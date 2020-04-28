@@ -76,7 +76,7 @@
     <!-- HEADER AREA END -->
 
     <!-- BANNER AREA START -->
-    <section id="banner">
+    <section id="banner" class="home">
         <div class="backtotop">
             <a href="#banner"><i class="fa fa-rocket" aria-hidden="true"></i></a>
         </div>
@@ -1512,6 +1512,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="js/lightbox.min.js"></script>
@@ -1520,6 +1521,19 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            "use strict";
+            //waterdrop js
+            $('.home').ripples({
+                resolution: 250,
+                dropRadius: 20,
+                perturbance: 0.04,
+            })
+
+        })
+
+    </script>
 </body>
 
 </html>
