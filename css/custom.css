@@ -436,7 +436,7 @@ margin-bottom: 5px;
 =============================*/
 #banner {
     padding: 180px 0 190px;
-    background-image: url(images/0srteljeshajo.jpg);
+    background: url(..images/0srteljeshajo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -446,11 +446,6 @@ margin-bottom: 5px;
 .heroimage {
     width: 100%;
     height: auto;
-    z-index: 999;
-    overflow: hidden;
-    border: 0;
-    vertical-align: middle;
-
 }
 
 #banner:after {
