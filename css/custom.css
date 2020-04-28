@@ -8,6 +8,7 @@ sötétzöld: #1d2326ff
 koszos Balaton: #569984
 
 
+
 /*
 * Template Name: Eveno - Event & Meetup Conference Template
 * Author:  Giantco
@@ -435,7 +436,7 @@ margin-bottom: 5px;
 =============================*/
 #banner {
     padding: 180px 0 190px;
-    background: url(../images/banner.jpg);
+    background-image: url(images/0srteljeshajo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -443,9 +444,13 @@ margin-bottom: 5px;
 }
 
 .heroimage {
-width: 100%;
-height: auto;
-z-index: 9999;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    overflow: hidden;
+    border: 0;
+    vertical-align: middle;
+
 }
 
 #banner:after {
