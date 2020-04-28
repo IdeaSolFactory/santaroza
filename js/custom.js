@@ -5,7 +5,8 @@
     //preloader part js
     $(window).on('load', function () {
         $('.main-preloader').delay(1000).fadeOut(1000);
-    });
+    });   
+
     // countdown timer js 
     $('.coundown_res').countdown('2020/12/25', function (event) {
         var $this = $(this);
@@ -174,5 +175,5 @@
     // counter part js
     $('.counter').counterUp();
     // video player js
-    jQuery("#bgndVideo").YTPlayer();
+    // jQuery("#bgndVideo").YTPlayer();
 }(jQuery));
