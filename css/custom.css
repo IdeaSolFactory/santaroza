@@ -148,8 +148,8 @@ p {
     height: 100%;
 }
 
-#main-preloader:before,
-#main-preloader:after {
+#main-preloader::before,
+#main-preloader::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -335,8 +335,8 @@ p {
 }
 
 .logomeret {
-width: 60px;
-height: 50px;
+width: 90px;
+height: 80px;
 margin-bottom: 5px;
 }
 
@@ -436,7 +436,7 @@ margin-bottom: 5px;
 =============================*/
 #banner {
     padding: 180px 0 190px;
-    background: url(..images/0srteljeshajo.jpg);
+    background: url(../images/0srteljeshajo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -448,7 +448,7 @@ margin-bottom: 5px;
     height: auto;
 }
 
-#banner:after {
+#banner::after {
     position: absolute;
     content: '';
     top: 0;
@@ -456,6 +456,7 @@ margin-bottom: 5px;
     width: 100%;
     height: 100%;
     background: #20282B;
+    opacity: .75;
 }
 
 .banner-txt {
