@@ -19,6 +19,10 @@
 }
 
 /*BANNER*/
+#banner {
+  background: url(../images/rozaimitator.jpg);
+}
+
 #banner .banner__image-holder {
   position: relative;
   width: 100%;
