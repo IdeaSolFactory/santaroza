@@ -1,3 +1,6 @@
+@import "colors";
+@import "mediaqueries";
+
 /*
  Ide jönnek a saját kódjaink
 */
@@ -19,6 +22,17 @@
             max-width: 300px;
             display: none;
         }   
+    }
+
+    // Collapsed navbar
+    .navbar-collapse.menu-main{
+
+        >ul{
+            background-color: color(primary-dark);
+            @include screen-md{
+                background-color: transparent;
+            }            
+        }
     }
      
 }
@@ -51,6 +65,17 @@
 
         }
     }
+}
+
+/* SCHEDULE */
+#schedule{
+
+    .schedule-item{
+        .timer{
+            background-color: transparent;
+        }
+    }
+
 }
 
 .venobox.vbox-item > i::before{

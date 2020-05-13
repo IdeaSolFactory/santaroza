@@ -18,6 +18,16 @@
   display: none;
 }
 
+.navbar .navbar-collapse.menu-main > ul {
+  background-color: #1d2326ff;
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar-collapse.menu-main > ul {
+    background-color: transparent;
+  }
+}
+
 /*BANNER*/
 #banner {
   background: url(../images/rozaimitator.jpg);
@@ -45,6 +55,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+/* SCHEDULE */
+#schedule .schedule-item .timer {
+  background-color: transparent;
 }
 
 .venobox.vbox-item > i::before {
