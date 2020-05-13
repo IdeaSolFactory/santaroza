@@ -7,8 +7,9 @@
 }
 
 .timer-main img{
-  width: 130px;
-  height: 130px;
+  object-fit: cover;
+  max-height: 130px;
+  width: auto;
 }
 
 /*
@@ -448,7 +449,7 @@ margin-bottom: 5px;
 =============================*/
 #banner {
     padding: 180px 0 190px;
-    background: url(../images/0srteljeshajo.jpg);
+    background: url(../images/rozaimitator.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
