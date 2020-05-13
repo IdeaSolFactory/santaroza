@@ -3,6 +3,21 @@
  Ide jönnek a saját kódjaink
 */
 /*HEADER*/
+.navbar.nav-bg .navbar-brand .navbar__logo {
+  display: block;
+}
+
+.navbar .navbar-brand {
+  vertical-align: middle;
+}
+
+.navbar .navbar-brand .navbar__logo {
+  width: auto;
+  height: 46px;
+  max-width: 300px;
+  display: none;
+}
+
 /*BANNER*/
 #banner .banner__image-holder {
   position: relative;

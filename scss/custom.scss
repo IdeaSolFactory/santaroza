@@ -3,7 +3,25 @@
 */
 
 /*HEADER*/
+.navbar{
 
+    &.nav-bg{
+        .navbar-brand .navbar__logo{
+            display: block;
+        }
+    }
+
+    .navbar-brand{
+        vertical-align: middle;
+        .navbar__logo{
+            width: auto;
+            height: 46px;
+            max-width: 300px;
+            display: none;
+        }   
+    }
+     
+}
 
 /*BANNER*/
 #banner{
