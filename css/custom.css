@@ -20,7 +20,10 @@
 
 /*BANNER*/
 #banner {
-  background: url(../images/rozaimitator.jpg);
+  background: url(../images/rozaimitator.jpg) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #banner .banner__image-holder {
