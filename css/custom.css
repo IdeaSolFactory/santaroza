@@ -945,16 +945,16 @@ margin-bottom: 5px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(45, 48, 75, 0.8);
+    background: #69767C;
 }
 
 #organize_2 {
-    background: #2d304b;
+    background: #333E43;
     padding: 40px 0;
 }
 
 .head-span {
-    color: #569984;
+    color: #9FD2C2;
     font-family: bl;
     font-size: 30px;
 }
@@ -982,18 +982,18 @@ margin-bottom: 5px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: #569984;
+    background: #9FD2C2;
     width: 50px;
     height: 2px;
 }
 
 .organize-text h3 span {
-    color: #569984;
+    color: #9FD2C2;
     font-size: 30px;
 }
 
 .organize-text p {
-    color: #aaadd0;
+    color: #9FD2C2;
     font-family: br;
     font-size: 19px;
     padding: 9px 165px 40px;
@@ -1011,7 +1011,7 @@ margin-bottom: 5px;
     right: 0;
     height: 50px;
     width: 1px;
-    background: #32396a;
+    background: #569984;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1027,7 +1027,7 @@ margin-bottom: 5px;
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #646caf;
+    background: #569984;
     text-align: center;
     border-radius: 50%;
 }
@@ -1041,7 +1041,7 @@ margin-bottom: 5px;
 }
 
 .org-item p {
-    color: #aaadd0;
+    color: #D5EFE7;
     font-size: 19px;
     font-family: br;
 }
@@ -1480,6 +1480,8 @@ margin-bottom: 5px;
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
     transition: all linear .3s;
+    width: 128px;
+    height: auto;
 }
 
 .price-item h3 {
@@ -1568,7 +1570,7 @@ margin-bottom: 5px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(42, 45, 72, 0.8);
+    background: #69767C;
 }
 
 .gallery-heading h3 {
@@ -1577,12 +1579,12 @@ margin-bottom: 5px;
 
 .gallery-heading h3::before,
 .gallery-style::before {
-    background: #569984;
+    background: #A9C8BE;
 }
 
 .gallery-heading h3::after,
 .gallery-style::after {
-    background: rgba(42, 45, 72, 0.84);
+    background: #E8EEF1;
 }
 
 .gallery-pa {
@@ -1635,8 +1637,8 @@ margin-bottom: 5px;
     border-radius: 50%;
     -webkit-animation: pulse-border 1500ms ease-out infinite;
     animation: pulse-border 1500ms ease-out infinite;
-    top: 47px;
-    left: 47px;
+    top: 50px;
+    left: 50px;
     z-index: 1;
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
@@ -1648,7 +1650,7 @@ margin-bottom: 5px;
     position: absolute;
     width: 100%;
     height: 0;
-    background: rgba(232, 69, 69, 0.8);
+    background: #A9C8BE;
     bottom: 0;
     left: 0;
     -webkit-transition: all linear .3s;
@@ -1691,7 +1693,7 @@ margin-bottom: 5px;
 }
 
 .r-b-color {
-    background: url(../images/register-bg.jpg);
+    background: url(../images/0srticket.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1710,13 +1712,13 @@ margin-bottom: 5px;
 .purchase-box h4 {
     font-size: 32px;
     font-family: bb;
-    color: #e84545;
+    color: #569984;
     padding-bottom: 29px;
 }
 
 .purchase-box h5 {
     font-family: bl;
-    color: #e84545;
+    color: #569984;
 }
 
 .form-control {
@@ -1731,11 +1733,11 @@ margin-bottom: 5px;
 }
 
 .payment-btn {
-    background: #e84545;
+    background: #569984;
     font-family: bb;
     color: white;
     padding: 14px 20px;
-    border: 1px solid #e84545;
+    border: 1px solid #569984;
     border-radius: 50px;
     margin-top: 20px;
     -webkit-transition: all linear .3s;
@@ -1745,15 +1747,21 @@ margin-bottom: 5px;
 }
 
 .payment-btn:hover {
-    background: #e84545;
-    border: 1px solid #e84545;
-    -webkit-box-shadow: 0px 4px 19px 0px #e84545;
-    box-shadow: 0px 4px 19px 0px #e84545;
+    background: #569984;
+    border: 1px solid #569984;
+    -webkit-box-shadow: 0px 4px 19px 0px #569984;
+    box-shadow: 0px 4px 19px 0px #569984;
 }
 
 .form-group {
     margin-bottom: 40px;
 }
+
+.card {
+  margin-top: 20px;
+  width: 300px;
+  height: auto;
+} 
 
 /*===========================
 12.0 *** REVIEW AREA START ***
@@ -1916,7 +1924,7 @@ margin-bottom: 5px;
 =============================*/
 #footer {
     padding: 60px 0;
-    background: #2a2d48;
+    background: #333E43;
 }
 
 .footer-txt h3 a {
@@ -1933,7 +1941,7 @@ margin-bottom: 5px;
     width: 60px;
     height: 60px;
     line-height: 60px;
-    background: #e84545;
+    background: #569984;
     color: white;
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -1943,7 +1951,7 @@ margin-bottom: 5px;
 
 #footer_2 {
     padding-bottom: 60px;
-    background: #2a2d48;
+    background: #333E43;
 }
 
 .menu-a a {
@@ -1957,7 +1965,7 @@ margin-bottom: 5px;
 }
 
 .menu-a a:hover {
-    color: #e84545;
+    color: #569984;
 }
 
 /*===========================
@@ -1965,7 +1973,7 @@ margin-bottom: 5px;
 =============================*/
 #copy_right {
     padding: 30px 0;
-    background: #2a2d48;
+    background: #1D2326;
     position: relative;
 }
 
@@ -1984,12 +1992,12 @@ margin-bottom: 5px;
 
 .copy-right-txt p {
     font-family: br;
-    color: #7c85cc;
+    color: #569984;
     font-size: 19px;
 }
 
 .copy-right-txt p a {
-    color: #e84545;
+    color: white;
 }
 
 .sub-item {
@@ -2014,8 +2022,8 @@ margin-bottom: 5px;
     right: 15px;
     width: 140px;
     height: 60px;
-    background: #e84545;
-    border: 1px solid #e84545;
+    background: #569984;
+    border: 1px solid #569984;
     font-family: bb;
     font-size: 19px;
     text-transform: uppercase;
@@ -2024,14 +2032,14 @@ margin-bottom: 5px;
 }
 
 .sub-btn:hover {
-    background: #e84545;
-    border: 1px solid #e84545;
+    background: #569984;
+    border: 1px solid #569984;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
-    background: #e84545;
-    border: 1px solid #e84545;
+    background: #569984;
+    border: 1px solid #569984;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
