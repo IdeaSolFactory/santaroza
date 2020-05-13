@@ -1,8 +1,20 @@
 /*
  Ide jönnek a saját kódjaink
-*
+*/
+
+.venobox.vbox-item > i::before{
+  padding-left: 3px;
+}
+
+.timer-main img{
+  width: 130px;
+  height: 130px;
+}
 
 /*
+
+
+
 színkódok
 sötétzöld: #1d2326ff
 koszos Balaton: #569984
