@@ -36,8 +36,8 @@ h1, h2, h3 {
 
 /*BANNER SECTION*/
 #banner {
-  background: url(../images/rozaimitator.jpg);
-  background-position: center;
+  background: url(../images/hero-01.jpg);
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
