@@ -163,6 +163,15 @@ h1, h2, h3{
     }
 }
 
+/* COUNTER SECTION */
+#counter{
+    padding: 100px 0 0px 0;
+
+    @include screen-lg{
+        padding: 100px 0 65px 0;
+    }
+}
+
 /* GALLERY SECTION */
 #gallery{
     background-image: url(../images/video-bckgrnd-01.jpg);
