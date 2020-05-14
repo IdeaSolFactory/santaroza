@@ -118,6 +118,16 @@ h1, h2, h3 {
   height: 100%;
 }
 
+/* GALLERY SECTION */
+#gallery {
+  background-image: url(../images/video-bckgrnd-01.jpg);
+}
+
+#gallery::after {
+  opacity: .65;
+  background-color: #1d2326ff;
+}
+
 .venobox.vbox-item > i::before {
   padding-left: 3px;
 }
