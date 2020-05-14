@@ -104,6 +104,24 @@ h1, h2, h3{
 
 }
 
+/* ABOUT SECTIONS */
+#about{
+    .about-img{
+        height: 100%;
+
+        .main-img{
+            height: 100%;
+            display: block;
+    
+            >img{
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+            }
+        }
+    }
+}
+
 .venobox.vbox-item > i::before{
     padding-left: 3px;
   }

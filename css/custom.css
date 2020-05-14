@@ -79,6 +79,24 @@ h1, h2, h3 {
   background-color: transparent;
 }
 
+/* ABOUT SECTIONS */
+#about .about-img {
+  height: 100%;
+}
+
+#about .about-img .main-img {
+  height: 100%;
+  display: block;
+}
+
+#about .about-img .main-img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+}
+
 .venobox.vbox-item > i::before {
   padding-left: 3px;
 }
