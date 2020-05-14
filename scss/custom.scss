@@ -1,11 +1,18 @@
 @import "colors";
 @import "mediaqueries";
 
-/*
- Ide jönnek a saját kódjaink
-*/
+/* TEXT */
 
-/*HEADER*/
+h1, h2, h3{
+    font-family: 'Bangers', cursive !important;
+    letter-spacing: 2px;
+}
+
+.banner-txt h1{    
+    letter-spacing: 4px;
+}
+
+/*HEADER SECTION*/
 .navbar{
 
     &.nav-bg{
@@ -37,7 +44,7 @@
      
 }
 
-/*BANNER*/
+/*BANNER SECTION*/
 #banner{
     background: url(../images/rozaimitator.jpg);
     background-position: center;
@@ -63,11 +70,30 @@
             background-position: center;
             background-size: contain;
 
+            @include screen-lg{
+                background-position: left;
+            }
+
+        }
+    }
+
+    .banner-txt{
+        h3{
+            padding-bottom: 16px;
         }
     }
 }
 
-/* SCHEDULE */
+/* EVENTS SECTION */
+#event{
+    .event-header{
+        h3{
+
+        }
+    }
+}
+
+/* SCHEDULE SECTION */
 #schedule{
 
     .schedule-item{

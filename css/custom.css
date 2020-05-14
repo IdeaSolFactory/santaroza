@@ -1,8 +1,14 @@
-@charset "UTF-8";
-/*
- Ide jönnek a saját kódjaink
-*/
-/*HEADER*/
+/* TEXT */
+h1, h2, h3 {
+  font-family: 'Bangers', cursive !important;
+  letter-spacing: 2px;
+}
+
+.banner-txt h1 {
+  letter-spacing: 4px;
+}
+
+/*HEADER SECTION*/
 .navbar.nav-bg .navbar-brand .navbar__logo {
   display: block;
 }
@@ -28,7 +34,7 @@
   }
 }
 
-/*BANNER*/
+/*BANNER SECTION*/
 #banner {
   background: url(../images/rozaimitator.jpg);
   background-position: center;
@@ -57,7 +63,18 @@
   background-size: contain;
 }
 
-/* SCHEDULE */
+@media (min-width: 992px) {
+  #banner .banner__image-holder::after {
+    background-position: left;
+  }
+}
+
+#banner .banner-txt h3 {
+  padding-bottom: 16px;
+}
+
+/* EVENTS SECTION */
+/* SCHEDULE SECTION */
 #schedule .schedule-item .timer {
   background-color: transparent;
 }
