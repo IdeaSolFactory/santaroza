@@ -76,6 +76,19 @@ h1, h2, h3 {
   padding-bottom: 16px;
 }
 
+/*BANNER 2 SECTION*/
+@media (min-width: 1200px) {
+  #banner-2 .coun_time #second ~ .coming-data2 {
+    right: 36px;
+  }
+  #banner-2 .coun_time #month ~ .coming-data2 {
+    right: 65px;
+  }
+  #banner-2 .coun_time #hour ~ .coming-data2 {
+    right: 65px;
+  }
+}
+
 /* EVENTS SECTION */
 /* SCHEDULE SECTION */
 #schedule .schedule-item .timer {
