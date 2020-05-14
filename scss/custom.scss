@@ -158,6 +158,12 @@ h1, h2, h3{
         opacity: .65;
         background-color: color(primary-dark);
     }
+
+    .gallery-heading{
+        h3::after{
+            content: none;
+        }
+    }
 }
 
 .venobox.vbox-item > i::before{

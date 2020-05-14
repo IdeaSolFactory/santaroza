@@ -128,6 +128,10 @@ h1, h2, h3 {
   background-color: #1d2326ff;
 }
 
+#gallery .gallery-heading h3::after {
+  content: none;
+}
+
 .venobox.vbox-item > i::before {
   padding-left: 3px;
 }
