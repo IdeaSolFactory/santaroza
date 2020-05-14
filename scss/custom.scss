@@ -86,6 +86,27 @@ h1, h2, h3{
     }
 }
 
+/*BANNER 2 SECTION*/
+#banner-2{
+
+    @include screen-xl{
+        .coun_time{
+            #second~.coming-data2{
+                right: 36px;
+            }
+    
+            #month~.coming-data2{
+                right: 65px;
+            }
+    
+            #hour~.coming-data2{
+                right: 65px;
+            }
+        }
+    }
+    
+}
+
 /* EVENTS SECTION */
 #event{
     .event-header{
