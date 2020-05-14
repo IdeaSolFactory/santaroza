@@ -71,6 +71,7 @@ h1, h2, h3{
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+            opacity: .65;
 
             @include screen-lg{
                 background-position: left;
