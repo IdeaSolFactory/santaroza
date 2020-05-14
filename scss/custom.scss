@@ -118,8 +118,13 @@ h1, h2, h3{
 
 /* SCHEDULE SECTION */
 #schedule{
-
     .schedule-item{
+        h3{
+            &::after{
+                background-color: color(primary);
+                opacity: .30;
+            }
+        }
         .timer{
             background-color: transparent;
         }

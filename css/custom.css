@@ -91,6 +91,11 @@ h1, h2, h3 {
 
 /* EVENTS SECTION */
 /* SCHEDULE SECTION */
+#schedule .schedule-item h3::after {
+  background-color: #569984;
+  opacity: .30;
+}
+
 #schedule .schedule-item .timer {
   background-color: transparent;
 }
