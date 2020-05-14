@@ -104,6 +104,19 @@ h1, h2, h3{
             }
         }
     }
+
+    .banner-2__aside-text{
+        color: white;
+        padding-top: 55px;
+
+        @include screen-sm{
+            padding-top: 12px;
+        }
+
+        @include screen-md{
+            padding-top: 0;
+        }
+    }
     
 }
 

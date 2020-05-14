@@ -89,6 +89,23 @@ h1, h2, h3 {
   }
 }
 
+#banner-2 .banner-2__aside-text {
+  color: white;
+  padding-top: 55px;
+}
+
+@media (min-width: 576px) {
+  #banner-2 .banner-2__aside-text {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  #banner-2 .banner-2__aside-text {
+    padding-top: 0;
+  }
+}
+
 /* EVENTS SECTION */
 /* SCHEDULE SECTION */
 #schedule .schedule-item h3::after {
