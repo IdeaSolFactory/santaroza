@@ -175,6 +175,17 @@ h1, h2, h3 {
   content: none;
 }
 
+/* FOOTER SECTION */
+#footer {
+  padding: 36px 0;
+}
+
+#footer .footer__logo {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+}
+
 .venobox.vbox-item > i::before {
   padding-left: 3px;
 }

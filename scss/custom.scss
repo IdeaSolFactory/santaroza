@@ -201,6 +201,19 @@ h1, h2, h3{
     }
 }
 
+
+/* FOOTER SECTION */
+#footer{
+
+    padding: 36px 0;
+
+    .footer__logo{
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+}
+
 .venobox.vbox-item > i::before{
     padding-left: 3px;
   }
