@@ -318,7 +318,31 @@ h3 {
 
 /* ORGANIZE SECTION */
 #organize {
-  background-image: url(../images/custom-events-01.jpg);
+  background-image: url(../images/custom-events-01-480.jpg);
+}
+
+@media (min-width: 768px) {
+  #organize {
+    background-image: url(../images/custom-events-01-768.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  #organize {
+    background-image: url(../images/custom-events-01-1024.jpg);
+  }
+}
+
+@media (min-width: 1680px) {
+  #organize {
+    background-image: url(../images/custom-events-01-1680.jpg);
+  }
+}
+
+@media (min-width: 1920px) {
+  #organize {
+    background-image: url(../images/custom-events-01-1920.jpg);
+  }
 }
 
 #organize::after {
