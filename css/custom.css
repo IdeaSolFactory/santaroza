@@ -1,6 +1,8 @@
 /* TEXT */
-h1, h2, h3 {
-  font-family: 'Bangers', cursive !important;
+h1,
+h2,
+h3 {
+  font-family: "Bangers", cursive !important;
   letter-spacing: 2px;
 }
 
@@ -92,7 +94,49 @@ h1, h2, h3 {
 }
 
 /*BANNER 2 SECTION*/
+#banner-2 .hourglass-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: -46px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 36px;
+  width: 36px;
+}
+
 @media (min-width: 1200px) {
+  #banner-2 .hourglass-icon {
+    display: block;
+  }
+  #banner-2 .hourglass-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+    width: 55px;
+    height: 55px;
+    background-color: #569984;
+    opacity: .15;
+    border-radius: 100%;
+  }
+  #banner-2 .hourglass-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/icons/hourglass-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   #banner-2 .coun_time #second ~ .coming-data2 {
     right: 36px;
   }
@@ -125,7 +169,7 @@ h1, h2, h3 {
 /* SCHEDULE SECTION */
 #schedule .schedule-item h3::after {
   background-color: #569984;
-  opacity: .30;
+  opacity: 0.3;
 }
 
 #schedule .schedule-item .timer {
@@ -167,7 +211,7 @@ h1, h2, h3 {
 }
 
 #gallery::after {
-  opacity: .65;
+  opacity: 0.65;
   background-color: #1d2326ff;
 }
 
