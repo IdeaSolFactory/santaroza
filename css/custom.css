@@ -220,6 +220,20 @@ h3 {
   right: 8px;
 }
 
+/* BRAND SECTION */
+#brand .brand__image-holder {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#brand .brand__image-holder > img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* SCHEDULE SECTION */
 #schedule .scrollarea {
   overflow: visible !important;
