@@ -274,6 +274,16 @@ h3 {
   margin-right: 6px;
 }
 
+/* ORGANIZE SECTION */
+#organize {
+  background-image: url(../images/custom-events-01.jpg);
+}
+
+#organize::after {
+  opacity: .9;
+  background-color: #1d2326ff;
+}
+
 /* GALLERY SECTION */
 #gallery {
   background-image: url(../images/video-bckgrnd-01.jpg);
