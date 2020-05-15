@@ -333,7 +333,23 @@ h3 {
 
 /* ORGANIZE SECTION */
 #organize{
-    background-image: url(../images/custom-events-01.jpg);
+    background-image: url(../images/custom-events-01-480.jpg);
+
+    @include screen-md{
+        background-image: url(../images/custom-events-01-768.jpg);
+    }
+
+    @include screen-xl{
+        background-image: url(../images/custom-events-01-1024.jpg);
+    }
+
+    @include screen-xxl{
+        background-image: url(../images/custom-events-01-1680.jpg);
+    }
+
+    @include screen-hd{
+        background-image: url(../images/custom-events-01-1920.jpg);
+    }
 
     &::after{
         opacity: .9;
