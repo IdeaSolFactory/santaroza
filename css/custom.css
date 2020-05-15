@@ -33,6 +33,26 @@ h3 {
   background-image: url(../images/icons/pirate-ship-1.svg);
 }
 
+.icon.coin {
+  background-image: url(../images/icons/coin-1.svg);
+}
+
+.icon.pirate-hook {
+  background-image: url(../images/icons/pirate-hook-1.svg);
+}
+
+.icon.pirate-hook-2 {
+  background-image: url(../images/icons/pirate-hook-2.svg);
+}
+
+.icon.map {
+  background-image: url(../images/icons/map-1.svg);
+}
+
+.icon.swords {
+  background-image: url(../images/icons/swords-1.svg);
+}
+
 /*HEADER SECTION*/
 .navbar.nav-bg .navbar-brand .navbar__logo {
   display: block;
@@ -237,6 +257,13 @@ h3 {
   #counter {
     padding: 100px 0 65px 0;
   }
+}
+
+#counter .counter-txt .icon {
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  margin-right: 6px;
 }
 
 /* GALLERY SECTION */

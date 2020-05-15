@@ -35,6 +35,26 @@ h3 {
     &.pirate-ship{
         background-image: url(../images/icons/pirate-ship-1.svg); 
     }
+
+    &.coin{
+        background-image: url(../images/icons/coin-1.svg); 
+    }
+
+    &.pirate-hook{
+        background-image: url(../images/icons/pirate-hook-1.svg); 
+    }
+
+    &.pirate-hook-2{
+        background-image: url(../images/icons/pirate-hook-2.svg); 
+    }
+
+    &.map{
+        background-image: url(../images/icons/map-1.svg); 
+    }
+
+    &.swords{
+        background-image: url(../images/icons/swords-1.svg); 
+    }
 }
 
 /*HEADER SECTION*/
@@ -240,10 +260,19 @@ h3 {
 
 /* COUNTER SECTION */
 #counter {
-    padding: 100px 0 0px 0;
+    padding: 100px 0 0px 0;   
 
     @include screen-lg {
         padding: 100px 0 65px 0;
+    }
+
+    .counter-txt{
+        .icon{
+            height: 36px;
+            width: 36px;
+            display: inline-block;
+            margin-right: 6px;
+        }
     }
 }
 
