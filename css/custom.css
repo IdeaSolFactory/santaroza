@@ -10,6 +10,29 @@ h3 {
   letter-spacing: 4px;
 }
 
+/* ICONS */
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon.pirate-kid {
+  background-image: url(../images/icons/pirate-kid-2.svg);
+}
+
+.icon.treasure-chest {
+  background-image: url(../images/icons/treasure-chest-1.svg);
+}
+
+.icon.steering-wheel {
+  background-image: url(../images/icons/steering-wheel-1.svg);
+}
+
+.icon.pirate-ship {
+  background-image: url(../images/icons/pirate-ship-1.svg);
+}
+
 /*HEADER SECTION*/
 .navbar.nav-bg .navbar-brand .navbar__logo {
   display: block;
@@ -166,6 +189,17 @@ h3 {
 }
 
 /* EVENTS SECTION */
+#event .about-item {
+  overflow: hidden;
+}
+
+#event .about-item span {
+  width: 42px;
+  height: 42px;
+  top: 20px;
+  right: 8px;
+}
+
 /* SCHEDULE SECTION */
 #schedule .schedule-item h3::after {
   background-color: #569984;
