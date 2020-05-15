@@ -227,17 +227,27 @@ h3 {
 
 /* SCHEDULE SECTION */
 #schedule {
-    .schedule-item {
-        h3 {
-            &::after {
-                background-color: color(primary);
-                opacity: 0.3;
+
+    .scrollarea{
+        overflow: visible !important;
+        cursor: default !important;
+        max-height: unset;
+        touch-action: auto !important;
+
+        .schedule-item {
+            h3 {
+                &::after {
+                    background-color: color(primary);
+                    opacity: 0.3;
+                }
+            }
+            .timer {
+                background-color: transparent;
             }
         }
-        .timer {
-            background-color: transparent;
-        }
     }
+    
+    
 }
 
 /* ABOUT SECTIONS */

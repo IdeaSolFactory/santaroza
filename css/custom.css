@@ -221,12 +221,20 @@ h3 {
 }
 
 /* SCHEDULE SECTION */
-#schedule .schedule-item h3::after {
+#schedule .scrollarea {
+  overflow: visible !important;
+  cursor: default !important;
+  max-height: unset;
+  -ms-touch-action: auto !important;
+      touch-action: auto !important;
+}
+
+#schedule .scrollarea .schedule-item h3::after {
   background-color: #569984;
   opacity: 0.3;
 }
 
-#schedule .schedule-item .timer {
+#schedule .scrollarea .schedule-item .timer {
   background-color: transparent;
 }
 
