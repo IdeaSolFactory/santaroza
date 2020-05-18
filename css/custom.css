@@ -57,6 +57,11 @@ h3 {
   background-image: url(../images/icons/compass-1.svg);
 }
 
+/* BACKGROUND MODIFIERS */
+[class^="bg-"] {
+  position: relative;
+}
+
 /*HEADER SECTION*/
 .navbar.nav-bg .navbar-brand .navbar__logo {
   display: block;
@@ -73,7 +78,7 @@ h3 {
 }
 
 .navbar .navbar-collapse.menu-main > ul {
-  background-color: #1d2326ff;
+  background-color: #1d2326;
 }
 
 @media (min-width: 768px) {
@@ -165,11 +170,29 @@ h3 {
 }
 
 /*BANNER 2 SECTION*/
+#banner-2 {
+  background-color: white !important;
+}
+
+#banner-2 .bg-drawing-1 {
+  display: block;
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+
+#banner-2 .bg-drawing-1 img {
+  width: 100%;
+  min-height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #banner-2 .hourglass-icon {
   display: none;
   position: absolute;
   top: 50%;
-  left: -46px;
+  left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 36px;
@@ -208,6 +231,12 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
   }
+  #banner-2 .coun_time h2 {
+    color: #1d2326;
+  }
+  #banner-2 .coun_time p {
+    color: #1d2326;
+  }
   #banner-2 .coun_time #second ~ .coming-data2 {
     right: 65px;
   }
@@ -220,7 +249,7 @@ h3 {
 }
 
 #banner-2 .banner-2__aside-text {
-  color: white;
+  color: #1d2326;
   padding-top: 55px;
 }
 
@@ -347,7 +376,7 @@ h3 {
 
 #organize::after {
   opacity: .9;
-  background-color: #1d2326ff;
+  background-color: #1d2326;
 }
 
 /* GALLERY SECTION */
@@ -357,7 +386,7 @@ h3 {
 
 #gallery::after {
   opacity: 0.65;
-  background-color: #1d2326ff;
+  background-color: #1d2326;
 }
 
 #gallery .gallery-heading h3::after {
