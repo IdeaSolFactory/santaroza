@@ -35,7 +35,7 @@ h1, h2, h3 {
 
 /*BANNER SECTION*/
 #banner {
-  background: url(../images/hero-01.jpg);
+  background: url(../images/santarozahero.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ h1, h2, h3 {
 
 /* GALLERY SECTION */
 #gallery {
-  background-image: url(../images/video-bckgrnd-01.jpg);
+  background-image: url(../images/santarozavideo.jpg);
 }
 
 #gallery::after {
