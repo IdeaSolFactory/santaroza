@@ -362,6 +362,25 @@ h3 {
 @media (min-width: 992px) {
   #counter {
     padding: 100px 0 65px 0;
+    position: relative;
+  }
+  #counter::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    background-image: url(../images/background-images/illustration-bckgrnd-01.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .4;
+  }
+  #counter .count-item {
+    background-color: rgba(255, 255, 255, 0.65);
   }
 }
 

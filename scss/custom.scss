@@ -390,10 +390,31 @@ h3 {
 
 /* COUNTER SECTION */
 #counter {
-    padding: 100px 0 0px 0;   
+    padding: 100px 0 0px 0;
 
     @include screen-lg {
         padding: 100px 0 65px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 500px;
+            background-image: url(../images/background-images/illustration-bckgrnd-01.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            opacity: .4;
+        }
+
+        .count-item{
+            background-color: rgba($color: #FFF, $alpha: .65);
+        }
     }
 
     .counter-txt{
