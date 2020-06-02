@@ -391,6 +391,11 @@ h3 {
   margin-right: 6px;
 }
 
+/* ROUTE SECTION */
+#route-section {
+  padding: 90px 0;
+}
+
 /* ORGANIZE SECTION */
 #organize {
   background-image: url(../images/custom-events-01-480.jpg);
