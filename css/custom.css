@@ -18,11 +18,11 @@ h3 {
 }
 
 .icon.pirate-kid {
-  background-image: url(../images/icons/pirate-kid-2.svg);
+  background-image: url(../images/icons/icon-baby.png);
 }
 
 .icon.treasure-chest {
-  background-image: url(../images/icons/treasure-chest-1.svg);
+  background-image: url(../images/icons/chest.png);
 }
 
 .icon.steering-wheel {
@@ -298,9 +298,9 @@ h3 {
 }
 
 #event .about-item span {
-  width: 42px;
-  height: 42px;
-  top: 20px;
+  width: 70px;
+  height: 70px;
+  top: 10px;
   right: 8px;
 }
 
