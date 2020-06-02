@@ -63,6 +63,33 @@ h3 {
 }
 
 /*HEADER SECTION*/
+.navbar.nav-bg {
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar.nav-bg::after {
+  content: "";
+  position: absolute;
+  height: 125px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  background-image: url(../images/background-images/bckgrnd-header-01.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .navbar.nav-bg::after {
+    height: 180px;
+  }
+}
+
 .navbar.nav-bg .navbar-brand .navbar__logo {
   display: block;
 }

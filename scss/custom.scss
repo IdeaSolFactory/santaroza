@@ -94,6 +94,28 @@ h3 {
 /*HEADER SECTION*/
 .navbar {
     &.nav-bg {
+        background-color: transparent !important;
+        box-shadow: none;
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 125px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: block;
+            background-image: url(../images/background-images/bckgrnd-header-01.png);
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+
+            @include screen-lg{
+                height: 180px;
+            }
+        }
+
         .navbar-brand .navbar__logo {
             display: block;
         }
