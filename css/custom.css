@@ -18,11 +18,11 @@ h3 {
 }
 
 .icon.pirate-kid {
-  background-image: url(../images/icons/pirate-kid-2.svg);
+  background-image: url(../images/icons/icon-baby.png);
 }
 
 .icon.treasure-chest {
-  background-image: url(../images/icons/treasure-chest-1.svg);
+  background-image: url(../images/icons/chest.png);
 }
 
 .icon.steering-wheel {
@@ -57,7 +57,39 @@ h3 {
   background-image: url(../images/icons/compass-1.svg);
 }
 
+/* BACKGROUND MODIFIERS */
+[class^="bg-"] {
+  position: relative;
+}
+
 /*HEADER SECTION*/
+.navbar.nav-bg {
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar.nav-bg::after {
+  content: "";
+  position: absolute;
+  height: 125px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  background-image: url(../images/background-images/bckgrnd-header-01.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .navbar.nav-bg::after {
+    height: 180px;
+  }
+}
+
 .navbar.nav-bg .navbar-brand .navbar__logo {
   display: block;
 }
@@ -73,7 +105,7 @@ h3 {
 }
 
 .navbar .navbar-collapse.menu-main > ul {
-  background-color: #1d2326ff;
+  background-color: #1d2326;
 }
 
 @media (min-width: 768px) {
@@ -165,11 +197,29 @@ h3 {
 }
 
 /*BANNER 2 SECTION*/
+#banner-2 {
+  background-color: white !important;
+}
+
+#banner-2 .bg-drawing-1 {
+  display: block;
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+
+#banner-2 .bg-drawing-1 img {
+  width: 100%;
+  min-height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #banner-2 .hourglass-icon {
   display: none;
   position: absolute;
   top: 50%;
-  left: -46px;
+  left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 36px;
@@ -208,6 +258,12 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
   }
+  #banner-2 .coun_time h2 {
+    color: #1d2326;
+  }
+  #banner-2 .coun_time p {
+    color: #1d2326;
+  }
   #banner-2 .coun_time #second ~ .coming-data2 {
     right: 65px;
   }
@@ -220,7 +276,7 @@ h3 {
 }
 
 #banner-2 .banner-2__aside-text {
-  color: white;
+  color: #1d2326;
   padding-top: 55px;
 }
 
@@ -242,9 +298,9 @@ h3 {
 }
 
 #event .about-item span {
-  width: 42px;
-  height: 42px;
-  top: 20px;
+  width: 70px;
+  height: 70px;
+  top: 10px;
   right: 8px;
 }
 
@@ -306,6 +362,25 @@ h3 {
 @media (min-width: 992px) {
   #counter {
     padding: 100px 0 65px 0;
+    position: relative;
+  }
+  #counter::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    background-image: url(../images/background-images/illustration-bckgrnd-01.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .4;
+  }
+  #counter .count-item {
+    background-color: rgba(255, 255, 255, 0.65);
   }
 }
 
@@ -314,6 +389,11 @@ h3 {
   width: 36px;
   display: inline-block;
   margin-right: 6px;
+}
+
+/* ROUTE SECTION */
+#route-section {
+  padding: 90px 0;
 }
 
 /* ORGANIZE SECTION */
@@ -347,7 +427,7 @@ h3 {
 
 #organize::after {
   opacity: .9;
-  background-color: #1d2326ff;
+  background-color: #1d2326;
 }
 
 /* GALLERY SECTION */
@@ -357,7 +437,7 @@ h3 {
 
 #gallery::after {
   opacity: 0.65;
-  background-color: #1d2326ff;
+  background-color: #1d2326;
 }
 
 #gallery .gallery-heading h3::after {
