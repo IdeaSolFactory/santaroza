@@ -122,6 +122,16 @@ h3 {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 992px) {
+  #banner {
+    height: 100vh;
+  }
+}
+
+#banner .banner__container {
+  height: 100%;
+}
+
 #banner .backtotop .backtotop__icon {
   position: relative;
   display: block;
@@ -432,7 +442,7 @@ h3 {
 
 /* GALLERY SECTION */
 #gallery {
-  background-image: url(../images/santarozavideo.jpg);
+  background-image: url(../images/video-bckgrnd-01.jpg);
 }
 
 #gallery::after {

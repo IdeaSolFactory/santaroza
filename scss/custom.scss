@@ -145,10 +145,18 @@ h3 {
 
 /*BANNER SECTION*/
 #banner {
-    background: url(../images/hero-01.jpg);
+    background: url(../images/santarozahero.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include screen-lg{
+        height: 100vh;
+    }
+
+    .banner__container{
+        height: 100%;       
+    }
 
     .backtotop{
         .backtotop__icon{
