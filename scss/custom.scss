@@ -63,35 +63,8 @@ h3 {
     }
 }
 
-/* BACKGROUND MODIFIERS */  
-
+/* BACKGROUND MODIFIERS */
     
-
-    [class^="bg-"]{
-
-        position: relative;
-        
-    //     background: none !important;
-    //     background-size: cover !important;
-    //     background-position: top !important;
-    //     background-repeat: no-repeat !important;
-    //     position: relative;
-
-    //     &::before{
-    //         content: "";
-    //         position: absolute;
-    //         width: 100%;
-    //         height: 100%;
-    //         top: 0;
-    //         left: 0;
-    //         background-color: color(primary-dark);
-    //         opacity: 0;
-    //     }
-    }
-
-    // .bg-1{
-    //     background-image: url(../images/background-images/background-02-brown-1920x.jpg) !important;        
-    // }
 
 /*HEADER SECTION*/
 .navbar {
@@ -232,7 +205,7 @@ h3 {
 
 /*BANNER 2 SECTION*/
 #banner-2 {
-
+    position: relative;
     background-color: white !important;
 
    &::before{
@@ -385,7 +358,8 @@ h3 {
 }
 
 /* ABOUT SECTIONS */
-#about {
+#about {   
+
     .about-img {
         height: 100%;
 
@@ -469,6 +443,28 @@ h3 {
     &::after{
         opacity: .9;
         background-color: color(primary-dark);
+    }
+}
+
+/* PRICE SECTION */
+#price{
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content:"";
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        width: 100%;
+        height: 100%;
+
+        background-image: url(../images/background-images/bckgrnd-map-sepia-01.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .15;
+        filter: grayscale(1);
     }
 }
 
