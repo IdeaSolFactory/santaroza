@@ -418,6 +418,42 @@ h3 {
 /* ROUTE SECTION */
 #route-section{
     padding: 90px 0;
+    
+    .route-section__item{
+        position: relative;            
+    }
+
+    .route-section__connection{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        overflow: visible;
+
+        &::after{
+            content: none;
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 100%;
+            height: 360px;
+
+            background-image: url(../images/background-images/dotted-line-01.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @include screen-lg{
+                content: "";
+                height: 360px;
+            }
+
+            @include screen-xl{
+                height: 500px;
+            }
+        }
+    }
 }
 
 /* ORGANIZE SECTION */
