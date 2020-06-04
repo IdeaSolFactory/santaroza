@@ -247,60 +247,28 @@ section .header.header--style-2::after {
 /*BANNER 2 SECTION*/
 #banner-2 {
   position: relative;
-  background-color: white !important;
-}
-
-#banner-2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 32px;
-  background-image: url(../images/background-images/bckgrnd-paper-01.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -32px;
-}
-
-@media (min-width: 992px) {
-  #banner-2::before {
-    height: 65px;
-    top: -63px;
-  }
-}
-
-#banner-2 .hourglass-icon {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 36px;
-  width: 36px;
+  background-color: transparent !important;
 }
 
 @media (min-width: 1200px) {
-  #banner-2 .hourglass-icon {
-    display: block;
+  #banner-2 {
+    top: -100px;
   }
-  #banner-2 .hourglass-icon::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-            transform: translateY(-50%) translateX(-50%);
-    width: 55px;
-    height: 55px;
-    background-color: #569984;
-    opacity: .05;
-    border-radius: 100%;
+  #banner-2 .banner-2__container {
+    background-color: white;
+    padding: 25px 0;
+    position: relative;
+    -webkit-box-shadow: 0px 6px 30px 0 rgba(35, 34, 39, 0.12);
+            box-shadow: 0px 6px 30px 0 rgba(35, 34, 39, 0.12);
   }
-  #banner-2 .hourglass-icon::after {
+  #banner-2 .banner-2__container .hourglass-icon {
+    display: block;
+    position: relative;
+    padding: 25px;
+    height: 120px;
+    width: 120px;
+  }
+  #banner-2 .banner-2__container .hourglass-icon::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -309,7 +277,7 @@ section .header.header--style-2::after {
             transform: translateY(-50%) translateX(-50%);
     width: 100%;
     height: 100%;
-    background-image: url(../images/icons/hourglass-1.svg);
+    background-image: url(../images/icons/hourglass-01.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
