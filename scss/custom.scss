@@ -122,7 +122,8 @@ h3 {
         /* HEADINGS */
 
         .section-title{
-            margin: 75px 0;
+            margin: 0 0 45px 0;
+            text-align: center;
         }
         .header{
             width: 100%;
@@ -160,6 +161,20 @@ h3 {
                         background-image: url(../images/background-images/heading-bckgrnd-02.png);
                     } 
                 }
+
+                &--style-3{
+                    &::after{
+                        background-image: url(../images/background-images/heading-bckgrnd-03.png);
+                    } 
+                }
+
+                &--style-4{
+                    &::after{
+                        background-image: url(../images/background-images/heading-bckgrnd-04.png);
+                    } 
+                }
+
+
             }
 
         }
