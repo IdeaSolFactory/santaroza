@@ -73,7 +73,7 @@ h3 {
   top: 0;
   left: 0;
   display: block;
-  background-image: url(../images/background-images/bckgrnd-header-02.png);
+  background-image: url(../images/background-images/bckgrnd-header-01.png);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@ h3 {
 
 @media (min-width: 992px) {
   .navbar.nav-bg::after {
-    height: 142px;
+    height: 200px;
   }
 }
 
