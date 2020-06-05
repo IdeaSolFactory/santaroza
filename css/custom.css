@@ -255,20 +255,28 @@ section .header.header--style-4::after {
 
 /*BANNER 2 SECTION*/
 #banner-2 {
+  padding: 0;
   position: relative;
   background-color: transparent !important;
 }
 
 @media (min-width: 1200px) {
-  #banner-2 {
-    top: -100px;
-  }
   #banner-2 .banner-2__container {
-    background-color: white;
     padding: 25px 0;
     position: relative;
-    -webkit-box-shadow: 0px 6px 30px 0 rgba(35, 34, 39, 0.12);
-            box-shadow: 0px 6px 30px 0 rgba(35, 34, 39, 0.12);
+  }
+  #banner-2 .banner-2__container::after {
+    content: "";
+    position: absolute;
+    right: -120px;
+    top: -140px;
+    width: 400px;
+    height: 400px;
+    display: block;
+    background-image: url(../images/background-images/illustration-cannon-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   #banner-2 .banner-2__container .hourglass-icon {
     display: block;

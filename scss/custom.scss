@@ -273,8 +273,13 @@ h3 {
 
 /*BANNER 2 SECTION*/
 #banner-2 {
+    padding: 0;
     position: relative;
     background-color: transparent !important;
+    // background-image: url(../images/background-images/bckgrnd-wood-01.png);
+    // background-position: bottom;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     
 
     .hourglass-icon {
@@ -282,13 +287,25 @@ h3 {
     }
 
     @include screen-xl {
-        top: -100px;
-
+        
         .banner-2__container{
-            background-color: white;
             padding: 25px 0;
             position: relative;
-            box-shadow: 0px 6px 30px 0 rgba($color: #232227, $alpha: .12);
+
+            &::after{
+                content: "";
+                position: absolute;
+                right: -120px;
+                top: -140px;
+                width: 400px;
+                height: 400px;
+                display: block;
+
+                background-image: url(../images/background-images/illustration-cannon-01.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
 
             .hourglass-icon {
                 display: block;
