@@ -59,13 +59,11 @@ h3 {
 
 /* BACKGROUND MODIFIERS */
 /*HEADER SECTION*/
-.navbar.nav-bg {
-  background-color: transparent !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.navbar {
+  padding: 20px 0;
 }
 
-.navbar.nav-bg::after {
+.navbar::after {
   content: "";
   position: absolute;
   height: 115px;
@@ -81,9 +79,15 @@ h3 {
 }
 
 @media (min-width: 992px) {
-  .navbar.nav-bg::after {
+  .navbar::after {
     height: 200px;
   }
+}
+
+.navbar.nav-bg {
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .navbar.nav-bg .navbar-brand .navbar__logo {
@@ -257,21 +261,21 @@ section .header.header--style-4::after {
 #banner-2 {
   position: relative;
   background-color: transparent !important;
+  overflow: visible;
 }
 
 #banner-2::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: -20px;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: 100%;
-  height: 100%;
+  height: 220px;
   background-image: url(../images/background-images/bckgrnd-wood-01.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: transparent;
 }
 
 @media (min-width: 1200px) {
