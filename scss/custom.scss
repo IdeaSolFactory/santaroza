@@ -276,10 +276,10 @@ h3 {
     padding: 0;
     position: relative;
     background-color: transparent !important;
-    // background-image: url(../images/background-images/bckgrnd-wood-01.png);
-    // background-position: bottom;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-image: url(../images/background-images/bckgrnd-wood-01.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 
     .hourglass-icon {
@@ -292,20 +292,20 @@ h3 {
             padding: 25px 0;
             position: relative;
 
-            &::after{
-                content: "";
-                position: absolute;
-                right: -120px;
-                top: -140px;
-                width: 400px;
-                height: 400px;
-                display: block;
+            // &::after{
+            //     content: "";
+            //     position: absolute;
+            //     right: -120px;
+            //     top: -140px;
+            //     width: 400px;
+            //     height: 400px;
+            //     display: block;
 
-                background-image: url(../images/background-images/illustration-cannon-01.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
+            //     background-image: url(../images/background-images/illustration-cannon-01.png);
+            //     background-position: center;
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            // }
 
             .hourglass-icon {
                 display: block;
