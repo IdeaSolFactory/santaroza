@@ -64,6 +64,20 @@ h3 {
 }
 
 /* BACKGROUND MODIFIERS */
+
+.bg-light{
+    background-color: color(secondary) !important;
+}
+
+.bg-darker{
+    background-color: color(secondary-dark) !important;
+}
+
+
+/* BODY */
+body{
+    background-color: color(background1);
+}
     
 
 /*HEADER SECTION*/
@@ -87,6 +101,12 @@ h3 {
 
         @include screen-lg{
             height: 200px;
+        }
+    }
+
+    &.navbar-light{
+        .navbar-nav .nav-link{
+            color: color(secondary);
         }
     }
 
@@ -268,7 +288,7 @@ h3 {
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                background-image: url(../images/brand/logo_white.png);
+                background-image: url(../images/brand/logo_secondary.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -285,6 +305,10 @@ h3 {
 
         @include screen-lg {
             text-align: left;
+        }
+
+        h1{
+            color: color(secondary);
         }
 
         h3 {
