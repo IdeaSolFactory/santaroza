@@ -337,6 +337,27 @@ body{
         background-size: cover;
         background-color: transparent;
     }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 280px;
+        height: 280px;
+        background-image: url(../images/background-images/illustration-anchor-01.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @include screen-lg{
+            left: 100px;
+        }
+
+        @include screen-xxl{
+            left: 360px;
+        }
+    }
     
 
     @include screen-xl {

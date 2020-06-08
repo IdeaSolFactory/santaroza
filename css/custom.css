@@ -299,6 +299,31 @@ section .header.header--style-4::after {
   background-color: transparent;
 }
 
+#banner-2::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background-image: url(../images/background-images/illustration-anchor-01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: 992px) {
+  #banner-2::after {
+    left: 100px;
+  }
+}
+
+@media (min-width: 1680px) {
+  #banner-2::after {
+    left: 360px;
+  }
+}
+
 @media (min-width: 1200px) {
   #banner-2 .banner-2__container {
     padding: 25px 0;
