@@ -59,16 +59,16 @@ h3 {
 
 /* BACKGROUND MODIFIERS */
 .bg-light {
-  background-color: #e9d9c3 !important;
+  background-color: #f0e5dd !important;
 }
 
 .bg-darker {
-  background-color: #cabead !important;
+  background-color: #ded5ce !important;
 }
 
 /* BODY */
 body {
-  background-color: #e7ddd4;
+  background-color: #eee4dc;
 }
 
 /*HEADER SECTION*/
@@ -98,7 +98,7 @@ body {
 }
 
 .navbar.navbar-light .navbar-nav .nav-link {
-  color: #e9d9c3;
+  color: #f0e5dd;
 }
 
 .navbar.nav-bg {
@@ -271,7 +271,7 @@ section .header.header--style-4::after {
 }
 
 #banner .banner-txt h1 {
-  color: #e9d9c3;
+  color: #f0e5dd;
 }
 
 #banner .banner-txt h3 {
@@ -620,7 +620,7 @@ section .header.header--style-4::after {
 }
 
 #footer .menu-a a {
-  color: #e9d9c3;
+  color: #f0e5dd;
 }
 
 .venobox.vbox-item > i::before {
