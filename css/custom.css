@@ -66,6 +66,23 @@ h3 {
   background-color: #ded5ce !important;
 }
 
+/* BOXES */
+.boxed {
+  padding: 0;
+  background-color: transparent;
+}
+
+.boxed.boxed--paper {
+  border: 15px solid transparent;
+  -o-border-image: url(../images/borders/paper-border-01.png) 125 100 round;
+     border-image: url(../images/borders/paper-border-01.png) 125 100 round;
+  border-image-width: 500px;
+  border-image-outset: 1;
+  background-color: #f4eae5;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
+}
+
 /* BODY */
 body {
   background-color: #eee4dc;
