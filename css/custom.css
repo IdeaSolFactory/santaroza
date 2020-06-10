@@ -352,24 +352,10 @@ section .header.header--style-4::after {
   overflow: visible;
 }
 
-#banner-2::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-  height: 220px;
-  background-image: url(../images/background-images/bckgrnd-wood-01.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
-}
-
 #banner-2::after {
   content: "";
   position: absolute;
-  top: -40px;
+  top: -30px;
   left: 0;
   width: 280px;
   height: 280px;
@@ -377,6 +363,7 @@ section .header.header--style-4::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  z-index: 20;
 }
 
 @media (min-width: 992px) {
