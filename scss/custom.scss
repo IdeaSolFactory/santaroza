@@ -67,6 +67,8 @@ h3 {
 
 [class^="bg-"]{
     background: unset !important;
+    position: relative;
+    width: 100%;
 }
 
 .bg-light{
@@ -83,6 +85,25 @@ h3 {
         background-position: center !important;
         background-size: 100% !important;
         background-repeat: repeat-y !important;
+
+        .bg-top{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: -12px;
+            left: 0;
+        }
+        
+        .bg-bottom{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -12px;
+            left: 0;
+            transform: rotate(180deg);
+
+            z-index: 10;
+        }
     }
 }
 
@@ -669,6 +690,11 @@ body{
         background-color: color(primary-dark);
     }
 }
+
+/* ORGANIZE 2 SECTION */
+// #organize_2{
+
+// }
 
 /* PRICE SECTION */
 #price{

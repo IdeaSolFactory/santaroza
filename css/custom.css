@@ -60,6 +60,8 @@ h3 {
 /* BACKGROUND MODIFIERS */
 [class^="bg-"] {
   background: unset !important;
+  position: relative;
+  width: 100%;
 }
 
 .bg-light {
@@ -75,6 +77,25 @@ h3 {
   background-position: center !important;
   background-size: 100% !important;
   background-repeat: repeat-y !important;
+}
+
+.bg-wood--repeat .bg-top {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -12px;
+  left: 0;
+}
+
+.bg-wood--repeat .bg-bottom {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -12px;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 10;
 }
 
 /* BOXES */
@@ -599,6 +620,7 @@ section .header.header--style-4::after {
   background-color: #1d2326;
 }
 
+/* ORGANIZE 2 SECTION */
 /* PRICE SECTION */
 #price {
   position: relative;
