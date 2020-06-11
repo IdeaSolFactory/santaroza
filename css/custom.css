@@ -62,7 +62,17 @@ h3 {
   position: relative;
 }
 
-.btn--style1::before {
+[class*="btn--"]:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+[class*="btn--style"] {
+  background-color: transparent !important;
+  z-index: 10;
+}
+
+[class*="btn--style"]::after {
   content: "";
   height: 120%;
   width: 120%;
@@ -74,11 +84,29 @@ h3 {
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
   background-color: transparent;
-  background-image: url(../images/buttons/button-01.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 4px;
+}
+
+.btn--style1::after {
+  height: 160%;
+  width: 160%;
+  background-image: url(../images/buttons/button-01.png);
+  z-index: -1;
+}
+
+.btn--style2 {
+  color: black !important;
+}
+
+.btn--style2::after {
+  height: 140%;
+  width: 140%;
+  background-image: url(../images/buttons/button-02.png);
+  z-index: -1;
+  margin-left: -1px;
 }
 
 /* BACKGROUND MODIFIERS */
