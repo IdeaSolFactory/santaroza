@@ -67,34 +67,8 @@ h3 {
           box-shadow: none !important;
 }
 
-[class*="btn--style"] {
-  background-color: transparent !important;
-  z-index: 10;
-}
-
-[class*="btn--style"]::after {
-  content: "";
-  height: 120%;
-  width: 120%;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
-  background-color: transparent;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: 4px;
-}
-
-.btn--style1::after {
-  height: 160%;
-  width: 160%;
-  background-image: url(../images/buttons/button-01.png);
-  z-index: -1;
+.btn--style1 {
+  background-color: #a93f35 !important;
 }
 
 .btn--style2 {
@@ -129,6 +103,7 @@ h3 {
   background-position: center !important;
   background-size: 100% !important;
   background-repeat: repeat-y !important;
+  z-index: 10;
 }
 
 .bg-wood--repeat .bg-top {
@@ -147,7 +122,7 @@ h3 {
   left: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  z-index: 10;
+  z-index: 0;
 }
 
 /* BOXES */
@@ -165,7 +140,7 @@ h3 {
   border-image-outset: 15;
   -webkit-box-shadow: 0 0 0 transparent;
           box-shadow: 0 0 0 transparent;
-  background-color: #efe3d8 !important;
+  background-color: #e6dfd4 !important;
 }
 
 .boxed.boxed--paper::before {
@@ -186,7 +161,7 @@ h3 {
 
 /* BODY */
 body {
-  background-color: #eee4dc;
+  background-color: #ede9df;
 }
 
 /*HEADER SECTION*/
@@ -431,7 +406,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 1200px) {
   #banner-2 .banner-2__container {
-    padding: 25px 0;
+    padding: 0;
     position: relative;
   }
   #banner-2 .banner-2__container .hourglass-icon {
@@ -459,12 +434,12 @@ section .header.header--style-4::after {
     color: #a93f35;
   }
   #banner-2 .coun_time p {
-    color: #1d2326;
+    color: white;
   }
 }
 
 #banner-2 .banner-2__aside-text {
-  color: #1d2326;
+  color: white;
   padding-top: 55px;
 }
 
@@ -476,7 +451,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 768px) {
   #banner-2 .banner-2__aside-text {
-    padding-top: 0;
+    padding-top: 10px;
   }
 }
 
@@ -519,6 +494,10 @@ section .header.header--style-4::after {
 }
 
 /* SCHEDULE SECTION */
+#schedule .nav.nav-pills .nav-link.active {
+  background-color: #a93f35;
+}
+
 #schedule .schedule-pa {
   padding-top: 25px;
 }
@@ -538,6 +517,10 @@ section .header.header--style-4::after {
 
 #schedule .scrollarea .schedule-item .timer {
   background-color: transparent;
+}
+
+#schedule .scrollarea .schedule-item .se-btn a {
+  background-color: #a93f35;
 }
 
 /* ABOUT SECTIONS */

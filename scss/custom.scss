@@ -73,34 +73,9 @@ h3 {
     }
 }
 
-[class*="btn--style"]{
-    background-color: transparent !important;
-    z-index: 10;
-
-    &::after {
-        content: "";
-        height: 120%;
-        width: 120%;
-        transform-origin: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        background-color: transparent;        
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-left: 4px;
-    }
-}
 
 .btn--style1 {
-    &::after {
-        height: 160%;
-        width: 160%;
-        background-image: url(../images/buttons/button-01.png);
-        z-index: -1;
-    }
+    background-color: color(primary) !important;
 }
 
 .btn--style2{
@@ -136,6 +111,7 @@ h3 {
         background-position: center !important;
         background-size: 100% !important;
         background-repeat: repeat-y !important;
+        z-index: 10;
 
         .bg-top {
             position: absolute;
@@ -152,8 +128,7 @@ h3 {
             bottom: -12px;
             left: 0;
             transform: rotate(180deg);
-
-            z-index: 10;
+            z-index: 0;
         }
     }
 }
@@ -171,7 +146,7 @@ h3 {
         border-image-width: 60px;
         border-image-outset: 15;
         box-shadow: 0 0 0 transparent;
-        background-color: #efe3d8 !important;
+        background-color: #e6dfd4 !important;
 
         &::before {
             content: "";
@@ -454,7 +429,7 @@ section {
 
     @include screen-xl {
         .banner-2__container {
-            padding: 25px 0;
+            padding: 0;
             position: relative;
 
             // &::after{
@@ -501,7 +476,7 @@ section {
             }
 
             p {
-                color: color(primary-dark);
+                color: white;
             }
 
             #second ~ .coming-data2 {
@@ -519,7 +494,7 @@ section {
     }
 
     .banner-2__aside-text {
-        color: color(primary-dark);
+        color: white;
         padding-top: 55px;
 
         @include screen-sm {
@@ -527,7 +502,7 @@ section {
         }
 
         @include screen-md {
-            padding-top: 0;
+            padding-top: 10px;
         }
     }
 }
@@ -579,6 +554,15 @@ section {
 
 /* SCHEDULE SECTION */
 #schedule {
+
+    .nav.nav-pills{
+        .nav-link{
+            &.active{
+                background-color: color(primary);
+            }
+        }
+    }
+
     .schedule-pa {
         padding-top: 25px;
     }
@@ -598,6 +582,12 @@ section {
             }
             .timer {
                 background-color: transparent;
+            }
+
+            .se-btn{
+                a{
+                    background-color: color(primary);
+                }
             }
         }
     }
