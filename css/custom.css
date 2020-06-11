@@ -163,10 +163,9 @@ h3 {
      border-image: url(../images/borders/paper-border-01.png) 100 round;
   border-image-width: 60px;
   border-image-outset: 15;
-  background-color: #f4eae5;
   -webkit-box-shadow: 0 0 0 transparent;
           box-shadow: 0 0 0 transparent;
-  background-color: #f6efe8 !important;
+  background-color: #efe3d8 !important;
 }
 
 .boxed.boxed--paper::before {
@@ -457,7 +456,7 @@ section .header.header--style-4::after {
     background-position: center;
   }
   #banner-2 .coun_time h2 {
-    color: #569984;
+    color: #a93f35;
   }
   #banner-2 .coun_time p {
     color: #1d2326;
@@ -533,7 +532,7 @@ section .header.header--style-4::after {
 }
 
 #schedule .scrollarea .schedule-item h3::after {
-  background-color: #569984;
+  background-color: #a93f35;
   opacity: 0.3;
 }
 
