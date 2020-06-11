@@ -760,6 +760,54 @@ section {
     position: relative;
     background-color: transparent;
 
+    .footer__container{
+
+        .footer__item{
+            &:not(:first-of-type){
+                padding-top: 24px;
+
+                @include screen-lg{
+                    padding-top: 0;
+                }
+            }
+        }
+
+        .footer__logo-container{
+            text-align: center;
+            align-self: center;
+    
+            @include screen-lg{
+                text-align: left;
+            }
+    
+            .footer__logo {
+                width: 100%;
+                height: auto;
+                max-width: 200px;
+            }
+        }    
+    
+        .menu-a{
+            text-align: center;
+            a {
+                color: color(secondary);
+            }
+    
+            @include screen-lg{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+        
+        .footer__map-container{
+            width: 100%;
+        }
+
+    }
+
     // &::before{
     //     content:"";
     //     position: absolute;
@@ -773,16 +821,7 @@ section {
     //     background-repeat: no-repeat;
     //     background-position: bottom;
     // }
-
-    .footer__logo {
-        width: 100%;
-        height: auto;
-        max-width: 250px;
-    }
-
-    .menu-a a {
-        color: color(secondary);
-    }
+    
 }
 
 .venobox.vbox-item > i::before {
