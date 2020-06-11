@@ -107,8 +107,8 @@ h3 {
 
 .boxed.boxed--paper {
   border: 1px solid transparent;
-  -o-border-image: url(../images/borders/paper-border-01.png) 125 125 stretch;
-     border-image: url(../images/borders/paper-border-01.png) 125 125 stretch;
+  -o-border-image: url(../images/borders/paper-border-01.png) 100 round;
+     border-image: url(../images/borders/paper-border-01.png) 100 round;
   border-image-width: 60px;
   border-image-outset: 15;
   background-color: #f4eae5;
