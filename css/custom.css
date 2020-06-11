@@ -526,6 +526,10 @@ section .header.header--style-4::after {
 }
 
 /* ABOUT SECTIONS */
+#about {
+  background-color: #ded5ce;
+}
+
 #about .about-img {
   height: 100%;
 }
