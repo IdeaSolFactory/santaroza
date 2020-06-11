@@ -537,6 +537,23 @@ section {
 #event {
     .about-item {
         // overflow: hidden;
+
+        h3{
+            padding-right: 40px;
+        }
+
+        @include screen-lg{
+            height: 100%;
+
+            &:first-of-type{
+                margin-right: 20px;
+            }
+
+            &:last-of-type{
+                margin-left: 20px;
+            }
+        }
+
         span {
             width: 70px;
             height: 70px;

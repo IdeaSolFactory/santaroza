@@ -482,6 +482,22 @@ section .header.header--style-4::after {
 }
 
 /* EVENTS SECTION */
+#event .about-item h3 {
+  padding-right: 40px;
+}
+
+@media (min-width: 992px) {
+  #event .about-item {
+    height: 100%;
+  }
+  #event .about-item:first-of-type {
+    margin-right: 20px;
+  }
+  #event .about-item:last-of-type {
+    margin-left: 20px;
+  }
+}
+
 #event .about-item span {
   width: 70px;
   height: 70px;
