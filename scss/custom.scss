@@ -329,6 +329,8 @@ section {
             display: block;
             width: 60px;
             height: 60px;
+            background: color(primary);
+            border: 1px solid color(primary);
 
             &::after {
                 content: "";
@@ -593,26 +595,6 @@ section {
     }
 }
 
-/* ABOUT SECTIONS */
-#about {
-    background-color: color(secondary-dark);
-
-    .about-img {
-        height: 100%;
-
-        .main-img {
-            height: 100%;
-            display: block;
-
-            > img {
-                object-fit: cover;
-                object-position: center;
-                height: 100%;
-            }
-        }
-    }
-}
-
 /* COUNTER SECTION */
 #counter {
     padding: 100px 0 0px 0;
@@ -648,6 +630,10 @@ section {
             width: 36px;
             display: inline-block;
             margin-right: 6px;
+        }
+
+        span{
+            color: color(primary);
         }
     }
 }
@@ -693,6 +679,39 @@ section {
     }
 }
 
+/* PRICE SECTION */
+#price {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        width: 100%;
+        height: 100%;
+
+        background-image: url(../images/background-images/bckgrnd-map-sepia-01.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.15;
+        filter: grayscale(1);
+    }
+
+    .price-item{
+        .price-tag>span{
+            color: color(primary);
+        }
+    }
+
+    .price-btn>a>i{
+        background-color: color(primary);
+        border-color: color(primary);
+    }
+}
+
 /* ORGANIZE SECTION */
 #organize {
     background-image: url(../images/custom-events-01-480.jpg);
@@ -714,35 +733,38 @@ section {
     }
 
     &::after {
-        opacity: 0.9;
+        opacity: .97;
         background-color: color(primary-dark);
+    }
+
+    .organize-text{
+        .head-span{
+            color: color(primary);
+            text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        p{
+            color: color(primary);
+        }
+
+        a{
+            background-color: color(primary);
+            box-shadow: 0px 4px 19px 0px color(primary);
+
+        }
     }
 }
 
 /* ORGANIZE 2 SECTION */
-// #organize_2{
+#organize_2{
+    .org-item{
 
-// }
-
-/* PRICE SECTION */
-#price {
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: -50px;
-        left: -100px;
-        width: 100%;
-        height: 100%;
-
-        background-image: url(../images/background-images/bckgrnd-map-sepia-01.jpg);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: contain;
-        opacity: 0.15;
-        filter: grayscale(1);
+        &::after{
+            background: color(primary);
+        }
+        i{
+            background-color: color(primary);
+        }
     }
 }
 
@@ -760,6 +782,77 @@ section {
             content: none;
         }
     }
+
+    .gallery-pa{
+        a>i{
+            background: color(primary);
+
+            &::before{
+                color: white;
+            }
+        }
+    }   
+}
+
+/* GALLERY-2 SECTION */
+#gallery_2{
+    .hover-overlay{
+        background: rgba(color(primary), $alpha: .65);
+    }
+}
+
+/* ABOUT SECTIONS */
+#about {
+    background-color: color(secondary-dark);
+
+    .about-img {
+        height: 100%;
+
+        .main-img {
+            height: 100%;
+            display: block;
+
+            > img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+            }
+        }
+    }
+
+    .about-txt{
+        h3,span{
+            color: color(primary);
+        }
+
+        h4{
+            color: black;
+        }
+
+        a{
+            background: color(primary);
+        }
+    }
+}
+
+/* REGISTER SECTION */
+#register{
+    .register-box{
+        .purchase-box{
+            h4,h5{
+                color: color(primary);
+            }
+            
+        button.btn.btn-primary{
+            background: color(primary);
+            border: 1px solid color(primary);
+
+            &:hover{
+                box-shadow: 0px 4px 19px 0px color(primary);
+            }
+        }
+        }
+    }
 }
 
 /* FOOTER SECTION */
@@ -767,6 +860,12 @@ section {
     padding: 36px 0;
     position: relative;
     background-color: transparent;
+
+    .copy-right-txt{
+       p{
+        color: color(primary);
+       } 
+    }
 
     .footer__container{
 
@@ -814,7 +913,7 @@ section {
             width: 100%;
         }
 
-    }
+    }    
 
     // &::before{
     //     content:"";
