@@ -135,7 +135,7 @@ h3 {
 .boxed.boxed--paper {
   border-style: solid;
   border-width: 1px;
-  border-color: red;
+  border-color: white;
   -o-border-image: url(../images/borders/paper-border-01.png) 100 100 round;
      border-image: url(../images/borders/paper-border-01.png) 100 100 round;
   border-image-width: 60px;
@@ -386,7 +386,7 @@ section .header.header--style-4::after {
   content: "";
   position: absolute;
   top: -30px;
-  left: 0;
+  left: -140px;
   width: 280px;
   height: 280px;
   background-image: url(../images/background-images/illustration-anchor-01.png);
@@ -394,6 +394,12 @@ section .header.header--style-4::after {
   background-position: center;
   background-size: contain;
   z-index: 20;
+}
+
+@media (min-width: 768px) {
+  #banner-2::after {
+    left: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -406,6 +412,14 @@ section .header.header--style-4::after {
   #banner-2::after {
     left: 360px;
   }
+}
+
+#banner-2 .coun_time h2 {
+  color: #a93f35;
+}
+
+#banner-2 .coun_time p {
+  color: white;
 }
 
 @media (min-width: 1200px) {
@@ -433,12 +447,6 @@ section .header.header--style-4::after {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  #banner-2 .coun_time h2 {
-    color: #a93f35;
-  }
-  #banner-2 .coun_time p {
-    color: white;
   }
 }
 

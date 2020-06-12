@@ -144,7 +144,7 @@ h3 {
         // border: 1px solid transparent;
         border-style: solid;
         border-width: 1px;
-        border-color: red;
+        border-color: white;
         border-image: url(../images/borders/paper-border-01.png) 100 100 round;
         // border-image: url(../images/borders/paper-border-01.png) 100 100 round;
         border-image-width: 60px;
@@ -415,7 +415,7 @@ section {
         content: "";
         position: absolute;
         top: -30px;
-        left: 0;
+        left: -140px;
         width: 280px;
         height: 280px;
         background-image: url(../images/background-images/illustration-anchor-01.png);
@@ -424,12 +424,38 @@ section {
         background-size: contain;
         z-index: 20;
 
+        @include screen-md{
+            left: 0;
+        }
+
         @include screen-lg {
             left: 100px;
         }
 
         @include screen-xxl {
             left: 360px;
+        }
+    }
+
+    .coun_time {
+        h2 {
+            color: color(primary);
+        }
+
+        p {
+            color: white;
+        }
+
+        #second ~ .coming-data2 {
+            // right: 65px;
+        }
+
+        #month ~ .coming-data2 {
+            // right: 65px;
+        }
+
+        #hour ~ .coming-data2 {
+            // right: 65px;
         }
     }
 
@@ -474,29 +500,7 @@ section {
                     background-position: center;
                 }
             }
-        }
-
-        .coun_time {
-            h2 {
-                color: color(primary);
-            }
-
-            p {
-                color: white;
-            }
-
-            #second ~ .coming-data2 {
-                // right: 65px;
-            }
-
-            #month ~ .coming-data2 {
-                // right: 65px;
-            }
-
-            #hour ~ .coming-data2 {
-                // right: 65px;
-            }
-        }
+        }        
     }
 
     .banner-2__aside-text {
@@ -635,7 +639,6 @@ section {
             display: inline-block;
             margin-right: 6px;
         }
-
         span{
             color: color(primary);
         }
