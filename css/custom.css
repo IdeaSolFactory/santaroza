@@ -781,6 +781,19 @@ section .header.header--style-4::after {
 }
 
 /* REGISTER SECTION */
+#register .register-box .r-b-color {
+  background-image: url(../images/kassza-480x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  #register .register-box .r-b-color {
+    background-image: url(../images/kassza-640x.jpg);
+  }
+}
+
 #register .register-box .purchase-box h4, #register .register-box .purchase-box h5 {
   color: #a93f35;
 }

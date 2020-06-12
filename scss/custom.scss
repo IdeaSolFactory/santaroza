@@ -856,6 +856,17 @@ section {
 /* REGISTER SECTION */
 #register{
     .register-box{
+
+        .r-b-color{
+            background-image: url(../images/kassza-480x.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @include screen-md{
+                background-image:url(../images/kassza-640x.jpg);
+            }
+        }
         .purchase-box{
             h4,h5{
                 color: color(primary);
