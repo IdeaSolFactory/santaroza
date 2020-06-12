@@ -683,6 +683,11 @@ section .header.header--style-4::after {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
 
+#organize .organize-text h3::after {
+  background: #a93f35;
+  opacity: .35;
+}
+
 #organize .organize-text p {
   color: #a93f35;
 }
@@ -696,6 +701,10 @@ section .header.header--style-4::after {
 /* ORGANIZE 2 SECTION */
 #organize_2 .org-item::after {
   background: #a93f35;
+}
+
+#organize_2 .org-item p {
+  color: #EDE9DF;
 }
 
 #organize_2 .org-item i {
