@@ -8,10 +8,25 @@ h2,
 h3 {
     font-family: "Bangers", cursive !important;
     letter-spacing: 2px;
+    color: color(text);
+}
+
+p{
+    color: color(text-light);
+}
+
+.section-title{
+    h1{color: color(primary);}
 }
 
 .banner-txt h1 {
     letter-spacing: 4px;
+}
+
+.event-header{
+    h1,h2,h3{
+        color: color(text);
+    }
 }
 
 /* ICONS */
@@ -98,11 +113,11 @@ h3 {
 }
 
 .bg-light {
-    background-color: color(secondary) !important;
+    background-color: color(background-main) !important;
 }
 
 .bg-darker {
-    background-color: color(secondary-dark) !important;
+    background-color: color(background-dark) !important;
 }
 
 .bg-wood {
@@ -178,7 +193,7 @@ h3 {
 
 /* BODY */
 body {
-    background-color: color(background1);
+    background-color: color(background-main);
 }
 
 /*HEADER SECTION*/
@@ -206,7 +221,7 @@ body {
 
     &.navbar-light {
         .navbar-nav .nav-link {
-            color: color(secondary);
+            color: color(background-main);
         }
     }
 
@@ -402,7 +417,7 @@ section {
         }
 
         h1 {
-            color: color(secondary);
+            color: color(background-main);
         }
 
         h3 {
@@ -525,11 +540,18 @@ section {
 
 /* EVENTS SECTION */
 #event {
+
+    .event-header {
+        h3{color: color(primary);}
+        p{color: color(text-light);}
+        
+    }
     .about-item {
         // overflow: hidden;
 
         h3{
             padding-right: 40px;
+            color: color(text);
         }
 
         @include screen-lg{
@@ -549,62 +571,6 @@ section {
             height: 70px;
             top: 10px;
             right: 8px;
-        }
-    }
-}
-
-/* BRAND SECTION */
-#brand {
-    .brand__image-holder {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-
-        > img {
-            height: auto;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-}
-
-/* SCHEDULE SECTION */
-#schedule {
-
-    .nav.nav-pills{
-        .nav-link{
-            &.active{
-                background-color: color(primary);
-            }
-        }
-    }
-
-    .schedule-pa {
-        padding-top: 25px;
-    }
-
-    .scrollarea {
-        overflow: visible !important;
-        cursor: default !important;
-        max-height: unset;
-        touch-action: auto !important;
-
-        .schedule-item {
-            h3 {
-                &::after {
-                    background-color: color(primary);
-                    opacity: 0.3;
-                }
-            }
-            .timer {
-                background-color: transparent;
-            }
-
-            .se-btn{
-                a{
-                    background-color: color(primary);
-                }
-            }
         }
     }
 }
@@ -639,6 +605,8 @@ section {
     }
 
     .counter-txt {
+        h3{color: color(text);}
+        p{color: color(text-lighter);}
         .icon {
             height: 36px;
             width: 36px;
@@ -647,6 +615,71 @@ section {
         }
         span{
             color: color(primary);
+        }
+    }
+}
+
+/* BRAND SECTION */
+#brand {
+    .brand__image-holder {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        > img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/* SCHEDULE SECTION */
+#schedule {
+
+    .nav.nav-pills{
+        .nav-link{
+            color: color(text-light);
+            background-color: color(background-main);
+            box-shadow: 0 0 16px 0 rgba($color: color(primary-darker), $alpha: .25);
+
+            &.active{
+                background-color: color(primary);
+                color: color(text-white);
+            }
+        }
+    }
+
+    .schedule-pa {
+        padding-top: 25px;
+    }
+
+    .scrollarea {
+        overflow: visible !important;
+        cursor: default !important;
+        max-height: unset;
+        touch-action: auto !important;
+
+        .schedule-item {
+            h3 {
+                color: color(text);
+                &::after {
+                    background-color: color(primary-lighter);
+                }
+            }
+
+            span{
+                color: color(text-light);
+            }
+            .timer {
+                background-color: transparent;
+            }
+
+            .se-btn{
+                a{
+                    background-color: color(primary);
+                }
+            }
         }
     }
 }
@@ -717,6 +750,16 @@ section {
         .price-tag>span{
             color: color(primary);
         }
+
+        h3{
+            color: color(text);
+        }
+
+        .gap-p{
+            p,i{
+                color: color(text-light);
+            }
+        }
     }
 
     .price-btn>a>i{
@@ -727,6 +770,9 @@ section {
 
 /* ORGANIZE SECTION */
 #organize {
+    position: relative;
+    overflow: hidden;      
+        
     background-image: url(../images/custom-events-01-480.jpg);
 
     @include screen-md {
@@ -746,11 +792,24 @@ section {
     }
 
     &::after {
-        opacity: .97;
-        background-color: color(primary-dark);
+        opacity: .9;
+        background-color: color(primary-darker);
     }
 
-    .organize-text{
+    .text-shadow{        
+            height: 1px;
+            width: 1px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            border-radius: 100%;
+            box-shadow: 0 0 160px 200px rgba($color: color(primary-darker), $alpha: 1);
+            z-index: -1;
+        
+    }
+
+    .organize-text{       
         
         .head-span{
             color: color(primary);
@@ -765,7 +824,7 @@ section {
         }
 
         p{
-            color: color(primary);
+            color: color(text-white);
         }
 
         a{
@@ -782,13 +841,9 @@ section {
 
         &::after{
             background: color(primary);
-        }
-        p{
-            color: #EDE9DF;
-        }
-        i{
-            background-color: color(primary);
-        }
+        }      
+        h3,p{ color: color(text-white); }
+        i{ background-color: color(primary);}
     }
 }
 
@@ -798,12 +853,15 @@ section {
 
     &::after {
         opacity: 0.65;
-        background-color: color(primary-dark);
+        background-color: color(primary-darker);
     }
 
     .gallery-heading {
-        h3::after {
-            content: none;
+        h3{
+            color: color(text-white);
+            &::after {
+                content: none;
+            }
         }
     }
 
@@ -812,8 +870,11 @@ section {
             background: color(primary);
 
             &::before{
-                color: white;
+                color: color(text-white);
             }
+        }
+        p{
+            color: color(text-white);
         }
     }   
 }
@@ -827,7 +888,7 @@ section {
 
 /* ABOUT SECTIONS */
 #about {
-    background-color: color(secondary-dark);
+    background-color: color(background-dark);
 
     .about-img {
         height: 100%;
@@ -849,9 +910,8 @@ section {
             color: color(primary);
         }
 
-        h4{
-            color: black;
-        }
+        h4{ color: color(text); }
+        p{color: color(text-light);}
 
         a{
             background: color(primary);
@@ -937,7 +997,7 @@ section {
         .menu-a{
             text-align: center;
             a {
-                color: color(secondary);
+                color: color(background-main);
             }
     
             @include screen-lg{
