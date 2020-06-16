@@ -753,10 +753,33 @@ section {
     }
 }
 
+/* SCHEDULE AND PRICE SECTION */
+#schedule-prices{
+    position: relative;
+
+    @include screen-lg{
+        &::before{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 120%;
+            max-width: 1000px;
+            top: 50%;
+            left: -30px;
+            transform: translateY(-50%);
+            background-image: url(../images/background-images/ship-in-dock-v1.png);
+            @include bckgrnd-img--contain;
+            background-position: left;
+            opacity: .25;
+            z-index: 1;
+        }
+    }
+}
+
 /* SCHEDULE SECTION */
 #schedule {
-
-    padding-bottom: 45px;
+    padding-bottom: 45px;  
 
     .schedule__table-container {
         height: auto;
@@ -998,7 +1021,7 @@ section {
         width: 100%;
         height: 100%;
 
-        background-image: url(../images/background-images/bckgrnd-map-sepia-01.jpg);
+        // background-image: url(../images/background-images/bckgrnd-map-sepia-01.jpg);
         background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
@@ -1007,8 +1030,9 @@ section {
     }
 
     .price-item {
+        z-index: 1;
         .price-tag > span {
-            color: color(primary);
+            color: color(primary);            
         }
 
         h3 {
