@@ -96,6 +96,13 @@ p {
 
 /* BUTTONS */
 
+
+.btn{
+    padding: 21px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
 [class*="btn--"] {
     position: relative;
     overflow: hidden;
@@ -110,6 +117,10 @@ p {
 }
 
 .btn--style1 {
+    color: color(text-white) !important;
+    font-size: 19px;
+    
+
     &::before {
         content: "";
         display: block;
@@ -121,7 +132,7 @@ p {
         background-image: url(../images/textures/dirt-01.png);
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;        
         opacity: 0.55;
         z-index: -1;
     }
@@ -238,11 +249,22 @@ p {
         border-width: 1px;
         border-color: white;
         border-image: url(../images/borders/paper-border-01.png) 100 100 round;
-        // border-image: url(../images/borders/paper-border-01.png) 100 100 round;
         border-image-width: 50px;
         border-image-outset: 15;
         box-shadow: 0 0 0 transparent;
         background-color: #e6dfd4 !important;
+
+        &-2{
+            // border: 1px solid transparent;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        border-image: url(../images/borders/paper-border-02.png) 100 100 round;
+        border-image-width: 50px;
+        border-image-outset: 15;
+        box-shadow: 0 0 0 transparent;
+        background-color: color(background-main) !important;
+        }
 
         &::before {
             content: "";
@@ -780,6 +802,7 @@ section {
 /* SCHEDULE SECTION */
 #schedule {
     padding-bottom: 45px;  
+    background: transparent;
 
     .schedule__table-container {
         height: auto;
@@ -787,15 +810,7 @@ section {
         .schedule__item {
             width: 100%;
             position: relative;
-            display: block;
-
-            // @include screen-lg{
-            //     padding: 12px 125px;
-
-            //     &:first-of-type{
-            //         margin-top: 65px;
-            //     }
-            // }
+            display: block;           
 
             .schedule__item-bckgrnd {
                 position: absolute;
@@ -806,127 +821,141 @@ section {
             .schedule__item-container {
                 display: flex;
                 flex-direction: column;
-                padding: 20px 25px;
+                padding: 32px 25px 25px 25px;
 
                 @include screen-lg {
                     flex-direction: row;
                     align-items: center;
-                }
-
-                .schedule__item-img {
-                    height: 65px;
-                    width: 65px;
-                    margin: 0 auto;
-
-                    background-image: url(../images/icons/chest.png);
-                    @include bckgrnd-img--contain;
-
-                    @include screen-lg {
-                        height: 120px;
-                        width: 120px;
-                    }
-                }
+                }                
 
                 .schedule__item-text {
                     width: 100%;
                     text-align: center;
                     color: color(text-light);
 
-                    h3{
-                        padding-bottom: 22px;
+                    .schedule__item-header{                       
+                        text-align: center;
+
+                        @include screen-lg{
+                            text-align: left;
+                        }
+
+                        .schedule__item-img {
+                            height: 64px;
+                            width: 64px;
+                            margin: 0 auto;
+                            display: inline-block;
+                            vertical-align: middle;
+        
+                            background-image: url(../images/icons/chest.png);
+                            @include bckgrnd-img--contain;
+                        }
+    
+                        h3{
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding-top: 5px;
+                            padding-left: 12px;
+                            font-size: 35px;
+                        }
+
+                        p{
+                            font-size: 18px;
+                            color: color(text-lighter);
+                        }
                     }
 
-                    .schedule__item-timetable{
-                        list-style-type: none;
-                        padding-top: 12px;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
+                    .schedule__timetable-row{                        
+                        padding-top: 20px;
+                        margin-top: 20px;
+                        padding-bottom: 20px;
                         position: relative;
-
+                        
                         &::before{
                             content: "";
                             position: absolute;
-                            display: block;
                             top: 0;
                             left: 0;
                             width: 100%;
-                            height: 12px;
-                            background-position: center;
-                            background-size: 100% 100%;
-                            background-repeat: no-repeat;
-                            background-image: url(../images/borders/border-zigzag-01.svg);
-                        }
-
-                        &::after{
-                            content: "";
-                            position: absolute;
-                            display: block;
-                            bottom: -20px;
-                            left: 0;
-                            width: 100%;
-                            height: 12px;
-                            background-position: top;
-                            background-size: 100% 100%;
-                            background-repeat: no-repeat;
-                            background-image: url(../images/borders/border-zigzag-01.svg);
-                        }
-                        
-
-                        @include screen-lg{
-                            flex-wrap: nowrap;
-                        }
-                        
-                        >li{
-                            line-height: 32x;
-                            font-size: 20px;
-                            font-weight: bold;
-                            color: color(primary);
-                            text-align: center;
-                            width: 100%;
-                            position: relative;
                             height: 100%;
-                       
-                            &:not(:last-of-type){ 
-                                @include screen-lg{                                  
-                                    padding-right: 12px;
 
-                                    &::after{
-                                        content: "";
-                                        position: absolute;
-                                        display: block;
-                                        top: 10px;
-                                        right: -40px;
-                                        width: 50%;
-                                        height: 12px;
-                                        background-position: right;
-                                        background-size: 100% 100%;
-                                        background-repeat: no-repeat;
-                                        background-image: url(../images/borders/border-zigzag-01.svg);
-                                        transform: rotate(90deg);
+                            border-top: 2px solid color(graphics-light);
+
+                            // background-image: url(../images/borders/border-zigzag-01.svg);
+                            // @include bckgrnd-img--contain;
+                        }                       
+                        
+
+                        .schedule__timetable{
+                            width: 100%;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: relative;
+    
+                            @include screen-lg{
+                                flex-wrap: nowrap;
+                            }
+                            
+                            >li{
+                                line-height: 32x;
+                                font-size: 32px;
+                                font-weight: bold;
+                                color: color(primary);
+                                text-align: center;
+                                position: relative;
+                                height: 100%;
+                                width: 100%;
+                                display: block;
+
+
+                                @include screen-lg{
+                                    &:not(.schedule__timetable-period){
+                                        &:not(:nth-of-type(2)){
+                                            border-left: 1px solid color(graphics-light);
+                                        }
                                     }
                                 }
-                            }
 
-                            &:not(:first-of-type){
-                                @include screen-lg{
-                                    padding-left: 12px;
+                                &.schedule__timetable-period{
+                                    display: inline;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    white-space: nowrap;
+                                    padding: 16px 10px;
+                                    line-height: 100%;
+                                    color: color(text-light);
+                                    background-color: rgba($color: color(graphics-light), $alpha: 0.25) ;
+                                    border: unset;                    
                                 }
                             }
                         }
-                    }
-
-                    @include screen-lg{
-                        padding-left: 25px;
-                        text-align: left;
-
-                        h3{
-                            padding-top: 24px;
-                        }
-                    }
+                    }                    
                 }
             }
+        }
+
+        .btn{
+            display: block;
+            margin: 20px auto 0;
+            width: min-content;
+        }
+
+        .schedule__addendum{
+            padding-top: 22px;
+            text-align: center;
+
+            ul>li{
+                &::before{
+                    content:"⋆";
+                    font-size: 32px;
+                    color: color(primary);
+                    padding-right: 2px;
+                }
+            }           
         }
     }
 
@@ -1059,6 +1088,7 @@ section {
 #price {
     position: relative;
     overflow: hidden;
+    background: transparent;
 
     &::before {
         content: "";
