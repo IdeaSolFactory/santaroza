@@ -779,22 +779,45 @@ section {
 #schedule-prices{
     position: relative;
 
-    @include screen-lg{
-        &::before{
-            content:"";
+    .schedule-prices__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        opacity: 1;
+
+        @include screen-lg{
             display: block;
+        }
+
+        >.bg__ship{
             position: absolute;
-            width: 100%;
-            height: 120%;
-            max-width: 1000px;
-            top: 50%;
-            left: -30px;
+            display: block;
+            width: 650px;
+            height: 650px;
+            top: 40%;
+            left: 0;
             transform: translateY(-50%);
-            background-image: url(../images/background-images/ship-in-dock-v1.png);
-            @include bckgrnd-img--contain;
+            background-size: contain;
+            background-repeat: no-repeat;
             background-position: left;
-            opacity: .25;
-            z-index: 1;
+            background-image: url(../images/background-images/schedule-ship-01.png);
+        }
+
+        >.bg__island-foreground{
+            position: absolute;
+            display: block;
+            width: 800px;
+            height: 800px;
+            top: 40%;
+            right: -200px;
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url(../images/background-images/schedule-island-foreground-01.png);
         }
     }
 }

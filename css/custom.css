@@ -729,26 +729,50 @@ section .header.header--style-4::after {
   position: relative;
 }
 
+#schedule-prices .schedule-prices__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 1;
+}
+
 @media (min-width: 992px) {
-  #schedule-prices::before {
-    content: "";
+  #schedule-prices .schedule-prices__bg {
     display: block;
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    max-width: 1000px;
-    top: 50%;
-    left: -30px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    background-image: url(../images/background-images/ship-in-dock-v1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: left;
-    opacity: .25;
-    z-index: 1;
   }
+}
+
+#schedule-prices .schedule-prices__bg > .bg__ship {
+  position: absolute;
+  display: block;
+  width: 650px;
+  height: 650px;
+  top: 40%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url(../images/background-images/schedule-ship-01.png);
+}
+
+#schedule-prices .schedule-prices__bg > .bg__island-foreground {
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 800px;
+  top: 40%;
+  right: -200px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(../images/background-images/schedule-island-foreground-01.png);
 }
 
 /* SCHEDULE SECTION */
