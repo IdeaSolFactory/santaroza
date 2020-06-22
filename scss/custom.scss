@@ -312,7 +312,15 @@ body {
 
 /*HEADER SECTION*/
 .navbar {
-    padding: 20px 0;
+    padding: 10px 20px;
+
+    @include screen-lg{
+        padding: 20px 100px;
+    }
+
+    @include screen-xl{
+        padding: 20px 200px;
+    }
 
     &::after {
         content: "";
@@ -375,8 +383,20 @@ body {
         vertical-align: middle;
         .navbar__logo {
             width: auto;
-            height: 46px;
-            max-width: 300px;
+            height: auto;
+            max-width: 200px;
+
+            @include screen-lg{
+                max-width: 220px;
+            }
+
+            @include screen-xl{
+                max-width: 240px;
+            }
+
+            @include screen-xxl{
+                max-width: 280px;
+            }
         }
     }
 
@@ -787,6 +807,7 @@ section {
         height: 100%;
         display: none;
         opacity: 1;
+        overflow: hidden;
 
         @include screen-lg{
             display: block;

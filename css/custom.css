@@ -302,7 +302,19 @@ body {
 
 /*HEADER SECTION*/
 .navbar {
-  padding: 20px 0;
+  padding: 10px 20px;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 20px 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 20px 200px;
+  }
 }
 
 .navbar::after {
@@ -352,8 +364,26 @@ body {
 
 .navbar .navbar-brand .navbar__logo {
   width: auto;
-  height: 46px;
-  max-width: 300px;
+  height: auto;
+  max-width: 200px;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-brand .navbar__logo {
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar-brand .navbar__logo {
+    max-width: 240px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .navbar .navbar-brand .navbar__logo {
+    max-width: 280px;
+  }
 }
 
 .navbar .navbar-collapse.menu-main > ul {
@@ -737,6 +767,7 @@ section .header.header--style-4::after {
   height: 100%;
   display: none;
   opacity: 1;
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
