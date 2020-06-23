@@ -13,7 +13,7 @@ p {
 }
 
 .section-title h1 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 .banner-txt h1 {
@@ -96,7 +96,7 @@ p {
   position: relative;
   overflow: hidden;
   position: relative !important;
-  background-color: #a93f35 !important;
+  background-color: #bf382b !important;
   display: inline-block;
   z-index: 1;
 }
@@ -491,8 +491,8 @@ section .header.header--style-4::after {
   display: block;
   width: 60px;
   height: 60px;
-  background: #a93f35;
-  border: 1px solid #a93f35;
+  background: #bf382b;
+  border: 1px solid #bf382b;
 }
 
 #banner .backtotop .backtotop__icon::after {
@@ -606,7 +606,7 @@ section .header.header--style-4::after {
 }
 
 #banner-2 .coun_time h2 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #banner-2 .coun_time p {
@@ -660,7 +660,7 @@ section .header.header--style-4::after {
 
 /* EVENTS SECTION */
 #event .event-header h3 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #event .event-header p {
@@ -737,7 +737,7 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt span {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 /* BRAND SECTION */
@@ -978,7 +978,7 @@ section .header.header--style-4::after {
   line-height: 32x;
   font-size: 32px;
   font-weight: bold;
-  color: #a93f35;
+  color: #bf382b;
   text-align: center;
   position: relative;
   height: 100%;
@@ -1020,7 +1020,7 @@ section .header.header--style-4::after {
 #schedule .schedule__table-container .schedule__addendum ul > li::before {
   content: "⋆";
   font-size: 32px;
-  color: #a93f35;
+  color: #bf382b;
   padding-right: 2px;
 }
 
@@ -1052,7 +1052,7 @@ section .header.header--style-4::after {
 }
 
 #schedule .nav.nav-pills .nav-link.active {
-  background-color: #a93f35;
+  background-color: #bf382b;
   color: #ede9df;
   position: relative;
 }
@@ -1104,7 +1104,7 @@ section .header.header--style-4::after {
 }
 
 #schedule .scrollarea .schedule-item .se-btn a {
-  background-color: #a93f35;
+  background-color: #bf382b;
 }
 
 /* ROUTE SECTION */
@@ -1179,7 +1179,7 @@ section .header.header--style-4::after {
 }
 
 #price .price-item .price-tag > span {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #price .price-item h3 {
@@ -1192,8 +1192,8 @@ section .header.header--style-4::after {
 }
 
 #price .price-btn > a > i {
-  background-color: #a93f35;
-  border-color: #a93f35;
+  background-color: #bf382b;
+  border-color: #bf382b;
 }
 
 /* ORGANIZE SECTION */
@@ -1247,12 +1247,12 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text .head-span {
-  color: #a93f35;
+  color: #bf382b;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
 
 #organize .organize-text h3::after {
-  background: #a93f35;
+  background: #bf382b;
   opacity: 0.35;
 }
 
@@ -1261,14 +1261,14 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text a {
-  background-color: #a93f35;
-  -webkit-box-shadow: 0px 4px 19px 0px #a93f35;
-          box-shadow: 0px 4px 19px 0px #a93f35;
+  background-color: #bf382b;
+  -webkit-box-shadow: 0px 4px 19px 0px #bf382b;
+          box-shadow: 0px 4px 19px 0px #bf382b;
 }
 
 /* ORGANIZE 2 SECTION */
 #organize_2 .org-item::after {
-  background: #a93f35;
+  background: #bf382b;
 }
 
 #organize_2 .org-item h3,
@@ -1277,7 +1277,7 @@ section .header.header--style-4::after {
 }
 
 #organize_2 .org-item i {
-  background-color: #a93f35;
+  background-color: #bf382b;
 }
 
 /* GALLERY SECTION */
@@ -1299,7 +1299,7 @@ section .header.header--style-4::after {
 }
 
 #gallery .gallery-pa a > i {
-  background: #a93f35;
+  background: #bf382b;
 }
 
 #gallery .gallery-pa a > i::before {
@@ -1312,7 +1312,7 @@ section .header.header--style-4::after {
 
 /* GALLERY-2 SECTION */
 #gallery_2 .hover-overlay {
-  background: rgba(169, 63, 53, 0.65);
+  background: rgba(191, 56, 43, 0.65);
 }
 
 /* ABOUT SECTIONS */
@@ -1339,7 +1339,7 @@ section .header.header--style-4::after {
 
 #about .about-txt h3,
 #about .about-txt span {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #about .about-txt h4 {
@@ -1351,7 +1351,7 @@ section .header.header--style-4::after {
 }
 
 #about .about-txt a {
-  background: #a93f35;
+  background: #bf382b;
 }
 
 /* REGISTER SECTION */
@@ -1380,17 +1380,17 @@ section .header.header--style-4::after {
 
 #register .register-box .purchase-box h4,
 #register .register-box .purchase-box h5 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #register .register-box .purchase-box button.btn.btn-primary {
-  background: #a93f35;
-  border: 1px solid #a93f35;
+  background: #bf382b;
+  border: 1px solid #bf382b;
 }
 
 #register .register-box .purchase-box button.btn.btn-primary:hover {
-  -webkit-box-shadow: 0px 4px 19px 0px #a93f35;
-          box-shadow: 0px 4px 19px 0px #a93f35;
+  -webkit-box-shadow: 0px 4px 19px 0px #bf382b;
+          box-shadow: 0px 4px 19px 0px #bf382b;
 }
 
 /* FOOTER SECTION */
@@ -1401,7 +1401,7 @@ section .header.header--style-4::after {
 }
 
 #footer .copy-right-txt p {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #footer .footer__container .footer__item:not(:first-of-type) {
