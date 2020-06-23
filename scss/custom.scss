@@ -1351,6 +1351,7 @@ section {
                 background-color: transparent;
                 border: none;
                 padding: 0;
+                transition: all .2s;
 
                 .btn.btn-primary {
                     width: 100%;
@@ -1371,7 +1372,18 @@ section {
 
             .faq__list-item-content {
                 width: 100%;
-                padding: 0 22px;                
+                padding: 0px 12px;
+                transition: all .2s;
+                transition-delay: all 0s;
+               
+                &.collapsing{
+                    transition: all .2s;
+                    padding: 0 12px;
+                }
+
+                &.show{                    
+                    padding: 24px 12px;
+                }
             }
         }
     }
