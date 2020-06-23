@@ -312,7 +312,15 @@ body {
 
 /*HEADER SECTION*/
 .navbar {
-    padding: 20px 0;
+    padding: 10px 20px;
+
+    @include screen-lg{
+        padding: 20px 100px;
+    }
+
+    @include screen-xl{
+        padding: 20px 200px;
+    }
 
     &::after {
         content: "";
@@ -375,8 +383,20 @@ body {
         vertical-align: middle;
         .navbar__logo {
             width: auto;
-            height: 46px;
-            max-width: 300px;
+            height: auto;
+            max-width: 200px;
+
+            @include screen-lg{
+                max-width: 220px;
+            }
+
+            @include screen-xl{
+                max-width: 240px;
+            }
+
+            @include screen-xxl{
+                max-width: 280px;
+            }
         }
     }
 
@@ -779,22 +799,79 @@ section {
 #schedule-prices{
     position: relative;
 
-    @include screen-lg{
-        &::before{
-            content:"";
+    .schedule-prices__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        opacity: .85;
+        overflow: hidden;
+
+        @include screen-lg{
             display: block;
+        }
+
+        >.bg__ship{
             position: absolute;
-            width: 100%;
-            height: 120%;
-            max-width: 1000px;
-            top: 50%;
-            left: -30px;
+            display: block;
+            width: 650px;
+            height: 650px;
+            top: 40%;
+            left: 0;
             transform: translateY(-50%);
-            background-image: url(../images/background-images/ship-in-dock-v1.png);
-            @include bckgrnd-img--contain;
+            background-size: contain;
+            background-repeat: no-repeat;
             background-position: left;
-            opacity: .25;
+            background-image: url(../images/background-images/schedule-ship-01.png);
+            z-index: 2;
+        }
+
+        >.bg__island-foreground{
+            position: absolute;
+            display: block;
+            width: 800px;
+            height: 800px;
+            top: 35%;
+            right: -200px;
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url(../images/background-images/schedule-island-foreground-01.png);
             z-index: 1;
+        }
+
+        >.bg__fog{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 650px;
+            top: 200px;
+            left: -400px;
+            background-size: auto;
+            background-repeat: repeat-x;
+            background-position: center;
+            background-image: url(../images/background-images/schedule-fog.svg);
+            z-index: 0;
+            opacity: 1;
+        }
+
+        >.bg__mountains{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 65px;
+            top: 40%;
+            right: 0;
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: repeat-x;
+            background-position: center;
+            background-image: url(../images/background-images/schedule-mountains.svg);
+            z-index: 0;
+            opacity: .45;
         }
     }
 }

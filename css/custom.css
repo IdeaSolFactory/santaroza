@@ -13,7 +13,7 @@ p {
 }
 
 .section-title h1 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 .banner-txt h1 {
@@ -96,7 +96,7 @@ p {
   position: relative;
   overflow: hidden;
   position: relative !important;
-  background-color: #a93f35 !important;
+  background-color: #bf382b !important;
   display: inline-block;
   z-index: 1;
 }
@@ -302,7 +302,19 @@ body {
 
 /*HEADER SECTION*/
 .navbar {
-  padding: 20px 0;
+  padding: 10px 20px;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 20px 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 20px 200px;
+  }
 }
 
 .navbar::after {
@@ -352,8 +364,26 @@ body {
 
 .navbar .navbar-brand .navbar__logo {
   width: auto;
-  height: 46px;
-  max-width: 300px;
+  height: auto;
+  max-width: 200px;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-brand .navbar__logo {
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar-brand .navbar__logo {
+    max-width: 240px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .navbar .navbar-brand .navbar__logo {
+    max-width: 280px;
+  }
 }
 
 .navbar .navbar-collapse.menu-main > ul {
@@ -461,8 +491,8 @@ section .header.header--style-4::after {
   display: block;
   width: 60px;
   height: 60px;
-  background: #a93f35;
-  border: 1px solid #a93f35;
+  background: #bf382b;
+  border: 1px solid #bf382b;
 }
 
 #banner .backtotop .backtotop__icon::after {
@@ -576,7 +606,7 @@ section .header.header--style-4::after {
 }
 
 #banner-2 .coun_time h2 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #banner-2 .coun_time p {
@@ -630,7 +660,7 @@ section .header.header--style-4::after {
 
 /* EVENTS SECTION */
 #event .event-header h3 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #event .event-header p {
@@ -707,7 +737,7 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt span {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 /* BRAND SECTION */
@@ -729,26 +759,85 @@ section .header.header--style-4::after {
   position: relative;
 }
 
+#schedule-prices .schedule-prices__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: .85;
+  overflow: hidden;
+}
+
 @media (min-width: 992px) {
-  #schedule-prices::before {
-    content: "";
+  #schedule-prices .schedule-prices__bg {
     display: block;
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    max-width: 1000px;
-    top: 50%;
-    left: -30px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    background-image: url(../images/background-images/ship-in-dock-v1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: left;
-    opacity: .25;
-    z-index: 1;
   }
+}
+
+#schedule-prices .schedule-prices__bg > .bg__ship {
+  position: absolute;
+  display: block;
+  width: 650px;
+  height: 650px;
+  top: 40%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url(../images/background-images/schedule-ship-01.png);
+  z-index: 2;
+}
+
+#schedule-prices .schedule-prices__bg > .bg__island-foreground {
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 800px;
+  top: 35%;
+  right: -200px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(../images/background-images/schedule-island-foreground-01.png);
+  z-index: 1;
+}
+
+#schedule-prices .schedule-prices__bg > .bg__fog {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 650px;
+  top: 200px;
+  left: -400px;
+  background-size: auto;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-image: url(../images/background-images/schedule-fog.svg);
+  z-index: 0;
+  opacity: 1;
+}
+
+#schedule-prices .schedule-prices__bg > .bg__mountains {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 65px;
+  top: 40%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-image: url(../images/background-images/schedule-mountains.svg);
+  z-index: 0;
+  opacity: .45;
 }
 
 /* SCHEDULE SECTION */
@@ -889,7 +978,7 @@ section .header.header--style-4::after {
   line-height: 32x;
   font-size: 32px;
   font-weight: bold;
-  color: #a93f35;
+  color: #bf382b;
   text-align: center;
   position: relative;
   height: 100%;
@@ -931,7 +1020,7 @@ section .header.header--style-4::after {
 #schedule .schedule__table-container .schedule__addendum ul > li::before {
   content: "⋆";
   font-size: 32px;
-  color: #a93f35;
+  color: #bf382b;
   padding-right: 2px;
 }
 
@@ -963,7 +1052,7 @@ section .header.header--style-4::after {
 }
 
 #schedule .nav.nav-pills .nav-link.active {
-  background-color: #a93f35;
+  background-color: #bf382b;
   color: #ede9df;
   position: relative;
 }
@@ -1015,7 +1104,7 @@ section .header.header--style-4::after {
 }
 
 #schedule .scrollarea .schedule-item .se-btn a {
-  background-color: #a93f35;
+  background-color: #bf382b;
 }
 
 /* ROUTE SECTION */
@@ -1090,7 +1179,7 @@ section .header.header--style-4::after {
 }
 
 #price .price-item .price-tag > span {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #price .price-item h3 {
@@ -1103,8 +1192,8 @@ section .header.header--style-4::after {
 }
 
 #price .price-btn > a > i {
-  background-color: #a93f35;
-  border-color: #a93f35;
+  background-color: #bf382b;
+  border-color: #bf382b;
 }
 
 /* ORGANIZE SECTION */
@@ -1158,12 +1247,12 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text .head-span {
-  color: #a93f35;
+  color: #bf382b;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
 
 #organize .organize-text h3::after {
-  background: #a93f35;
+  background: #bf382b;
   opacity: 0.35;
 }
 
@@ -1172,14 +1261,14 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text a {
-  background-color: #a93f35;
-  -webkit-box-shadow: 0px 4px 19px 0px #a93f35;
-          box-shadow: 0px 4px 19px 0px #a93f35;
+  background-color: #bf382b;
+  -webkit-box-shadow: 0px 4px 19px 0px #bf382b;
+          box-shadow: 0px 4px 19px 0px #bf382b;
 }
 
 /* ORGANIZE 2 SECTION */
 #organize_2 .org-item::after {
-  background: #a93f35;
+  background: #bf382b;
 }
 
 #organize_2 .org-item h3,
@@ -1188,7 +1277,7 @@ section .header.header--style-4::after {
 }
 
 #organize_2 .org-item i {
-  background-color: #a93f35;
+  background-color: #bf382b;
 }
 
 /* GALLERY SECTION */
@@ -1210,7 +1299,7 @@ section .header.header--style-4::after {
 }
 
 #gallery .gallery-pa a > i {
-  background: #a93f35;
+  background: #bf382b;
 }
 
 #gallery .gallery-pa a > i::before {
@@ -1223,7 +1312,7 @@ section .header.header--style-4::after {
 
 /* GALLERY-2 SECTION */
 #gallery_2 .hover-overlay {
-  background: rgba(169, 63, 53, 0.65);
+  background: rgba(191, 56, 43, 0.65);
 }
 
 /* ABOUT SECTIONS */
@@ -1250,7 +1339,7 @@ section .header.header--style-4::after {
 
 #about .about-txt h3,
 #about .about-txt span {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #about .about-txt h4 {
@@ -1262,7 +1351,7 @@ section .header.header--style-4::after {
 }
 
 #about .about-txt a {
-  background: #a93f35;
+  background: #bf382b;
 }
 
 /* REGISTER SECTION */
@@ -1291,17 +1380,17 @@ section .header.header--style-4::after {
 
 #register .register-box .purchase-box h4,
 #register .register-box .purchase-box h5 {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #register .register-box .purchase-box button.btn.btn-primary {
-  background: #a93f35;
-  border: 1px solid #a93f35;
+  background: #bf382b;
+  border: 1px solid #bf382b;
 }
 
 #register .register-box .purchase-box button.btn.btn-primary:hover {
-  -webkit-box-shadow: 0px 4px 19px 0px #a93f35;
-          box-shadow: 0px 4px 19px 0px #a93f35;
+  -webkit-box-shadow: 0px 4px 19px 0px #bf382b;
+          box-shadow: 0px 4px 19px 0px #bf382b;
 }
 
 /* FOOTER SECTION */
@@ -1312,7 +1401,7 @@ section .header.header--style-4::after {
 }
 
 #footer .copy-right-txt p {
-  color: #a93f35;
+  color: #bf382b;
 }
 
 #footer .footer__container .footer__item:not(:first-of-type) {
