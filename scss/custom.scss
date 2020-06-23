@@ -1155,7 +1155,15 @@ section {
             }
 
             @include screen-xl {
-                height: 500px;
+                height: 440px;
+            }
+        }
+
+        &.alt{
+            &::after{
+                top: -160px;
+                left: 0;
+                transform: scaleX(-1);
             }
         }
     }

@@ -1148,8 +1148,15 @@ section .header.header--style-4::after {
 
 @media (min-width: 1200px) {
   #route-section .route-section__connection::after {
-    height: 500px;
+    height: 440px;
   }
+}
+
+#route-section .route-section__connection.alt::after {
+  top: -160px;
+  left: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 /* PRICE SECTION */
