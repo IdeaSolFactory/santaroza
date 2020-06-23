@@ -1334,6 +1334,45 @@ section {
     }
 }
 
+/* FAQ SECTION */
+#faq{
+    .faq__list{
+        .faq__list-item{
+            margin: 22px 0;
+
+            .btn.btn-primary{
+                display: block;
+                width: 100%;
+                border-radius: 0;
+                text-align: left;
+                background-color: transparent;
+                border: none;
+
+                &:hover,:active,:visited,:focus{
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: none !important;
+                }
+                
+                >h3{
+                    color: color(text);
+                }
+            }
+
+            .faq__list-item-content{
+                width: 100%;
+                >.card.card-body{
+                    margin-top: 0;
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    color: color(text-light);
+                }
+            }
+        }        
+    }
+}
+
 /* ABOUT SECTIONS */
 #about {
     background-color: color(background-dark);

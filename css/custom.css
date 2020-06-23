@@ -1322,6 +1322,43 @@ section .header.header--style-4::after {
   background: rgba(191, 56, 43, 0.65);
 }
 
+/* FAQ SECTION */
+#faq .faq__list .faq__list-item {
+  margin: 22px 0;
+}
+
+#faq .faq__list .faq__list-item .btn.btn-primary {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+
+#faq .faq__list .faq__list-item .btn.btn-primary:hover, #faq .faq__list .faq__list-item .btn.btn-primary :active, #faq .faq__list .faq__list-item .btn.btn-primary :visited, #faq .faq__list .faq__list-item .btn.btn-primary :focus {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#faq .faq__list .faq__list-item .btn.btn-primary > h3 {
+  color: #474341;
+}
+
+#faq .faq__list .faq__list-item .faq__list-item-content {
+  width: 100%;
+}
+
+#faq .faq__list .faq__list-item .faq__list-item-content > .card.card-body {
+  margin-top: 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #686460;
+}
+
 /* ABOUT SECTIONS */
 #about {
   background-color: #e7e1d6;
