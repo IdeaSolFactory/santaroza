@@ -797,81 +797,141 @@
                 <div class="col-lg-12 section-title text-center">
                     <h1>Gyakran ismételt kérdések</h1>
                     <div class="header header--style-3"></div>
+
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12">
+                    <ul id="accordion" class="faq__list">
 
-                    <!-- LIST ITEM -->
-                    <ul class="faq__list">
-                        <li class="faq__list-item style-1 boxed boxed--paper">
-                            <a href="#collapseItem1" class="btn btn-primary" data-toggle="collapse" role="button"
-                                aria-expanded="true" aria-controls="collapseItem">
-                                <h3>Hol találom a hajót?</h3>
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-1">
 
-                            </a>
-                            <div class="faq__list-item-content collapse" id="collapseItem1">
-                                <div class="card card-body">A Sánta Róza Balatonfüreden, a Vitorlás tér mólójáról indul
-                                    a menetrendben feltüntetett
-                                    időpontokban. Indulj el a Tagore sétányról a móló irányába, ahol már látni fogod a
-                                    megtépázott vitorlákat, a zsákmánnyal és ágyúkkal felszerelt kalózhajót.</div>
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-1"
+                                    aria-expanded="true" aria-controls="collapse-1">
+                                    <h3>Hol találom a hajót?</h3>
+                                </button>
                             </div>
+
+                            <div id="collapse-1" class="faq__list-item-content collapse show"
+                                aria-labelledby="cardheader-1" data-parent="#accordion">A Sánta Róza Balatonfüreden, a
+                                Vitorlás tér mólójáról indul
+                                a menetrendben feltüntetett
+                                időpontokban. Indulj el a Tagore sétányról a móló irányába, ahol már látni fogod a
+                                megtépázott vitorlákat, a zsákmánnyal és ágyúkkal felszerelt kalózhajót.</div>
                         </li>
                         <!-- LIST ITEM END -->
 
                         <!-- LIST ITEM -->
-                        <li class="faq__list-item style-2">
-                            <a href="#collapseItem2" class="btn btn-primary" data-toggle="collapse" role="button"
-                                aria-expanded="true" aria-controls="collapseItem">
-                                <h3>Hol találom a hajót?</h3>
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-2">
 
-                            </a>
-                            <div class="faq__list-item-content collapse" id="collapseItem2">
-                                <div class="card card-body">
-                                    <p>Sánta Róza Balatonfüreden, a Vitorlás tér mólójáról indul
-                                        a menetrendben feltüntetett
-                                        időpontokban. Indulj el a Tagore sétányról a móló irányába, ahol már látni fogod a
-                                        megtépázott vitorlákat, a zsákmánnyal és ágyúkkal felszerelt kalózhajót.</p>
-                                </div>
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-2"
+                                    aria-expanded="false" aria-controls="collapse-2">
+                                    <h3>Hol tudok parkolni a hajóhoz legközelebb?</h3>
+                                </button>
                             </div>
+
+                            <div id="collapse-2" class="faq__list-item-content collapse" aria-labelledby="cardheader-2"
+                                data-parent="#accordion">A kikötőhöz legközelebb a Zákony utcai parkolóház használatát
+                                javasoljuk, a
+                                Zákonyi Ferenc
+                                utca 12. szám alatti mélygarázsban, 300 Ft/óra díj ellenében.
+                                Egy utcával távolabb, néhány perc sétával elérhető a Huray utcai parkoló, a
+                                Huray utca 3.
+                                szám alatt, ahol a parkolási díj 200 Ft/óra.</div>
                         </li>
-                         <!-- LIST ITEM END -->
+                        <!-- LIST ITEM END -->
 
-                         <!-- LIST ITEM -->
-                        <li class="faq__list-item style-2">
-                            <a href="#collapseItem3" class="btn btn-primary" data-toggle="collapse" role="button"
-                                aria-expanded="true" aria-controls="collapseItem">
-                                <h3>Hol tudok parkolni a hajóhoz legközelebb?</h3>
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-3">
 
-                            </a>
-                            <div class="faq__list-item-content collapse" id="collapseItem3">
-                                <div class="card card-body">
-                                    <p>A kikötőhöz legközelebb a Zákony utcai parkolóház használatát javasoljuk, a Zákonyi Ferenc
-                                        utca 12. szám alatti mélygarázsban, 300 Ft/óra díj ellenében.
-                                        Egy utcával távolabb, néhány perc sétával elérhető a Huray utcai parkoló, a Huray utca 3.
-                                        szám alatt, ahol a parkolási díj 200 Ft/óra.</p>
-                                </div>
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-3"
+                                    aria-expanded="false" aria-controls="collapse-3">
+                                    <h3>Mennyi ideig tart a kalandjárat?</h3>
+                                </button>
                             </div>
+
+                            <div id="collapse-3" class="faq__list-item-content collapse" aria-labelledby="cardheader-3"
+                                data-parent="#accordion">A Sánta Róza kalózprogramja 60 percig tart. Ezalatt számos
+                                kihívás és élmény vár
+                                a
+                                kalózokra.</div>
                         </li>
-                         <!-- LIST ITEM END -->
+                        <!-- LIST ITEM END -->
 
-                          <!-- LIST ITEM -->
-                        <li class="faq__list-item style-2">
-                            <a href="#collapseItem4" class="btn btn-primary" data-toggle="collapse" role="button"
-                                aria-expanded="true" aria-controls="collapseItem">
-                                <h3>Mennyi ideig tart a kalandjárat?</h3>
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-4">
 
-                            </a>
-                            <div class="faq__list-item-content collapse" id="collapseItem4">
-                                <div class="card card-body">
-                                    <p>A Sánta Róza kalózprogramja 60 percig tart. Ezalatt számos kihívás és élmény vár a
-                                        kalózokra.</p>
-                                </div>
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-4"
+                                    aria-expanded="false" aria-controls="collapse-4">
+                                    <h3>Online is tudok jegyet venni?</h3>
+                                </button>
                             </div>
+
+                            <div id="collapse-4" class="faq__list-item-content collapse" aria-labelledby="cardheader-4"
+                                data-parent="#accordion">Online jegyvásárlási rendszerünkön keresztül is tudsz jegyet
+                                váltani. Ne aggódj, kimaradó járat esetén egy későbbi időpontra fel tudod használni
+                                korábban megváltott jegyedet!</div>
                         </li>
-                         <!-- LIST ITEM END -->
-                        
-                       
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-5">
+
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-5"
+                                    aria-expanded="false" aria-controls="collapse-5">
+                                    <h3>Egyedül is útnak engedhetem a gyerekeket?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-5" class="faq__list-item-content collapse" aria-labelledby="cardheader-5"
+                                data-parent="#accordion">Bár szülőként is részt vehettek a programon, arra biztatunk titeket, hogy bátran engedjétek el gyerkőcötöket egy felejthetetlen, amíg ti kényelmesen elkortyoltok egy pohár bort a mólón, a Spicc teraszán. Így több hely marad az ifjú legénység számára a
+                                fedélzeten.</div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-6">
+
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-6"
+                                    aria-expanded="false" aria-controls="collapse-6">
+                                    <h3>A biztonsági berendezések is eltűntek a hajóról a kinccsel együtt?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-6" class="faq__list-item-content collapse" aria-labelledby="cardheader-6"
+                                data-parent="#accordion">Természetesen nem! Hajónk a mindenkori Hajózási Szabályzatot szigorúan betartva biztosítja a
+                                szükséges mentőfelszerelések számát, és legénységünk számára is a lurkók épsége a
+                                legfontosabb kritérium.</div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-7">
+
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-7"
+                                    aria-expanded="false" aria-controls="collapse-7">
+                                    <h3>Mikor vehetik birtokba a nagyobbak és felnőttek a hajót?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-7" class="faq__list-item-content collapse" aria-labelledby="cardheader-7"
+                                data-parent="#accordion">Menetrendszerinti járatainkon kívül lehetőség van egyedi programok szervezésére is a hajó
+                                fedélzetén. Vegyétek fel velünk a kapcsolatot, és örömmel adunk további tájékoztatást a
+                                lehetőségekről!</div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+
+
+
                         <li><b>Mennyi ideig tart a kalandjárat?</b></li>
                         <li>A Sánta Róza kalózprogramja 60 percig tart. Ezalatt számos kihívás és élmény vár a
                             kalózokra.</li>

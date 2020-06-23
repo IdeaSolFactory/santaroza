@@ -176,4 +176,8 @@
     $('.counter').counterUp();
     // video player js
     // jQuery("#bgndVideo").YTPlayer();
+
+    // Auto-collapse -- ISF
+    
+
 }(jQuery));

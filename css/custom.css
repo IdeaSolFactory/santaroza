@@ -1328,51 +1328,24 @@ section .header.header--style-4::after {
   margin-bottom: 80px;
 }
 
-#faq .faq__list .faq__list-item.style-1 {
-  margin: 22px 0;
-}
-
-#faq .faq__list .faq__list-item.style-1 .btn.btn-primary {
-  display: block;
-  width: 100%;
-  border-radius: 0;
-  text-align: left;
-  background-color: transparent;
-  border: none;
-}
-
-#faq .faq__list .faq__list-item.style-1 .btn.btn-primary:hover,
-#faq .faq__list .faq__list-item.style-1 .btn.btn-primary :active,
-#faq .faq__list .faq__list-item.style-1 .btn.btn-primary :visited,
-#faq .faq__list .faq__list-item.style-1 .btn.btn-primary :focus {
-  background-color: transparent;
-  border: none;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
-#faq .faq__list .faq__list-item.style-1 .btn.btn-primary > h3 {
-  color: #474341;
-}
-
-#faq .faq__list .faq__list-item.style-1 .faq__list-item-content {
-  width: 100%;
-}
-
-#faq .faq__list .faq__list-item.style-1 .faq__list-item-content > .card.card-body {
-  margin-top: 0;
+#faq .faq__list .faq__list-item {
+  margin: 0;
   width: 100%;
   background-color: transparent;
   border: none;
-  color: #686460;
 }
 
-#faq .faq__list .faq__list-item.style-2 {
-  margin: 24px 0;
+#faq .faq__list .faq__list-item:not(:first-of-type) {
+  margin-top: 12px;
 }
 
-#faq .faq__list .faq__list-item.style-2 .btn.btn-primary {
-  display: block;
+#faq .faq__list .faq__list-item .card-header {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+#faq .faq__list .faq__list-item .card-header .btn.btn-primary {
   width: 100%;
   border-radius: 4px;
   text-align: left;
@@ -1380,32 +1353,20 @@ section .header.header--style-4::after {
   border: none;
 }
 
-#faq .faq__list .faq__list-item.style-2 .btn.btn-primary:hover, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:active, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:focus, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:visited {
+#faq .faq__list .faq__list-item .card-header .btn.btn-primary:hover, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:active, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:focus, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:visited {
   background-color: #bf382b;
   border: none;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
-#faq .faq__list .faq__list-item.style-2 .btn.btn-primary:hover > h3, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:active > h3, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:focus > h3, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:visited > h3 {
+#faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
   color: #ede9df;
 }
 
-#faq .faq__list .faq__list-item.style-2 .btn.btn-primary > h3 {
-  color: #ede9df;
-  font-size: 28px;
-}
-
-#faq .faq__list .faq__list-item.style-2 .faq__list-item-content {
+#faq .faq__list .faq__list-item .faq__list-item-content {
   width: 100%;
-}
-
-#faq .faq__list .faq__list-item.style-2 .faq__list-item-content > .card.card-body {
-  margin-top: 0;
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  color: #686460;
+  padding: 0 22px;
 }
 
 /* ABOUT SECTIONS */

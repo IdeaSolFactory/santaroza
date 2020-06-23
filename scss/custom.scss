@@ -1332,88 +1332,46 @@ section {
 
 /* FAQ SECTION */
 #faq {
-    .section-title{
+    .section-title {
         margin-top: 120px;
         margin-bottom: 80px;
     }
     .faq__list {
-
         .faq__list-item {
+            margin: 0;
+            width: 100%;
+            background-color: transparent;
+            border: none;
 
-            &.style-1 {
-                margin: 22px 0;
-
-                .btn.btn-primary {
-                    display: block;
-                    width: 100%;
-                    border-radius: 0;
-                    text-align: left;
-                    background-color: transparent;
-                    border: none;
-
-                    &:hover,
-                    :active,
-                    :visited,
-                    :focus {
-                        background-color: transparent;
-                        border: none;
-                        box-shadow: none !important;
-                    }
-
-                    > h3 {
-                        color: color(text);
-                    }
-                }
-
-                .faq__list-item-content {
-                    width: 100%;
-
-                    > .card.card-body {
-                        margin-top: 0;
-                        width: 100%;
-                        background-color: transparent;
-                        border: none;
-                        color: color(text-light);
-                    }
-                }
+            &:not(:first-of-type){
+                margin-top: 12px;
             }
 
-            &.style-2{
-                margin: 24px 0;
+            .card-header {
+                background-color: transparent;
+                border: none;
+                padding: 0;
 
                 .btn.btn-primary {
-                    display: block;
                     width: 100%;
                     border-radius: 4px;
                     text-align: left;
                     background-color: color(graphics);
                     border: none;
 
-                    @include hover-state--all{
+                    @include hover-state--all {
                         background-color: color(primary);
                         border: none;
                         box-shadow: none !important;
-
-                        >h3{color: color(text-white)}
                     }
 
-                    > h3 {
-                        color: color(text-white);
-                        font-size: 28px;
-                    }
+                    >h3{color: color(text-white);}
                 }
+            }
 
-                .faq__list-item-content {
-                    width: 100%;
-
-                    > .card.card-body {
-                        margin-top: 0;
-                        width: 100%;
-                        background-color: transparent;
-                        border: none;
-                        color: color(text-light);
-                    }
-                }
+            .faq__list-item-content {
+                width: 100%;
+                padding: 0 22px;                
             }
         }
     }
