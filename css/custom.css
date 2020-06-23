@@ -766,7 +766,7 @@ section .header.header--style-4::after {
   width: 100%;
   height: 100%;
   display: none;
-  opacity: .85;
+  opacity: 0.85;
   overflow: hidden;
 }
 
@@ -837,7 +837,7 @@ section .header.header--style-4::after {
   background-position: center;
   background-image: url(../images/background-images/schedule-mountains.svg);
   z-index: 0;
-  opacity: .45;
+  opacity: 0.45;
 }
 
 /* SCHEDULE SECTION */
@@ -1323,11 +1323,16 @@ section .header.header--style-4::after {
 }
 
 /* FAQ SECTION */
-#faq .faq__list .faq__list-item {
+#faq .section-title {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+#faq .faq__list .faq__list-item.style-1 {
   margin: 22px 0;
 }
 
-#faq .faq__list .faq__list-item .btn.btn-primary {
+#faq .faq__list .faq__list-item.style-1 .btn.btn-primary {
   display: block;
   width: 100%;
   border-radius: 0;
@@ -1336,22 +1341,66 @@ section .header.header--style-4::after {
   border: none;
 }
 
-#faq .faq__list .faq__list-item .btn.btn-primary:hover, #faq .faq__list .faq__list-item .btn.btn-primary :active, #faq .faq__list .faq__list-item .btn.btn-primary :visited, #faq .faq__list .faq__list-item .btn.btn-primary :focus {
+#faq .faq__list .faq__list-item.style-1 .btn.btn-primary:hover,
+#faq .faq__list .faq__list-item.style-1 .btn.btn-primary :active,
+#faq .faq__list .faq__list-item.style-1 .btn.btn-primary :visited,
+#faq .faq__list .faq__list-item.style-1 .btn.btn-primary :focus {
   background-color: transparent;
   border: none;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
-#faq .faq__list .faq__list-item .btn.btn-primary > h3 {
+#faq .faq__list .faq__list-item.style-1 .btn.btn-primary > h3 {
   color: #474341;
 }
 
-#faq .faq__list .faq__list-item .faq__list-item-content {
+#faq .faq__list .faq__list-item.style-1 .faq__list-item-content {
   width: 100%;
 }
 
-#faq .faq__list .faq__list-item .faq__list-item-content > .card.card-body {
+#faq .faq__list .faq__list-item.style-1 .faq__list-item-content > .card.card-body {
+  margin-top: 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #686460;
+}
+
+#faq .faq__list .faq__list-item.style-2 {
+  margin: 24px 0;
+}
+
+#faq .faq__list .faq__list-item.style-2 .btn.btn-primary {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left;
+  background-color: #876255;
+  border: none;
+}
+
+#faq .faq__list .faq__list-item.style-2 .btn.btn-primary:hover, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:active, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:focus, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:visited {
+  background-color: #bf382b;
+  border: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#faq .faq__list .faq__list-item.style-2 .btn.btn-primary:hover > h3, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:active > h3, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:focus > h3, #faq .faq__list .faq__list-item.style-2 .btn.btn-primary:visited > h3 {
+  color: #ede9df;
+}
+
+#faq .faq__list .faq__list-item.style-2 .btn.btn-primary > h3 {
+  color: #ede9df;
+  font-size: 28px;
+}
+
+#faq .faq__list .faq__list-item.style-2 .faq__list-item-content {
+  width: 100%;
+}
+
+#faq .faq__list .faq__list-item.style-2 .faq__list-item-content > .card.card-body {
   margin-top: 0;
   width: 100%;
   background-color: transparent;
