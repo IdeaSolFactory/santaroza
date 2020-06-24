@@ -1354,8 +1354,8 @@ section {
                 transition: all .2s;
 
                 .btn.btn-primary {
-                    width: 100%;
-                    border-radius: 4px;
+                    width: 100%;      
+                    border-radius: 4px 4px 0 0;              
                     text-align: left;
                     background-color: color(graphics);
                     border: none;
@@ -1366,23 +1366,30 @@ section {
                         box-shadow: none !important;
                     }
 
+                    &.collapsed{
+                        border-radius: 4px;
+                    }
+
                     >h3{color: color(text-white);}
                 }
             }
 
             .faq__list-item-content {
                 width: 100%;
-                padding: 0px 12px;
+                padding: 0px 30px;
                 transition: all .2s;
                 transition-delay: all 0s;
+                background-color: rgba($color: color(graphics-light), $alpha: .3);
+                font-size: 16px;
                
                 &.collapsing{
                     transition: all .2s;
-                    padding: 0 12px;
+                    padding: 0 30px;
                 }
 
                 &.show{                    
-                    padding: 24px 12px;
+                    padding: 24px 30px;
+                    border-radius: 0 0 4px 4px;
                 }
             }
         }

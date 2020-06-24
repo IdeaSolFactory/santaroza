@@ -1349,7 +1349,7 @@ section .header.header--style-4::after {
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary {
   width: 100%;
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
   text-align: left;
   background-color: #876255;
   border: none;
@@ -1362,27 +1362,34 @@ section .header.header--style-4::after {
           box-shadow: none !important;
 }
 
+#faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed {
+  border-radius: 4px;
+}
+
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
   color: #ede9df;
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content {
   width: 100%;
-  padding: 0px 12px;
+  padding: 0px 30px;
   -webkit-transition: all .2s;
   transition: all .2s;
   -webkit-transition-delay: all 0s;
           transition-delay: all 0s;
+  background-color: rgba(183, 151, 138, 0.3);
+  font-size: 16px;
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content.collapsing {
   -webkit-transition: all .2s;
   transition: all .2s;
-  padding: 0 12px;
+  padding: 0 30px;
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content.show {
-  padding: 24px 12px;
+  padding: 24px 30px;
+  border-radius: 0 0 4px 4px;
 }
 
 /* ABOUT SECTIONS */
