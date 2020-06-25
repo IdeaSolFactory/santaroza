@@ -1366,11 +1366,31 @@ section {
                         box-shadow: none !important;
                     }
 
+                    &::before{
+                        content: "";
+                        width: 22px;
+                        height: 22px;
+                        display: inline-block;
+                        background-image: url(../images/buttons/button-close.svg);
+                        background-position: center;
+                        vertical-align: middle;
+                        margin-right: 12px;
+                        transition: all .3s;                        
+                    }                    
+
                     &.collapsed{
                         border-radius: 4px;
+                        &::before{
+                            background-image: url(../images/buttons/button-open.svg);
+                            transition: all .3s;  
+                        }
                     }
 
-                    >h3{color: color(text-white);}
+                    >h3{
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: color(text-white);
+                    }
                 }
             }
 
@@ -1384,7 +1404,7 @@ section {
                
                 &.collapsing{
                     transition: all .2s;
-                    padding: 0 30px;
+                    padding: 0 30px;                   
                 }
 
                 &.show{                    

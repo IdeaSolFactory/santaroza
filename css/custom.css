@@ -1362,11 +1362,32 @@ section .header.header--style-4::after {
           box-shadow: none !important;
 }
 
+#faq .faq__list .faq__list-item .card-header .btn.btn-primary::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url(../images/buttons/button-close.svg);
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 12px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed {
   border-radius: 4px;
 }
 
+#faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed::before {
+  background-image: url(../images/buttons/button-open.svg);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
+  display: inline-block;
+  vertical-align: middle;
   color: #ede9df;
 }
 
