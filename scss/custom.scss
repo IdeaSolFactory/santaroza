@@ -1335,8 +1335,18 @@ section {
     .section-title {
         margin-top: 120px;
         margin-bottom: 80px;
+
+        @include screen-lg{
+            margin-bottom: 30px;
+        }
     }
     .faq__list {
+        padding: 24px 0;
+
+        @include screen-lg{
+            padding: 64px 0;
+        }
+
         .faq__list-item {
             margin: 0;
             width: 100%;

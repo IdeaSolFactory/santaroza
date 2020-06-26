@@ -1328,6 +1328,22 @@ section .header.header--style-4::after {
   margin-bottom: 80px;
 }
 
+@media (min-width: 992px) {
+  #faq .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+#faq .faq__list {
+  padding: 24px 0;
+}
+
+@media (min-width: 992px) {
+  #faq .faq__list {
+    padding: 64px 0;
+  }
+}
+
 #faq .faq__list .faq__list-item {
   margin: 0;
   width: 100%;
