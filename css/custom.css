@@ -33,6 +33,34 @@ p {
   background-size: contain;
 }
 
+.icon.arrow {
+  background-image: url(../images/icons/arrow-white.svg);
+}
+
+.icon.wheel-1-white {
+  background-image: url(../images/icons/icon-wheel-1-white.svg);
+}
+
+.icon.boots {
+  background-image: url(../images/icons/icon-boots-1-white.svg);
+}
+
+.icon.fishes {
+  background-image: url(../images/icons/icon-fishes-1-white.svg);
+}
+
+.icon.jugs {
+  background-image: url(../images/icons/icon-jugs.svg);
+}
+
+.icon.jug-white {
+  background-image: url(../images/icons/icon-jug-1-white.svg);
+}
+
+.icon.pirate-hat {
+  background-image: url(../images/icons/icon-pirate-hat.svg);
+}
+
 .icon.pirate-kid {
   background-image: url(../images/icons/icon-baby.png);
 }
@@ -50,19 +78,23 @@ p {
 }
 
 .icon.coin {
-  background-image: url(../images/icons/coin-1.svg);
+  background-image: url(../images/icons/icon-coin.svg);
+}
+
+.icon.coin-2 {
+  background-image: url(../images/icons/icon-coin-2.svg);
 }
 
 .icon.pirate-hook {
-  background-image: url(../images/icons/pirate-hook-1.svg);
+  background-image: url(../images/icons/icon-hook.svg);
 }
 
 .icon.pirate-hook-2 {
-  background-image: url(../images/icons/pirate-hook-2.svg);
+  background-image: url(../images/icons/icon-hook-2.svg);
 }
 
 .icon.map {
-  background-image: url(../images/icons/map-1.svg);
+  background-image: url(../images/icons/icon-map-2.svg);
 }
 
 .icon.swords {
@@ -398,6 +430,7 @@ body {
 
 /* SECTION FORMATTING */
 section {
+  overflow: hidden;
   /* HEADINGS */
 }
 
@@ -685,10 +718,26 @@ section .header.header--style-4::after {
 }
 
 #event .about-item span {
-  width: 70px;
-  height: 70px;
-  top: 10px;
+  width: 60px;
+  height: 60px;
+  top: unset;
+  bottom: 0;
   right: 8px;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  #event .about-item span {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #event .about-item span {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* COUNTER SECTION */
@@ -723,6 +772,7 @@ section .header.header--style-4::after {
 
 #counter .counter-txt h3 {
   color: #474341;
+  vertical-align: middle;
 }
 
 #counter .counter-txt p {
@@ -730,13 +780,22 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt .icon {
-  height: 36px;
-  width: 36px;
+  vertical-align: middle;
+  height: 42px;
+  width: 42px;
   display: inline-block;
   margin-right: 6px;
 }
 
+@media (min-width: 1200px) {
+  #counter .counter-txt .icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 #counter .counter-txt span {
+  vertical-align: middle;
   color: #bf382b;
 }
 
@@ -910,7 +969,7 @@ section .header.header--style-4::after {
   margin: 0 auto;
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../images/icons/chest.png);
+  background-image: url(../images/icons/icon-pirate-hat.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1199,7 +1258,13 @@ section .header.header--style-4::after {
 }
 
 #price .price-btn > a > i {
+  display: inline-block;
   background-color: #bf382b;
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  background-position: 56% 50%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   border-color: #bf382b;
 }
 
@@ -1285,6 +1350,14 @@ section .header.header--style-4::after {
 
 #organize_2 .org-item i {
   background-color: #bf382b;
+  display: inline-block;
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#organize_2 .org-item i.icon.fishes {
+  background-position: 40% 50%;
 }
 
 /* GALLERY SECTION */

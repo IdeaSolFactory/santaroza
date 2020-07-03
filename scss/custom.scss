@@ -40,6 +40,34 @@ p {
     background-position: center;
     background-size: contain;
 
+    &.arrow{
+        background-image: url(../images/icons/arrow-white.svg);
+    }
+
+    &.wheel-1-white{
+        background-image: url(../images/icons/icon-wheel-1-white.svg);
+    }
+
+    &.boots{
+        background-image: url(../images/icons/icon-boots-1-white.svg);
+    }
+
+    &.fishes{
+        background-image: url(../images/icons/icon-fishes-1-white.svg);
+    }
+    
+    &.jugs{
+        background-image: url(../images/icons/icon-jugs.svg);
+    }
+
+    &.jug-white{
+        background-image: url(../images/icons/icon-jug-1-white.svg);
+    }
+
+    &.pirate-hat{
+        background-image: url(../images/icons/icon-pirate-hat.svg);
+    }
+
     &.pirate-kid {
         background-image: url(../images/icons/icon-baby.png);
         // background-image: url(../images/icons/pirate-kid-2.svg);
@@ -59,19 +87,23 @@ p {
     }
 
     &.coin {
-        background-image: url(../images/icons/coin-1.svg);
+        background-image: url(../images/icons/icon-coin.svg);
+    }
+
+    &.coin-2{
+        background-image: url(../images/icons/icon-coin-2.svg);
     }
 
     &.pirate-hook {
-        background-image: url(../images/icons/pirate-hook-1.svg);
+        background-image: url(../images/icons/icon-hook.svg);
     }
 
     &.pirate-hook-2 {
-        background-image: url(../images/icons/pirate-hook-2.svg);
+        background-image: url(../images/icons/icon-hook-2.svg);
     }
 
     &.map {
-        background-image: url(../images/icons/map-1.svg);
+        background-image: url(../images/icons/icon-map-2.svg);
     }
 
     &.swords {
@@ -411,6 +443,8 @@ body {
 
 /* SECTION FORMATTING */
 section {
+    overflow: hidden;
+
     /* HEADINGS */
 
     .section-title {
@@ -722,10 +756,22 @@ section {
         }
 
         span {
-            width: 70px;
-            height: 70px;
-            top: 10px;
+            width: 60px;
+            height: 60px;
+            top: unset;
+            bottom: 0;
             right: 8px;
+            z-index: 1;
+
+            @include screen-lg{
+                width: 80px;
+                height: 80px;
+            }
+
+            @include screen-xl{
+                width: 100px;
+                height: 100px;
+            }
         }
     }
 }
@@ -762,17 +808,25 @@ section {
     .counter-txt {
         h3 {
             color: color(text);
+            vertical-align: middle;
         }
         p {
             color: color(text-lighter);
         }
         .icon {
-            height: 36px;
-            width: 36px;
+            vertical-align: middle;
+            height: 42px;
+            width: 42px;
             display: inline-block;
             margin-right: 6px;
+
+            @include screen-xl{
+                height: 50px;
+                width: 50px;
+            }
         }
         span {
+            vertical-align: middle;
             color: color(primary);
         }
     }
@@ -922,7 +976,7 @@ section {
                             display: inline-block;
                             vertical-align: middle;
 
-                            background-image: url(../images/icons/chest.png);
+                            background-image: url(../images/icons/icon-pirate-hat.svg);
                             @include bckgrnd-img--contain;
                         }
 
@@ -1203,10 +1257,16 @@ section {
                 color: color(text-light);
             }
         }
-    }
+    }   
 
-    .price-btn > a > i {
+    .price-btn > a > i {        
+        display: inline-block;
         background-color: color(primary);
+        background-size: 26px 26px;
+        background-repeat: no-repeat;
+        background-position: 56% 50%;
+        transform: rotate(90deg);
+        
         border-color: color(primary);
     }
 }
@@ -1287,6 +1347,14 @@ section {
         }
         i {
             background-color: color(primary);
+            display: inline-block;
+            background-size: 36px 36px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &.icon.fishes{
+                background-position: 40% 50%;
+            }
         }
     }
 }
