@@ -285,7 +285,23 @@ p {
                 background-size: 300px;
                 z-index: 0;
             }
-        }        
+        } 
+        
+        &.top{
+            &::before{
+                content: "";
+                position: absolute;
+                top: -12px;
+                height: 65px;
+                width: 100%;
+                display: block;
+                background-image: url(../images/background-images/bg-wood-top-1.svg);
+                background-position: 0;
+                background-repeat: repeat-x;
+                background-size: 300px;
+                z-index: 0;
+            }
+        }
     }
 }
 
