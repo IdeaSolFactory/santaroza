@@ -37,6 +37,10 @@ p {
   background-image: url(../images/icons/arrow-white.svg);
 }
 
+.icon.ship-surrender {
+  background-image: url(../images/icons/icon-surrender.svg);
+}
+
 .icon.wheel-1-white {
   background-image: url(../images/icons/icon-wheel-1-white.svg);
 }
@@ -55,6 +59,10 @@ p {
 
 .icon.jug-white {
   background-image: url(../images/icons/icon-jug-1-white.svg);
+}
+
+.icon.jugs-mat {
+  background-image: url(../images/icons/icon-jugs-01-mat.svg);
 }
 
 .icon.pirate-hat {
@@ -791,6 +799,11 @@ section .header.header--style-4::after {
   #counter .counter-txt .icon {
     height: 50px;
     width: 50px;
+  }
+  #counter .counter-txt .icon.ship-surrender {
+    height: 60px;
+    width: 60px;
+    margin-top: -12px;
   }
 }
 

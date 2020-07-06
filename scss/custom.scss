@@ -44,6 +44,11 @@ p {
         background-image: url(../images/icons/arrow-white.svg);
     }
 
+    &.ship-surrender{
+        background-image: url(../images/icons/icon-surrender.svg);
+
+    }
+
     &.wheel-1-white{
         background-image: url(../images/icons/icon-wheel-1-white.svg);
     }
@@ -62,6 +67,11 @@ p {
 
     &.jug-white{
         background-image: url(../images/icons/icon-jug-1-white.svg);
+    }
+
+    &.jugs-mat{
+        background-image: url(../images/icons/icon-jugs-01-mat.svg);
+
     }
 
     &.pirate-hat{
@@ -818,11 +828,17 @@ section {
             height: 42px;
             width: 42px;
             display: inline-block;
-            margin-right: 6px;
+            margin-right: 6px;            
 
             @include screen-xl{
                 height: 50px;
                 width: 50px;
+
+                &.ship-surrender{
+                    height: 60px;
+                    width: 60px;
+                    margin-top: -12px;
+                }
             }
         }
         span {
