@@ -285,6 +285,20 @@ p {
   z-index: 0;
 }
 
+.bg-wood--repeat.bottom::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  height: 65px;
+  width: 100%;
+  display: block;
+  background-image: url(../images/background-images/bg-wood-top-1.svg);
+  background-position: 0;
+  background-repeat: repeat-x;
+  background-size: 300px;
+  z-index: 0;
+}
+
 /* BOXES */
 .boxed {
   position: relative;
@@ -366,40 +380,9 @@ body {
 
 /*HEADER SECTION*/
 .navbar {
-  padding: 10px 20px;
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    padding: 20px 100px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar {
-    padding: 20px 200px;
-  }
-}
-
-.navbar::after {
-  content: "";
-  position: absolute;
-  height: 115px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: block;
-  background-image: url(../images/background-images/bckgrnd-header-01.png);
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-@media (min-width: 992px) {
-  .navbar::after {
-    height: 200px;
-  }
+  z-index: 9999;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .navbar.navbar-light .navbar-nav .nav-link {
@@ -414,6 +397,85 @@ body {
 
 .navbar.nav-bg .navbar-brand .navbar__logo {
   display: block;
+}
+
+.navbar .navbar__ropes-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar__ropes-container {
+    display: block;
+  }
+}
+
+.navbar .navbar__ropes-container::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/items/Rope-01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navbar .navbar__ropes-container::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/items/Rope-02.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar__ropes-container::before {
+    background-position: -20px;
+  }
+  .navbar .navbar__ropes-container::after {
+    background-position: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar__ropes-container::before {
+    background-position: -15px;
+  }
+  .navbar .navbar__ropes-container::after {
+    background-position: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .navbar .navbar__ropes-container::before {
+    background-position: -12px;
+  }
+  .navbar .navbar__ropes-container::after {
+    background-position: 65px;
+  }
+}
+
+.navbar .navbar-content {
+  padding: 12px 20px;
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-content {
+    padding: 12px 160px;
+    max-width: 1600px;
+  }
 }
 
 .navbar .navbar-nav {
@@ -451,7 +513,7 @@ body {
 }
 
 .navbar .navbar-collapse.menu-main > ul {
-  background-color: #9b2d2d;
+  background-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -1601,7 +1663,6 @@ section .header.header--style-4::after {
   -o-object-position: center;
      object-position: center;
   height: 100%;
-  opacity: .75;
 }
 
 #about .about-txt h3,
