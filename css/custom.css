@@ -1600,6 +1600,8 @@ section .header.header--style-4::after {
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed {
   border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed::after {
@@ -1611,6 +1613,7 @@ section .header.header--style-4::after {
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
   display: block;
   color: #ede9df;
+  font-size: 24px;
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content {
