@@ -1759,7 +1759,6 @@ section .header.header--style-4::after {
   width: 100%;
   height: auto;
   max-width: 200px;
-  opacity: 0.7;
 }
 
 #footer .footer__container .menu-a {
