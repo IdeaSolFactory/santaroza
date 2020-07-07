@@ -1573,11 +1573,18 @@ section {
         .main-img {
             height: 100%;
             display: block;
+            width: 100%;
+            text-align: center;
+
+            @include screen-lg{
+                min-height: 800px;
+            }
 
             > img {
-                object-fit: cover;
+                object-fit: contain;
                 object-position: center;
                 height: 100%;
+                opacity: .75;
             }
         }
     }
