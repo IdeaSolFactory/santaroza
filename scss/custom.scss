@@ -611,12 +611,23 @@ section {
     /* HEADINGS */
 
     .section-title {
-        margin: 0 0 45px 0;
+        margin: 115px 0 65px 0;
         text-align: center;
+        z-index: 1;
+
+        h1{
+            z-index: 10;
+            position: relative;
+        }
+
+        .header{
+            z-index: 0;
+        }
     }
     .header {
         width: 100%;
         height: 0;
+        z-index: 0;
 
         &::after {
             content: "";
@@ -630,7 +641,6 @@ section {
             background-position: center;
             background-repeat: no-repeat;
             opacity: 0.45;
-            z-index: -11;
         }
 
         &.header--dark {
@@ -902,6 +912,12 @@ section {
 
 /* EVENTS SECTION */
 #event {
+    padding: 90px 0 10px 0;
+
+    @include screen-lg{
+        padding: 90px 0;
+    }
+
     .event-header {
         h3 {
             color: color(primary);
@@ -953,7 +969,7 @@ section {
 
 /* COUNTER SECTION */
 #counter {
-    padding: 300px 0 0px 0;
+    padding: 260px 0 20px 0;
     position: relative;
 
     &::after {
@@ -961,21 +977,26 @@ section {
         position: absolute;
         display: block;
         left: 0;
-        top: 0;
-        height: 300px;
-        width: 100%;
+        top: -65px;
+        height: 400px;
+        width: 400px;
         background-image: url(../images/background-images/illustration-bckgrnd-01.png);
         background-position: -150px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         z-index: -1;
 
         @include screen-lg{
-            left: -160px;
-            top: 0;
-            height: 100%;
             width: 650px;
+            height: 100%;
+            left: -300px;
+            top: 0;
+        }
 
+        @include screen-xl{           
+           
+            width: 800px;
+            left: -400px;
             background-position: right;
         }
     }
@@ -1120,7 +1141,7 @@ section {
 
 /* SCHEDULE SECTION */
 #schedule {
-    padding-bottom: 45px;
+    padding: 0;
     background: transparent;
 
     .schedule__table-container {
@@ -1367,7 +1388,11 @@ section {
 
 /* ROUTE SECTION */
 #route-section {
-    padding: 90px 0;
+    padding: 60px 0;
+
+    .route-section__heading{
+        padding-bottom: 60px;
+    }
 
     .route-section__item {
         position: relative;
@@ -1419,6 +1444,7 @@ section {
     position: relative;
     overflow: hidden;
     background: transparent;
+    padding: 0 0 65px 0;
 
     &::before {
         content: "";
