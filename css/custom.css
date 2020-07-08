@@ -1394,11 +1394,47 @@ section .header.header--style-4::after {
   position: relative;
 }
 
+#route-section .route-section__item .route-section__img-container {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 992px) {
+  #route-section .route-section__item .route-section__img-container {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+}
+
+#route-section .route-section__item .route-section__text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  #route-section .route-section__item .route-section__text {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    padding-bottom: initial;
+  }
+}
+
 #route-section .route-section__connection {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 60px;
   overflow: visible;
+}
+
+@media (min-width: 992px) {
+  #route-section .route-section__connection {
+    height: 200px;
+  }
 }
 
 #route-section .route-section__connection::after {
@@ -1407,10 +1443,10 @@ section .header.header--style-4::after {
   display: block;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(10deg);
+          transform: translateX(-50%) translateY(-50%) rotate(10deg);
   width: 100%;
-  height: 360px;
+  height: 100%;
   background-image: url(../images/background-images/dotted-line-01.png);
   background-position: center;
   background-size: contain;
@@ -1426,15 +1462,15 @@ section .header.header--style-4::after {
 
 @media (min-width: 1200px) {
   #route-section .route-section__connection::after {
-    height: 440px;
+    height: 400px;
   }
 }
 
 #route-section .route-section__connection.alt::after {
-  top: -160px;
+  top: 0;
   left: 0;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scaleX(-1) rotate(20deg);
+          transform: scaleX(-1) rotate(20deg);
 }
 
 /* PRICE SECTION */
@@ -1443,6 +1479,10 @@ section .header.header--style-4::after {
   overflow: hidden;
   background: transparent;
   padding: 0 0 65px 0;
+}
+
+#price .price-pa {
+  padding: 0;
 }
 
 #price::before {
@@ -1635,7 +1675,7 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list {
-  padding: 24px 0;
+  padding: 0 0 24px 0;
 }
 
 @media (min-width: 992px) {

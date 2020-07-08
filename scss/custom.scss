@@ -1396,13 +1396,35 @@ section {
 
     .route-section__item {
         position: relative;
+
+        .route-section__img-container{
+            order: 2;            
+
+            @include screen-lg{
+                order: unset;
+            }
+        }
+
+        .route-section__text{
+            order: 1;
+            padding-bottom: 20px;
+
+            @include screen-lg{
+                order: unset;
+                padding-bottom: initial;
+            }
+        }
     }
 
     .route-section__connection {
         position: relative;
         width: 100%;
-        height: 100px;
+        height: 60px;
         overflow: visible;
+
+        @include screen-lg{
+            height: 200px;
+        }
 
         &::after {
             content: none;
@@ -1410,9 +1432,9 @@ section {
             display: block;
             top: 50%;
             left: 50%;
-            transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%) rotate(10deg);
             width: 100%;
-            height: 360px;
+            height: 100%;           
 
             background-image: url(../images/background-images/dotted-line-01.png);
             background-position: center;
@@ -1425,15 +1447,15 @@ section {
             }
 
             @include screen-xl {
-                height: 440px;
+                height: 400px;
             }
         }
 
         &.alt {
             &::after {
-                top: -160px;
+                top: 0;
                 left: 0;
-                transform: scaleX(-1);
+                transform: scaleX(-1) rotate(20deg);                
             }
         }
     }
@@ -1445,6 +1467,10 @@ section {
     overflow: hidden;
     background: transparent;
     padding: 0 0 65px 0;
+
+    .price-pa{
+        padding: 0;
+    }
 
     &::before {
         content: "";
@@ -1464,6 +1490,7 @@ section {
 
     .price-item {
         z-index: 1;
+
         .price-tag > span {
             color: color(primary);
         }
@@ -1635,7 +1662,7 @@ section {
         }
     }
     .faq__list {
-        padding: 24px 0;
+        padding: 0 0 24px 0;
 
         @include screen-lg{
             padding: 64px 0;
