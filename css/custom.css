@@ -662,6 +662,32 @@ section .header.header--style-4::after {
   }
 }
 
+#banner .backtotop .backtotop__icon {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #bf382b;
+  border: 1px solid #bf382b;
+}
+
+#banner .backtotop .backtotop__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  height: 100%;
+  max-height: 46px;
+  max-width: 46px;
+  background-image: url(../images/icons/compass-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #banner .text-shadow {
   position: absolute;
   top: 50%;
@@ -716,32 +742,6 @@ section .header.header--style-4::after {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-#banner .banner-content .backtotop .backtotop__icon {
-  position: relative;
-  display: block;
-  width: 60px;
-  height: 60px;
-  background: #bf382b;
-  border: 1px solid #bf382b;
-}
-
-#banner .banner-content .backtotop .backtotop__icon::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  width: 100%;
-  height: 100%;
-  max-height: 46px;
-  max-width: 46px;
-  background-image: url(../images/icons/compass-1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 #banner .banner-content .banner__image-holder {
@@ -1432,6 +1432,12 @@ section .header.header--style-4::after {
   padding: 60px 0;
 }
 
+@media (min-width: 992px) {
+  #route-section {
+    padding: 0 0 60px 0;
+  }
+}
+
 #route-section .route-section__heading {
   padding-bottom: 60px;
 }
@@ -1503,6 +1509,8 @@ section .header.header--style-4::after {
   #route-section .route-section__connection::after {
     content: "";
     height: 360px;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(0);
+            transform: translateX(-50%) translateY(-50%) rotate(0);
   }
 }
 
@@ -1519,12 +1527,32 @@ section .header.header--style-4::after {
           transform: scaleX(-1) rotate(20deg);
 }
 
+@media (min-width: 992px) {
+  #route-section .route-section__connection.alt::after {
+    top: -40px;
+    -webkit-transform: scaleX(-1) rotate(0);
+            transform: scaleX(-1) rotate(0);
+  }
+}
+
 /* PRICE SECTION */
 #price {
   position: relative;
   overflow: hidden;
   background: transparent;
   padding: 0 0 65px 0;
+}
+
+#price .section-title {
+  margin-top: 145px;
+  margin-bottom: 65px;
+}
+
+@media (min-width: 992px) {
+  #price .section-title {
+    margin-top: 145px;
+    margin-bottom: 90px;
+  }
 }
 
 #price .price-pa {
@@ -1839,8 +1867,28 @@ section .header.header--style-4::after {
   background-color: #e7e1d6;
 }
 
+@media (min-width: 992px) {
+  #about {
+    padding-bottom: 45px;
+  }
+}
+
 #about .about-img {
-  height: 100%;
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  height: 420px;
+  opacity: .40;
+}
+
+@media (min-width: 992px) {
+  #about .about-img {
+    position: relative;
+    height: 100%;
+    top: unset;
+    left: unset;
+    opacity: 1;
+  }
 }
 
 #about .about-img .main-img {
@@ -1848,10 +1896,12 @@ section .header.header--style-4::after {
   display: block;
   width: 100%;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #about .about-img .main-img {
+    padding-bottom: 0;
     min-height: 800px;
   }
 }
@@ -1859,8 +1909,8 @@ section .header.header--style-4::after {
 #about .about-img .main-img > img {
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
   height: 100%;
 }
 
@@ -1899,11 +1949,23 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #about .about-txt .about-s {
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 }
 
 /* REGISTER SECTION */
+@media (min-width: 992px) {
+  #register {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  #register .register-pa {
+    padding-top: 20px;
+  }
+}
+
 #register .register-box {
   padding: 6px;
 }
