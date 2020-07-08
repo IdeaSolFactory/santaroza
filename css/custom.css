@@ -317,6 +317,8 @@ p {
   -webkit-box-shadow: 0 0 0 transparent;
           box-shadow: 0 0 0 transparent;
   background-color: #e6dfd4 !important;
+  -webkit-filter: drop-shadow(-7px 9px 0px rgba(48, 15, 15, 0.07));
+          filter: drop-shadow(-7px 9px 0px rgba(48, 15, 15, 0.07));
 }
 
 .boxed.boxed--paper-2 {
@@ -330,10 +332,11 @@ p {
   -webkit-box-shadow: 0 0 0 transparent;
           box-shadow: 0 0 0 transparent;
   background-color: #ede9df !important;
+  -webkit-filter: drop-shadow(-7px 9px 0px rgba(48, 15, 15, 0.07));
+          filter: drop-shadow(-7px 9px 0px rgba(48, 15, 15, 0.07));
 }
 
 .boxed.boxed--paper::before {
-  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -663,7 +666,7 @@ section .header.header--style-4::after {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(../images/brand/logo_secondary.png);
+  background-image: url(../images/brand/santa_roza_banner.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1695,10 +1698,32 @@ section .header.header--style-4::after {
 
 #about .about-txt p {
   color: #686460;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  #about .about-txt p {
+    padding-bottom: 40px;
+  }
 }
 
 #about .about-txt a {
   background: #bf382b;
+  display: block;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#about .about-txt .about-s {
+  padding-top: 30px;
+}
+
+@media (min-width: 992px) {
+  #about .about-txt .about-s {
+    padding-bottom: 40px;
+  }
 }
 
 /* REGISTER SECTION */

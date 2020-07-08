@@ -338,6 +338,7 @@ p {
         border-image-outset: 15;
         box-shadow: 0 0 0 transparent;
         background-color: #e6dfd4 !important;
+        filter: drop-shadow(-7px 9px 0px rgba(color(primary-darker), .07));
 
         &-2 {
             // border: 1px solid transparent;
@@ -349,10 +350,11 @@ p {
             border-image-outset: 15;
             box-shadow: 0 0 0 transparent;
             background-color: color(background-main) !important;
+            filter: drop-shadow(-7px 9px 0px rgba(color(primary-darker), .07));
         }
 
         &::before {
-            content: "";
+            // content: "";
             width: 100%;
             height: 100%;
             position: absolute;
@@ -704,7 +706,7 @@ section {
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                background-image: url(../images/brand/logo_secondary.png);
+                background-image: url(../images/brand/santa_roza_banner.svg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -1697,10 +1699,26 @@ section {
         }
         p {
             color: color(text-light);
+            padding-bottom: 30px;
+
+            @include screen-lg{
+                padding-bottom: 40px;
+            }
         }
 
         a {
             background: color(primary);
+            display: block;
+            margin: 0 auto;
+            width: max-content;
+        }
+
+        .about-s{
+            padding-top: 30px;
+
+            @include screen-lg{
+                padding-bottom: 40px;
+            }
         }
     }
 }
