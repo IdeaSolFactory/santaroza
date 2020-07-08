@@ -446,6 +446,46 @@ body {
         }
     }
 
+    >.rope-right{
+        position: absolute;
+        right: 0;
+        bottom: -65px;
+        width: 100px;
+        height: 100px;
+
+        background-image: url(../images/items/Rope-Alt-1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        z-index: -1;
+
+        animation: swing 2s infinite;
+        animation-timing-function: ease-in-out;
+        transform-origin: top center;
+
+        @include screen-lg{
+            right: 65px;
+            width: 200px;
+            height: 200px;
+            bottom: -142px;
+        }
+
+        @keyframes swing{
+            0%{
+                transform: skewX(0deg);
+            }
+
+            50%{
+                transform: skewX(3deg);
+            }
+
+            100%{
+                transform: skewX(0deg);
+            }
+        }
+    }
+
     .navbar__ropes-container{
         position: absolute;
         width: 100%;
@@ -484,37 +524,6 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-        }
-
-        >.rope-right{
-            position: absolute;
-            right: 0;
-            bottom: -141px;
-            width: 200px;
-            height: 200px;
-
-            background-image: url(../images/items/Rope-Alt-1.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-
-            animation: swing 2s infinite;
-            animation-timing-function: ease-in-out;
-            transform-origin: top center;
-
-            @keyframes swing{
-                0%{
-                    transform: skewX(0deg);
-                }
-
-                50%{
-                    transform: skewX(3deg);
-                }
-
-                100%{
-                    transform: skewX(0deg);
-                }
-            }
         }
 
         @include screen-md{

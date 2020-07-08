@@ -402,6 +402,64 @@ body {
   display: block;
 }
 
+.navbar > .rope-right {
+  position: absolute;
+  right: 0;
+  bottom: -65px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/items/Rope-Alt-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  -webkit-animation: swing 2s infinite;
+          animation: swing 2s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
+@media (min-width: 992px) {
+  .navbar > .rope-right {
+    right: 65px;
+    width: 200px;
+    height: 200px;
+    bottom: -142px;
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  50% {
+    -webkit-transform: skewX(3deg);
+            transform: skewX(3deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  50% {
+    -webkit-transform: skewX(3deg);
+            transform: skewX(3deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
 .navbar .navbar__ropes-container {
   position: absolute;
   width: 100%;
@@ -441,54 +499,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.navbar .navbar__ropes-container > .rope-right {
-  position: absolute;
-  right: 0;
-  bottom: -141px;
-  width: 200px;
-  height: 200px;
-  background-image: url(../images/items/Rope-Alt-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-animation: swing 2s infinite;
-          animation: swing 2s infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-}
-
-@-webkit-keyframes swing {
-  0% {
-    -webkit-transform: skewX(0deg);
-            transform: skewX(0deg);
-  }
-  50% {
-    -webkit-transform: skewX(3deg);
-            transform: skewX(3deg);
-  }
-  100% {
-    -webkit-transform: skewX(0deg);
-            transform: skewX(0deg);
-  }
-}
-
-@keyframes swing {
-  0% {
-    -webkit-transform: skewX(0deg);
-            transform: skewX(0deg);
-  }
-  50% {
-    -webkit-transform: skewX(3deg);
-            transform: skewX(3deg);
-  }
-  100% {
-    -webkit-transform: skewX(0deg);
-            transform: skewX(0deg);
-  }
 }
 
 @media (min-width: 768px) {
