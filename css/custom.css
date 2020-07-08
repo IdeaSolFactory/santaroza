@@ -1602,9 +1602,12 @@ section .header.header--style-4::after {
   content: "";
   width: 22px;
   height: 22px;
-  display: block;
+  min-width: 22px;
+  min-height: 22px;
   background-image: url(../images/buttons/button-close.svg);
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -1625,6 +1628,8 @@ section .header.header--style-4::after {
   display: block;
   color: #ede9df;
   font-size: 24px;
+  white-space: break-spaces;
+  padding-right: 15px;
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content {

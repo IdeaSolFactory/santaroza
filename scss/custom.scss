@@ -1607,12 +1607,15 @@ section {
                     }
 
                     &::after{
-                        content: "";
+                        content: "";                                              
                         width: 22px;
                         height: 22px;
-                        display: block;
+                        min-width: 22px;
+                        min-height: 22px;
                         background-image: url(../images/buttons/button-close.svg);
-                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                        background-size: contain;
                         transition: all .3s;         
                     }                    
 
@@ -1630,6 +1633,8 @@ section {
                         display: block;
                         color: color(text-white);
                         font-size: 24px;
+                        white-space: break-spaces;
+                        padding-right: 15px;
                     }
                 }
             }
