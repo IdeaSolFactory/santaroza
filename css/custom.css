@@ -236,7 +236,7 @@ p {
 
 .bg-wood--repeat {
   overflow: unset;
-  background-image: url(../images/background-images/bckgrnd-wood-1.svg) !important;
+  background-image: url(../images/background-images/bckgrnd-wood-1.jpg) !important;
   background-position: center center !important;
   background-size: 400px !important;
   background-repeat: repeat repeat !important;
@@ -250,7 +250,7 @@ p {
   height: 65px;
   width: 100%;
   display: block;
-  background-image: url(../images/background-images/bg-wood-top-1.svg);
+  background-image: url(../images/background-images/bg-wood-top-1.png);
   background-position: 0;
   background-repeat: repeat-x;
   background-size: 300px;
@@ -264,7 +264,7 @@ p {
   height: 65px;
   width: 100%;
   display: block;
-  background-image: url(../images/background-images/bg-wood-top-1.svg);
+  background-image: url(../images/background-images/bg-wood-top-1.png);
   background-position: top left;
   background-repeat: repeat-x;
   background-size: 300px;
@@ -278,7 +278,7 @@ p {
   height: 65px;
   width: 100%;
   display: block;
-  background-image: url(../images/background-images/bg-wood-top-1.svg);
+  background-image: url(../images/background-images/bg-wood-top-1.png);
   background-position: 0;
   background-repeat: repeat-x;
   background-size: 300px;
@@ -292,7 +292,7 @@ p {
   height: 65px;
   width: 100%;
   display: block;
-  background-image: url(../images/background-images/bg-wood-top-1.svg);
+  background-image: url(../images/background-images/bg-wood-top-1.png);
   background-position: 0;
   background-repeat: repeat-x;
   background-size: 300px;
@@ -845,28 +845,39 @@ section .header.header--style-4::after {
 
 /* COUNTER SECTION */
 #counter {
-  padding: 100px 0 0px 0;
+  padding: 300px 0 0px 0;
+  position: relative;
+}
+
+#counter::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/background-images/illustration-bckgrnd-01.png);
+  background-position: -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  #counter::after {
+    left: -160px;
+    top: 0;
+    height: 100%;
+    width: 650px;
+    background-position: right;
+  }
 }
 
 @media (min-width: 992px) {
   #counter {
     padding: 100px 0 65px 0;
     position: relative;
-  }
-  #counter::after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 500px;
-    background-image: url(../images/background-images/illustration-bckgrnd-01.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    opacity: 0.4;
   }
   #counter .count-item {
     background-color: rgba(255, 255, 255, 0.65);
