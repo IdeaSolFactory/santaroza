@@ -652,6 +652,7 @@ section .header.header--style-4::after {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 0;
   position: relative;
 }
 
@@ -681,11 +682,43 @@ section .header.header--style-4::after {
   }
 }
 
-#banner .banner__container {
+#banner .banner-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   height: 100%;
+  z-index: 1;
+  padding: 65px 0;
+  -webkit-filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.65));
+          filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.65));
 }
 
-#banner .backtotop .backtotop__icon {
+@media (min-width: 992px) {
+  #banner .banner-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#banner .banner-content .backtotop .backtotop__icon {
   position: relative;
   display: block;
   width: 60px;
@@ -694,7 +727,7 @@ section .header.header--style-4::after {
   border: 1px solid #bf382b;
 }
 
-#banner .backtotop .backtotop__icon::after {
+#banner .banner-content .backtotop .backtotop__icon::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -711,26 +744,30 @@ section .header.header--style-4::after {
   background-size: contain;
 }
 
+#banner .banner-content .banner__image-holder {
+  position: relative;
+  height: 100%;
+  min-height: 260px;
+  width: 100%;
+  margin-bottom: 22px;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
 @media (min-width: 992px) {
-  #banner .banner__image-wrapper {
-    margin-right: 42px;
+  #banner .banner-content .banner__image-holder {
+    height: 300px;
+    width: 300px;
   }
 }
 
-#banner .banner__image-wrapper .banner__image-holder {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 320px;
-}
-
-#banner .banner__image-wrapper .banner__image-holder::after {
+#banner .banner-content .banner__image-holder::after {
   content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
-  max-height: 320px;
+  max-height: 260px;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
@@ -742,27 +779,36 @@ section .header.header--style-4::after {
 }
 
 @media (min-width: 992px) {
-  #banner .banner__image-wrapper .banner__image-holder::after {
-    background-position: left;
+  #banner .banner-content .banner__image-holder::after {
+    background-position: center;
+    max-height: unset;
   }
 }
 
-#banner .banner-txt {
+#banner .banner-content .banner__txt {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  #banner .banner-txt {
-    text-align: left;
+  #banner .banner-content .banner__txt {
+    max-width: 650px;
+    margin-left: 20px;
   }
 }
 
-#banner .banner-txt h1 {
+#banner .banner-content .banner__txt h1 {
   color: #ede9df;
 }
 
-#banner .banner-txt h3 {
+#banner .banner-content .banner__txt h3 {
   padding-bottom: 16px;
+}
+
+#banner .banner-content .banner__txt p {
+  color: #ede9df;
 }
 
 /*BANNER 2 SECTION*/
@@ -1699,8 +1745,8 @@ section .header.header--style-4::after {
   background-color: transparent;
   border: none;
   padding: 0;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary {
@@ -1742,8 +1788,8 @@ section .header.header--style-4::after {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed {
@@ -1754,8 +1800,8 @@ section .header.header--style-4::after {
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed::after {
   background-image: url(../images/buttons/button-open.svg);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
@@ -1769,8 +1815,8 @@ section .header.header--style-4::after {
 #faq .faq__list .faq__list-item .faq__list-item-content {
   width: 100%;
   padding: 0px 30px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-transition-delay: all 0s;
           transition-delay: all 0s;
   background-color: rgba(183, 151, 138, 0.3);
@@ -1778,8 +1824,8 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content.collapsing {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   padding: 0 30px;
 }
 

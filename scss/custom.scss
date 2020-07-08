@@ -40,41 +40,39 @@ p {
     background-position: center;
     background-size: contain;
 
-    &.arrow{
+    &.arrow {
         background-image: url(../images/icons/arrow-white.svg);
     }
 
-    &.ship-surrender{
+    &.ship-surrender {
         background-image: url(../images/icons/icon-surrender.svg);
-
     }
 
-    &.wheel-1-white{
+    &.wheel-1-white {
         background-image: url(../images/icons/icon-wheel-1-white.svg);
     }
 
-    &.boots{
+    &.boots {
         background-image: url(../images/icons/icon-boots-1-white.svg);
     }
 
-    &.fishes{
+    &.fishes {
         background-image: url(../images/icons/icon-fishes-1-white.svg);
     }
-    
-    &.jugs{
+
+    &.jugs {
         background-image: url(../images/icons/icon-jugs.svg);
     }
 
-    &.jug-white{
+    &.jug-white {
         background-image: url(../images/icons/icon-jug-1-white.svg);
     }
 
-    &.jugs-mat{
+    &.jugs-mat {
         background-image: url(../images/icons/icon-jugs-01-mat.svg);
-
     }
 
-    &.pirate-hat{
+    &.pirate-hat {
         background-image: url(../images/icons/icon-pirate-hat.svg);
     }
 
@@ -100,7 +98,7 @@ p {
         background-image: url(../images/icons/icon-coin.svg);
     }
 
-    &.coin-2{
+    &.coin-2 {
         background-image: url(../images/icons/icon-coin-2.svg);
     }
 
@@ -255,10 +253,10 @@ p {
         background-position: center center !important;
         background-size: 400px !important;
         background-repeat: repeat repeat !important;
-        z-index: 10;       
+        z-index: 10;
 
-        &.top-bottom{
-            &::before{
+        &.top-bottom {
+            &::before {
                 content: "";
                 position: absolute;
                 top: -12px;
@@ -272,7 +270,7 @@ p {
                 z-index: 0;
             }
 
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 bottom: -25px;
@@ -285,10 +283,10 @@ p {
                 background-size: 300px;
                 z-index: 0;
             }
-        } 
-        
-        &.top{
-            &::before{
+        }
+
+        &.top {
+            &::before {
                 content: "";
                 position: absolute;
                 top: -12px;
@@ -303,8 +301,8 @@ p {
             }
         }
 
-        &.bottom{
-            &::before{
+        &.bottom {
+            &::before {
                 content: "";
                 position: absolute;
                 bottom: -12px;
@@ -338,7 +336,7 @@ p {
         border-image-outset: 15;
         box-shadow: 0 0 0 transparent;
         background-color: #e6dfd4 !important;
-        filter: drop-shadow(-7px 9px 0px rgba(color(primary-darker), .07));
+        filter: drop-shadow(-7px 9px 0px rgba(color(primary-darker), 0.07));
 
         &-2 {
             // border: 1px solid transparent;
@@ -350,7 +348,7 @@ p {
             border-image-outset: 15;
             box-shadow: 0 0 0 transparent;
             background-color: color(background-main) !important;
-            filter: drop-shadow(-7px 9px 0px rgba(color(primary-darker), .07));
+            filter: drop-shadow(-7px 9px 0px rgba(color(primary-darker), 0.07));
         }
 
         &::before {
@@ -410,13 +408,13 @@ body {
 
     // @include screen-xl {
     //     padding: 20px 200px;
-    // }    
+    // }
 
     &.navbar-light {
         .navbar-nav .nav-link {
             color: color(background-main);
         }
-    }    
+    }
 
     &.nav-bg {
         background-color: transparent !important;
@@ -446,7 +444,7 @@ body {
         }
     }
 
-    >.rope-right{
+    > .rope-right {
         position: absolute;
         right: 0;
         bottom: -65px;
@@ -464,40 +462,40 @@ body {
         animation-timing-function: ease-in-out;
         transform-origin: top center;
 
-        @include screen-lg{
+        @include screen-lg {
             right: 65px;
             width: 200px;
             height: 200px;
             bottom: -142px;
         }
 
-        @keyframes swing{
-            0%{
+        @keyframes swing {
+            0% {
                 transform: skewX(0deg);
             }
 
-            50%{
+            50% {
                 transform: skewX(3deg);
             }
 
-            100%{
+            100% {
                 transform: skewX(0deg);
             }
         }
     }
 
-    .navbar__ropes-container{
+    .navbar__ropes-container {
         position: absolute;
         width: 100%;
         height: 100%;
         display: none;
         z-index: 0;
 
-        @include screen-lg{
+        @include screen-lg {
             display: block;
         }
 
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             bottom: -12px;
@@ -509,10 +507,10 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            z-index: 0;            
+            z-index: 0;
         }
 
-        &::after{
+        &::after {
             content: "";
             position: absolute;
             bottom: -14px;
@@ -526,42 +524,42 @@ body {
             background-size: contain;
         }
 
-        @include screen-md{
-            &::before{
+        @include screen-md {
+            &::before {
                 background-position: -20px;
             }
 
-            &::after{
+            &::after {
                 background-position: 80px;
             }
         }
 
-        @include screen-lg{
-            &::before{
+        @include screen-lg {
+            &::before {
                 background-position: -15px;
             }
 
-            &::after{
+            &::after {
                 background-position: 70px;
             }
         }
 
-        @include screen-hd{
-            &::before{
+        @include screen-hd {
+            &::before {
                 background-position: -12px;
             }
 
-            &::after{
+            &::after {
                 background-position: 65px;
             }
         }
     }
 
-    .navbar-content{
+    .navbar-content {
         padding: 12px 20px;
         z-index: 10;
 
-        @include screen-lg{
+        @include screen-lg {
             padding: 12px 160px;
             max-width: 1600px;
         }
@@ -615,12 +613,12 @@ section {
         text-align: center;
         z-index: 1;
 
-        h1{
+        h1 {
             z-index: 10;
             position: relative;
         }
 
-        .header{
+        .header {
             z-index: 0;
         }
     }
@@ -682,6 +680,7 @@ section {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 0;
 
     position: relative;
 
@@ -704,48 +703,64 @@ section {
         }
     }
 
-    .banner__container {
+    .banner-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
         height: 100%;
-    }
+        z-index: 1;
+        padding: 65px 0;
 
-    .backtotop {
-        .backtotop__icon {
-            position: relative;
-            display: block;
-            width: 60px;
-            height: 60px;
-            background: color(primary);
-            border: 1px solid color(primary);
+        filter: drop-shadow(0 0 50px rgba(0, 0, 0, .65));
 
-            &::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                width: 100%;
-                height: 100%;
-                max-height: 46px;
-                max-width: 46px;
-
-                background-image: url(../images/icons/compass-1.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        }
-    }
-
-    .banner__image-wrapper {
         @include screen-lg {
-            margin-right: 42px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .backtotop {
+            .backtotop__icon {
+                position: relative;
+                display: block;
+                width: 60px;
+                height: 60px;
+                background: color(primary);
+                border: 1px solid color(primary);
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    width: 100%;
+                    height: 100%;
+                    max-height: 46px;
+                    max-width: 46px;
+
+                    background-image: url(../images/icons/compass-1.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
         }
 
         .banner__image-holder {
             position: relative;
-            width: 100%;
             height: 100%;
-            min-height: 320px;
+            min-height: 260px;
+            width: 100%;
+            margin-bottom: 22px;
+            flex-shrink: 2;
+
+            @include screen-lg{
+                height: 300px;
+                width: 300px;
+            }
 
             &::after {
                 content: "";
@@ -753,7 +768,7 @@ section {
                 display: block;
                 width: 100%;
                 height: 100%;
-                max-height: 320px;
+                max-height: 260px;
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
@@ -763,25 +778,33 @@ section {
                 background-size: contain;
 
                 @include screen-lg {
-                    background-position: left;
+                    background-position: center;
+                    max-height: unset;
                 }
             }
         }
-    }
 
-    .banner-txt {
-        text-align: center;
+        .banner__txt {
+            flex-grow: 1;
+            text-align: center;
 
-        @include screen-lg {
-            text-align: left;
-        }
+            @include screen-lg {
+                // text-align: left;
+                max-width: 650px;
+                margin-left: 20px;
+            }
 
-        h1 {
-            color: color(background-main);
-        }
+            h1 {
+                color: color(background-main);
+            }
 
-        h3 {
-            padding-bottom: 16px;
+            h3 {
+                padding-bottom: 16px;
+            }
+
+            p {
+                color: color(text-white);
+            }
         }
     }
 }
@@ -792,7 +815,7 @@ section {
     background-color: transparent !important;
     overflow: visible;
 
-    >.anchor-container{
+    > .anchor-container {
         position: absolute;
         top: 0;
         left: 0;
@@ -811,24 +834,21 @@ section {
             background-position: center;
             background-size: contain;
             z-index: 20;
-    
+
             @include screen-md {
                 left: 0;
                 content: "";
             }
-    
+
             @include screen-lg {
                 left: 100px;
             }
-    
+
             @include screen-xxl {
                 left: 360px;
             }
         }
-
     }
-
-  
 
     .coun_time {
         h2 {
@@ -914,7 +934,7 @@ section {
 #event {
     padding: 90px 0 10px 0;
 
-    @include screen-lg{
+    @include screen-lg {
         padding: 90px 0;
     }
 
@@ -954,12 +974,12 @@ section {
             right: 8px;
             z-index: 1;
 
-            @include screen-lg{
+            @include screen-lg {
                 width: 80px;
                 height: 80px;
             }
 
-            @include screen-xl{
+            @include screen-xl {
                 width: 100px;
                 height: 100px;
             }
@@ -986,15 +1006,14 @@ section {
         background-size: contain;
         z-index: -1;
 
-        @include screen-lg{
+        @include screen-lg {
             width: 650px;
             height: 100%;
             left: -300px;
             top: 0;
         }
 
-        @include screen-xl{           
-           
+        @include screen-xl {
             width: 800px;
             left: -400px;
             background-position: right;
@@ -1003,7 +1022,7 @@ section {
 
     @include screen-lg {
         padding: 100px 0 65px 0;
-        position: relative;       
+        position: relative;
 
         .count-item {
             background-color: rgba($color: #fff, $alpha: 0.65);
@@ -1023,13 +1042,13 @@ section {
             height: 42px;
             width: 42px;
             display: inline-block;
-            margin-right: 6px;            
+            margin-right: 6px;
 
-            @include screen-xl{
+            @include screen-xl {
                 height: 50px;
                 width: 50px;
 
-                &.ship-surrender{
+                &.ship-surrender {
                     height: 60px;
                     width: 60px;
                     margin-top: -12px;
@@ -1190,7 +1209,7 @@ section {
                             background-image: url(../images/icons/icon-pirate-hat.svg);
                             @include bckgrnd-img--contain;
 
-                            @include screen-lg{
+                            @include screen-lg {
                                 height: 80px;
                                 width: 80px;
                             }
@@ -1390,26 +1409,26 @@ section {
 #route-section {
     padding: 60px 0;
 
-    .route-section__heading{
+    .route-section__heading {
         padding-bottom: 60px;
     }
 
     .route-section__item {
         position: relative;
 
-        .route-section__img-container{
-            order: 2;            
+        .route-section__img-container {
+            order: 2;
 
-            @include screen-lg{
+            @include screen-lg {
                 order: unset;
             }
         }
 
-        .route-section__text{
+        .route-section__text {
             order: 1;
             padding-bottom: 20px;
 
-            @include screen-lg{
+            @include screen-lg {
                 order: unset;
                 padding-bottom: initial;
             }
@@ -1422,7 +1441,7 @@ section {
         height: 60px;
         overflow: visible;
 
-        @include screen-lg{
+        @include screen-lg {
             height: 200px;
         }
 
@@ -1434,7 +1453,7 @@ section {
             left: 50%;
             transform: translateX(-50%) translateY(-50%) rotate(10deg);
             width: 100%;
-            height: 100%;           
+            height: 100%;
 
             background-image: url(../images/background-images/dotted-line-01.png);
             background-position: center;
@@ -1455,7 +1474,7 @@ section {
             &::after {
                 top: 0;
                 left: 0;
-                transform: scaleX(-1) rotate(20deg);                
+                transform: scaleX(-1) rotate(20deg);
             }
         }
     }
@@ -1468,7 +1487,7 @@ section {
     background: transparent;
     padding: 0 0 65px 0;
 
-    .price-pa{
+    .price-pa {
         padding: 0;
     }
 
@@ -1505,16 +1524,16 @@ section {
                 color: color(text-light);
             }
         }
-    }   
+    }
 
-    .price-btn > a > i {        
+    .price-btn > a > i {
         display: inline-block;
         background-color: color(primary);
         background-size: 26px 26px;
         background-repeat: no-repeat;
         background-position: 56% 50%;
         transform: rotate(90deg);
-        
+
         border-color: color(primary);
     }
 }
@@ -1589,7 +1608,7 @@ section {
         &::after {
             content: none;
 
-            @include screen-lg{
+            @include screen-lg {
                 content: "";
                 background: color(primary);
             }
@@ -1605,7 +1624,7 @@ section {
             background-repeat: no-repeat;
             background-position: center;
 
-            &.icon.fishes{
+            &.icon.fishes {
                 background-position: 40% 50%;
             }
         }
@@ -1657,14 +1676,14 @@ section {
         margin-top: 120px;
         margin-bottom: 80px;
 
-        @include screen-lg{
+        @include screen-lg {
             margin-bottom: 30px;
         }
     }
     .faq__list {
         padding: 0 0 24px 0;
 
-        @include screen-lg{
+        @include screen-lg {
             padding: 64px 0;
         }
 
@@ -1674,7 +1693,7 @@ section {
             background-color: transparent;
             border: none;
 
-            &:not(:first-of-type){
+            &:not(:first-of-type) {
                 margin-top: 12px;
             }
 
@@ -1682,7 +1701,7 @@ section {
                 background-color: transparent;
                 border: none;
                 padding: 0;
-                transition: all .2s;
+                transition: all 0.2s;
 
                 .btn.btn-primary {
                     display: flex;
@@ -1690,8 +1709,8 @@ section {
                     justify-content: space-between;
                     align-items: center;
                     position: relative;
-                    width: 100%;      
-                    border-radius: 4px 4px 0 0;              
+                    width: 100%;
+                    border-radius: 4px 4px 0 0;
                     text-align: left;
                     background-color: color(graphics);
                     border: none;
@@ -1702,8 +1721,8 @@ section {
                         box-shadow: none !important;
                     }
 
-                    &::after{
-                        content: "";                                              
+                    &::after {
+                        content: "";
                         width: 22px;
                         height: 22px;
                         min-width: 22px;
@@ -1712,20 +1731,20 @@ section {
                         background-repeat: no-repeat;
                         background-position: right center;
                         background-size: contain;
-                        transition: all .3s;         
-                    }                    
+                        transition: all 0.3s;
+                    }
 
-                    &.collapsed{
+                    &.collapsed {
                         border-radius: 4px;
                         padding-top: 10px;
                         padding-bottom: 10px;
-                        &::after{
+                        &::after {
                             background-image: url(../images/buttons/button-open.svg);
-                            transition: all .3s;  
+                            transition: all 0.3s;
                         }
                     }
 
-                    >h3{
+                    > h3 {
                         display: block;
                         color: color(text-white);
                         font-size: 24px;
@@ -1738,17 +1757,17 @@ section {
             .faq__list-item-content {
                 width: 100%;
                 padding: 0px 30px;
-                transition: all .2s;
+                transition: all 0.2s;
                 transition-delay: all 0s;
-                background-color: rgba($color: color(graphics-light), $alpha: .3);
+                background-color: rgba($color: color(graphics-light), $alpha: 0.3);
                 font-size: 16px;
-               
-                &.collapsing{
-                    transition: all .2s;
-                    padding: 0 30px;                   
+
+                &.collapsing {
+                    transition: all 0.2s;
+                    padding: 0 30px;
                 }
 
-                &.show{                    
+                &.show {
                     padding: 24px 30px;
                     border-radius: 0 0 4px 4px;
                 }
@@ -1770,7 +1789,7 @@ section {
             width: 100%;
             text-align: center;
 
-            @include screen-lg{
+            @include screen-lg {
                 min-height: 800px;
             }
 
@@ -1795,7 +1814,7 @@ section {
             color: color(text-light);
             padding-bottom: 30px;
 
-            @include screen-lg{
+            @include screen-lg {
                 padding-bottom: 40px;
             }
         }
@@ -1807,10 +1826,10 @@ section {
             width: max-content;
         }
 
-        .about-s{
+        .about-s {
             padding-top: 30px;
 
-            @include screen-lg{
+            @include screen-lg {
                 padding-bottom: 40px;
             }
         }
