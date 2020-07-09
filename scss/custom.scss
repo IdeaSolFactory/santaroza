@@ -1602,6 +1602,12 @@ section {
 
     .route-section__heading {
         padding-bottom: 60px;
+
+        .section-title{
+            @include screen-lg{
+                margin: 165px 0 65px 0;
+            }
+        }
     }
 
     .route-section__item {
