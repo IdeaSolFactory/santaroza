@@ -902,7 +902,7 @@ section {
         }
 
         p {
-            color: white;
+            color: color(text-white);
         }
 
         #second ~ .coming-data2 {
@@ -963,7 +963,7 @@ section {
     }
 
     .banner-2__aside-text {
-        color: white;
+        color: color(text-white);
         padding-top: 55px;
 
         @include screen-sm {

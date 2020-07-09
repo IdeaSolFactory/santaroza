@@ -918,7 +918,7 @@ section .header.header--style-4::after {
 }
 
 #banner-2 .coun_time p {
-  color: white;
+  color: #ede9df;
 }
 
 @media (min-width: 1200px) {
@@ -950,7 +950,7 @@ section .header.header--style-4::after {
 }
 
 #banner-2 .banner-2__aside-text {
-  color: white;
+  color: #ede9df;
   padding-top: 55px;
 }
 
