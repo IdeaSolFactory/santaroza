@@ -1577,6 +1577,7 @@ section .header.header--style-4::after {
 @media (min-width: 992px) {
   #price {
     margin-top: 170px;
+    margin-bottom: 55px;
   }
 }
 
