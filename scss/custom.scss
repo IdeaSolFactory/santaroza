@@ -983,7 +983,7 @@ section {
 
     @include screen-lg {     
         padding: 90px 0 40px 0;   
-        margin-top: 100px;
+        margin-top: 140px;
     }
 
     .event__item{
@@ -1255,6 +1255,12 @@ section {
     padding: 0;
     background: transparent;
 
+    .section-title{
+        @include screen-lg{
+            margin-top: 120px;
+        }
+    }
+
     .schedule__table-container {
         height: auto;
 
@@ -1262,6 +1268,10 @@ section {
             width: 100%;
             position: relative;
             display: block;
+
+            @include screen-lg{
+                margin-top: 40px;
+            }
 
             .schedule__item-bckgrnd {
                 position: absolute;
@@ -1481,7 +1491,8 @@ section {
         max-height: unset;
         touch-action: auto !important;
 
-        .schedule-item {
+        .schedule-item {           
+
             h3 {
                 color: color(text);
                 &::after {
