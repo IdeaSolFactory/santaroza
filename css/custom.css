@@ -1251,10 +1251,12 @@ section .header.header--style-4::after {
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__item-header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {
   #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__item-header {
+    margin-bottom: 12px;
     text-align: left;
   }
 }
@@ -1271,10 +1273,10 @@ section .header.header--style-4::after {
   background-position: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__item-header .schedule__item-img {
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -1282,8 +1284,14 @@ section .header.header--style-4::after {
   display: inline-block;
   vertical-align: middle;
   padding-top: 5px;
-  padding-left: 12px;
-  font-size: 35px;
+  padding-left: 16px;
+  font-size: 24px;
+}
+
+@media (min-width: 992px) {
+  #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__item-header h3 {
+    font-size: 24px;
+  }
 }
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__item-header p {
@@ -1293,9 +1301,11 @@ section .header.header--style-4::after {
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row {
   padding-top: 20px;
-  margin-top: 20px;
-  padding-bottom: 20px;
   position: relative;
+}
+
+#schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row:not(:last-of-type) {
+  padding-bottom: 20px;
 }
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row::before {
@@ -1338,7 +1348,7 @@ section .header.header--style-4::after {
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row .schedule__timetable > li {
   line-height: 32x;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   color: #bf382b;
   text-align: center;
