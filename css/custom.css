@@ -1082,7 +1082,7 @@ section .header.header--style-4::after {
 }
 
 #counter::after {
-  content: "";
+  content: none;
   position: absolute;
   display: block;
   left: 0;

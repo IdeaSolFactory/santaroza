@@ -1078,7 +1078,7 @@ section {
     }
 
     &::after {
-        content: "";
+        content: none;
         position: absolute;
         display: block;
         left: 0;
