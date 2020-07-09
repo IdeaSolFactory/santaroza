@@ -1914,7 +1914,6 @@ section .header.header--style-4::after {
 @media (min-width: 1200px) {
   #about .about-img .main-img {
     padding-bottom: 0;
-    min-height: 800px;
   }
 }
 
