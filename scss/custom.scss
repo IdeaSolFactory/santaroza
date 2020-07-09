@@ -2,12 +2,32 @@
 @import "mediaqueries";
 @import "mixins";
 
+@font-face{
+    font-family: bangers;
+    src: url(../fonts/Bangers-Regular.ttf);
+}
+
+@font-face {
+    src: url(../fonts/BarlowCondensed-Bold.ttf);
+    font-family: bb;
+}
+
+@font-face {
+    src: url(../fonts/BarlowCondensed-Light.ttf);
+    font-family: bl;
+}
+
+@font-face {
+    src: url(../fonts/BarlowCondensed-Regular.ttf);
+    font-family: br;
+}
+
 /* TEXT */
 
 h1,
 h2,
 h3 {
-    font-family: "Bangers", cursive !important;
+    font-family: bangers !important;
     letter-spacing: 2px;
     color: color(text);
 }

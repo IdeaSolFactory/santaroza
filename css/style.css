@@ -122,7 +122,7 @@
       height: 100%;
   }
   
-  @font-face {
+  /* @font-face {
       src: url(../fonts/BarlowCondensed-Bold.ttf);
       font-family: bb;
   }
@@ -135,12 +135,12 @@
   @font-face {
       src: url(../fonts/BarlowCondensed-Regular.ttf);
       font-family: br;
-  }
+  } */
   
-  @font-face {
+  /* @font-face {
       src: url(../fonts/Parisienne-Regular.ttf);
       font-family: pr;
-  }
+  } */
   
   /* Version 2 */
   .particles-js-canvas-el {
