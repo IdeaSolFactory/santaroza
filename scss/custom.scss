@@ -1175,7 +1175,7 @@ section {
 
     .schedule-prices__bg {
         position: absolute;
-        top: 0;
+        top: 135px;
         left: 0;
         width: 100%;
         height: 100%;
@@ -1520,6 +1520,78 @@ section {
     }
 }
 
+/* PRICE SECTION */
+#price {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    padding: 0 0 65px 0;
+
+    @include screen-lg{
+        margin-top: 100px;
+    }
+
+    .section-title{
+        margin-top: 145px;
+        margin-bottom: 65px;
+
+        @include screen-lg{
+            margin-top: 145px;
+        margin-bottom: 120px;
+        }
+    }
+
+    .price-pa {
+        padding: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        width: 100%;
+        height: 100%;
+
+        // background-image: url(../images/background-images/bckgrnd-map-sepia-01.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.15;
+        filter: grayscale(1);
+    }
+
+    .price-item {
+        z-index: 1;
+
+        .price-tag > span {
+            color: color(primary);
+        }
+
+        h3 {
+            color: color(text);
+        }
+
+        .gap-p {
+            p,
+            i {
+                color: color(text-light);
+            }
+        }
+    }
+
+    .price-btn > a > i {
+        display: inline-block;
+        background-color: color(primary);
+        background-size: 26px 26px;
+        background-repeat: no-repeat;
+        background-position: 56% 50%;
+        transform: rotate(90deg);
+
+        border-color: color(primary);
+    }
+}
+
 /* ROUTE SECTION */
 #route-section {
     padding: 60px 0;
@@ -1615,74 +1687,6 @@ section {
                 }
             }
         }
-    }
-}
-
-/* PRICE SECTION */
-#price {
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-    padding: 0 0 65px 0;
-
-    .section-title{
-        margin-top: 145px;
-        margin-bottom: 65px;
-
-        @include screen-lg{
-            margin-top: 145px;
-        margin-bottom: 90px;
-        }
-    }
-
-    .price-pa {
-        padding: 0;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: -50px;
-        left: -100px;
-        width: 100%;
-        height: 100%;
-
-        // background-image: url(../images/background-images/bckgrnd-map-sepia-01.jpg);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: contain;
-        opacity: 0.15;
-        filter: grayscale(1);
-    }
-
-    .price-item {
-        z-index: 1;
-
-        .price-tag > span {
-            color: color(primary);
-        }
-
-        h3 {
-            color: color(text);
-        }
-
-        .gap-p {
-            p,
-            i {
-                color: color(text-light);
-            }
-        }
-    }
-
-    .price-btn > a > i {
-        display: inline-block;
-        background-color: color(primary);
-        background-size: 26px 26px;
-        background-repeat: no-repeat;
-        background-position: 56% 50%;
-        transform: rotate(90deg);
-
-        border-color: color(primary);
     }
 }
 
