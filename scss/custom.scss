@@ -26,7 +26,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
     font-family: bangers !important;
     letter-spacing: 2px;
     color: color(text);
@@ -1598,7 +1599,7 @@ section {
     padding: 60px 0;
 
     @include screen-lg{
-        padding: 0 0 60px 0;
+        padding: 0 0 90px 0;
     }
 
     .route-section__heading {
@@ -2021,7 +2022,14 @@ section {
 
             @include screen-lg {
                 padding-bottom: 0;
+                padding-top: 0;
             }
+
+            p{                 
+                text-align: right;
+                font-style: italic;
+            }
+
         }
     }
 }

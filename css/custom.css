@@ -22,7 +22,8 @@
 /* TEXT */
 h1,
 h2,
-h3 {
+h3,
+h5 {
   font-family: bangers !important;
   letter-spacing: 2px;
   color: #474341;
@@ -1647,7 +1648,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #route-section {
-    padding: 0 0 60px 0;
+    padding: 0 0 90px 0;
   }
 }
 
@@ -2131,7 +2132,13 @@ section .header.header--style-4::after {
 @media (min-width: 992px) {
   #about .about-txt .about-s {
     padding-bottom: 0;
+    padding-top: 0;
   }
+}
+
+#about .about-txt .about-s p {
+  text-align: right;
+  font-style: italic;
 }
 
 /* REGISTER SECTION */
