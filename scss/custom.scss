@@ -959,8 +959,10 @@ section {
 /* EVENTS SECTION */
 #event {
     
+    padding: 80px 0 0 0;
 
-    @include screen-lg {        
+    @include screen-lg {     
+        padding: 90px 0 40px 0;   
         margin-top: 100px;
     }
 
@@ -1046,6 +1048,15 @@ section {
     padding: 260px 0 20px 0;
     position: relative;
 
+    @include screen-lg {
+        padding: 100px 0 60px 0;
+        position: relative;
+
+        .count-item {
+            background-color: rgba($color: #fff, $alpha: 0.65);
+        }
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -1054,32 +1065,39 @@ section {
         top: -65px;
         height: 400px;
         width: 400px;
-        background-image: url(../images/background-images/illustration-bckgrnd-01.png);
+        background-image: url(../images/background-images/bg-booty-mobile.jpg);
         background-position: -150px;
         background-repeat: no-repeat;
         background-size: contain;
+        opacity: .65;
         z-index: -1;
+
+        @include screen-md{
+            background-image: url(../images/background-images/bg-booty.jpg);
+
+        }
 
         @include screen-lg {
             width: 650px;
-            height: 100%;
-            left: -300px;
+            left: -100px;
             top: 0;
         }
 
         @include screen-xl {
             width: 800px;
-            left: -400px;
+            left: -300px;
             background-position: right;
         }
     }
+    
+    .counter__container{
+        
+        @include screen-lg{
+            margin-top: 180px;
+        }
 
-    @include screen-lg {
-        padding: 100px 0 65px 0;
-        position: relative;
-
-        .count-item {
-            background-color: rgba($color: #fff, $alpha: 0.65);
+        @include screen-xl{
+            margin-top: 60px;
         }
     }
 

@@ -947,8 +947,13 @@ section .header.header--style-4::after {
 }
 
 /* EVENTS SECTION */
+#event {
+  padding: 80px 0 0 0;
+}
+
 @media (min-width: 992px) {
   #event {
+    padding: 90px 0 40px 0;
     margin-top: 100px;
   }
 }
@@ -1046,6 +1051,16 @@ section .header.header--style-4::after {
   position: relative;
 }
 
+@media (min-width: 992px) {
+  #counter {
+    padding: 100px 0 60px 0;
+    position: relative;
+  }
+  #counter .count-item {
+    background-color: rgba(255, 255, 255, 0.65);
+  }
+}
+
 #counter::after {
   content: "";
   position: absolute;
@@ -1054,18 +1069,24 @@ section .header.header--style-4::after {
   top: -65px;
   height: 400px;
   width: 400px;
-  background-image: url(../images/background-images/illustration-bckgrnd-01.png);
+  background-image: url(../images/background-images/bg-booty-mobile.jpg);
   background-position: -150px;
   background-repeat: no-repeat;
   background-size: contain;
+  opacity: .65;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  #counter::after {
+    background-image: url(../images/background-images/bg-booty.jpg);
+  }
 }
 
 @media (min-width: 992px) {
   #counter::after {
     width: 650px;
-    height: 100%;
-    left: -300px;
+    left: -100px;
     top: 0;
   }
 }
@@ -1073,18 +1094,20 @@ section .header.header--style-4::after {
 @media (min-width: 1200px) {
   #counter::after {
     width: 800px;
-    left: -400px;
+    left: -300px;
     background-position: right;
   }
 }
 
 @media (min-width: 992px) {
-  #counter {
-    padding: 100px 0 65px 0;
-    position: relative;
+  #counter .counter__container {
+    margin-top: 180px;
   }
-  #counter .count-item {
-    background-color: rgba(255, 255, 255, 0.65);
+}
+
+@media (min-width: 1200px) {
+  #counter .counter__container {
+    margin-top: 60px;
   }
 }
 
