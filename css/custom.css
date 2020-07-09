@@ -933,18 +933,22 @@ section .header.header--style-4::after {
 }
 
 /* EVENTS SECTION */
-#event {
-  padding: 90px 0 10px 0;
-}
-
 @media (min-width: 992px) {
   #event {
-    padding: 90px 0 30px 0;
-    margin-top: 40px;
+    margin-top: 100px;
   }
 }
 
 #event .event-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 42px 0;
 }
 
@@ -961,6 +965,12 @@ section .header.header--style-4::after {
 #event .event-header p {
   color: #686460;
   padding: 0 0 24px 0;
+}
+
+@media (min-width: 992px) {
+  #event .about-item {
+    padding-bottom: 90px;
+  }
 }
 
 #event .about-item h3 {

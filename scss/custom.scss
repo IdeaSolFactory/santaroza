@@ -950,19 +950,25 @@ section {
 
 /* EVENTS SECTION */
 #event {
-    padding: 90px 0 10px 0;
+    
 
-    @include screen-lg {
-        padding: 90px 0 30px 0;
-        margin-top: 40px;
+    @include screen-lg {        
+        margin-top: 100px;
     }
 
     .event-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 42px 0;
-
+        
         @include screen-lg{
             margin: 0;
         }
+
+        // .event-header__content{
+
+        // }
 
         h3 {
             color: color(primary);
@@ -973,7 +979,9 @@ section {
         }
     }
     .about-item {
-        // overflow: hidden;
+        @include screen-lg{
+            padding-bottom: 90px;
+        }
 
         h3 {
             padding-right: 40px;
