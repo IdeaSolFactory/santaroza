@@ -1552,6 +1552,7 @@ section .header.header--style-4::after {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -1559,6 +1560,22 @@ section .header.header--style-4::after {
     -webkit-box-ordinal-group: unset;
         -ms-flex-order: unset;
             order: unset;
+  }
+}
+
+#route-section .route-section__item .route-section__img-container .route-section__img {
+  max-height: 360px;
+}
+
+@media (min-width: 768px) {
+  #route-section .route-section__item .route-section__img-container .route-section__img {
+    max-height: 480px;
+  }
+}
+
+@media (min-width: 992px) {
+  #route-section .route-section__item .route-section__img-container .route-section__img {
+    max-height: 600px;
   }
 }
 

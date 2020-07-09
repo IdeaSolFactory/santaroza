@@ -1502,9 +1502,22 @@ section {
 
         .route-section__img-container {
             order: 2;
+            text-align: center;
 
             @include screen-lg {
                 order: unset;
+            }
+
+            .route-section__img{
+                max-height: 360px;
+
+                @include screen-md{
+                    max-height: 480px;
+                }
+
+                @include screen-lg{
+                    max-height: 600px;
+                }
             }
         }
 
