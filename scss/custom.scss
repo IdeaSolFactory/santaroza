@@ -956,6 +956,16 @@ section {
         margin-top: 100px;
     }
 
+    .event__item{
+        &:not(:first-of-type){
+            margin-top: 20px;
+
+            @include screen-lg{
+                margin-top: unset;
+            }
+        }
+    }
+
     .event-header {
         display: flex;
         justify-content: center;
@@ -963,7 +973,7 @@ section {
         margin: 42px 0;
         
         @include screen-lg{
-            margin: 0;
+            margin: 0;           
         }
 
         // .event-header__content{
@@ -979,7 +989,9 @@ section {
         }
     }
     .about-item {
+
         @include screen-lg{
+            order: unset;
             padding-bottom: 90px;
         }
 

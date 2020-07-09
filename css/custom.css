@@ -939,6 +939,16 @@ section .header.header--style-4::after {
   }
 }
 
+#event .event__item:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  #event .event__item:not(:first-of-type) {
+    margin-top: unset;
+  }
+}
+
 #event .event-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,6 +979,9 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #event .about-item {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
     padding-bottom: 90px;
   }
 }
