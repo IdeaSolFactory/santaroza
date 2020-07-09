@@ -919,7 +919,18 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #event {
-    padding: 90px 0;
+    padding: 90px 0 30px 0;
+    margin-top: 40px;
+  }
+}
+
+#event .event-header {
+  margin: 42px 0;
+}
+
+@media (min-width: 992px) {
+  #event .event-header {
+    margin: 0;
   }
 }
 
@@ -929,6 +940,7 @@ section .header.header--style-4::after {
 
 #event .event-header p {
   color: #686460;
+  padding: 0 0 24px 0;
 }
 
 #event .about-item h3 {

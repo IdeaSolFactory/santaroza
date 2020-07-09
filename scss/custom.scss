@@ -935,15 +935,23 @@ section {
     padding: 90px 0 10px 0;
 
     @include screen-lg {
-        padding: 90px 0;
+        padding: 90px 0 30px 0;
+        margin-top: 40px;
     }
 
     .event-header {
+        margin: 42px 0;
+
+        @include screen-lg{
+            margin: 0;
+        }
+
         h3 {
             color: color(primary);
         }
         p {
             color: color(text-light);
+            padding: 0 0 24px 0;
         }
     }
     .about-item {
