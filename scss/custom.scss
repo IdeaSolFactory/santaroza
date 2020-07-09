@@ -1835,6 +1835,11 @@ section {
 
 /* FAQ SECTION */
 #faq {
+
+    @include screen-lg{
+        margin-bottom: 42px;
+    }
+
     .section-title {
         margin-top: 120px;
         margin-bottom: 80px;
@@ -1944,7 +1949,8 @@ section {
     background-color: color(background-dark);
 
     @include screen-lg{
-        padding-bottom: 45px;
+        margin-bottom: 0;
+        padding-bottom: 65px;
     }
 
     .about-img {
@@ -2003,7 +2009,6 @@ section {
         a {
             background: color(primary);
             display: block;
-            margin: 0 auto;
             width: max-content;
             font-size: 19px;
             font-weight: normal;
@@ -2024,8 +2029,14 @@ section {
 /* REGISTER SECTION */
 #register {
 
-    @include screen-lg{
-        padding-top: 40px;
+    @include screen-lg{        
+        padding-top: 0;
+    }
+
+    .section-title{
+        @include screen-lg{
+            margin: 125px 0 90px 0;
+        }        
     }
 
     .register-pa{

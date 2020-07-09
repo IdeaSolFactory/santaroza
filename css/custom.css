@@ -1909,6 +1909,12 @@ section .header.header--style-4::after {
 }
 
 /* FAQ SECTION */
+@media (min-width: 992px) {
+  #faq {
+    margin-bottom: 42px;
+  }
+}
+
 #faq .section-title {
   margin-top: 120px;
   margin-bottom: 80px;
@@ -2041,7 +2047,8 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #about {
-    padding-bottom: 45px;
+    margin-bottom: 0;
+    padding-bottom: 65px;
   }
 }
 
@@ -2108,7 +2115,6 @@ section .header.header--style-4::after {
 #about .about-txt a {
   background: #bf382b;
   display: block;
-  margin: 0 auto;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -2131,7 +2137,13 @@ section .header.header--style-4::after {
 /* REGISTER SECTION */
 @media (min-width: 992px) {
   #register {
-    padding-top: 40px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #register .section-title {
+    margin: 125px 0 90px 0;
   }
 }
 
