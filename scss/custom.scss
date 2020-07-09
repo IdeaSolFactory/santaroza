@@ -157,7 +157,11 @@ p {
 
 .btn--style1 {
     color: color(text-white) !important;
-    font-size: 19px;
+    font-size: 19px !important;
+    font-family: br !important;
+    font-weight: normal !important;
+    text-transform: none !important;
+    border: none !important;
 
     &::before {
         content: "";
@@ -1870,6 +1874,10 @@ section {
             display: block;
             margin: 0 auto;
             width: max-content;
+            font-size: 19px;
+            font-weight: normal;
+            text-transform: none;
+            font-family: br;
         }
 
         .about-s {
