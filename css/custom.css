@@ -2142,6 +2142,27 @@ section .header.header--style-4::after {
   font-style: italic;
 }
 
+/* BOOKING SECTION */
+#booking {
+  padding: 25px 0;
+}
+
+#booking .section-title {
+  margin-bottom: 100px;
+}
+
+#booking .booking__img-holder {
+  width: 100%;
+  height: 100%;
+}
+
+#booking .booking__img-holder > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* REGISTER SECTION */
 @media (min-width: 992px) {
   #register {
