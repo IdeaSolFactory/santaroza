@@ -28,7 +28,7 @@ h1,
 h2,
 h3,
 h5 {
-    font-family: bangers !important;
+    font-family: bangers;
     letter-spacing: 2px;
     color: color(text);
 }
@@ -1914,6 +1914,7 @@ section {
                     }
 
                     > h3 {
+                        font-family: bb;
                         display: block;
                         color: color(text-white);
                         font-size: 24px;

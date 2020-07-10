@@ -24,7 +24,7 @@ h1,
 h2,
 h3,
 h5 {
-  font-family: bangers !important;
+  font-family: bangers;
   letter-spacing: 2px;
   color: #474341;
 }
@@ -2012,6 +2012,7 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
+  font-family: bb;
   display: block;
   color: #ede9df;
   font-size: 24px;
