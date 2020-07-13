@@ -2152,6 +2152,7 @@ section .header.header--style-4::after {
 
 /* BOOKING SECTION */
 #booking {
+  display: none;
   padding: 25px 0;
 }
 
@@ -2172,6 +2173,10 @@ section .header.header--style-4::after {
 }
 
 /* REGISTER SECTION */
+#register {
+  display: none;
+}
+
 @media (min-width: 992px) {
   #register {
     padding-top: 0;

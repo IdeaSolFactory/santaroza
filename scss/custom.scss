@@ -2036,6 +2036,7 @@ section {
 
 /* BOOKING SECTION */
 #booking {
+    display: none;
     padding: 25px 0;
 
     .section-title {
@@ -2056,6 +2057,9 @@ section {
 
 /* REGISTER SECTION */
 #register {
+
+    display: none;
+
     @include screen-lg {
         padding-top: 0;
     }
