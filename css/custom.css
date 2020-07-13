@@ -1667,6 +1667,20 @@ section .header.header--style-4::after {
   border-color: #bf382b;
 }
 
+#price .price-item__container .price__img-holder {
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#price .price-item__container .price__img-holder > img {
+  display: inline-block;
+  width: auto;
+  height: 180px;
+  text-align: center;
+}
+
 /* ROUTE SECTION */
 #route-section {
   padding: 60px 0;
