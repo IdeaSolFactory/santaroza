@@ -2006,6 +2006,13 @@ section .header.header--style-4::after {
   border: none;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  padding: 21px 16px;
+}
+
+@media (min-width: 992px) {
+  #faq .faq__list .faq__list-item .card-header .btn.btn-primary {
+    padding: 21px 20px;
+  }
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary:hover, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:active, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:focus, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:visited {

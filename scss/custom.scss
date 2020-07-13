@@ -1900,6 +1900,11 @@ section {
                     background-color: color(graphics);
                     border: none;
                     transition: all .2s ease-in-out;
+                    padding: 21px 16px;
+
+                    @include screen-lg{
+                        padding: 21px 20px;
+                    }
 
                     @include hover-state--all {
                         background-color: color(primary);
