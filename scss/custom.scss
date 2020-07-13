@@ -2,7 +2,7 @@
 @import "mediaqueries";
 @import "mixins";
 
-@font-face{
+@font-face {
     font-family: bangers;
     src: url(../fonts/Bangers-Regular.ttf);
 }
@@ -185,8 +185,8 @@ p {
     text-transform: none !important;
     border: none !important;
     border-radius: 50px !important;
-    
-    @include screen-lg{
+
+    @include screen-lg {
         padding: 20px 22px !important;
     }
 
@@ -369,7 +369,7 @@ p {
         background-color: #e6dfd4 !important;
         filter: drop-shadow(0px 9px 0 rgba(color(primary-darker), 0.07));
 
-        @include screen-xl{
+        @include screen-xl {
             filter: drop-shadow(-7px 9px 0 rgba(color(primary-darker), 0.07));
         }
 
@@ -385,7 +385,7 @@ p {
             background-color: color(background-main) !important;
             filter: drop-shadow(0px 9px 0 rgba(color(primary-darker), 0.07));
 
-            @include screen-xl{
+            @include screen-xl {
                 filter: drop-shadow(-7px 9px 0 rgba(color(primary-darker), 0.07));
             }
         }
@@ -606,8 +606,8 @@ body {
 
     .navbar-nav {
         align-items: center;
-        
-        .nav-btn{
+
+        .nav-btn {
             height: unset;
             width: unset;
             background: none;
@@ -788,7 +788,7 @@ section {
         z-index: 1;
         padding: 65px 0;
 
-        filter: drop-shadow(0 0 50px rgba(0, 0, 0, .65));
+        filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.65));
 
         @include screen-lg {
             flex-direction: row;
@@ -805,7 +805,7 @@ section {
             margin-bottom: 22px;
             flex-shrink: 2;
 
-            @include screen-lg{
+            @include screen-lg {
                 height: 300px;
                 width: 300px;
             }
@@ -980,19 +980,18 @@ section {
 
 /* EVENTS SECTION */
 #event {
-    
     padding: 80px 0 0 0;
 
-    @include screen-lg {     
-        padding: 90px 0 40px 0;   
+    @include screen-lg {
+        padding: 90px 0 40px 0;
         margin-top: 140px;
     }
 
-    .event__item{
-        &:not(:first-of-type){
+    .event__item {
+        &:not(:first-of-type) {
             margin-top: 20px;
 
-            @include screen-lg{
+            @include screen-lg {
                 margin-top: unset;
             }
         }
@@ -1003,9 +1002,9 @@ section {
         justify-content: center;
         align-items: center;
         margin: 42px 0;
-        
-        @include screen-lg{
-            margin: 0;           
+
+        @include screen-lg {
+            margin: 0;
         }
 
         // .event-header__content{
@@ -1021,8 +1020,7 @@ section {
         }
     }
     .about-item {
-
-        @include screen-lg{
+        @include screen-lg {
             order: unset;
             padding-bottom: 90px;
         }
@@ -1091,12 +1089,11 @@ section {
         background-position: -150px;
         background-repeat: no-repeat;
         background-size: contain;
-        opacity: .65;
+        opacity: 0.65;
         z-index: -1;
 
-        @include screen-md{
+        @include screen-md {
             background-image: url(../images/background-images/bg-booty.jpg);
-
         }
 
         @include screen-lg {
@@ -1111,14 +1108,13 @@ section {
             background-position: right;
         }
     }
-    
-    .counter__container{
-        
-        @include screen-lg{
+
+    .counter__container {
+        @include screen-lg {
             margin-top: 180px;
         }
 
-        @include screen-xl{
+        @include screen-xl {
             margin-top: 60px;
         }
     }
@@ -1257,11 +1253,10 @@ section {
     padding: 0;
     background: transparent;
 
-    .section-title{
-
+    .section-title {
         margin-bottom: 80px;
 
-        @include screen-lg{
+        @include screen-lg {
             margin-top: 110px;
             margin-bottom: 45px;
         }
@@ -1275,7 +1270,7 @@ section {
             position: relative;
             display: block;
 
-            @include screen-lg{
+            @include screen-lg {
                 margin-top: 40px;
             }
 
@@ -1321,7 +1316,7 @@ section {
 
                             @include screen-xl {
                                 height: 100px;
-                                width: 100px;                                
+                                width: 100px;
                             }
                         }
 
@@ -1332,7 +1327,7 @@ section {
                             padding-left: 16px;
                             font-size: 24px;
 
-                            @include screen-lg{
+                            @include screen-lg {
                                 font-size: 24px;
                             }
                         }
@@ -1344,10 +1339,10 @@ section {
                     }
 
                     .schedule__timetable-row {
-                        padding-top: 20px;                        
+                        padding-top: 20px;
                         position: relative;
-                        
-                        &:not(:last-of-type){
+
+                        &:not(:last-of-type) {
                             padding-bottom: 20px;
                         }
 
@@ -1497,8 +1492,7 @@ section {
         max-height: unset;
         touch-action: auto !important;
 
-        .schedule-item {           
-
+        .schedule-item {
             h3 {
                 color: color(text);
                 &::after {
@@ -1529,23 +1523,23 @@ section {
     background: transparent;
     padding: 0 0 65px 0;
 
-    @include screen-lg{
+    @include screen-lg {
         margin-top: 170px;
         margin-bottom: 55px;
     }
 
-    .section-title{
+    .section-title {
         margin-top: 145px;
         margin-bottom: 65px;
 
-        @include screen-lg{
+        @include screen-lg {
             margin-top: 145px;
-        margin-bottom: 120px;
+            margin-bottom: 120px;
         }
     }
 
     .price-pa {
-        padding: 0;
+        padding: 0;      
     }
 
     &::before {
@@ -1564,34 +1558,41 @@ section {
         filter: grayscale(1);
     }
 
-    .price-item {
-        z-index: 1;
-
-        .price-tag > span {
-            color: color(primary);
+    .price-item__container {   
+        
+        @include screen-lg{
+            padding: 0 12px;
         }
 
-        h3 {
-            color: color(text);
-        }
+        .price-item {
+            z-index: 1;
 
-        .gap-p {
-            p,
-            i {
-                color: color(text-light);
+            .price-tag > span {
+                color: color(primary);
+            }
+
+            h3 {
+                color: color(text);
+            }
+
+            .gap-p {
+                p,
+                i {
+                    color: color(text-light);
+                }
             }
         }
-    }
 
-    .price-btn > a > i {
-        display: inline-block;
-        background-color: color(primary);
-        background-size: 26px 26px;
-        background-repeat: no-repeat;
-        background-position: 56% 50%;
-        transform: rotate(90deg);
+        .price-btn > a > i {
+            display: inline-block;
+            background-color: color(primary);
+            background-size: 26px 26px;
+            background-repeat: no-repeat;
+            background-position: 56% 50%;
+            transform: rotate(90deg);
 
-        border-color: color(primary);
+            border-color: color(primary);
+        }
     }
 }
 
@@ -1599,15 +1600,15 @@ section {
 #route-section {
     padding: 60px 0;
 
-    @include screen-lg{
+    @include screen-lg {
         padding: 0 0 90px 0;
     }
 
     .route-section__heading {
         padding-bottom: 60px;
 
-        .section-title{
-            @include screen-lg{
+        .section-title {
+            @include screen-lg {
                 margin: 165px 0 65px 0;
             }
         }
@@ -1624,14 +1625,14 @@ section {
                 order: unset;
             }
 
-            .route-section__img{
+            .route-section__img {
                 max-height: 360px;
 
-                @include screen-md{
+                @include screen-md {
                     max-height: 480px;
                 }
 
-                @include screen-lg{
+                @include screen-lg {
                     max-height: 600px;
                 }
             }
@@ -1690,7 +1691,7 @@ section {
                 left: 0;
                 transform: scaleX(-1) rotate(20deg);
 
-                @include screen-lg{
+                @include screen-lg {
                     top: -40px;
                     transform: scaleX(-1) rotate(0);
                 }
@@ -1837,8 +1838,7 @@ section {
 
 /* FAQ SECTION */
 #faq {
-
-    @include screen-lg{
+    @include screen-lg {
         margin-bottom: 42px;
     }
 
@@ -1951,7 +1951,7 @@ section {
 #about {
     background-color: color(background-dark);
 
-    @include screen-lg{
+    @include screen-lg {
         margin-bottom: 0;
         padding-bottom: 65px;
     }
@@ -1961,15 +1961,14 @@ section {
         top: -75px;
         left: 50%;
         height: 420px;
-        opacity: .40;
+        opacity: 0.4;
 
-        @include screen-lg{
+        @include screen-lg {
             position: relative;
             height: 100%;
             top: unset;
             left: unset;
             opacity: 1;
-
         }
 
         .main-img {
@@ -1977,9 +1976,9 @@ section {
             display: block;
             width: 100%;
             text-align: center;
-            padding-bottom: 20px;          
+            padding-bottom: 20px;
 
-            @include screen-xl {   
+            @include screen-xl {
                 padding-bottom: 0;
             }
 
@@ -2027,29 +2026,27 @@ section {
                 padding-top: 0;
             }
 
-            p{                 
+            p {
                 text-align: right;
                 font-style: italic;
             }
-
         }
     }
 }
 
 /* BOOKING SECTION */
-#booking{
-
+#booking {
     padding: 25px 0;
 
-    .section-title{
+    .section-title {
         margin-bottom: 100px;
     }
 
-    .booking__img-holder{
+    .booking__img-holder {
         width: 100%;
         height: 100%;
 
-        >img{
+        > img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -2059,19 +2056,18 @@ section {
 
 /* REGISTER SECTION */
 #register {
-
-    @include screen-lg{        
+    @include screen-lg {
         padding-top: 0;
     }
 
-    .section-title{
-        @include screen-lg{
+    .section-title {
+        @include screen-lg {
             margin: 125px 0 90px 0;
-        }        
+        }
     }
 
-    .register-pa{
-        @include screen-lg{
+    .register-pa {
+        @include screen-lg {
             padding-top: 20px;
         }
     }
