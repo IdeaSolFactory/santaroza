@@ -743,6 +743,7 @@ section {
             height: 60px;
             background: color(primary);
             border: 1px solid color(primary);
+            transform: none;
 
             &::after {
                 content: "";

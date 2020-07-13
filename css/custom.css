@@ -724,6 +724,8 @@ section .header.header--style-4::after {
   height: 60px;
   background: #bf382b;
   border: 1px solid #bf382b;
+  -webkit-transform: none;
+          transform: none;
 }
 
 #banner .backtotop .backtotop__icon::after {
