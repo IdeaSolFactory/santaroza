@@ -1645,6 +1645,7 @@ section .header.header--style-4::after {
 #price .price-item__container .price-item .gap-p p,
 #price .price-item__container .price-item .gap-p i {
   color: #686460;
+  font-size: 19px;
 }
 
 #price .price-item__container .price-btn > a > i {
@@ -1728,6 +1729,10 @@ section .header.header--style-4::after {
             order: unset;
     padding-bottom: initial;
   }
+}
+
+#route-section .route-section__item .route-section__text > h3 {
+  padding-bottom: 6px;
 }
 
 #route-section .route-section__connection {

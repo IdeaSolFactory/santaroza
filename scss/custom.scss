@@ -1585,6 +1585,7 @@ section {
                 p,
                 i {
                     color: color(text-light);
+                    font-size: 19px;
                 }
             }
         }
@@ -1651,6 +1652,10 @@ section {
             @include screen-lg {
                 order: unset;
                 padding-bottom: initial;
+            }
+
+            >h3{
+                padding-bottom: 6px;
             }
         }
     }
