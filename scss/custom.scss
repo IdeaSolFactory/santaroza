@@ -1562,10 +1562,15 @@ section {
         
         @include screen-lg{
             padding: 0 12px;
+            height: 100%;
         }
 
         .price-item {
             z-index: 1;
+
+            @include screen-lg{
+                height: 100%;
+            }
 
             .price-tag > span {
                 color: color(primary);

@@ -1618,11 +1618,18 @@ section .header.header--style-4::after {
 @media (min-width: 992px) {
   #price .price-item__container {
     padding: 0 12px;
+    height: 100%;
   }
 }
 
 #price .price-item__container .price-item {
   z-index: 1;
+}
+
+@media (min-width: 992px) {
+  #price .price-item__container .price-item {
+    height: 100%;
+  }
 }
 
 #price .price-item__container .price-item .price-tag > span {
