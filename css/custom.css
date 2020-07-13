@@ -1962,7 +1962,13 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list .faq__list-item:not(:first-of-type) {
-  margin-top: 12px;
+  margin-top: 6px;
+}
+
+@media (min-width: 992px) {
+  #faq .faq__list .faq__list-item:not(:first-of-type) {
+    margin-top: 12px;
+  }
 }
 
 #faq .faq__list .faq__list-item .card-header {
@@ -1993,6 +1999,8 @@ section .header.header--style-4::after {
   text-align: left;
   background-color: #876255;
   border: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary:hover, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:active, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:focus, #faq .faq__list .faq__list-item .card-header .btn.btn-primary:visited {
@@ -2004,16 +2012,25 @@ section .header.header--style-4::after {
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary::after {
   content: "";
-  width: 22px;
-  height: 22px;
-  min-width: 22px;
-  min-height: 22px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
   background-image: url(../images/buttons/button-close.svg);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@media (min-width: 992px) {
+  #faq .faq__list .faq__list-item .card-header .btn.btn-primary::after {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+  }
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed {
@@ -2029,12 +2046,21 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
-  font-family: bb;
+  font-family: bangers;
+  line-height: 125%;
+  font-size: 18px;
   display: block;
   color: #ede9df;
-  font-size: 24px;
   white-space: break-spaces;
   padding-right: 15px;
+  margin-top: 3px;
+}
+
+@media (min-width: 992px) {
+  #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
+    line-height: initial;
+    font-size: 24px;
+  }
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content {
@@ -2045,7 +2071,9 @@ section .header.header--style-4::after {
   -webkit-transition-delay: all 0s;
           transition-delay: all 0s;
   background-color: rgba(183, 151, 138, 0.3);
-  font-size: 16px;
+  font-size: 19px;
+  font-family: br;
+  font-weight: 400;
 }
 
 #faq .faq__list .faq__list-item .faq__list-item-content.collapsing {

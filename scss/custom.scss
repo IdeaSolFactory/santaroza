@@ -1870,7 +1870,11 @@ section {
             border: none;
 
             &:not(:first-of-type) {
-                margin-top: 12px;
+                margin-top: 6px;
+
+                @include screen-lg {
+                    margin-top: 12px;
+                }
             }
 
             .card-header {
@@ -1890,6 +1894,7 @@ section {
                     text-align: left;
                     background-color: color(graphics);
                     border: none;
+                    transition: all .2s ease-in-out;
 
                     @include hover-state--all {
                         background-color: color(primary);
@@ -1899,15 +1904,22 @@ section {
 
                     &::after {
                         content: "";
-                        width: 22px;
-                        height: 22px;
-                        min-width: 22px;
-                        min-height: 22px;
+                        width: 16px;
+                        height: 16px;
+                        min-width: 16px;
+                        min-height: 16px;
                         background-image: url(../images/buttons/button-close.svg);
                         background-repeat: no-repeat;
                         background-position: right center;
                         background-size: contain;
-                        transition: all 0.3s;
+                        transition: all 0.2s;
+
+                        @include screen-lg {
+                            width: 22px;
+                            height: 22px;
+                            min-width: 22px;
+                            min-height: 22px;
+                        }
                     }
 
                     &.collapsed {
@@ -1921,12 +1933,19 @@ section {
                     }
 
                     > h3 {
-                        font-family: bb;
+                        font-family: bangers;
+                        line-height: 125%;
+                        font-size: 18px;
                         display: block;
-                        color: color(text-white);
-                        font-size: 24px;
+                        color: color(text-white);                        
                         white-space: break-spaces;
                         padding-right: 15px;
+                        margin-top: 3px;
+
+                        @include screen-lg {
+                            line-height: initial;
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -1937,7 +1956,9 @@ section {
                 transition: all 0.2s;
                 transition-delay: all 0s;
                 background-color: rgba($color: color(graphics-light), $alpha: 0.3);
-                font-size: 16px;
+                font-size: 19px;
+                font-family: br;
+                font-weight: 400;
 
                 &.collapsing {
                     transition: all 0.2s;
@@ -2002,7 +2023,7 @@ section {
             color: color(primary);
         }
 
-        h3{
+        h3 {
             font-family: bangers;
         }
 
@@ -2125,8 +2146,7 @@ section {
 #contact {
     padding: 60px 0;
 
-    .contact__content {        
-
+    .contact__content {
         .contact__img-holder {
             margin: 0 auto;
             height: 120px;
@@ -2151,19 +2171,18 @@ section {
         }
     }
 
-    .contact__text{
-
+    .contact__text {
         text-align: center;
 
-        @include screen-lg{
+        @include screen-lg {
             text-align: initial;
         }
 
-        >.contact__title{
+        > .contact__title {
             font-size: 2.5rem;
-            color: color(primary);           
+            color: color(primary);
         }
-        >.contact__email{
+        > .contact__email {
             font-size: 26px;
         }
     }
