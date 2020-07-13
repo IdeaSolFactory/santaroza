@@ -1635,7 +1635,14 @@ section .header.header--style-4::after {
 }
 
 #price .price-item__container .price-item .price-tag > span {
+  display: inline-block;
   color: #bf382b;
+  vertical-align: middle;
+}
+
+#price .price-item__container .price-item .price-tag > span > p {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #price .price-item__container .price-item h3 {

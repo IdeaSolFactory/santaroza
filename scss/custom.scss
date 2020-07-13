@@ -1574,7 +1574,14 @@ section {
             }
 
             .price-tag > span {
+                display: inline-block;
                 color: color(primary);
+                vertical-align: middle;
+
+                >p{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
             }
 
             h3 {
