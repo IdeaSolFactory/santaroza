@@ -2116,8 +2116,13 @@ section .header.header--style-4::after {
   color: #bf382b;
 }
 
+#about .about-txt h3 {
+  font-family: bangers;
+}
+
 #about .about-txt h4 {
   color: #474341;
+  text-transform: uppercase;
 }
 
 #about .about-txt p {

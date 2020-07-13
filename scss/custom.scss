@@ -2002,8 +2002,13 @@ section {
             color: color(primary);
         }
 
+        h3{
+            font-family: bangers;
+        }
+
         h4 {
             color: color(text);
+            text-transform: uppercase;
         }
         p {
             color: color(text-light);
