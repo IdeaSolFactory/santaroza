@@ -1647,6 +1647,7 @@ section .header.header--style-4::after {
 
 #price .price-item__container .price-item h3 {
   color: #474341;
+  letter-spacing: 0;
 }
 
 #price .price-item__container .price-item .gap-p p,
