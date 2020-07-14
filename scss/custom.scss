@@ -53,6 +53,7 @@ p {
     h1,
     h2,
     h3 {
+        font-family: bangers;
         color: color(text);
     }
 }
@@ -902,6 +903,7 @@ section {
 
     .coun_time {
         h2 {
+            font-family: bangers;
             color: color(primary);
         }
 
@@ -990,12 +992,17 @@ section {
     }
 
     .event__item {
+
         &:not(:first-of-type) {
             margin-top: 20px;
 
             @include screen-lg {
                 margin-top: unset;
             }
+        }
+
+        h3{
+            font-family: bangers;
         }
     }
 
@@ -1123,6 +1130,7 @@ section {
 
     .counter-txt {
         h3 {
+            font-family: bangers;
             color: color(text);
             vertical-align: middle;
         }
@@ -1593,7 +1601,8 @@ section {
 
                 h3 {
                     color: color(text);
-                    letter-spacing: 0;
+                    letter-spacing: 2px;
+                    font-family: bangers;
                 }
 
                 .gap-p {

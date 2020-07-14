@@ -46,6 +46,7 @@ p {
 .event-header h1,
 .event-header h2,
 .event-header h3 {
+  font-family: bangers;
   color: #474341;
 }
 
@@ -919,6 +920,7 @@ section .header.header--style-4::after {
 }
 
 #banner-2 .coun_time h2 {
+  font-family: bangers;
   color: #bf382b;
 }
 
@@ -991,6 +993,10 @@ section .header.header--style-4::after {
   #event .event__item:not(:first-of-type) {
     margin-top: unset;
   }
+}
+
+#event .event__item h3 {
+  font-family: bangers;
 }
 
 #event .event-header {
@@ -1137,6 +1143,7 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt h3 {
+  font-family: bangers;
   color: #474341;
   vertical-align: middle;
 }
@@ -1661,7 +1668,8 @@ section .header.header--style-4::after {
 
 #price .price-item__container .price-item .price-item__text-container h3 {
   color: #474341;
-  letter-spacing: 0;
+  letter-spacing: 2px;
+  font-family: bangers;
 }
 
 #price .price-item__container .price-item .price-item__text-container .gap-p p,
