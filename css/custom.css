@@ -2391,6 +2391,10 @@ section .header.header--style-4::after {
   background-color: transparent;
 }
 
+#footer .copy-right-txt {
+  margin-top: 16px;
+}
+
 #footer .copy-right-txt p {
   color: #bf382b;
 }
