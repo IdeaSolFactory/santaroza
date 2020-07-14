@@ -1625,6 +1625,16 @@ section .header.header--style-4::after {
 }
 
 #price .price-item__container .price-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 1;
 }
 
@@ -1634,29 +1644,33 @@ section .header.header--style-4::after {
   }
 }
 
-#price .price-item__container .price-item .price-tag > span {
+#price .price-item__container .price-item .price-item__text-container {
+  margin-bottom: 12px;
+}
+
+#price .price-item__container .price-item .price-item__text-container .price-tag > span {
   display: inline-block;
   color: #bf382b;
   vertical-align: middle;
 }
 
-#price .price-item__container .price-item .price-tag > span > p {
+#price .price-item__container .price-item .price-item__text-container .price-tag > span > p {
   display: inline-block;
   vertical-align: middle;
 }
 
-#price .price-item__container .price-item h3 {
+#price .price-item__container .price-item .price-item__text-container h3 {
   color: #474341;
   letter-spacing: 0;
 }
 
-#price .price-item__container .price-item .gap-p p,
-#price .price-item__container .price-item .gap-p i {
+#price .price-item__container .price-item .price-item__text-container .gap-p p,
+#price .price-item__container .price-item .price-item__text-container .gap-p i {
   color: #686460;
   font-size: 19px;
 }
 
-#price .price-item__container .price-btn > a > i {
+#price .price-item__container .price-item .price-item__text-container .price-btn > a > i {
   display: inline-block;
   background-color: #bf382b;
   background-size: 26px 26px;
@@ -1668,9 +1682,10 @@ section .header.header--style-4::after {
 }
 
 #price .price-item__container .price__img-holder {
-  margin-top: 25px;
-  width: 100%;
-  height: 100%;
+  justify-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
 }
 
@@ -1679,6 +1694,7 @@ section .header.header--style-4::after {
   width: auto;
   height: 180px;
   text-align: center;
+  padding: 0;
 }
 
 /* ROUTE SECTION */
@@ -2026,8 +2042,8 @@ section .header.header--style-4::after {
   text-align: left;
   background-color: #876255;
   border: none;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 21px 16px;
 }
 
