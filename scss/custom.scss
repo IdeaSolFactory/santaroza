@@ -737,16 +737,35 @@ section {
 
 /*BANNER SECTION*/
 #banner {
-    background: url(../images/480/sr_480_01.jpg);
+    background: url(../images/480/sr_480_01.jpg);    
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
 
-    position: relative;
+    position: relative; 
+
+
+    @include screen-md{       
+        background-image: url(../images/768/sr_768_01.jpg);
+    }
 
     @include screen-lg {
+        // 992px
+        
         height: 100vh;
+    }
+
+    @include screen-xl{
+        background-image: url(../images/1024/sr_1024_01.jpg);
+    }
+
+    @include screen-xxl{
+        //1680px
+    }
+
+    @include screen-hd{
+        //1920px
     }
 
     .backtotop {

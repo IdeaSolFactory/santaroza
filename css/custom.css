@@ -723,9 +723,21 @@ section .header.header--style-4::after {
   position: relative;
 }
 
+@media (min-width: 767px) {
+  #banner {
+    background-image: url(../images/768/sr_768_01.jpg);
+  }
+}
+
 @media (min-width: 992px) {
   #banner {
     height: 100vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  #banner {
+    background-image: url(../images/1024/sr_1024_01.jpg);
   }
 }
 
