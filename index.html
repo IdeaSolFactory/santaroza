@@ -9,9 +9,7 @@
     <title>Sánta Róza</title>
     <!--font-awesome icons link-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- google fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> -->
-
+    
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -45,7 +43,7 @@
                         <a class="nav-link" href="#event">Programok</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#speaker">Menetred</a>
+                        <a class="nav-link" href="#speaker">Menetrend</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#schedule">Jegyek</a>
@@ -88,9 +86,8 @@
                     <div class="banner-content">
                         <div class="banner__image-holder"></div>
                         <div class="banner__txt">
-                            <h1>Légy a Sánta Róza legénységének tagja!</h1>
-                            <p>Ha egy igazán emlékezetes hajókirándulásra vágysz, gyere és csatlakozz a Sánta Róza
-                                legénységéhez! Bonts vitorlát és találd meg az elveszett kincset! </p>
+                            <h1>Lépj a Sánta Róza kalózhajójának fedélzetére!</h1>
+                            <p>Légy részese te is a balatoni kalózlegendának! Balatonfüredről naponta induló <b>gyermek kalózjáratok</b> és felnőtteknek szóló <b>egyedi rendezvény</b> lehetőségek várnak rád. </p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +117,7 @@
                                             <div class="coun">
                                                 <div class="coun_time">
                                                     <h2 id="day" class="coming-data"></h2>
-                                                    <p class="coming-data2 special-pos">Nap</p>
+                                                    <p class="coming-data2">Nap</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -413,7 +410,7 @@
                 </div>
 
                 <div class="row justify-content-center schedule__table-container">
-                    <div class="col-11 col-lg-10">
+                    <div class="col-11 col-lg-12">
                         <div class="schedule__item boxed boxed--paper-2">
                             <!-- <img src="images/background-images/wooden-board-01.png" class="schedule__item-bckgrnd"/> -->
                             <div class="row justify-content-center h-100">
@@ -433,17 +430,27 @@
                                                     <p>Menetidő: 1 óra</p>
                                                 </div>
                                             </div>
-                                            <div class="schedule__timetable-row">
-                                                <ul class="schedule__timetable">
-                                                    <li class="schedule__timetable-period">Hétfő-Péntek</li>
-                                                    <li>11:30</li>
-                                                    <li>12:00</li>
-                                                    <li>14:30</li>
-                                                    <li>15:00</li>
-                                                    <li>16:30</li>
-                                                </ul>
+                                            <div class="schedule__timetable-block">
+                                                <div class="schedule__timetable-period">
+                                                    <h3>Hétfő-Péntek</h3>
+                                                    
+                                                </div>
+                                                <div class="schedule__timetable-rows">
+                                                    <ul class="schedule__timetable">
+                                                        <li>9:45 - 10:45</li>
+                                                        <li>11:15 - 12:15</li>
+                                                        <li>14:15 - 15:15</li>
+                                                        
+                                                    </ul>
+                                                    <ul class="schedule__timetable">
+                                                        <li>15:45 - 16:45</li>
+                                                        <li>17:15 - 18:15</li>
+                                                        <li>18:45 - 19:45</li>
+                                                    </ul>
+                                                </div>
+                                                
                                             </div>
-                                            <div class="schedule__timetable-row">
+                                            <!-- <div class="schedule__timetable-row">
                                                 <ul class="schedule__timetable">
                                                     <li class="schedule__timetable-period">Szombat-Vasárnap</li>
                                                     <li>11:30</li>
@@ -452,7 +459,7 @@
                                                     <li>15:00</li>
                                                     <li>16:30</li>
                                                 </ul>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <!-- SCHEDULE ITEM END -->
 
@@ -624,7 +631,7 @@
         <div class="container zindex">
             <div class="row">
                 <div class="col-lg-12 speaker-heading gallery-heading">
-                    <h3>galéria</h3>
+                    <h3>Galéria</h3>
                     <!-- <div class="header-style gallery-style"></div> -->
                 </div>
             </div>
@@ -632,7 +639,7 @@
                 <div class="col-lg-10 m-auto text-center video-p">
                     <a data-autoplay="true" data-vbtype="video" href="https://youtu.be/Xj3gU3jACe8" class=" venobox"><i
                             class="fa fa-play" aria-hidden="true"></i></a>
-                    <p>videó lejátszása</p>
+                    <p>Videó lejátszása</p>
                 </div>
             </div>
         </div>
@@ -974,21 +981,22 @@
                     <h3>XVIII. század, Magyarország</h3>
                     <h4>A hírhedt kalóz, Sánta Róza azokban az időkben vált híressé, amikor a Balatont még "Blátónak"
                         hívták.</h4>
-                    <p>Éjszakánként villámok helyett kalózok ágyútüze világította be a Tihanyi-félszigetet, hiszen
+                    <p> Ekkor még éjszakánként villámok helyett kalózok ágyútüze világította be a Tihanyi-félszigetet, hiszen
                         tengerekről ideérkező gazdag zsarnokok és gonosz kalózok harcoltak egymással az elsüllyedt
-                        blátói aranyért, ami a legenda szerint évszázadok óta a mocsár fenekén rekedt. Ezek voltak talán
+                        blátói aranyért, ami a legenda szerint évszázadok óta a mocsár fenekén hevert. Ezek voltak talán
                         a tó legzordabb évei.
-                        Sánta Rózát bár rettegett kalóznak tartották ismeretlen, sötét mítoszokkal teletűzdelt múltja
+                        Sánta Rózát bár rettegett kalóznak tartották rejtélyes mítoszokkal teletűzdelt múltja
                         miatt, mégis kivívta magának a dicsőséget, amikor a számtalan zsarnokkal és gonosztevővel
-                        ellentétben megvédte a tavat és annak lakóit a háborúzó és tivornyázó idegen seregektől.<br>
+                        szemben megvédte a tavat és annak lakóit a háborúzó, tivornyázó idegen seregektől.
+                        <br><br>
                         Nevét onnan kapta, hogy egy ágyúdörgésektől hangos csatában elvesztette bal lábát, de ezzel is
-                        csak azt bizonyította, hogy bizony életét adná a tóért. Minden gonosszal hosszú csatát vívott,
-                        majd a győzelem után elkobozta zsákmányukat, municiójukat és pénzüket szétosztotta a szegény
-                        blátói lakosok között, és örökre elkergette őket. <br>
+                        csak azt bizonyította, hogy életét adná a tóért. Minden gonosszal küzdelmes és hősies csatát vívott,
+                        majd a győzelem után elkobozta zsákmányukat és municiójukat, pénzüket pedig szétosztotta a szegény
+                        blátói lakosok között. <br><br>
                         Sánta Róza nevét mindenki hamar megtanulta, hiszen legénységével szemben egy idő után már senki
-                        sem mert csatába állni. A tó azóta lett ilyen nyugalmas és szép, gonosz kalózokat azóta sem
-                        látott itt senki. Halála után a hajójára vésték a nevét, amely egy régi kincsestérképet is rejt.
-                        Segítségével ti is megtalálhatjátok az elveszettnek hitt blátói aranyat!</p>
+                        sem mert csatába állni. A tó ettől fogva ilyen nyugalmas és szép, gonosz kalózokat azóta sem
+                        látott itt senki. Halála után nevét a hajójára vésték, amely egy régi kincsestérképet is rejt.
+                        A kincs azóta sem került elő, hiszen ezt a térképet csakis a legleleményesebb kalózok képesek megfejteni...</p>
                     <!-- <a class="btn--style1" href="#">Megkeresem a kincset</a> -->
                     <div class="about-s">
                         <p> – részlet a "Blátói kalózhistóriákból"</p>

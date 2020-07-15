@@ -2,25 +2,30 @@
 @import "mediaqueries";
 @import "mixins";
 
-@font-face {
-    font-family: bangers;
-    src: url(../fonts/Bangers-Regular.ttf);
+@font-face{
+    font-family: "GrenzeGotisch";
+    src: url(../fonts/GrenzeGotisch-VariableFont_wght.ttf) format("truetype");
 }
 
-@font-face {
-    src: url(../fonts/BarlowCondensed-Bold.ttf);
-    font-family: bb;
+@font-face{
+    font-family: Grenze;
+    font-weight: 200;
+    src: url(../fonts/Grenze-ExtraLight.ttf);
 }
 
-@font-face {
-    src: url(../fonts/BarlowCondensed-Light.ttf);
-    font-family: bl;
+@font-face{
+    font-family: Grenze;
+    font-weight: normal;
+    src: url(../fonts/Grenze-Light.ttf);
 }
 
-@font-face {
-    src: url(../fonts/BarlowCondensed-Regular.ttf);
-    font-family: br;
+@font-face{
+    font-family: Grenze;
+    font-weight: bold;
+    src: url(../fonts/Grenze-SemiBold.ttf);
 }
+
+
 
 /* TEXT */
 
@@ -28,32 +33,36 @@ h1,
 h2,
 h3,
 h5 {
-    font-family: bangers;
+    font-family: GrenzeGotisch;
+    font-variation-settings: "wght" 500;
     letter-spacing: 2px;
     color: color(text);
 }
 
 p {
-    font-family: br;
+    font-family: Grenze;
+    font-weight: normal;
     color: color(text-light);
-    font-size: 19px;
+    font-size: 22px;
+    line-height: 30px;
+
+    b{
+        font-weight: bold;
+    }
 }
 
 .section-title {
     h1 {
+        font-family: GrenzeGotisch;
         color: color(primary);
     }
-}
-
-.banner-txt h1 {
-    letter-spacing: 4px;
 }
 
 .event-header {
     h1,
     h2,
     h3 {
-        font-family: bangers;
+        font-family: GrenzeGotisch;
         color: color(text);
     }
 }
@@ -182,15 +191,15 @@ p {
 .btn--style1 {
     padding: 12px 16px !important;
     color: color(text-white) !important;
-    font-size: 19px !important;
-    font-family: br !important;
+    font-size: 22px !important;
+    font-family: GrenzeGotisch !important;
     font-weight: normal !important;
     text-transform: none !important;
     border: none !important;
     border-radius: 50px !important;
 
     @include screen-lg {
-        padding: 20px 22px !important;
+        padding: 14px 22px !important;
     }
 
     &::before {
@@ -454,6 +463,8 @@ body {
 
     &.navbar-light {
         .navbar-nav .nav-link {
+            font-family: Grenze;
+            font-size: 22px;
             color: color(background-main);
         }
     }
@@ -837,24 +848,31 @@ section {
 
         .banner__txt {
             flex-grow: 1;
-            text-align: center;
+            text-align: center;            
 
             @include screen-lg {
                 // text-align: left;
-                max-width: 650px;
+                max-width: 720px;
                 margin-left: 20px;
+                margin-top: -30px;
             }
 
             h1 {
-                color: color(background-main);
-            }
-
-            h3 {
+                font-family: GrenzeGotisch;
+                font-variation-settings: "wght" 500;
+                font-size: 55px;
+                line-height: 115%;
                 padding-bottom: 16px;
-            }
+                color: color(background-main);
+                filter: drop-shadow(0 0 20px rgba(0, 0, 0, .65));
+            }           
 
             p {
+                font-family: Grenze;
+                font-weight: 200;
+                font-size: 24px;
                 color: color(text-white);
+                filter: drop-shadow(0 0 1px rgba(0, 0, 0, .65));
             }
         }
     }
@@ -903,24 +921,76 @@ section {
 
     .coun_time {
         h2 {
-            font-family: bangers;
+            font-family: GrenzeGotisch;
+            font-variation-settings: "wght" 500;
+            font-size: 50px;
             color: color(primary);
         }
 
         p {
+            font-family: Grenze;
+            font-weight: bold;
+            font-size: 24px;
             color: color(text-white);
         }
 
-        #second ~ .coming-data2 {
-            // right: 65px;
+        .coming-data2{
+           top: 55px;
+           left: 8px;
         }
 
-        #month ~ .coming-data2 {
-            // right: 65px;
+        @include screen-sm{
+            .coming-data2{
+                left: 50px;
+                top: 20px;
+            }
         }
 
-        #hour ~ .coming-data2 {
-            // right: 65px;
+        @include screen-md{
+            .coming-data2{
+                left: 50px;
+                top: 20px;
+            }
+    
+            #second ~ .coming-data2 {
+                left: 50px;
+                top: 25px;
+            }
+    
+            #month ~ .coming-data2 {
+                left: 55px;
+                top: 15px;
+            }
+        }
+
+        @include screen-lg{
+            .coming-data2{
+                left: 60px;
+                top: 6px;
+            }
+    
+            #second ~ .coming-data2 {
+                left: 50px;
+                top: 15px;
+            }
+    
+            #month ~ .coming-data2 {
+                left: 55px;
+                top: 5px;
+            }
+        }
+    }  
+    
+    .banner-2__aside-text {
+        color: color(text-white);
+        padding-top: 32px;
+
+        @include screen-sm {
+            padding-top: 12px;
+        }
+
+        @include screen-md {
+            padding-top: 10px;
         }
     }
 
@@ -942,42 +1012,7 @@ section {
             //     background-position: center;
             //     background-repeat: no-repeat;
             //     background-size: contain;
-            // }
-
-            .hourglass-icon {
-                display: block;
-                position: relative;
-                padding: 25px;
-                height: 120px;
-                width: 120px;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translateY(-50%) translateX(-50%);
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../images/icons/hourglass-01.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-            }
-        }
-    }
-
-    .banner-2__aside-text {
-        color: color(text-white);
-        padding-top: 55px;
-
-        @include screen-sm {
-            padding-top: 12px;
-        }
-
-        @include screen-md {
-            padding-top: 10px;
+            // }            
         }
     }
 }
@@ -992,7 +1027,6 @@ section {
     }
 
     .event__item {
-
         &:not(:first-of-type) {
             margin-top: 20px;
 
@@ -1001,8 +1035,8 @@ section {
             }
         }
 
-        h3{
-            font-family: bangers;
+        h3 {
+            font-family: GrenzeGotisch;
         }
     }
 
@@ -1024,6 +1058,8 @@ section {
             color: color(primary);
         }
         p {
+            font-family: Grenze;
+            font-size: 22px;
             color: color(text-light);
             padding: 0 0 24px 0;
         }
@@ -1035,8 +1071,17 @@ section {
         }
 
         h3 {
+            font-size: 30px;
             padding-right: 40px;
             color: color(text);
+            padding-bottom: 12px;
+        }
+
+        p {
+            font-family: Grenze;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 140%;
         }
 
         @include screen-lg {
@@ -1130,12 +1175,15 @@ section {
 
     .counter-txt {
         h3 {
-            font-family: bangers;
+            font-family: GrenzeGotisch;
             color: color(text);
             vertical-align: middle;
         }
         p {
+            font-family: Grenze;
+            font-size: 22px;
             color: color(text-lighter);
+            margin-top: -6px;
         }
         .icon {
             vertical-align: middle;
@@ -1156,6 +1204,8 @@ section {
             }
         }
         span {
+            font-family: GrenzeGotisch;
+            font-size: 50px;
             vertical-align: middle;
             color: color(primary);
         }
@@ -1312,7 +1362,7 @@ section {
                         @include screen-lg {
                             margin-bottom: 12px;
                             text-align: left;
-                        }
+                        }                      
 
                         .schedule__item-img {
                             height: 64px;
@@ -1343,14 +1393,16 @@ section {
                         }
 
                         p {
-                            font-size: 18px;
+                            font-size: 22px;
                             color: color(text-lighter);
                         }
                     }
 
-                    .schedule__timetable-row {
+                    .schedule__timetable-block {
                         padding-top: 20px;
                         position: relative;
+                        display: flex;
+                        flex-direction: column;
 
                         &:not(:last-of-type) {
                             padding-bottom: 20px;
@@ -1362,7 +1414,7 @@ section {
                             top: 0;
                             left: 0;
                             width: 100%;
-                            height: 100%;
+                            // height: 100%;
 
                             border-top: 2px solid color(graphics-light);
 
@@ -1370,52 +1422,100 @@ section {
                             // @include bckgrnd-img--contain;
                         }
 
-                        .schedule__timetable {
-                            width: 100%;
-                            list-style-type: none;
+                        @include screen-lg{
                             display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            align-items: center;
-                            position: relative;
+                            flex-direction: row;                            
+                            justify-content: stretch;
+                        }
 
-                            @include screen-lg {
-                                flex-wrap: nowrap;
+                        .schedule__timetable-period {
+                            display: block;
+                            font-family: Grenze;
+                            font-weight: bold;
+                            font-size: 20px;
+                            white-space: nowrap;
+                            padding: 16px 10px;
+                            line-height: 100%;
+                            color: color(text-light);
+                            background-color: rgba($color: color(graphics-light), $alpha: 0.25);
+                            border: unset;
+
+                            @include screen-lg{
+                                display: flex;                                
+                                justify-content: center;
+                                align-items: center;
+                                align-self: stretch;
+                                width: 300px;
                             }
 
-                            > li {
-                                line-height: 32x;
-                                font-size: 24px;
-                                font-weight: bold;
-                                color: color(primary);
-                                text-align: center;
-                                position: relative;
-                                height: 100%;
-                                width: 100%;
+                            >h3{
                                 display: block;
-
-                                @include screen-lg {
-                                    &:not(.schedule__timetable-period) {
-                                        &:not(:nth-of-type(2)) {
-                                            border-left: 1px solid color(graphics-light);
-                                        }
-                                    }
-                                }
-
-                                &.schedule__timetable-period {
-                                    display: inline;
-                                    font-weight: bold;
-                                    font-size: 16px;
-                                    white-space: nowrap;
-                                    padding: 16px 10px;
-                                    line-height: 100%;
-                                    color: color(text-light);
-                                    background-color: rgba($color: color(graphics-light), $alpha: 0.25);
-                                    border: unset;
-                                }
+                                font-family: Grenze;
+                                font-size: 22px;
+                                font-weight: bold;
                             }
                         }
+
+                        .schedule__timetable-rows{
+                            height: 100%;
+                            width: 100%;                            
+
+                            @include screen-lg{
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 0 40px;
+                            }
+
+                            .schedule__timetable {
+                                width: 100%;
+                                height: 100%;
+                                list-style-type: none;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                align-items: center;
+                                position: relative;     
+                                
+                                @include screen-lg{
+                                    height: 100%;
+                                    
+                                    &:not(:first-of-type){
+                                        border-top: 1px solid color(graphics-light);
+                                    }
+                                }
+    
+                                > li {
+                                    line-height: 32px;
+                                    font-family: GrenzeGotisch;
+                                    font-size: 32px;
+                                    font-weight: bold;
+                                    color: color(primary);
+                                    text-align: center;
+                                    position: relative;
+                                    height: 100%;
+                                    width: 100%;
+                                    display: block;
+                                    padding-top: 12px;
+                                    
+    
+                                    @include screen-lg {
+    
+                                        width: 33.333%;
+                                        padding: 12px 0;
+
+                                        &:not(.schedule__timetable-period) {
+    
+                                            &:not(:first-of-type) {
+                                                border-left: 1px solid color(graphics-light);
+                                            }
+                                        }
+                                    }                                
+                                }                            
+                            }
+                        }
+
+                        
                     }
                 }
             }
@@ -1432,8 +1532,11 @@ section {
             text-align: center;
 
             ul > li {
+                font-family: Grenze;
+                font-size: 22px;
+                
                 &::before {
-                    content: "⋆";
+                    content: "⋆";                    
                     font-size: 32px;
                     color: color(primary);
                     padding-right: 2px;
@@ -1585,11 +1688,20 @@ section {
             }
 
             .price-item__text-container {
-
                 margin-bottom: 12px;
+
+                >h3{
+                    font-size: 36px;
+                }
+                >.cl{
+                    font-family: GrenzeGotisch;
+                    font-size: 20px;
+                }
 
                 .price-tag > span {
                     display: inline-block;
+                    font-family: GrenzeGotisch;
+                    font-size: 50px;
                     color: color(primary);
                     vertical-align: middle;
 
@@ -1602,14 +1714,19 @@ section {
                 h3 {
                     color: color(text);
                     letter-spacing: 2px;
-                    font-family: bangers;
+                    font-family: GrenzeGotisch;
                 }
 
                 .gap-p {
                     p,
                     i {
                         color: color(text-light);
-                        font-size: 19px;
+                        font-size: 20px;
+                    }
+
+                    p{
+                        font-size: 22px;
+                        font-family: Grenze;
                     }
                 }
 
@@ -1620,11 +1737,11 @@ section {
                     background-repeat: no-repeat;
                     background-position: 56% 50%;
                     transform: rotate(90deg);
-        
+
                     border-color: color(primary);
                 }
             }
-        }        
+        }
 
         .price__img-holder {
             justify-self: flex-end;
@@ -1795,11 +1912,19 @@ section {
 
     .organize-text {
         .head-span {
+            font-family: GrenzeGotisch;
+            font-size: 32px;
             color: color(primary);
             text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
         }
 
         h3 {
+
+            font-family: GrenzeGotisch;
+            font-size: 50px;
+            text-transform: none;
+
+
             &::after {
                 background: color(primary);
                 opacity: 0.35;
@@ -1807,7 +1932,11 @@ section {
         }
 
         p {
+            font-family: Grenze;
+            font-weight: 200;
+            font-size: 24px;
             color: color(text-white);
+            padding: 9px 120px 40px
         }
 
         a {
@@ -1833,6 +1962,18 @@ section {
         p {
             color: color(text-white);
         }
+
+        h3{
+            font-family: GrenzeGotisch;
+            font-size: 26px;
+        }
+
+        p{
+            font-family: Grenze;
+            font-weight: 200;
+            font-size: 22px;
+        }
+
         i {
             background-color: color(primary);
             display: inline-block;
@@ -1858,6 +1999,9 @@ section {
 
     .gallery-heading {
         h3 {
+            font-family: GrenzeGotisch;
+            font-size: 62px;
+            text-transform: none;
             color: color(text-white);
             &::after {
                 content: none;
@@ -1874,6 +2018,9 @@ section {
             }
         }
         p {
+            font-family: GrenzeGotisch;
+            font-size: 32px;
+            text-transform: none;
             color: color(text-white);
         }
     }
@@ -1982,9 +2129,10 @@ section {
                     }
 
                     > h3 {
-                        font-family: bangers;
+                        font-family: GrenzeGotisch;
+                        font-variation-settings: "wght" 300;
                         line-height: 125%;
-                        font-size: 18px;
+                        font-size: 24px;
                         display: block;
                         color: color(text-white);
                         white-space: break-spaces;
@@ -2005,8 +2153,8 @@ section {
                 transition: all 0.2s;
                 transition-delay: all 0s;
                 background-color: rgba($color: color(graphics-light), $alpha: 0.3);
-                font-size: 19px;
-                font-family: br;
+                font-size: 20px;
+                font-family: Grenze;
                 font-weight: 400;
 
                 &.collapsing {
@@ -2073,18 +2221,25 @@ section {
         }
 
         h3 {
-            font-family: bangers;
+            font-family: GrenzeGotisch;            
+            font-size: 32px;
         }
 
         h4 {
+            font-family: GrenzeGotisch;
+            font-variation-settings: "wght" 500;
             color: color(text);
-            text-transform: uppercase;
+            text-transform: none;
         }
         p {
+            font-family: GrenzeGotisch;
+            font-variation-settings: "wght" 400;
+            font-size: 20px;
             color: color(text-light);
             padding-bottom: 30px;
 
             @include screen-lg {
+                font-size: 22px;
                 padding-bottom: 40px;
             }
         }
@@ -2096,7 +2251,7 @@ section {
             font-size: 19px;
             font-weight: normal;
             text-transform: none;
-            font-family: br;
+            font-family: GrenzeGotisch;
         }
 
         .about-s {
@@ -2109,7 +2264,6 @@ section {
 
             p {
                 text-align: right;
-                font-style: italic;
             }
         }
     }
@@ -2232,6 +2386,7 @@ section {
             color: color(primary);
         }
         > .contact__email {
+            font-family: Grenze;
             font-size: 26px;
         }
     }
@@ -2246,6 +2401,8 @@ section {
     .copy-right-txt {
         margin-top: 16px;
         p {
+            font-family: GrenzeGotisch;
+            font-size: 22px;
             color: color(primary);
         }
     }
@@ -2279,6 +2436,8 @@ section {
         .menu-a {
             text-align: center;
             a {
+                font-family: Grenze;
+                font-size: 24px;
                 color: color(background-main);
             }
 
