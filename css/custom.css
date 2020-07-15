@@ -1133,13 +1133,12 @@ section .header.header--style-4::after {
 
 /* COUNTER SECTION */
 #counter {
-  padding: 260px 0 20px 0;
+  padding: 65px 0 20px 0;
   position: relative;
 }
 
 @media (min-width: 992px) {
   #counter {
-    padding: 100px 0 60px 0;
     position: relative;
   }
   #counter .count-item {
@@ -1187,7 +1186,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #counter .counter__container {
-    margin-top: 180px;
+    margin-top: 80px;
   }
 }
 
@@ -2136,6 +2135,10 @@ section .header.header--style-4::after {
 
 #gallery .gallery-heading h3::after {
   content: none;
+}
+
+#gallery .gallery-pa a {
+  pointer-events: none;
 }
 
 #gallery .gallery-pa a > i {

@@ -1119,11 +1119,10 @@ section {
 
 /* COUNTER SECTION */
 #counter {
-    padding: 260px 0 20px 0;
+    padding: 65px 0 20px 0;
     position: relative;
 
     @include screen-lg {
-        padding: 100px 0 60px 0;
         position: relative;
 
         .count-item {
@@ -1165,7 +1164,7 @@ section {
 
     .counter__container {
         @include screen-lg {
-            margin-top: 180px;
+            margin-top: 80px;
         }
 
         @include screen-xl {
@@ -2010,13 +2009,18 @@ section {
     }
 
     .gallery-pa {
-        a > i {
-            background: color(primary);
+        a{
+            pointer-events: none;
 
-            &::before {
-                color: color(text-white);
+            >i{
+                background: color(primary);            
+
+                &::before {
+                    color: color(text-white);
+                }
             }
         }
+       
         p {
             font-family: GrenzeGotisch;
             font-size: 32px;
