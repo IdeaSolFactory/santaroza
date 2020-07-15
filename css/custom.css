@@ -1,37 +1,25 @@
 @charset "UTF-8";
 @font-face {
-  font-family: ggb;
-  src: url(../fonts/GrenzeGotisch-Bold.ttf);
+  font-family: "GrenzeGotisch";
+  src: url(../fonts/GrenzeGotisch-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: ggm;
-  src: url(../fonts/GrenzeGotisch-Medium.ttf);
-}
-
-@font-face {
-  src: url(../fonts/GrenzeGotisch-Light.ttf);
-  font-family: ggl;
-}
-
-@font-face {
-  src: url(../fonts/GrenzeGotisch-ExtraLight.ttf);
-  font-family: ggxl;
-}
-
-@font-face {
+  font-family: Grenze;
+  font-weight: 200;
   src: url(../fonts/Grenze-ExtraLight.ttf);
-  font-family: gxl;
 }
 
 @font-face {
+  font-family: Grenze;
+  font-weight: normal;
   src: url(../fonts/Grenze-Light.ttf);
-  font-family: gl;
 }
 
 @font-face {
+  font-family: Grenze;
+  font-weight: bold;
   src: url(../fonts/Grenze-SemiBold.ttf);
-  font-family: gsb;
 }
 
 /* TEXT */
@@ -39,27 +27,33 @@ h1,
 h2,
 h3,
 h5 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
+  font-variation-settings: "wght" 500;
   letter-spacing: 2px;
   color: #474341;
 }
 
 p {
-  font-family: ggl;
+  font-family: Grenze;
+  font-weight: normal;
   color: #686460;
   font-size: 22px;
   line-height: 30px;
 }
 
+p b {
+  font-weight: bold;
+}
+
 .section-title h1 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   color: #bf382b;
 }
 
 .event-header h1,
 .event-header h2,
 .event-header h3 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   color: #474341;
 }
 
@@ -187,7 +181,7 @@ p {
   padding: 12px 16px !important;
   color: #ede9df !important;
   font-size: 22px !important;
-  font-family: ggxl !important;
+  font-family: GrenzeGotisch !important;
   font-weight: normal !important;
   text-transform: none !important;
   border: none !important;
@@ -452,7 +446,7 @@ body {
 }
 
 .navbar.navbar-light .navbar-nav .nav-link {
-  font-family: gl;
+  font-family: Grenze;
   font-size: 22px;
   color: #ede9df;
 }
@@ -566,7 +560,7 @@ body {
   background-size: contain;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .navbar .navbar__ropes-container::before {
     background-position: -20px;
   }
@@ -651,7 +645,7 @@ body {
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .navbar .navbar-collapse.menu-main > ul {
     background-color: transparent;
   }
@@ -876,7 +870,8 @@ section .header.header--style-4::after {
 }
 
 #banner .banner-content .banner__txt h1 {
-  font-family: ggm;
+  font-family: GrenzeGotisch;
+  font-variation-settings: "wght" 500;
   font-size: 55px;
   line-height: 115%;
   padding-bottom: 16px;
@@ -886,7 +881,8 @@ section .header.header--style-4::after {
 }
 
 #banner .banner-content .banner__txt p {
-  font-family: gxl;
+  font-family: Grenze;
+  font-weight: 200;
   font-size: 24px;
   color: #ede9df;
   -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.65));
@@ -922,7 +918,7 @@ section .header.header--style-4::after {
   z-index: 20;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #banner-2 > .anchor-container::after {
     left: 0;
     content: "";
@@ -942,47 +938,64 @@ section .header.header--style-4::after {
 }
 
 #banner-2 .coun_time h2 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
+  font-variation-settings: "wght" 500;
+  font-size: 50px;
   color: #bf382b;
 }
 
 #banner-2 .coun_time p {
-  font-family: ggxl;
+  font-family: Grenze;
+  font-weight: bold;
   font-size: 24px;
   color: #ede9df;
 }
 
-@media (min-width: 1200px) {
-  #banner-2 .banner-2__container {
-    padding: 0;
-    position: relative;
+#banner-2 .coun_time .coming-data2 {
+  top: 55px;
+  left: 8px;
+}
+
+@media (min-width: 576px) {
+  #banner-2 .coun_time .coming-data2 {
+    left: 50px;
+    top: 20px;
   }
-  #banner-2 .banner-2__container .hourglass-icon {
-    display: block;
-    position: relative;
-    padding: 25px;
-    height: 120px;
-    width: 120px;
+}
+
+@media (min-width: 767px) {
+  #banner-2 .coun_time .coming-data2 {
+    left: 50px;
+    top: 20px;
   }
-  #banner-2 .banner-2__container .hourglass-icon::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-            transform: translateY(-50%) translateX(-50%);
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/icons/hourglass-01.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  #banner-2 .coun_time #second ~ .coming-data2 {
+    left: 50px;
+    top: 25px;
+  }
+  #banner-2 .coun_time #month ~ .coming-data2 {
+    left: 55px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  #banner-2 .coun_time .coming-data2 {
+    left: 60px;
+    top: 6px;
+  }
+  #banner-2 .coun_time #second ~ .coming-data2 {
+    left: 50px;
+    top: 15px;
+  }
+  #banner-2 .coun_time #month ~ .coming-data2 {
+    left: 55px;
+    top: 5px;
   }
 }
 
 #banner-2 .banner-2__aside-text {
   color: #ede9df;
-  padding-top: 55px;
+  padding-top: 32px;
 }
 
 @media (min-width: 576px) {
@@ -991,9 +1004,16 @@ section .header.header--style-4::after {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #banner-2 .banner-2__aside-text {
     padding-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #banner-2 .banner-2__container {
+    padding: 0;
+    position: relative;
   }
 }
 
@@ -1020,7 +1040,7 @@ section .header.header--style-4::after {
 }
 
 #event .event__item h3 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
 }
 
 #event .event-header {
@@ -1047,7 +1067,7 @@ section .header.header--style-4::after {
 }
 
 #event .event-header p {
-  font-family: gl;
+  font-family: Grenze;
   font-size: 22px;
   color: #686460;
   padding: 0 0 24px 0;
@@ -1070,7 +1090,8 @@ section .header.header--style-4::after {
 }
 
 #event .about-item p {
-  font-family: gl;
+  font-family: Grenze;
+  font-weight: normal;
   font-size: 22px;
   line-height: 140%;
 }
@@ -1142,7 +1163,7 @@ section .header.header--style-4::after {
   z-index: -1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #counter::after {
     background-image: url(../images/background-images/bg-booty.jpg);
   }
@@ -1177,15 +1198,16 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt h3 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   color: #474341;
   vertical-align: middle;
 }
 
 #counter .counter-txt p {
-  font-family: ggl;
+  font-family: Grenze;
   font-size: 22px;
   color: #89847f;
+  margin-top: -6px;
 }
 
 #counter .counter-txt .icon {
@@ -1209,7 +1231,7 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt span {
-  font-family: ggm;
+  font-family: GrenzeGotisch;
   font-size: 50px;
   vertical-align: middle;
   color: #bf382b;
@@ -1485,7 +1507,7 @@ section .header.header--style-4::after {
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row .schedule__timetable > li {
   line-height: 32px;
-  font-family: ggl;
+  font-family: GrenzeGotisch;
   font-size: 32px;
   font-weight: bold;
   color: #bf382b;
@@ -1504,7 +1526,7 @@ section .header.header--style-4::after {
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row .schedule__timetable > li.schedule__timetable-period {
   display: inline;
-  font-family: ggb;
+  font-family: Grenze;
   font-weight: bold;
   font-size: 20px;
   white-space: nowrap;
@@ -1529,7 +1551,7 @@ section .header.header--style-4::after {
 }
 
 #schedule .schedule__table-container .schedule__addendum ul > li {
-  font-family: ggl;
+  font-family: Grenze;
   font-size: 22px;
 }
 
@@ -1705,13 +1727,13 @@ section .header.header--style-4::after {
 }
 
 #price .price-item__container .price-item .price-item__text-container > .cl {
-  font-family: ggl;
+  font-family: GrenzeGotisch;
   font-size: 20px;
 }
 
 #price .price-item__container .price-item .price-item__text-container .price-tag > span {
   display: inline-block;
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   font-size: 50px;
   color: #bf382b;
   vertical-align: middle;
@@ -1725,7 +1747,7 @@ section .header.header--style-4::after {
 #price .price-item__container .price-item .price-item__text-container h3 {
   color: #474341;
   letter-spacing: 2px;
-  font-family: ggb;
+  font-family: GrenzeGotisch;
 }
 
 #price .price-item__container .price-item .price-item__text-container .gap-p p,
@@ -1736,7 +1758,7 @@ section .header.header--style-4::after {
 
 #price .price-item__container .price-item .price-item__text-container .gap-p p {
   font-size: 22px;
-  font-family: ggl;
+  font-family: Grenze;
 }
 
 #price .price-item__container .price-item .price-item__text-container .price-btn > a > i {
@@ -1810,7 +1832,7 @@ section .header.header--style-4::after {
   max-height: 360px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #route-section .route-section__item .route-section__img-container .route-section__img {
     max-height: 480px;
   }
@@ -1911,7 +1933,7 @@ section .header.header--style-4::after {
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #organize {
     background-image: url(../images/custom-events-01-768.jpg);
   }
@@ -1955,14 +1977,14 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text .head-span {
-  font-family: ggxl;
+  font-family: GrenzeGotisch;
   font-size: 32px;
   color: #bf382b;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
 
 #organize .organize-text h3 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   font-size: 50px;
   text-transform: none;
 }
@@ -1973,7 +1995,8 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text p {
-  font-family: ggxl;
+  font-family: Grenze;
+  font-weight: 200;
   font-size: 24px;
   color: #ede9df;
   padding: 9px 120px 40px;
@@ -2003,12 +2026,13 @@ section .header.header--style-4::after {
 }
 
 #organize_2 .org-item h3 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   font-size: 26px;
 }
 
 #organize_2 .org-item p {
-  font-family: ggl;
+  font-family: Grenze;
+  font-weight: 200;
   font-size: 22px;
 }
 
@@ -2035,7 +2059,7 @@ section .header.header--style-4::after {
 }
 
 #gallery .gallery-heading h3 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   font-size: 62px;
   text-transform: none;
   color: #ede9df;
@@ -2054,7 +2078,7 @@ section .header.header--style-4::after {
 }
 
 #gallery .gallery-pa p {
-  font-family: ggl;
+  font-family: GrenzeGotisch;
   font-size: 32px;
   text-transform: none;
   color: #ede9df;
@@ -2192,7 +2216,8 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
-  font-family: ggl;
+  font-family: GrenzeGotisch;
+  font-variation-settings: "wght" 300;
   line-height: 125%;
   font-size: 24px;
   display: block;
@@ -2218,7 +2243,7 @@ section .header.header--style-4::after {
           transition-delay: all 0s;
   background-color: rgba(183, 151, 138, 0.3);
   font-size: 20px;
-  font-family: ggl;
+  font-family: Grenze;
   font-weight: 400;
 }
 
@@ -2291,18 +2316,20 @@ section .header.header--style-4::after {
 }
 
 #about .about-txt h3 {
-  font-family: ggb;
+  font-family: GrenzeGotisch;
   font-size: 32px;
 }
 
 #about .about-txt h4 {
-  font-family: ggl;
+  font-family: GrenzeGotisch;
+  font-variation-settings: "wght" 500;
   color: #474341;
   text-transform: none;
 }
 
 #about .about-txt p {
-  font-family: ggl;
+  font-family: GrenzeGotisch;
+  font-variation-settings: "wght" 400;
   font-size: 20px;
   color: #686460;
   padding-bottom: 30px;
@@ -2324,7 +2351,7 @@ section .header.header--style-4::after {
   font-size: 19px;
   font-weight: normal;
   text-transform: none;
-  font-family: ggl;
+  font-family: GrenzeGotisch;
 }
 
 #about .about-txt .about-s {
@@ -2404,7 +2431,7 @@ section .header.header--style-4::after {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #register .register-box .r-b-color {
     background-image: url(../images/kassza-640x.jpg);
   }
@@ -2473,6 +2500,7 @@ section .header.header--style-4::after {
 }
 
 #contact .contact__text > .contact__email {
+  font-family: Grenze;
   font-size: 26px;
 }
 
@@ -2488,7 +2516,7 @@ section .header.header--style-4::after {
 }
 
 #footer .copy-right-txt p {
-  font-family: ggxl;
+  font-family: GrenzeGotisch;
   font-size: 22px;
   color: #bf382b;
 }
@@ -2527,7 +2555,7 @@ section .header.header--style-4::after {
 }
 
 #footer .footer__container .menu-a a {
-  font-family: ggl;
+  font-family: Grenze;
   font-size: 24px;
   color: #ede9df;
 }
