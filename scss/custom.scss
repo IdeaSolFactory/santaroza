@@ -751,8 +751,7 @@ section {
     }
 
     @include screen-lg {
-        // 992px
-        
+        background-image: url(../images/992/sr_992_01.jpg);
         height: 100vh;
     }
 
@@ -761,11 +760,11 @@ section {
     }
 
     @include screen-xxl{
-        //1680px
+        background-image: url(../images/1680/sr_1680_01.jpg);
     }
 
     @include screen-hd{
-        //1920px
+        background-image: url(../images/1920/sr_1024_01.jpg);
     }
 
     .backtotop {
@@ -2009,6 +2008,27 @@ section {
 /* GALLERY SECTION */
 #gallery {
     background-image: url(../images/480/sr_480_12.jpg);
+    
+    @include screen-md{       
+        background-image: url(../images/768/sr_768_12.jpg);
+    }
+
+    @include screen-lg {
+        background-image: url(../images/992/sr_992_12.jpg);
+        height: 100vh;
+    }
+
+    @include screen-xl{
+        background-image: url(../images/1024/sr_1024_12.jpg);
+    }
+
+    @include screen-xxl{
+        background-image: url(../images/1680/sr_1680_12.jpg);
+    }
+
+    @include screen-hd{
+        background-image: url(../images/1920/sr_1024_12.jpg);
+    }
 
     &::after {
         opacity: 0.65;
