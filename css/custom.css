@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family: ggm;
+  src: url(../fonts/GrenzeGotisch-Medium.ttf);
+}
+
+@font-face {
   src: url(../fonts/GrenzeGotisch-Light.ttf);
   font-family: ggl;
 }
@@ -12,6 +17,21 @@
 @font-face {
   src: url(../fonts/GrenzeGotisch-ExtraLight.ttf);
   font-family: ggxl;
+}
+
+@font-face {
+  src: url(../fonts/Grenze-ExtraLight.ttf);
+  font-family: gxl;
+}
+
+@font-face {
+  src: url(../fonts/Grenze-Light.ttf);
+  font-family: gl;
+}
+
+@font-face {
+  src: url(../fonts/Grenze-SemiBold.ttf);
+  font-family: gsb;
 }
 
 /* TEXT */
@@ -432,7 +452,7 @@ body {
 }
 
 .navbar.navbar-light .navbar-nav .nav-link {
-  font-family: ggxl;
+  font-family: gl;
   font-size: 22px;
   color: #ede9df;
 }
@@ -855,15 +875,21 @@ section .header.header--style-4::after {
 }
 
 #banner .banner-content .banner__txt h1 {
-  font-size: 50px;
+  font-family: ggm;
+  font-size: 55px;
+  line-height: 115%;
   padding-bottom: 16px;
   color: #ede9df;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.65));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.65));
 }
 
 #banner .banner-content .banner__txt p {
-  font-family: ggxl;
-  font-size: 22px;
+  font-family: gxl;
+  font-size: 24px;
   color: #ede9df;
+  -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.65));
+          filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.65));
 }
 
 /*BANNER 2 SECTION*/
@@ -1020,7 +1046,7 @@ section .header.header--style-4::after {
 }
 
 #event .event-header p {
-  font-family: ggl;
+  font-family: gl;
   font-size: 22px;
   color: #686460;
   padding: 0 0 24px 0;
@@ -1036,13 +1062,14 @@ section .header.header--style-4::after {
 }
 
 #event .about-item h3 {
+  font-size: 30px;
   padding-right: 40px;
   color: #474341;
   padding-bottom: 12px;
 }
 
 #event .about-item p {
-  font-family: ggl;
+  font-family: gl;
   font-size: 22px;
   line-height: 140%;
 }
@@ -2310,7 +2337,6 @@ section .header.header--style-4::after {
 
 #about .about-txt .about-s p {
   text-align: right;
-  font-style: italic;
 }
 
 /* BOOKING SECTION */

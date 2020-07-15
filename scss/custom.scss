@@ -8,6 +8,11 @@
 }
 
 @font-face {
+    font-family: ggm;
+    src: url(../fonts/GrenzeGotisch-Medium.ttf);
+}
+
+@font-face {
     src: url(../fonts/GrenzeGotisch-Light.ttf);
     font-family: ggl;
 }
@@ -15,6 +20,21 @@
 @font-face {
     src: url(../fonts/GrenzeGotisch-ExtraLight.ttf);
     font-family: ggxl;
+}
+
+@font-face {
+    src: url(../fonts/Grenze-ExtraLight.ttf);
+    font-family: gxl;
+}
+
+@font-face {
+    src: url(../fonts/Grenze-Light.ttf);
+    font-family: gl;
+}
+
+@font-face {
+    src: url(../fonts/Grenze-SemiBold.ttf);
+    font-family: gsb;
 }
 
 /* TEXT */
@@ -447,7 +467,7 @@ body {
 
     &.navbar-light {
         .navbar-nav .nav-link {
-            font-family: ggxl;
+            font-family: gl;
             font-size: 22px;
             color: color(background-main);
         }
@@ -832,7 +852,7 @@ section {
 
         .banner__txt {
             flex-grow: 1;
-            text-align: center;
+            text-align: center;            
 
             @include screen-lg {
                 // text-align: left;
@@ -841,15 +861,19 @@ section {
             }
 
             h1 {
-                font-size: 50px;
+                font-family: ggm;
+                font-size: 55px;
+                line-height: 115%;
                 padding-bottom: 16px;
                 color: color(background-main);
+                filter: drop-shadow(0 0 20px rgba(0, 0, 0, .65));
             }           
 
             p {
-                font-family: ggxl;
-                font-size: 22px;
+                font-family: gxl;
+                font-size: 24px;
                 color: color(text-white);
+                filter: drop-shadow(0 0 1px rgba(0, 0, 0, .65));
             }
         }
     }
@@ -1020,7 +1044,7 @@ section {
             color: color(primary);
         }
         p {
-            font-family: ggl;
+            font-family: gl;
             font-size: 22px;
             color: color(text-light);
             padding: 0 0 24px 0;
@@ -1033,13 +1057,14 @@ section {
         }
 
         h3 {
+            font-size: 30px;
             padding-right: 40px;
             color: color(text);
             padding-bottom: 12px;
         }
 
         p {
-            font-family: ggl;
+            font-family: gl;
             font-size: 22px;
             line-height: 140%;
         }
@@ -2168,7 +2193,6 @@ section {
 
             p {
                 text-align: right;
-                font-style: italic;
             }
         }
     }
