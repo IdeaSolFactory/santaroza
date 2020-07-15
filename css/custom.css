@@ -715,7 +715,7 @@ section .header.header--style-4::after {
 
 /*BANNER SECTION*/
 #banner {
-  background: url(../images/480/sr_480_01.jpg);
+  background: url(..images/480/sr_480_01.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2118,7 +2118,7 @@ section .header.header--style-4::after {
 
 /* GALLERY SECTION */
 #gallery {
-  background-image: url(../images/video-bckgrnd-01.jpg);
+  background-image: url(../images/480/sr_480_12.jpg);
 }
 
 #gallery::after {
