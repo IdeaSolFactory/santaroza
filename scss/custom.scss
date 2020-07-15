@@ -2008,7 +2008,7 @@ section {
 /* GALLERY SECTION */
 #gallery {
     background-image: url(../images/480/sr_480_12.jpg);
-    
+
     @include screen-md{       
         background-image: url(../images/768/sr_768_12.jpg);
     }
