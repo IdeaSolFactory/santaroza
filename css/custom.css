@@ -731,7 +731,6 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #banner {
-    background-image: url(../images/992/sr_992_01.jpg);
     height: 100vh;
   }
 }
@@ -739,18 +738,6 @@ section .header.header--style-4::after {
 @media (min-width: 1200px) {
   #banner {
     background-image: url(../images/1024/sr_1024_01.jpg);
-  }
-}
-
-@media (min-width: 1680px) {
-  #banner {
-    background-image: url(../images/1680/sr_1680_01.jpg);
-  }
-}
-
-@media (min-width: 1920px) {
-  #banner {
-    background-image: url(../images/1920/sr_1024_01.jpg);
   }
 }
 
@@ -2144,37 +2131,6 @@ section .header.header--style-4::after {
 /* GALLERY SECTION */
 #gallery {
   background-image: url(../images/480/sr_480_12.jpg);
-}
-
-@media (min-width: 767px) {
-  #gallery {
-    background-image: url(../images/768/sr_768_12.jpg);
-  }
-}
-
-@media (min-width: 992px) {
-  #gallery {
-    background-image: url(../images/992/sr_992_12.jpg);
-    height: 100vh;
-  }
-}
-
-@media (min-width: 1200px) {
-  #gallery {
-    background-image: url(../images/1024/sr_1024_12.jpg);
-  }
-}
-
-@media (min-width: 1680px) {
-  #gallery {
-    background-image: url(../images/1680/sr_1680_12.jpg);
-  }
-}
-
-@media (min-width: 1920px) {
-  #gallery {
-    background-image: url(../images/1920/sr_1024_12.jpg);
-  }
 }
 
 #gallery::after {
