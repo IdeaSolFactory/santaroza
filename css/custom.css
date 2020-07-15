@@ -1209,6 +1209,8 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt span {
+  font-family: ggm;
+  font-size: 50px;
   vertical-align: middle;
   color: #bf382b;
 }
