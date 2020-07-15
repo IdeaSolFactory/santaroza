@@ -3,23 +3,18 @@
 @import "mixins";
 
 @font-face {
-    font-family: bangers;
-    src: url(../fonts/Bangers-Regular.ttf);
+    font-family: ggb;
+    src: url(../fonts/GrenzeGotisch-Bold.ttf);
 }
 
 @font-face {
-    src: url(../fonts/BarlowCondensed-Bold.ttf);
-    font-family: bb;
+    src: url(../fonts/GrenzeGotisch-Light.ttf);
+    font-family: ggl;
 }
 
 @font-face {
-    src: url(../fonts/BarlowCondensed-Light.ttf);
-    font-family: bl;
-}
-
-@font-face {
-    src: url(../fonts/BarlowCondensed-Regular.ttf);
-    font-family: br;
+    src: url(../fonts/GrenzeGotisch-ExtraLight.ttf);
+    font-family: ggxl;
 }
 
 /* TEXT */
@@ -28,32 +23,30 @@ h1,
 h2,
 h3,
 h5 {
-    font-family: bangers;
+    font-family: ggb;
     letter-spacing: 2px;
     color: color(text);
 }
 
 p {
-    font-family: br;
+    font-family: ggl;
     color: color(text-light);
-    font-size: 19px;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 .section-title {
     h1 {
+        font-family: ggb;
         color: color(primary);
     }
-}
-
-.banner-txt h1 {
-    letter-spacing: 4px;
 }
 
 .event-header {
     h1,
     h2,
     h3 {
-        font-family: bangers;
+        font-family: ggb;
         color: color(text);
     }
 }
@@ -182,8 +175,8 @@ p {
 .btn--style1 {
     padding: 12px 16px !important;
     color: color(text-white) !important;
-    font-size: 19px !important;
-    font-family: br !important;
+    font-size: 22px !important;
+    font-family: ggxl !important;
     font-weight: normal !important;
     text-transform: none !important;
     border: none !important;
@@ -454,6 +447,8 @@ body {
 
     &.navbar-light {
         .navbar-nav .nav-link {
+            font-family: ggxl;
+            font-size: 22px;
             color: color(background-main);
         }
     }
@@ -846,14 +841,14 @@ section {
             }
 
             h1 {
-                color: color(background-main);
-            }
-
-            h3 {
+                font-size: 50px;
                 padding-bottom: 16px;
-            }
+                color: color(background-main);
+            }           
 
             p {
+                font-family: ggxl;
+                font-size: 22px;
                 color: color(text-white);
             }
         }
@@ -903,11 +898,13 @@ section {
 
     .coun_time {
         h2 {
-            font-family: bangers;
+            font-family: ggb;
             color: color(primary);
         }
 
         p {
+            font-family: ggxl;
+            font-size: 24px;
             color: color(text-white);
         }
 
@@ -992,7 +989,6 @@ section {
     }
 
     .event__item {
-
         &:not(:first-of-type) {
             margin-top: 20px;
 
@@ -1001,8 +997,8 @@ section {
             }
         }
 
-        h3{
-            font-family: bangers;
+        h3 {
+            font-family: ggb;
         }
     }
 
@@ -1024,6 +1020,8 @@ section {
             color: color(primary);
         }
         p {
+            font-family: ggl;
+            font-size: 22px;
             color: color(text-light);
             padding: 0 0 24px 0;
         }
@@ -1037,6 +1035,13 @@ section {
         h3 {
             padding-right: 40px;
             color: color(text);
+            padding-bottom: 12px;
+        }
+
+        p {
+            font-family: ggl;
+            font-size: 22px;
+            line-height: 140%;
         }
 
         @include screen-lg {
@@ -1130,11 +1135,13 @@ section {
 
     .counter-txt {
         h3 {
-            font-family: bangers;
+            font-family: ggb;
             color: color(text);
             vertical-align: middle;
         }
         p {
+            font-family: ggl;
+            font-size: 22px;
             color: color(text-lighter);
         }
         .icon {
@@ -1312,7 +1319,7 @@ section {
                         @include screen-lg {
                             margin-bottom: 12px;
                             text-align: left;
-                        }
+                        }                      
 
                         .schedule__item-img {
                             height: 64px;
@@ -1343,7 +1350,7 @@ section {
                         }
 
                         p {
-                            font-size: 18px;
+                            font-size: 22px;
                             color: color(text-lighter);
                         }
                     }
@@ -1385,8 +1392,9 @@ section {
                             }
 
                             > li {
-                                line-height: 32x;
-                                font-size: 24px;
+                                line-height: 32px;
+                                font-family: ggl;
+                                font-size: 32px;
                                 font-weight: bold;
                                 color: color(primary);
                                 text-align: center;
@@ -1405,8 +1413,9 @@ section {
 
                                 &.schedule__timetable-period {
                                     display: inline;
+                                    font-family: ggb;
                                     font-weight: bold;
-                                    font-size: 16px;
+                                    font-size: 20px;
                                     white-space: nowrap;
                                     padding: 16px 10px;
                                     line-height: 100%;
@@ -1432,8 +1441,11 @@ section {
             text-align: center;
 
             ul > li {
+                font-family: ggl;
+                font-size: 22px;
+                
                 &::before {
-                    content: "⋆";
+                    content: "⋆";                    
                     font-size: 32px;
                     color: color(primary);
                     padding-right: 2px;
@@ -1585,11 +1597,20 @@ section {
             }
 
             .price-item__text-container {
-
                 margin-bottom: 12px;
+
+                >h3{
+                    font-size: 36px;
+                }
+                >.cl{
+                    font-family: ggl;
+                    font-size: 20px;
+                }
 
                 .price-tag > span {
                     display: inline-block;
+                    font-family: ggb;
+                    font-size: 50px;
                     color: color(primary);
                     vertical-align: middle;
 
@@ -1602,14 +1623,19 @@ section {
                 h3 {
                     color: color(text);
                     letter-spacing: 2px;
-                    font-family: bangers;
+                    font-family: ggb;
                 }
 
                 .gap-p {
                     p,
                     i {
                         color: color(text-light);
-                        font-size: 19px;
+                        font-size: 20px;
+                    }
+
+                    p{
+                        font-size: 22px;
+                        font-family: ggl;
                     }
                 }
 
@@ -1620,11 +1646,11 @@ section {
                     background-repeat: no-repeat;
                     background-position: 56% 50%;
                     transform: rotate(90deg);
-        
+
                     border-color: color(primary);
                 }
             }
-        }        
+        }
 
         .price__img-holder {
             justify-self: flex-end;
@@ -1795,11 +1821,19 @@ section {
 
     .organize-text {
         .head-span {
+            font-family: ggxl;
+            font-size: 32px;
             color: color(primary);
             text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
         }
 
         h3 {
+
+            font-family: ggb;
+            font-size: 50px;
+            text-transform: none;
+
+
             &::after {
                 background: color(primary);
                 opacity: 0.35;
@@ -1807,7 +1841,10 @@ section {
         }
 
         p {
+            font-family: ggxl;
+            font-size: 24px;
             color: color(text-white);
+            padding: 9px 120px 40px
         }
 
         a {
@@ -1833,6 +1870,17 @@ section {
         p {
             color: color(text-white);
         }
+
+        h3{
+            font-family: ggb;
+            font-size: 26px;
+        }
+
+        p{
+            font-family: ggl;
+            font-size: 22px;
+        }
+
         i {
             background-color: color(primary);
             display: inline-block;
@@ -1858,6 +1906,9 @@ section {
 
     .gallery-heading {
         h3 {
+            font-family: ggb;
+            font-size: 62px;
+            text-transform: none;
             color: color(text-white);
             &::after {
                 content: none;
@@ -1874,6 +1925,9 @@ section {
             }
         }
         p {
+            font-family: ggl;
+            font-size: 32px;
+            text-transform: none;
             color: color(text-white);
         }
     }
@@ -1982,9 +2036,9 @@ section {
                     }
 
                     > h3 {
-                        font-family: bangers;
+                        font-family: ggl;
                         line-height: 125%;
-                        font-size: 18px;
+                        font-size: 24px;
                         display: block;
                         color: color(text-white);
                         white-space: break-spaces;
@@ -2005,8 +2059,8 @@ section {
                 transition: all 0.2s;
                 transition-delay: all 0s;
                 background-color: rgba($color: color(graphics-light), $alpha: 0.3);
-                font-size: 19px;
-                font-family: br;
+                font-size: 20px;
+                font-family: ggl;
                 font-weight: 400;
 
                 &.collapsing {
@@ -2073,18 +2127,23 @@ section {
         }
 
         h3 {
-            font-family: bangers;
+            font-family: ggb;
+            font-size: 32px;
         }
 
         h4 {
+            font-family: ggl;
             color: color(text);
-            text-transform: uppercase;
+            text-transform: none;
         }
         p {
+            font-family: ggl;
+            font-size: 20px;
             color: color(text-light);
             padding-bottom: 30px;
 
             @include screen-lg {
+                font-size: 22px;
                 padding-bottom: 40px;
             }
         }
@@ -2096,7 +2155,7 @@ section {
             font-size: 19px;
             font-weight: normal;
             text-transform: none;
-            font-family: br;
+            font-family: ggl;
         }
 
         .about-s {
@@ -2246,6 +2305,8 @@ section {
     .copy-right-txt {
         margin-top: 16px;
         p {
+            font-family: ggxl;
+            font-size: 22px;
             color: color(primary);
         }
     }
@@ -2279,6 +2340,8 @@ section {
         .menu-a {
             text-align: center;
             a {
+                font-family: ggl;
+                font-size: 24px;
                 color: color(background-main);
             }
 

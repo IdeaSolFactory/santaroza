@@ -1,22 +1,17 @@
 @charset "UTF-8";
 @font-face {
-  font-family: bangers;
-  src: url(../fonts/Bangers-Regular.ttf);
+  font-family: ggb;
+  src: url(../fonts/GrenzeGotisch-Bold.ttf);
 }
 
 @font-face {
-  src: url(../fonts/BarlowCondensed-Bold.ttf);
-  font-family: bb;
+  src: url(../fonts/GrenzeGotisch-Light.ttf);
+  font-family: ggl;
 }
 
 @font-face {
-  src: url(../fonts/BarlowCondensed-Light.ttf);
-  font-family: bl;
-}
-
-@font-face {
-  src: url(../fonts/BarlowCondensed-Regular.ttf);
-  font-family: br;
+  src: url(../fonts/GrenzeGotisch-ExtraLight.ttf);
+  font-family: ggxl;
 }
 
 /* TEXT */
@@ -24,29 +19,27 @@ h1,
 h2,
 h3,
 h5 {
-  font-family: bangers;
+  font-family: ggb;
   letter-spacing: 2px;
   color: #474341;
 }
 
 p {
-  font-family: br;
+  font-family: ggl;
   color: #686460;
-  font-size: 19px;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .section-title h1 {
+  font-family: ggb;
   color: #bf382b;
-}
-
-.banner-txt h1 {
-  letter-spacing: 4px;
 }
 
 .event-header h1,
 .event-header h2,
 .event-header h3 {
-  font-family: bangers;
+  font-family: ggb;
   color: #474341;
 }
 
@@ -173,8 +166,8 @@ p {
 .btn--style1 {
   padding: 12px 16px !important;
   color: #ede9df !important;
-  font-size: 19px !important;
-  font-family: br !important;
+  font-size: 22px !important;
+  font-family: ggxl !important;
   font-weight: normal !important;
   text-transform: none !important;
   border: none !important;
@@ -439,6 +432,8 @@ body {
 }
 
 .navbar.navbar-light .navbar-nav .nav-link {
+  font-family: ggxl;
+  font-size: 22px;
   color: #ede9df;
 }
 
@@ -860,14 +855,14 @@ section .header.header--style-4::after {
 }
 
 #banner .banner-content .banner__txt h1 {
+  font-size: 50px;
+  padding-bottom: 16px;
   color: #ede9df;
 }
 
-#banner .banner-content .banner__txt h3 {
-  padding-bottom: 16px;
-}
-
 #banner .banner-content .banner__txt p {
+  font-family: ggxl;
+  font-size: 22px;
   color: #ede9df;
 }
 
@@ -920,11 +915,13 @@ section .header.header--style-4::after {
 }
 
 #banner-2 .coun_time h2 {
-  font-family: bangers;
+  font-family: ggb;
   color: #bf382b;
 }
 
 #banner-2 .coun_time p {
+  font-family: ggxl;
+  font-size: 24px;
   color: #ede9df;
 }
 
@@ -996,7 +993,7 @@ section .header.header--style-4::after {
 }
 
 #event .event__item h3 {
-  font-family: bangers;
+  font-family: ggb;
 }
 
 #event .event-header {
@@ -1023,6 +1020,8 @@ section .header.header--style-4::after {
 }
 
 #event .event-header p {
+  font-family: ggl;
+  font-size: 22px;
   color: #686460;
   padding: 0 0 24px 0;
 }
@@ -1039,6 +1038,13 @@ section .header.header--style-4::after {
 #event .about-item h3 {
   padding-right: 40px;
   color: #474341;
+  padding-bottom: 12px;
+}
+
+#event .about-item p {
+  font-family: ggl;
+  font-size: 22px;
+  line-height: 140%;
 }
 
 @media (min-width: 992px) {
@@ -1143,12 +1149,14 @@ section .header.header--style-4::after {
 }
 
 #counter .counter-txt h3 {
-  font-family: bangers;
+  font-family: ggb;
   color: #474341;
   vertical-align: middle;
 }
 
 #counter .counter-txt p {
+  font-family: ggl;
+  font-size: 22px;
   color: #89847f;
 }
 
@@ -1394,7 +1402,7 @@ section .header.header--style-4::after {
 }
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__item-header p {
-  font-size: 18px;
+  font-size: 22px;
   color: #89847f;
 }
 
@@ -1446,8 +1454,9 @@ section .header.header--style-4::after {
 }
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row .schedule__timetable > li {
-  line-height: 32x;
-  font-size: 24px;
+  line-height: 32px;
+  font-family: ggl;
+  font-size: 32px;
   font-weight: bold;
   color: #bf382b;
   text-align: center;
@@ -1465,8 +1474,9 @@ section .header.header--style-4::after {
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-row .schedule__timetable > li.schedule__timetable-period {
   display: inline;
+  font-family: ggb;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   white-space: nowrap;
   padding: 16px 10px;
   line-height: 100%;
@@ -1486,6 +1496,11 @@ section .header.header--style-4::after {
 #schedule .schedule__table-container .schedule__addendum {
   padding-top: 22px;
   text-align: center;
+}
+
+#schedule .schedule__table-container .schedule__addendum ul > li {
+  font-family: ggl;
+  font-size: 22px;
 }
 
 #schedule .schedule__table-container .schedule__addendum ul > li::before {
@@ -1655,8 +1670,19 @@ section .header.header--style-4::after {
   margin-bottom: 12px;
 }
 
+#price .price-item__container .price-item .price-item__text-container > h3 {
+  font-size: 36px;
+}
+
+#price .price-item__container .price-item .price-item__text-container > .cl {
+  font-family: ggl;
+  font-size: 20px;
+}
+
 #price .price-item__container .price-item .price-item__text-container .price-tag > span {
   display: inline-block;
+  font-family: ggb;
+  font-size: 50px;
   color: #bf382b;
   vertical-align: middle;
 }
@@ -1669,13 +1695,18 @@ section .header.header--style-4::after {
 #price .price-item__container .price-item .price-item__text-container h3 {
   color: #474341;
   letter-spacing: 2px;
-  font-family: bangers;
+  font-family: ggb;
 }
 
 #price .price-item__container .price-item .price-item__text-container .gap-p p,
 #price .price-item__container .price-item .price-item__text-container .gap-p i {
   color: #686460;
-  font-size: 19px;
+  font-size: 20px;
+}
+
+#price .price-item__container .price-item .price-item__text-container .gap-p p {
+  font-size: 22px;
+  font-family: ggl;
 }
 
 #price .price-item__container .price-item .price-item__text-container .price-btn > a > i {
@@ -1894,8 +1925,16 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text .head-span {
+  font-family: ggxl;
+  font-size: 32px;
   color: #bf382b;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+}
+
+#organize .organize-text h3 {
+  font-family: ggb;
+  font-size: 50px;
+  text-transform: none;
 }
 
 #organize .organize-text h3::after {
@@ -1904,7 +1943,10 @@ section .header.header--style-4::after {
 }
 
 #organize .organize-text p {
+  font-family: ggxl;
+  font-size: 24px;
   color: #ede9df;
+  padding: 9px 120px 40px;
 }
 
 #organize .organize-text a {
@@ -1930,6 +1972,16 @@ section .header.header--style-4::after {
   color: #ede9df;
 }
 
+#organize_2 .org-item h3 {
+  font-family: ggb;
+  font-size: 26px;
+}
+
+#organize_2 .org-item p {
+  font-family: ggl;
+  font-size: 22px;
+}
+
 #organize_2 .org-item i {
   background-color: #bf382b;
   display: inline-block;
@@ -1953,6 +2005,9 @@ section .header.header--style-4::after {
 }
 
 #gallery .gallery-heading h3 {
+  font-family: ggb;
+  font-size: 62px;
+  text-transform: none;
   color: #ede9df;
 }
 
@@ -1969,6 +2024,9 @@ section .header.header--style-4::after {
 }
 
 #gallery .gallery-pa p {
+  font-family: ggl;
+  font-size: 32px;
+  text-transform: none;
   color: #ede9df;
 }
 
@@ -2104,9 +2162,9 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
-  font-family: bangers;
+  font-family: ggl;
   line-height: 125%;
-  font-size: 18px;
+  font-size: 24px;
   display: block;
   color: #ede9df;
   white-space: break-spaces;
@@ -2129,8 +2187,8 @@ section .header.header--style-4::after {
   -webkit-transition-delay: all 0s;
           transition-delay: all 0s;
   background-color: rgba(183, 151, 138, 0.3);
-  font-size: 19px;
-  font-family: br;
+  font-size: 20px;
+  font-family: ggl;
   font-weight: 400;
 }
 
@@ -2203,21 +2261,26 @@ section .header.header--style-4::after {
 }
 
 #about .about-txt h3 {
-  font-family: bangers;
+  font-family: ggb;
+  font-size: 32px;
 }
 
 #about .about-txt h4 {
+  font-family: ggl;
   color: #474341;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 #about .about-txt p {
+  font-family: ggl;
+  font-size: 20px;
   color: #686460;
   padding-bottom: 30px;
 }
 
 @media (min-width: 992px) {
   #about .about-txt p {
+    font-size: 22px;
     padding-bottom: 40px;
   }
 }
@@ -2231,7 +2294,7 @@ section .header.header--style-4::after {
   font-size: 19px;
   font-weight: normal;
   text-transform: none;
-  font-family: br;
+  font-family: ggl;
 }
 
 #about .about-txt .about-s {
@@ -2396,6 +2459,8 @@ section .header.header--style-4::after {
 }
 
 #footer .copy-right-txt p {
+  font-family: ggxl;
+  font-size: 22px;
   color: #bf382b;
 }
 
@@ -2433,6 +2498,8 @@ section .header.header--style-4::after {
 }
 
 #footer .footer__container .menu-a a {
+  font-family: ggl;
+  font-size: 24px;
   color: #ede9df;
 }
 
