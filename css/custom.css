@@ -196,7 +196,7 @@ p {
 
 @media (min-width: 992px) {
   .btn--style1 {
-    padding: 20px 22px !important;
+    padding: 14px 22px !important;
   }
 }
 
@@ -869,8 +869,9 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #banner .banner-content .banner__txt {
-    max-width: 650px;
+    max-width: 720px;
     margin-left: 20px;
+    margin-top: -30px;
   }
 }
 

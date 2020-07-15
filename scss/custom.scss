@@ -203,7 +203,7 @@ p {
     border-radius: 50px !important;
 
     @include screen-lg {
-        padding: 20px 22px !important;
+        padding: 14px 22px !important;
     }
 
     &::before {
@@ -856,8 +856,9 @@ section {
 
             @include screen-lg {
                 // text-align: left;
-                max-width: 650px;
+                max-width: 720px;
                 margin-left: 20px;
+                margin-top: -30px;
             }
 
             h1 {
