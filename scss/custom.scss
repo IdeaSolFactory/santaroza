@@ -1398,9 +1398,11 @@ section {
                         }
                     }
 
-                    .schedule__timetable-row {
+                    .schedule__timetable-block {
                         padding-top: 20px;
                         position: relative;
+                        display: flex;
+                        flex-direction: column;
 
                         &:not(:last-of-type) {
                             padding-bottom: 20px;
@@ -1412,7 +1414,7 @@ section {
                             top: 0;
                             left: 0;
                             width: 100%;
-                            height: 100%;
+                            // height: 100%;
 
                             border-top: 2px solid color(graphics-light);
 
@@ -1420,54 +1422,100 @@ section {
                             // @include bckgrnd-img--contain;
                         }
 
-                        .schedule__timetable {
-                            width: 100%;
-                            list-style-type: none;
+                        @include screen-lg{
                             display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            align-items: center;
-                            position: relative;
+                            flex-direction: row;                            
+                            justify-content: stretch;
+                        }
 
-                            @include screen-lg {
-                                flex-wrap: nowrap;
+                        .schedule__timetable-period {
+                            display: block;
+                            font-family: Grenze;
+                            font-weight: bold;
+                            font-size: 20px;
+                            white-space: nowrap;
+                            padding: 16px 10px;
+                            line-height: 100%;
+                            color: color(text-light);
+                            background-color: rgba($color: color(graphics-light), $alpha: 0.25);
+                            border: unset;
+
+                            @include screen-lg{
+                                display: flex;                                
+                                justify-content: center;
+                                align-items: center;
+                                align-self: stretch;
+                                width: 300px;
                             }
 
-                            > li {
-                                line-height: 32px;
-                                font-family: GrenzeGotisch;
-                                font-size: 32px;
-                                font-weight: bold;
-                                color: color(primary);
-                                text-align: center;
-                                position: relative;
-                                height: 100%;
-                                width: 100%;
+                            >h3{
                                 display: block;
-
-                                @include screen-lg {
-                                    &:not(.schedule__timetable-period) {
-                                        &:not(:nth-of-type(2)) {
-                                            border-left: 1px solid color(graphics-light);
-                                        }
-                                    }
-                                }
-
-                                &.schedule__timetable-period {
-                                    display: inline;
-                                    font-family: Grenze;
-                                    font-weight: bold;
-                                    font-size: 20px;
-                                    white-space: nowrap;
-                                    padding: 16px 10px;
-                                    line-height: 100%;
-                                    color: color(text-light);
-                                    background-color: rgba($color: color(graphics-light), $alpha: 0.25);
-                                    border: unset;
-                                }
+                                font-family: Grenze;
+                                font-size: 22px;
+                                font-weight: bold;
                             }
                         }
+
+                        .schedule__timetable-rows{
+                            height: 100%;
+                            width: 100%;                            
+
+                            @include screen-lg{
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 0 40px;
+                            }
+
+                            .schedule__timetable {
+                                width: 100%;
+                                height: 100%;
+                                list-style-type: none;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                align-items: center;
+                                position: relative;     
+                                
+                                @include screen-lg{
+                                    height: 100%;
+                                    
+                                    &:not(:first-of-type){
+                                        border-top: 1px solid color(graphics-light);
+                                    }
+                                }
+    
+                                > li {
+                                    line-height: 32px;
+                                    font-family: GrenzeGotisch;
+                                    font-size: 32px;
+                                    font-weight: bold;
+                                    color: color(primary);
+                                    text-align: center;
+                                    position: relative;
+                                    height: 100%;
+                                    width: 100%;
+                                    display: block;
+                                    padding-top: 12px;
+                                    
+    
+                                    @include screen-lg {
+    
+                                        width: 33.333%;
+                                        padding: 12px 0;
+
+                                        &:not(.schedule__timetable-period) {
+    
+                                            &:not(:first-of-type) {
+                                                border-left: 1px solid color(graphics-light);
+                                            }
+                                        }
+                                    }                                
+                                }                            
+                            }
+                        }
+
+                        
                     }
                 }
             }
