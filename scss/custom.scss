@@ -2241,7 +2241,6 @@ section {
 
         @include screen-xl {
             position: relative;
-            height: 500px;
             top: unset;
             left: unset;
             opacity: 1;
@@ -2251,8 +2250,7 @@ section {
             >img{                
                 object-fit: cover;
                 object-position: 30% 70%;
-                max-width: unset;
-                height: 100%;
+                max-width: 100%;
             }
         }
     }
