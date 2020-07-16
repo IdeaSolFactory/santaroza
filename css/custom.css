@@ -2419,20 +2419,35 @@ section .header.header--style-4::after {
 
 @media (min-width: 1200px) {
   #about .about-img {
+    height: 250px;
     position: relative;
     top: unset;
     left: unset;
     opacity: 1;
-    overflow: hidden;
     padding: 0;
+    margin: 0 0 20px 0;
   }
   #about .about-img > img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 30% 70%;
-       object-position: 30% 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    -o-object-fit: contain;
+       object-fit: contain;
     max-width: 100%;
+    max-height: 100%;
   }
+}
+
+@media (min-width: 1680px) {
+  #about .about-img {
+    height: 200px;
+  }
+}
+
+#about .about-txt {
+  margin-bottom: 30px;
 }
 
 #about .about-txt h3,
@@ -2453,18 +2468,18 @@ section .header.header--style-4::after {
 }
 
 #about .about-txt p {
-  font-family: GrenzeGotisch;
+  font-family: Grenze;
   font-variation-settings: "wght" 400;
   font-size: 22px;
   color: #686460;
-  padding-bottom: 30px;
   padding-right: 0;
+  padding-bottom: 0;
+  margin-bottom: 12px;
 }
 
 @media (min-width: 992px) {
   #about .about-txt p {
     font-size: 22px;
-    padding-bottom: 40px;
   }
 }
 
