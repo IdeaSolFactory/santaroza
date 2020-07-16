@@ -735,7 +735,7 @@ section {
 
 /*BANNER SECTION*/
 #banner {
-    background: url(../images/480/sr_480_01.JPG);    
+    background: url(../images/480/sr-480-01.jpg);    
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -745,7 +745,7 @@ section {
 
 
     @include screen-md{       
-        background-image: url(../images/768/sr_768_01.JPG);
+        background-image: url(../images/768/sr-768-01.jpg);
     }
 
     @include screen-lg {
@@ -755,14 +755,16 @@ section {
     }
 
     @include screen-xl{
-        background-image: url(../images/1024/sr_1024_01.JPG);
+        background-image: url(../images/1024/sr-1024-01.jpg);
     }
 
     @include screen-xxl{
-        
+        background-image: url(../images/1680/sr-1680-01.jpg);
     }
 
-    @include screen-hd{}
+    @include screen-hd{
+        background-image: url(../images/1920/sr-1920-01.jpg);
+    }
 
     .backtotop {
         .backtotop__icon {
@@ -2004,26 +2006,26 @@ section {
 
 /* GALLERY SECTION */
 #gallery {
-    background-image: url(../images/480/sr_480_12.jpg);
+    background-image: url(../images/480/sr-480-12.jpg);
 
     @include screen-md{
-        background-image: url(../images/768/sr_768_12.jpg);
+        background-image: url(../images/768/sr-768-12.jpg);
     }
 
     @include screen-lg{
-        background-image: url(../images/992/sr_992_12.jpg);
+        background-image: url(../images/992/sr-992-12.jpg);
     }
 
     @include screen-xl{
-        background-image: url(../images/1024/sr_1024_12.jpg);
+        background-image: url(../images/1024/sr-1024-12.jpg);
     }
 
     @include screen-xxl{
-        background-image: url(../images/1680/sr_1680_12.jpg);
+        background-image: url(../images/1680/sr-1680-12.jpg);
     }
 
     @include screen-hd{
-        background-image: url(../images/1920/sr_1920_12.jpg);
+        background-image: url(../images/1920/sr-1920-12.jpg);
     }
 
     &::after {

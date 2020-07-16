@@ -715,7 +715,7 @@ section .header.header--style-4::after {
 
 /*BANNER SECTION*/
 #banner {
-  background: url(../images/480/sr_480_01.JPG);
+  background: url(../images/480/sr-480-01.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -725,7 +725,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 767px) {
   #banner {
-    background-image: url(../images/768/sr_768_01.JPG);
+    background-image: url(../images/768/sr-768-01.jpg);
   }
 }
 
@@ -737,7 +737,19 @@ section .header.header--style-4::after {
 
 @media (min-width: 1200px) {
   #banner {
-    background-image: url(../images/1024/sr_1024_01.JPG);
+    background-image: url(../images/1024/sr-1024-01.jpg);
+  }
+}
+
+@media (min-width: 1680px) {
+  #banner {
+    background-image: url(../images/1680/sr-1680-01.jpg);
+  }
+}
+
+@media (min-width: 1920px) {
+  #banner {
+    background-image: url(../images/1920/sr-1920-01.jpg);
   }
 }
 
@@ -2130,36 +2142,36 @@ section .header.header--style-4::after {
 
 /* GALLERY SECTION */
 #gallery {
-  background-image: url(../images/480/sr_480_12.jpg);
+  background-image: url(../images/480/sr-480-12.jpg);
 }
 
 @media (min-width: 767px) {
   #gallery {
-    background-image: url(../images/768/sr_768_12.jpg);
+    background-image: url(../images/768/sr-768-12.jpg);
   }
 }
 
 @media (min-width: 992px) {
   #gallery {
-    background-image: url(../images/992/sr_992_12.jpg);
+    background-image: url(../images/992/sr-992-12.jpg);
   }
 }
 
 @media (min-width: 1200px) {
   #gallery {
-    background-image: url(../images/1024/sr_1024_12.jpg);
+    background-image: url(../images/1024/sr-1024-12.jpg);
   }
 }
 
 @media (min-width: 1680px) {
   #gallery {
-    background-image: url(../images/1680/sr_1680_12.jpg);
+    background-image: url(../images/1680/sr-1680-12.jpg);
   }
 }
 
 @media (min-width: 1920px) {
   #gallery {
-    background-image: url(../images/1920/sr_1920_12.jpg);
+    background-image: url(../images/1920/sr-1920-12.jpg);
   }
 }
 
