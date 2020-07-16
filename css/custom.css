@@ -2420,7 +2420,7 @@ section .header.header--style-4::after {
 @media (min-width: 1200px) {
   #about .about-img {
     position: relative;
-    height: 100%;
+    height: 500px;
     top: unset;
     left: unset;
     opacity: 1;
@@ -2433,6 +2433,7 @@ section .header.header--style-4::after {
     -o-object-position: 30% 70%;
        object-position: 30% 70%;
     max-width: unset;
+    height: 100%;
   }
 }
 
