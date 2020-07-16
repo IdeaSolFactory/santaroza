@@ -2224,7 +2224,8 @@ section {
         top: -75px;
         left: 50%;
         height: 420px;
-        opacity: 0.4;
+        width: 100%;
+        opacity: 0.2;
 
         @include screen-lg {
             position: relative;
@@ -2232,26 +2233,29 @@ section {
             top: unset;
             left: unset;
             opacity: 1;
+            overflow: hidden;
+            
+            padding: 12px 0;
         }
 
-        .main-img {
+        @include screen-xl {
+            position: relative;
             height: 100%;
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding-bottom: 20px;
+            top: unset;
+            left: unset;
+            opacity: 1;
+            overflow: hidden;
+            padding: 0;
 
-            @include screen-xl {
-                padding-bottom: 0;
-            }
-
-            > img {
-                object-fit: contain;
-                object-position: 50% 50%;
-                height: 100%;
+            >img{                
+                object-fit: cover;
+                object-position: 30% 70%;
+                max-width: unset;
             }
         }
     }
+
+       
 
     .about-txt {
         h3,
@@ -2273,9 +2277,10 @@ section {
         p {
             font-family: GrenzeGotisch;
             font-variation-settings: "wght" 400;
-            font-size: 20px;
+            font-size: 22px;
             color: color(text-light);
             padding-bottom: 30px;
+            padding-right: 0;
 
             @include screen-lg {
                 font-size: 22px;
@@ -2293,18 +2298,32 @@ section {
             font-family: GrenzeGotisch;
         }
 
-        .about-s {
-            padding-top: 30px;
+        &--bodytext{
+            p{
+                font-family: Grenze;
+                font-size: 22px;
+                padding-right: 0;
 
-            @include screen-lg {
-                padding-bottom: 0;
-                padding-top: 0;
+                &:not(:first-of-type){
+                    margin-top: 12px;
+                }
             }
 
-            p {
-                text-align: right;
+            .about-s {
+                padding-top: 20px;
+    
+                @include screen-lg {
+                    padding-bottom: 0;
+                    padding-top: 20px;
+                }
+    
+                p {
+                    text-align: right;
+                }
             }
         }
+
+        
     }
 }
 

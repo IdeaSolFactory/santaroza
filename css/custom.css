@@ -2389,7 +2389,8 @@ section .header.header--style-4::after {
   top: -75px;
   left: 50%;
   height: 420px;
-  opacity: 0.4;
+  width: 100%;
+  opacity: 0.2;
 }
 
 @media (min-width: 992px) {
@@ -2399,29 +2400,28 @@ section .header.header--style-4::after {
     top: unset;
     left: unset;
     opacity: 1;
+    overflow: hidden;
+    padding: 12px 0;
   }
-}
-
-#about .about-img .main-img {
-  height: 100%;
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
-  #about .about-img .main-img {
-    padding-bottom: 0;
+  #about .about-img {
+    position: relative;
+    height: 100%;
+    top: unset;
+    left: unset;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
   }
-}
-
-#about .about-img .main-img > img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-  height: 100%;
+  #about .about-img > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 30% 70%;
+       object-position: 30% 70%;
+    max-width: unset;
+  }
 }
 
 #about .about-txt h3,
@@ -2444,9 +2444,10 @@ section .header.header--style-4::after {
 #about .about-txt p {
   font-family: GrenzeGotisch;
   font-variation-settings: "wght" 400;
-  font-size: 20px;
+  font-size: 22px;
   color: #686460;
   padding-bottom: 30px;
+  padding-right: 0;
 }
 
 @media (min-width: 992px) {
@@ -2468,18 +2469,28 @@ section .header.header--style-4::after {
   font-family: GrenzeGotisch;
 }
 
-#about .about-txt .about-s {
-  padding-top: 30px;
+#about .about-txt--bodytext p {
+  font-family: Grenze;
+  font-size: 22px;
+  padding-right: 0;
+}
+
+#about .about-txt--bodytext p:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+#about .about-txt--bodytext .about-s {
+  padding-top: 20px;
 }
 
 @media (min-width: 992px) {
-  #about .about-txt .about-s {
+  #about .about-txt--bodytext .about-s {
     padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 20px;
   }
 }
 
-#about .about-txt .about-s p {
+#about .about-txt--bodytext .about-s p {
   text-align: right;
 }
 
