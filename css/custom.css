@@ -2215,6 +2215,16 @@ section .header.header--style-4::after {
   background: rgba(191, 56, 43, 0.65);
 }
 
+#gallery_2 .gallery-item img {
+  width: 100% !important;
+  max-width: unset;
+  height: 360px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /* FAQ SECTION */
 @media (min-width: 992px) {
   #faq {

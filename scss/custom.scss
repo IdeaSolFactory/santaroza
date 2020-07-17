@@ -2064,13 +2064,23 @@ section {
             text-transform: none;
             color: color(text-white);
         }
-    }
+    }    
 }
 
 /* GALLERY-2 SECTION */
 #gallery_2 {
     .hover-overlay {
         background: rgba(color(primary), $alpha: 0.65);
+    }
+
+    .gallery-item{
+        img{
+            width: 100% !important;
+            max-width: unset;
+            height: 360px !important;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }
 
