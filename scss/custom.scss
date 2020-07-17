@@ -735,7 +735,7 @@ section {
 
 /*BANNER SECTION*/
 #banner {
-    background: url(../images/480/sr-480-01.jpg);    
+    background: url(../images/480/sr-480-18.jpg);    
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -745,25 +745,25 @@ section {
 
 
     @include screen-md{       
-        background-image: url(../images/768/sr-768-01.jpg);
+        background-image: url(../images/768/sr-768-18.jpg);
     }
 
-    @include screen-lg {
-        // 992px
-        
+    @include screen-lg {        
         height: 100vh;
     }
 
     @include screen-xl{
-        background-image: url(../images/1024/sr-1024-01.jpg);
+        background-image: url(../images/1024/sr-1024-18.jpg);
+        background-size: 130%;
+        background-position: 0% 75%;
     }
 
     @include screen-xxl{
-        background-image: url(../images/1680/sr-1680-01.jpg);
+        background-image: url(../images/1680/sr-1680-18.jpg);
     }
 
     @include screen-hd{
-        background-image: url(../images/1920/sr-1920-01.jpg);
+        background-image: url(../images/1920/sr-1920-18.jpg);
     }
 
     .backtotop {
@@ -869,7 +869,7 @@ section {
 
             @include screen-lg {
                 // text-align: left;
-                max-width: 720px;
+                max-width: 735px;
                 margin-left: 20px;
                 margin-top: -30px;
             }
