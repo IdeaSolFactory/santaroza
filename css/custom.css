@@ -2752,4 +2752,52 @@ section .header.header--style-4::after {
   width: 130px;
   height: 130px;
 }
+
+/* Content Types */
+.content--text {
+  padding: 65px 0;
+}
+
+.content--text h1, .content--text h2, .content--text h3, .content--text h4, .content--text h5, .content--text h6 {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.content--text p:not(:first-of-type) {
+  padding-top: 12px;
+}
+
+.content--text .par-1 {
+  margin: 32px 0 0 0;
+}
+
+.content--text .par-1 h3 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.content--text .par-1 ul, .content--text .par-1 ol {
+  font-size: 22px;
+  color: #686460;
+  padding: 12px 0 12px 12px;
+}
+
+.content--text .par-1 ul li, .content--text .par-1 ol li {
+  font-family: Grenze;
+  font-size: inherit;
+}
+
+.content--text .par-1 ol {
+  list-style-type: decimal;
+  margin-left: 24px;
+}
+
+.content--text .par-1 ol li {
+  padding-left: 12px;
+}
+
+.content--text .par-1 ul li::before {
+  content: "—";
+  padding-right: 12px;
+}
 /*# sourceMappingURL=custom.css.map */
