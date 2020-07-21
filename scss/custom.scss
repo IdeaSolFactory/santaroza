@@ -25,6 +25,18 @@
     src: url(../fonts/Grenze-SemiBold.ttf);
 }
 
+// ISF FONTS
+@font-face{
+    font-family: SegoeUI;
+    src: url(../fonts/SegoeUI.eot);
+    src:    
+    url(../fonts/SegoeUI.woff) format("woff"),
+    url(../fonts/SegoeUI.woff2) format("woff2"),
+    url(../fonts/SegoeUI.ttf) format("truetype"),
+    url(../fonts/SegoeUI.svg) format("svg");
+}
+
+
 /* TEXT */
 
 h1,
@@ -2570,6 +2582,46 @@ section {
 .timer-main img {
     width: 130px;
     height: 130px;
+}
+
+/* COMPANY SECTION */
+#isf{
+    padding: 12px 0;
+    background-color: color(isf-secondary);
+
+    .isf__container{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        .isf__logo{
+            display: block;        
+            img{
+                height: 36px;
+            }    
+        }
+
+        .isf__text{
+            display: block;
+            padding-left: 22px;
+
+            h1,h2,h3,h4,h5,h6,
+            p, a{
+                font-family: SegoeUI;
+                color: white;
+            }
+
+            a{
+                font-weight: bold;
+            }
+
+            >h3{
+                font-size: 18px;
+                line-height: 36px;
+            }
+            
+        }
+    }
 }
 
 /* Content Types */

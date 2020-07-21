@@ -22,6 +22,12 @@
   src: url(../fonts/Grenze-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUI.eot);
+  src: url(../fonts/SegoeUI.woff) format("woff"), url(../fonts/SegoeUI.woff2) format("woff2"), url(../fonts/SegoeUI.ttf) format("truetype"), url(../fonts/SegoeUI.svg) format("svg");
+}
+
 /* TEXT */
 h1,
 h2,
@@ -2778,6 +2784,53 @@ section .header.header--style-4::after {
 .timer-main img {
   width: 130px;
   height: 130px;
+}
+
+/* COMPANY SECTION */
+#isf {
+  padding: 12px 0;
+  background-color: #33b5b1;
+}
+
+#isf .isf__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#isf .isf__container .isf__logo {
+  display: block;
+}
+
+#isf .isf__container .isf__logo img {
+  height: 36px;
+}
+
+#isf .isf__container .isf__text {
+  display: block;
+  padding-left: 22px;
+}
+
+#isf .isf__container .isf__text h1, #isf .isf__container .isf__text h2, #isf .isf__container .isf__text h3, #isf .isf__container .isf__text h4, #isf .isf__container .isf__text h5, #isf .isf__container .isf__text h6,
+#isf .isf__container .isf__text p, #isf .isf__container .isf__text a {
+  font-family: SegoeUI;
+  color: white;
+}
+
+#isf .isf__container .isf__text a {
+  font-weight: bold;
+}
+
+#isf .isf__container .isf__text > h3 {
+  font-size: 18px;
+  line-height: 36px;
 }
 
 /* Content Types */
