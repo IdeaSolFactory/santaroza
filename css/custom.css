@@ -749,28 +749,35 @@ section .header.header--style-4::after {
 /*BANNER SECTION*/
 #banner {
   background: url(../images/480/sr-480-18.jpg);
-  background-position: bottom;
+  background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 0;
   position: relative;
 }
 
+@media (min-width: 576px) {
+  #banner {
+    background-image: url(../images/512/sr-512-18.jpg);
+    background-position: bottom left;
+  }
+}
+
 @media (min-width: 767px) {
   #banner {
-    background-image: url(../images/768/sr-768-18.jpg);
+    background-image: url(../images/1024/sr-1024-18.jpg);
   }
 }
 
 @media (min-width: 992px) {
   #banner {
+    background-image: url(../images/1200/sr-1200-18.jpg);
     height: 100vh;
   }
 }
 
 @media (min-width: 1200px) {
   #banner {
-    background-image: url(../images/1024/sr-1024-18.jpg);
     background-size: 130%;
     background-position: 0% 75%;
   }
