@@ -2245,6 +2245,84 @@ section .header.header--style-4::after {
   color: #ede9df;
 }
 
+/*GALLERY CAROUSEL SECTION*/
+#gallery-carousel .gallery-carousel__container .gallery-carousel__item {
+  height: 320px;
+  position: relative;
+}
+
+#gallery-carousel .gallery-carousel__container .gallery-carousel__item img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#gallery-carousel .gallery-carousel__container .gallery-carousel__item .hover-overlay {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: .75;
+  z-index: 10;
+  background-color: #bf382b;
+  -webkit-transition: height .35s ease-in-out;
+  transition: height .35s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  #gallery-carousel .gallery-carousel__container .gallery-carousel__item .hover-overlay {
+    display: block;
+  }
+}
+
+#gallery-carousel .gallery-carousel__container .gallery-carousel__item .hover-overlay > a {
+  position: relative;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+}
+
+#gallery-carousel .gallery-carousel__container .gallery-carousel__item .hover-overlay > a > i {
+  top: 50%;
+  left: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+#gallery-carousel .gallery-carousel__container .gallery-carousel__item:hover .hover-overlay {
+  height: 100%;
+}
+
+#gallery-carousel .gallery-carousel__container .flickity-button {
+  border-radius: 0;
+  height: 160px;
+  opacity: .65;
+  background-color: #bf382b;
+}
+
+@media (min-width: 992px) {
+  #gallery-carousel .gallery-carousel__container .flickity-button {
+    opacity: 1;
+  }
+}
+
+#gallery-carousel .gallery-carousel__container .flickity-button.previous {
+  left: 0;
+}
+
+#gallery-carousel .gallery-carousel__container .flickity-button.next {
+  right: 0;
+}
+
+#gallery-carousel .gallery-carousel__container .flickity-button .flickity-button-icon {
+  color: white;
+}
+
 /* GALLERY-2 SECTION */
 #gallery_2 .hover-overlay {
   background: rgba(191, 56, 43, 0.65);
