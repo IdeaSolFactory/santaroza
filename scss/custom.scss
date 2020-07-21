@@ -1983,7 +1983,11 @@ section {
             font-weight: 200;
             font-size: 24px;
             color: color(text-white);
-            padding: 9px 120px 40px;
+            padding: 9px 0 40px;
+
+            @include screen-lg{
+                padding: 9px 120px 40px;
+            }
         }
 
         a {

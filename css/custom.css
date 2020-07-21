@@ -2126,7 +2126,13 @@ section .header.header--style-4::after {
   font-weight: 200;
   font-size: 24px;
   color: #ede9df;
-  padding: 9px 120px 40px;
+  padding: 9px 0 40px;
+}
+
+@media (min-width: 992px) {
+  #organize .organize-text p {
+    padding: 9px 120px 40px;
+  }
 }
 
 #organize .organize-text a {
