@@ -23,44 +23,7 @@
         cellAlign: 'left',
         contain: true,
         autoPlay: true
-    });
-
-    // gallery slide js
-    $('.gallery-main').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 2000,
-        arrows: false,
-        centerMode: true,
-        centerPadding: '0px',
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-    },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-    },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                }
-    },
-
-  ]
-    });
+    });  
 
     // Review slide js
     $('.review-main').slick({
