@@ -17,13 +17,12 @@
     });
 
 
-    // Flickity
+    // Flickity 
     $('.gallery-carousel__container').flickity({
         // options
         cellAlign: 'left',
         contain: true,
-        autoPlay: true,
-        lazyLoad: 6
+        autoPlay: true
     });
 
     // gallery slide js
