@@ -2256,6 +2256,7 @@ section {
                     padding: 21px 16px;
 
                     @include screen-lg {
+                        flex-wrap: nowrap;
                         padding: 21px 20px;
                     }
 
@@ -2267,17 +2268,23 @@ section {
 
                     &::after {
                         content: "";
-                        width: 16px;
+                        margin-top: 6px;
+                        display: block;                                            
                         height: 16px;
                         min-width: 16px;
                         min-height: 16px;
-                        background-image: url(../images/buttons/button-close-white.svg);
+                        background-image: url(../images/buttons/button-open.svg);
+                        transform: rotate(180deg);
+                        transform-origin: 50% 42%;
                         background-repeat: no-repeat;
-                        background-position: right center;
+                        background-position: center;
                         background-size: contain;
                         transition: all 0.2s;
 
                         @include screen-lg {
+                            position: relative;
+                            bottom: unset;
+                            left: unset;
                             width: 22px;
                             height: 22px;
                             min-width: 22px;
@@ -2290,16 +2297,16 @@ section {
                         padding-top: 10px;
                         padding-bottom: 10px;
                         &::after {
-                            background-image: url(../images/buttons/button-open.svg);
+                            transform: rotate(0deg);
                             transition: all 0.3s;
                         }
                     }
 
                     > h3 {
-                        font-family: GrenzeGotisch;
+                        font-family: Grenze;
                         font-variation-settings: "wght" 300;
                         line-height: 125%;
-                        font-size: 24px;
+                        font-size: 20px;
                         display: block;
                         color: color(text-white);
                         white-space: break-spaces;

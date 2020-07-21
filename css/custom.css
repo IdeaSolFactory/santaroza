@@ -2430,6 +2430,8 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #faq .faq__list .faq__list-item .card-header .btn.btn-primary {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding: 21px 20px;
   }
 }
@@ -2443,13 +2445,18 @@ section .header.header--style-4::after {
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary::after {
   content: "";
-  width: 16px;
+  margin-top: 6px;
+  display: block;
   height: 16px;
   min-width: 16px;
   min-height: 16px;
-  background-image: url(../images/buttons/button-close-white.svg);
+  background-image: url(../images/buttons/button-open.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: 50% 42%;
+          transform-origin: 50% 42%;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center;
   background-size: contain;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2457,6 +2464,9 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #faq .faq__list .faq__list-item .card-header .btn.btn-primary::after {
+    position: relative;
+    bottom: unset;
+    left: unset;
     width: 22px;
     height: 22px;
     min-width: 22px;
@@ -2471,16 +2481,17 @@ section .header.header--style-4::after {
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary.collapsed::after {
-  background-image: url(../images/buttons/button-open.svg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 #faq .faq__list .faq__list-item .card-header .btn.btn-primary > h3 {
-  font-family: GrenzeGotisch;
+  font-family: Grenze;
   font-variation-settings: "wght" 300;
   line-height: 125%;
-  font-size: 24px;
+  font-size: 20px;
   display: block;
   color: #ede9df;
   white-space: break-spaces;
