@@ -931,12 +931,18 @@ section .header.header--style-4::after {
 #banner .banner-content .banner__txt h1 {
   font-family: GrenzeGotisch;
   font-variation-settings: "wght" 500;
-  font-size: 55px;
+  font-size: 32px;
   line-height: 115%;
   padding-bottom: 16px;
   color: #ede9df;
   -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.65));
           filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.65));
+}
+
+@media (min-width: 992px) {
+  #banner .banner-content .banner__txt h1 {
+    font-size: 55px;
+  }
 }
 
 #banner .banner-content .banner__txt p {
