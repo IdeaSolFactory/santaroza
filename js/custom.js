@@ -15,6 +15,17 @@
         $('#month').html(event.strftime('<span>%M</span>'));
         $('#second').html(event.strftime('<span>%S</span>'));
     });
+
+
+    // Flickity
+    $('.gallery-carousel__container').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        autoPlay: true,
+        lazyLoad: 6
+    });
+
     // gallery slide js
     $('.gallery-main').slick({
         slidesToShow: 5,
