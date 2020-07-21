@@ -2,27 +2,35 @@
 @import "mediaqueries";
 @import "mixins";
 
-@font-face{
+@font-face {
     font-family: "GrenzeGotisch";
     src: url(../fonts/GrenzeGotisch-VariableFont_wght.ttf) format("truetype");
 }
 
-@font-face{
+@font-face {
     font-family: Grenze;
     font-weight: 200;
     src: url(../fonts/Grenze-ExtraLight.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: Grenze;
     font-weight: normal;
     src: url(../fonts/Grenze-Light.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: Grenze;
     font-weight: bold;
     src: url(../fonts/Grenze-SemiBold.ttf);
+}
+
+// ISF FONTS
+@font-face {
+    font-family: SegoeUI;
+    src: url(../fonts/SegoeUI.eot);
+    src: url(../fonts/SegoeUI.woff) format("woff"), url(../fonts/SegoeUI.woff2) format("woff2"),
+        url(../fonts/SegoeUI.ttf) format("truetype"), url(../fonts/SegoeUI.svg) format("svg");
 }
 
 /* TEXT */
@@ -44,7 +52,7 @@ p {
     font-size: 22px;
     line-height: 30px;
 
-    b{
+    b {
         font-weight: bold;
     }
 }
@@ -62,6 +70,34 @@ p {
     h3 {
         font-family: GrenzeGotisch;
         color: color(text);
+    }
+}
+
+/* LISTS */
+.custom-counter {
+    counter-reset: my-counter;
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-left: 16px;
+        padding: 10px 0;
+
+        &::before {
+            counter-increment: my-counter + 1;
+            content: counter(my-counter) ".";
+
+            text-align: center;
+            font-family: GrenzeGotisch;
+            font-size: 32px;
+            position: absolute;
+            left: -25px;
+            top: 10px;
+            padding: 0;
+            margin: 0;
+            line-height: 100%;
+            color: color(text);
+        }
     }
 }
 
@@ -735,33 +771,37 @@ section {
 
 /*BANNER SECTION*/
 #banner {
-    background: url(../images/480/sr-480-18.jpg);    
-    background-position: bottom;
+    background: url(../images/480/sr-480-18.jpg);
+    background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
-    position: relative; 
+    position: relative;
 
-
-    @include screen-md{       
-        background-image: url(../images/768/sr-768-18.jpg);
+    @include screen-sm {
+        background-image: url(../images/512/sr-512-18.jpg);
+        background-position: bottom left;
     }
 
-    @include screen-lg {        
+    @include screen-md {
+        background-image: url(../images/1024/sr-1024-18.jpg);
+    }
+
+    @include screen-lg {
+        background-image: url(../images/1200/sr-1200-18.jpg);
         height: 100vh;
     }
 
-    @include screen-xl{
-        background-image: url(../images/1024/sr-1024-18.jpg);
+    @include screen-xl {
         background-size: 130%;
         background-position: 0% 75%;
     }
 
-    @include screen-xxl{
+    @include screen-xxl {
         background-image: url(../images/1680/sr-1680-18.jpg);
     }
 
-    @include screen-hd{
+    @include screen-hd {
         background-image: url(../images/1920/sr-1920-18.jpg);
     }
 
@@ -864,7 +904,7 @@ section {
 
         .banner__txt {
             flex-grow: 1;
-            text-align: center;            
+            text-align: center;
 
             @include screen-lg {
                 // text-align: left;
@@ -876,19 +916,23 @@ section {
             h1 {
                 font-family: GrenzeGotisch;
                 font-variation-settings: "wght" 500;
-                font-size: 55px;
+                font-size: 32px;
                 line-height: 115%;
                 padding-bottom: 16px;
                 color: color(background-main);
-                filter: drop-shadow(0 0 20px rgba(0, 0, 0, .65));
-            }           
+                filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.65));
+
+                @include screen-lg {
+                    font-size: 55px;
+                }
+            }
 
             p {
                 font-family: Grenze;
                 font-weight: 200;
                 font-size: 24px;
                 color: color(text-white);
-                filter: drop-shadow(0 0 1px rgba(0, 0, 0, .65));
+                filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.65));
             }
         }
     }
@@ -950,53 +994,53 @@ section {
             color: color(text-white);
         }
 
-        .coming-data2{
-           top: 55px;
-           left: 8px;
+        .coming-data2 {
+            top: 55px;
+            left: 8px;
         }
 
-        @include screen-sm{
-            .coming-data2{
+        @include screen-sm {
+            .coming-data2 {
                 left: 50px;
                 top: 20px;
             }
         }
 
-        @include screen-md{
-            .coming-data2{
+        @include screen-md {
+            .coming-data2 {
                 left: 50px;
                 top: 20px;
             }
-    
+
             #second ~ .coming-data2 {
                 left: 50px;
                 top: 25px;
             }
-    
+
             #month ~ .coming-data2 {
                 left: 55px;
                 top: 15px;
             }
         }
 
-        @include screen-lg{
-            .coming-data2{
+        @include screen-lg {
+            .coming-data2 {
                 left: 60px;
                 top: 6px;
             }
-    
+
             #second ~ .coming-data2 {
                 left: 50px;
                 top: 15px;
             }
-    
+
             #month ~ .coming-data2 {
                 left: 55px;
                 top: 5px;
             }
         }
-    }  
-    
+    }
+
     .banner-2__aside-text {
         color: color(text-white);
         padding-top: 32px;
@@ -1028,7 +1072,7 @@ section {
             //     background-position: center;
             //     background-repeat: no-repeat;
             //     background-size: contain;
-            // }            
+            // }
         }
     }
 }
@@ -1112,7 +1156,7 @@ section {
             }
         }
 
-        span {
+        .about-item__icon {
             width: 60px;
             height: 60px;
             top: unset;
@@ -1377,7 +1421,7 @@ section {
                         @include screen-lg {
                             margin-bottom: 12px;
                             text-align: left;
-                        }                      
+                        }
 
                         .schedule__item-img {
                             height: 64px;
@@ -1437,9 +1481,9 @@ section {
                             // @include bckgrnd-img--contain;
                         }
 
-                        @include screen-lg{
+                        @include screen-lg {
                             display: flex;
-                            flex-direction: row;                            
+                            flex-direction: row;
                             justify-content: stretch;
                         }
 
@@ -1455,15 +1499,15 @@ section {
                             background-color: rgba($color: color(graphics-light), $alpha: 0.25);
                             border: unset;
 
-                            @include screen-lg{
-                                display: flex;                                
+                            @include screen-lg {
+                                display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 align-self: stretch;
                                 width: 300px;
                             }
 
-                            >h3{
+                            > h3 {
                                 display: block;
                                 font-family: Grenze;
                                 font-size: 22px;
@@ -1471,11 +1515,11 @@ section {
                             }
                         }
 
-                        .schedule__timetable-rows{
+                        .schedule__timetable-rows {
                             height: 100%;
-                            width: 100%;                            
+                            width: 100%;
 
-                            @include screen-lg{
+                            @include screen-lg {
                                 display: flex;
                                 flex-wrap: wrap;
                                 padding: 0 40px;
@@ -1490,16 +1534,16 @@ section {
                                 flex-wrap: wrap;
                                 justify-content: space-between;
                                 align-items: center;
-                                position: relative;     
-                                
-                                @include screen-lg{
+                                position: relative;
+
+                                @include screen-lg {
                                     height: 100%;
-                                    
-                                    &:not(:first-of-type){
+
+                                    &:not(:first-of-type) {
                                         border-top: 1px solid color(graphics-light);
                                     }
                                 }
-    
+
                                 > li {
                                     line-height: 32px;
                                     font-family: GrenzeGotisch;
@@ -1512,25 +1556,20 @@ section {
                                     width: 100%;
                                     display: block;
                                     padding-top: 12px;
-                                    
-    
+
                                     @include screen-lg {
-    
                                         width: 33.333%;
                                         padding: 12px 0;
 
                                         &:not(.schedule__timetable-period) {
-    
                                             &:not(:first-of-type) {
                                                 border-left: 1px solid color(graphics-light);
                                             }
                                         }
-                                    }                                
-                                }                            
+                                    }
+                                }
                             }
                         }
-
-                        
                     }
                 }
             }
@@ -1549,9 +1588,9 @@ section {
             ul > li {
                 font-family: Grenze;
                 font-size: 22px;
-                
+
                 &::before {
-                    content: "⋆";                    
+                    content: "⋆";
                     font-size: 32px;
                     color: color(primary);
                     padding-right: 2px;
@@ -1705,10 +1744,10 @@ section {
             .price-item__text-container {
                 margin-bottom: 12px;
 
-                >h3{
+                > h3 {
                     font-size: 36px;
                 }
-                >.cl{
+                > .cl {
                     font-family: GrenzeGotisch;
                     font-size: 20px;
                 }
@@ -1739,7 +1778,7 @@ section {
                         font-size: 20px;
                     }
 
-                    p{
+                    p {
                         font-size: 22px;
                         font-family: Grenze;
                     }
@@ -1934,11 +1973,9 @@ section {
         }
 
         h3 {
-
             font-family: GrenzeGotisch;
             font-size: 50px;
             text-transform: none;
-
 
             &::after {
                 background: color(primary);
@@ -1951,7 +1988,11 @@ section {
             font-weight: 200;
             font-size: 24px;
             color: color(text-white);
-            padding: 9px 120px 40px
+            padding: 9px 0 40px;
+
+            @include screen-lg {
+                padding: 9px 120px 40px;
+            }
         }
 
         a {
@@ -1978,12 +2019,12 @@ section {
             color: color(text-white);
         }
 
-        h3{
+        h3 {
             font-family: GrenzeGotisch;
             font-size: 26px;
         }
 
-        p{
+        p {
             font-family: Grenze;
             font-weight: 200;
             font-size: 22px;
@@ -2007,23 +2048,23 @@ section {
 #gallery {
     background-image: url(../images/480/sr-480-12.jpg);
 
-    @include screen-md{
+    @include screen-md {
         background-image: url(../images/768/sr-768-12.jpg);
     }
 
-    @include screen-lg{
+    @include screen-lg {
         background-image: url(../images/992/sr-992-12.jpg);
     }
 
-    @include screen-xl{
+    @include screen-xl {
         background-image: url(../images/1024/sr-1024-12.jpg);
     }
 
-    @include screen-xxl{
+    @include screen-xxl {
         background-image: url(../images/1680/sr-1680-12.jpg);
     }
 
-    @include screen-hd{
+    @include screen-hd {
         background-image: url(../images/1920/sr-1920-12.jpg);
     }
 
@@ -2045,25 +2086,100 @@ section {
     }
 
     .gallery-pa {
-        a{
+        a {
             pointer-events: none;
 
-            >i{
-                background: color(primary);            
+            > i {
+                background: color(primary);
 
                 &::before {
                     color: color(text-white);
                 }
             }
         }
-       
+
         p {
             font-family: GrenzeGotisch;
             font-size: 32px;
             text-transform: none;
             color: color(text-white);
         }
-    }    
+    }
+}
+
+/*GALLERY CAROUSEL SECTION*/
+#gallery-carousel {
+    .gallery-carousel__container {
+        .gallery-carousel__item {
+            height: 320px;
+            position: relative;
+
+            img {
+                width: auto;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .hover-overlay {
+                position: absolute;
+                display: none;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                opacity: 0.75;
+                z-index: 10;
+                background-color: color(primary);
+                transition: height 0.35s ease-in-out;
+
+                @include screen-lg {
+                    display: block;
+                }
+
+                > a {
+                    position: relative;
+                    width: 100%;
+                    height: 0;
+                    z-index: 10;
+
+                    > i {
+                        top: 50%;
+                        left: 50%;
+                        @include pos-vh-center;
+                    }
+                }
+            }
+
+            &:hover {
+                .hover-overlay {
+                    height: 100%;
+                }
+            }
+        }
+
+        .flickity-button {
+            border-radius: 0;
+            height: 160px;
+            opacity: 0.65;
+            background-color: color(primary);
+
+            @include screen-lg {
+                opacity: 1;
+            }
+
+            &.previous {
+                left: 0;
+            }
+
+            &.next {
+                right: 0;
+            }
+
+            .flickity-button-icon {
+                color: white;
+            }
+        }
+    }
 }
 
 /* GALLERY-2 SECTION */
@@ -2072,8 +2188,8 @@ section {
         background: rgba(color(primary), $alpha: 0.65);
     }
 
-    .gallery-item{
-        img{
+    .gallery-item {
+        img {
             width: 100% !important;
             max-width: unset;
             height: 360px !important;
@@ -2139,6 +2255,7 @@ section {
                     padding: 21px 16px;
 
                     @include screen-lg {
+                        flex-wrap: nowrap;
                         padding: 21px 20px;
                     }
 
@@ -2150,17 +2267,23 @@ section {
 
                     &::after {
                         content: "";
-                        width: 16px;
+                        margin-top: 6px;
+                        display: block;
                         height: 16px;
                         min-width: 16px;
                         min-height: 16px;
-                        background-image: url(../images/buttons/button-close-white.svg);
+                        background-image: url(../images/buttons/button-open.svg);
+                        transform: rotate(180deg);
+                        transform-origin: 50% 42%;
                         background-repeat: no-repeat;
-                        background-position: right center;
+                        background-position: center;
                         background-size: contain;
                         transition: all 0.2s;
 
                         @include screen-lg {
+                            position: relative;
+                            bottom: unset;
+                            left: unset;
                             width: 22px;
                             height: 22px;
                             min-width: 22px;
@@ -2173,16 +2296,16 @@ section {
                         padding-top: 10px;
                         padding-bottom: 10px;
                         &::after {
-                            background-image: url(../images/buttons/button-open.svg);
+                            transform: rotate(0deg);
                             transition: all 0.3s;
                         }
                     }
 
                     > h3 {
-                        font-family: GrenzeGotisch;
+                        font-family: Grenze;
                         font-variation-settings: "wght" 300;
                         line-height: 125%;
-                        font-size: 24px;
+                        font-size: 20px;
                         display: block;
                         color: color(text-white);
                         white-space: break-spaces;
@@ -2244,7 +2367,7 @@ section {
             top: unset;
             left: unset;
             opacity: 1;
-            overflow: hidden;            
+            overflow: hidden;
             padding: 12px 0;
         }
 
@@ -2258,22 +2381,21 @@ section {
             padding: 0;
             margin: 0 0 20px 0;
 
-            >img{            
+            > img {
                 position: absolute;
-                @include pos-vh-center;                   
+                @include pos-vh-center;
                 object-fit: contain;
                 max-width: 100%;
                 max-height: 100%;
             }
         }
 
-        @include screen-xxl{
+        @include screen-xxl {
             height: 200px;
         }
     }
 
     .about-txt {
-
         margin-bottom: 30px;
 
         h3,
@@ -2282,7 +2404,7 @@ section {
         }
 
         h3 {
-            font-family: GrenzeGotisch;            
+            font-family: GrenzeGotisch;
             font-size: 32px;
         }
 
@@ -2301,7 +2423,6 @@ section {
             padding-bottom: 0;
             margin-bottom: 12px;
 
-            
             @include screen-lg {
                 font-size: 22px;
             }
@@ -2317,32 +2438,27 @@ section {
             font-family: GrenzeGotisch;
         }
 
-        &--bodytext{
-            p{
+        &--bodytext {
+            p {
                 font-family: Grenze;
                 font-size: 22px;
                 padding-right: 0;
-
-                &:not(:first-of-type){
-                    margin-top: 12px;
-                }
+                margin: 12px 0;
             }
 
             .about-s {
                 padding-top: 20px;
-    
+
                 @include screen-lg {
                     padding-bottom: 0;
                     padding-top: 20px;
                 }
-    
+
                 p {
                     text-align: right;
                 }
             }
         }
-
-        
     }
 }
 
@@ -2556,54 +2672,163 @@ section {
     height: 130px;
 }
 
+/* COMPANY SECTION */
+#isf {
+    padding: 12px 0;
+    background-color: color(isf-secondary);
+
+    .isf__container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        @include screen-md{
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .isf__logo {
+            display: block;
+            img {
+                height: 36px;
+            }
+        }
+
+        .isf__text {
+            display: block;
+            padding-left: 22px;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a {
+                font-family: SegoeUI;
+                color: white;
+                text-align: center;
+            }
+
+            a {
+                font-weight: bold;
+            }
+
+            > h3 {
+                padding-top: 6px;
+                font-size: 16px;
+                line-height: 18px;
+
+                @include screen-md{
+                    padding-top: 0;
+                    font-size: 18px;
+                line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+/* TEXT STYLING */
+
+/*Initial letter*/
+.first-char{
+    position: relative;
+       color: color(text) !important;      
+       right: 0;
+       top:-10px;    
+       display: block;
+       font-family: GrenzeGotisch;
+       font-weight: 500;
+       text-transform: uppercase;
+       font-size: 80px;
+       line-height: 65px;
+       top: -4px;
+       margin: 0 6px -12px 0;
+       float: left;
+
+       ~p{
+           display: inline;
+           vertical-align: middle;
+
+       }
+}
+
+p {
+   >.first-char{
+       position: relative;
+       color: color(text) !important;      
+       right: 0;  
+       top: 0;
+       float: none;  
+       display: inline-block;
+       vertical-align: middle;
+       font-family: GrenzeGotisch;
+       font-weight: 500;
+       text-transform: uppercase;
+       font-size: 2em;
+       line-height: 0;
+       margin: 0 -3px 0 0;
+       
+       &.big{
+           font-size: 2.7em;
+       }
+   }
+}
 
 /* Content Types */
-.content{
-    &--text{
+.content {
+    &--text {
         padding: 65px 0;
 
-        h1,h2,h3,h4,h5,h6{
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             text-align: center;
             margin-bottom: 22px;
         }
 
-        p{
-            &:not(:first-of-type){
+        p {
+            &:not(:first-of-type) {
                 padding-top: 12px;
             }
         }
 
-        .par-1{
-            margin: 32px 0 0 0; 
-            
-            h3{
+        .par-1 {
+            margin: 32px 0 0 0;
+
+            h3 {
                 text-align: left;
                 margin-bottom: 16px;
-            }  
+            }
 
-            ul,ol{
+            ul,
+            ol {
                 font-size: 22px;
                 color: color(text-light);
                 padding: 12px 0 12px 12px;
 
-                li{
+                li {
                     font-family: Grenze;
                     font-size: inherit;
                 }
             }
-            
-            ol{
-                list-style-type: decimal;
+
+            ol {
+                // list-style-type: decimal;
                 margin-left: 24px;
-                li{
+                li {
                     padding-left: 12px;
                 }
             }
 
-            ul{
-                li{
-
-                    &::before{
+            ul {
+                li {
+                    &::before {
                         content: "—";
                         padding-right: 12px;
                     }
