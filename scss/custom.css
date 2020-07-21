@@ -715,7 +715,7 @@ section .header.header--style-4::after {
 
 /*BANNER SECTION*/
 #banner {
-  background: url(../images/480/sr-480-01.jpg);
+  background: url(../images/480/sr-480-18.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -725,7 +725,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 767px) {
   #banner {
-    background-image: url(../images/768/sr-768-01.jpg);
+    background-image: url(../images/768/sr-768-18.jpg);
   }
 }
 
@@ -737,19 +737,21 @@ section .header.header--style-4::after {
 
 @media (min-width: 1200px) {
   #banner {
-    background-image: url(../images/1024/sr-1024-01.jpg);
+    background-image: url(../images/1024/sr-1024-18.jpg);
+    background-size: 130%;
+    background-position: 0% 75%;
   }
 }
 
 @media (min-width: 1680px) {
   #banner {
-    background-image: url(../images/1680/sr-1680-01.jpg);
+    background-image: url(../images/1680/sr-1680-18.jpg);
   }
 }
 
 @media (min-width: 1920px) {
   #banner {
-    background-image: url(../images/1920/sr-1920-01.jpg);
+    background-image: url(../images/1920/sr-1920-18.jpg);
   }
 }
 
@@ -887,7 +889,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #banner .banner-content .banner__txt {
-    max-width: 720px;
+    max-width: 735px;
     margin-left: 20px;
     margin-top: -30px;
   }
@@ -2215,6 +2217,16 @@ section .header.header--style-4::after {
   background: rgba(191, 56, 43, 0.65);
 }
 
+#gallery_2 .gallery-item img {
+  width: 100% !important;
+  max-width: unset;
+  height: 360px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /* FAQ SECTION */
 @media (min-width: 992px) {
   #faq {
@@ -2739,5 +2751,53 @@ section .header.header--style-4::after {
 .timer-main img {
   width: 130px;
   height: 130px;
+}
+
+/* Content Types */
+.content--text {
+  padding: 65px 0;
+}
+
+.content--text h1, .content--text h2, .content--text h3, .content--text h4, .content--text h5, .content--text h6 {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.content--text p:not(:first-of-type) {
+  padding-top: 12px;
+}
+
+.content--text .par-1 {
+  margin: 32px 0 0 0;
+}
+
+.content--text .par-1 h3 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.content--text .par-1 ul, .content--text .par-1 ol {
+  font-size: 22px;
+  color: #686460;
+  padding: 12px 0 12px 12px;
+}
+
+.content--text .par-1 ul li, .content--text .par-1 ol li {
+  font-family: Grenze;
+  font-size: inherit;
+}
+
+.content--text .par-1 ol {
+  list-style-type: decimal;
+  margin-left: 24px;
+}
+
+.content--text .par-1 ol li {
+  padding-left: 12px;
+}
+
+.content--text .par-1 ul li::before {
+  content: "—";
+  padding-right: 12px;
 }
 /*# sourceMappingURL=custom.css.map */
