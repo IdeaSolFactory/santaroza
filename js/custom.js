@@ -23,7 +23,8 @@
         cellAlign: 'left',
         contain: true,
         autoPlay: true,
-        imagesLoaded: true
+        imagesLoaded: true,
+        lazyLoad: 6
     });  
 
     // Review slide js
