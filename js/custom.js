@@ -22,7 +22,8 @@
         // options
         cellAlign: 'left',
         contain: true,
-        autoPlay: true
+        autoPlay: true,
+        imagesLoaded: true
     });  
 
     // Review slide js
