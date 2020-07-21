@@ -2679,8 +2679,13 @@ section {
 
     .isf__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: stretch;
+
+        @include screen-md{
+            flex-direction: row;
+            align-items: center;
+        }
 
         .isf__logo {
             display: block;
@@ -2703,6 +2708,7 @@ section {
             a {
                 font-family: SegoeUI;
                 color: white;
+                text-align: center;
             }
 
             a {
@@ -2710,8 +2716,15 @@ section {
             }
 
             > h3 {
-                font-size: 18px;
-                line-height: 36px;
+                padding-top: 6px;
+                font-size: 16px;
+                line-height: 18px;
+
+                @include screen-md{
+                    padding-top: 0;
+                    font-size: 18px;
+                line-height: 22px;
+                }
             }
         }
     }
