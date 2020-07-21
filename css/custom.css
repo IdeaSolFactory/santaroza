@@ -2645,10 +2645,7 @@ section .header.header--style-4::after {
   font-family: Grenze;
   font-size: 22px;
   padding-right: 0;
-}
-
-#about .about-txt--bodytext p:not(:first-of-type) {
-  margin-top: 12px;
+  margin: 12px 0;
 }
 
 #about .about-txt--bodytext .about-s {
