@@ -26,16 +26,12 @@
 }
 
 // ISF FONTS
-@font-face{
+@font-face {
     font-family: SegoeUI;
     src: url(../fonts/SegoeUI.eot);
-    src:    
-    url(../fonts/SegoeUI.woff) format("woff"),
-    url(../fonts/SegoeUI.woff2) format("woff2"),
-    url(../fonts/SegoeUI.ttf) format("truetype"),
-    url(../fonts/SegoeUI.svg) format("svg");
+    src: url(../fonts/SegoeUI.woff) format("woff"), url(../fonts/SegoeUI.woff2) format("woff2"),
+        url(../fonts/SegoeUI.ttf) format("truetype"), url(../fonts/SegoeUI.svg) format("svg");
 }
-
 
 /* TEXT */
 
@@ -79,7 +75,7 @@ p {
 
 /* LISTS */
 .custom-counter {
-    counter-reset: my-counter;    
+    counter-reset: my-counter;
     list-style: none;
 
     li {
@@ -87,10 +83,10 @@ p {
         margin-left: 16px;
         padding: 10px 0;
 
-        &::before {         
-            counter-increment: my-counter +1;   
-            content: counter(my-counter)".";
-        
+        &::before {
+            counter-increment: my-counter + 1;
+            content: counter(my-counter) ".";
+
             text-align: center;
             font-family: GrenzeGotisch;
             font-size: 32px;
@@ -776,15 +772,15 @@ section {
 /*BANNER SECTION*/
 #banner {
     background: url(../images/480/sr-480-18.jpg);
-    background-position: bottom center; 
+    background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
     position: relative;
 
-    @include screen-sm{
+    @include screen-sm {
         background-image: url(../images/512/sr-512-18.jpg);
-        background-position: bottom left; 
+        background-position: bottom left;
     }
 
     @include screen-md {
@@ -796,7 +792,7 @@ section {
         height: 100vh;
     }
 
-    @include screen-xl {        
+    @include screen-xl {
         background-size: 130%;
         background-position: 0% 75%;
     }
@@ -926,7 +922,7 @@ section {
                 color: color(background-main);
                 filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.65));
 
-                @include screen-lg{
+                @include screen-lg {
                     font-size: 55px;
                 }
             }
@@ -1160,7 +1156,7 @@ section {
             }
         }
 
-        span {
+        .about-item__icon {
             width: 60px;
             height: 60px;
             top: unset;
@@ -1994,7 +1990,7 @@ section {
             color: color(text-white);
             padding: 9px 0 40px;
 
-            @include screen-lg{
+            @include screen-lg {
                 padding: 9px 120px 40px;
             }
         }
@@ -2112,43 +2108,41 @@ section {
 }
 
 /*GALLERY CAROUSEL SECTION*/
-#gallery-carousel{
-
-    .gallery-carousel__container{
-        
-        .gallery-carousel__item{
+#gallery-carousel {
+    .gallery-carousel__container {
+        .gallery-carousel__item {
             height: 320px;
             position: relative;
-    
-            img{
+
+            img {
                 width: auto;
                 height: 100%;
                 object-fit: cover;
             }
 
-            .hover-overlay{
+            .hover-overlay {
                 position: absolute;
                 display: none;
                 bottom: 0;
                 left: 0;
                 width: 100%;
                 height: 0;
-                opacity: .75;                
+                opacity: 0.75;
                 z-index: 10;
                 background-color: color(primary);
-                transition: height .35s ease-in-out;
+                transition: height 0.35s ease-in-out;
 
-                @include screen-lg{
+                @include screen-lg {
                     display: block;
                 }
 
-                >a{
+                > a {
                     position: relative;
                     width: 100%;
-                    height: 0;                    
+                    height: 0;
                     z-index: 10;
-                    
-                    >i{
+
+                    > i {
                         top: 50%;
                         left: 50%;
                         @include pos-vh-center;
@@ -2156,32 +2150,32 @@ section {
                 }
             }
 
-            &:hover{
-                .hover-overlay{
+            &:hover {
+                .hover-overlay {
                     height: 100%;
                 }
             }
         }
 
-        .flickity-button{
+        .flickity-button {
             border-radius: 0;
             height: 160px;
-            opacity: .65;
+            opacity: 0.65;
             background-color: color(primary);
 
-            @include screen-lg{
+            @include screen-lg {
                 opacity: 1;
             }
 
-            &.previous{
+            &.previous {
                 left: 0;
             }
 
-            &.next{
+            &.next {
                 right: 0;
             }
 
-            .flickity-button-icon{
+            .flickity-button-icon {
                 color: white;
             }
         }
@@ -2274,7 +2268,7 @@ section {
                     &::after {
                         content: "";
                         margin-top: 6px;
-                        display: block;                                            
+                        display: block;
                         height: 16px;
                         min-width: 16px;
                         min-height: 16px;
@@ -2679,43 +2673,95 @@ section {
 }
 
 /* COMPANY SECTION */
-#isf{
+#isf {
     padding: 12px 0;
     background-color: color(isf-secondary);
 
-    .isf__container{
+    .isf__container {
         display: flex;
         flex-direction: row;
         align-items: stretch;
 
-        .isf__logo{
-            display: block;        
-            img{
+        .isf__logo {
+            display: block;
+            img {
                 height: 36px;
-            }    
+            }
         }
 
-        .isf__text{
+        .isf__text {
             display: block;
             padding-left: 22px;
 
-            h1,h2,h3,h4,h5,h6,
-            p, a{
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a {
                 font-family: SegoeUI;
                 color: white;
             }
 
-            a{
+            a {
                 font-weight: bold;
             }
 
-            >h3{
+            > h3 {
                 font-size: 18px;
                 line-height: 36px;
             }
-            
         }
     }
+}
+
+/* TEXT STYLING */
+
+/*Initial letter*/
+.first-char{
+    position: relative;
+       color: color(text) !important;      
+       right: 0;
+       top:-10px;    
+       display: block;
+       font-family: GrenzeGotisch;
+       font-weight: 500;
+       text-transform: uppercase;
+       font-size: 80px;
+       line-height: 65px;
+       top: -4px;
+       margin: 0 6px -12px 0;
+       float: left;
+
+       ~p{
+           display: inline;
+           vertical-align: middle;
+
+       }
+}
+
+p {
+   >.first-char{
+       position: relative;
+       color: color(text) !important;      
+       right: 0;  
+       top: 0;
+       float: none;  
+       display: inline-block;
+       vertical-align: middle;
+       font-family: GrenzeGotisch;
+       font-weight: 500;
+       text-transform: uppercase;
+       font-size: 2em;
+       line-height: 0;
+       margin: 0 -3px 0 0;
+       
+       &.big{
+           font-size: 2.7em;
+       }
+   }
 }
 
 /* Content Types */

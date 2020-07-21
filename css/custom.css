@@ -76,7 +76,7 @@ p b {
 }
 
 .custom-counter li::before {
-  counter-increment: my-counter +1;
+  counter-increment: my-counter1;
   content: counter(my-counter) ".";
   text-align: center;
   font-family: GrenzeGotisch;
@@ -1180,7 +1180,7 @@ section .header.header--style-4::after {
   }
 }
 
-#event .about-item span {
+#event .about-item .about-item__icon {
   width: 60px;
   height: 60px;
   top: unset;
@@ -1190,14 +1190,14 @@ section .header.header--style-4::after {
 }
 
 @media (min-width: 992px) {
-  #event .about-item span {
+  #event .about-item .about-item__icon {
     width: 80px;
     height: 80px;
   }
 }
 
 @media (min-width: 1200px) {
-  #event .about-item span {
+  #event .about-item .about-item__icon {
     width: 100px;
     height: 100px;
   }
@@ -2284,11 +2284,11 @@ section .header.header--style-4::after {
   left: 0;
   width: 100%;
   height: 0;
-  opacity: .75;
+  opacity: 0.75;
   z-index: 10;
   background-color: #bf382b;
-  -webkit-transition: height .35s ease-in-out;
-  transition: height .35s ease-in-out;
+  -webkit-transition: height 0.35s ease-in-out;
+  transition: height 0.35s ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -2320,7 +2320,7 @@ section .header.header--style-4::after {
 #gallery-carousel .gallery-carousel__container .flickity-button {
   border-radius: 0;
   height: 160px;
-  opacity: .65;
+  opacity: 0.65;
   background-color: #bf382b;
 }
 
@@ -2923,8 +2923,14 @@ section .header.header--style-4::after {
   padding-left: 22px;
 }
 
-#isf .isf__container .isf__text h1, #isf .isf__container .isf__text h2, #isf .isf__container .isf__text h3, #isf .isf__container .isf__text h4, #isf .isf__container .isf__text h5, #isf .isf__container .isf__text h6,
-#isf .isf__container .isf__text p, #isf .isf__container .isf__text a {
+#isf .isf__container .isf__text h1,
+#isf .isf__container .isf__text h2,
+#isf .isf__container .isf__text h3,
+#isf .isf__container .isf__text h4,
+#isf .isf__container .isf__text h5,
+#isf .isf__container .isf__text h6,
+#isf .isf__container .isf__text p,
+#isf .isf__container .isf__text a {
   font-family: SegoeUI;
   color: white;
 }
@@ -2936,6 +2942,49 @@ section .header.header--style-4::after {
 #isf .isf__container .isf__text > h3 {
   font-size: 18px;
   line-height: 36px;
+}
+
+/* TEXT STYLING */
+/*Initial letter*/
+.first-char {
+  position: relative;
+  color: #474341 !important;
+  right: 0;
+  top: -10px;
+  display: block;
+  font-family: GrenzeGotisch;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 65px;
+  top: -4px;
+  margin: 0 6px -12px 0;
+  float: left;
+}
+
+.first-char ~ p {
+  display: inline;
+  vertical-align: middle;
+}
+
+p > .first-char {
+  position: relative;
+  color: #474341 !important;
+  right: 0;
+  top: 0;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: GrenzeGotisch;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 0;
+  margin: 0 -3px 0 0;
+}
+
+p > .first-char.big {
+  font-size: 2.7em;
 }
 
 /* Content Types */
