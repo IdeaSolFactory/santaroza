@@ -5,10 +5,31 @@
     //preloader part js
     $(window).on('load', function () {
         $('.main-preloader').delay(1000).fadeOut(1000);
-    });   
+    });
+    
+    
+    // Countdown Feed
+
+    
+       var currDate = new Date($.now());
+       feedCountdown(currDate);
+    
+
+    function feedCountdown(currentDateTime){
+        var departureData = {
+            times: [ "09:45:00", "11:15:00", "14:15:00", "15:45:00", "17:15:00", "18:45:00"],
+        }
+
+        $.each(departureData.times, function(index){
+            
+        });
+           
+               
+
+    }
 
     // countdown timer js 
-    $('.coundown_res').countdown('2020/07/21', function (event) {
+    $('.coundown_res').countdown('2020/07/22 15:20:15', function (event) {
         var $this = $(this);
         $('#day').html(event.strftime('<span>%D</span>'));
         $('#hour').html(event.strftime('<span>%H</span>'));
