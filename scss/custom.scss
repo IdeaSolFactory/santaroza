@@ -74,31 +74,74 @@ p {
 }
 
 /* LISTS */
-.custom-counter {
+.custom-list {
     counter-reset: my-counter;
     list-style: none;
 
-    li {
+    li{
         position: relative;
         margin-left: 16px;
         padding: 10px 0;
+    }
 
-        &::before {
-            counter-increment: my-counter;
-            content: counter(my-counter) ".";
+    &.list-dash{
+        li{
+            
+            margin-left: 12px;
 
-            text-align: center;
-            font-family: GrenzeGotisch;
-            font-size: 32px;
-            position: absolute;
-            left: -25px;
-            top: 10px;
-            padding: 0;
-            margin: 0;
-            line-height: 100%;
-            color: color(text);
+            &::before{
+                content: "—";
+                padding-right: 12px;
+            }
+        }
+        
+    }
+
+    &.list-latin{
+
+        margin-left: 24px;
+        
+        li{
+           counter-increment: my-counter;
+           padding-left: 12px;
+
+           &::before{
+               content: counter(my-counter,lower-latin) ")";
+               position: absolute;
+               font-family: GrenzeGotisch;
+               font-size: 32px;
+               left: -25px;
+               top: 10px;
+               padding: 0;
+                margin: 0;
+                line-height: 100%;
+                color: color(text);   
+           }
         }
     }
+
+    &.list-counter{
+        li {           
+    
+            &::before {
+                counter-increment: my-counter;
+                content: counter(my-counter) ".";
+    
+                text-align: center;
+                font-family: GrenzeGotisch;
+                font-size: 32px;
+                position: absolute;
+                left: -25px;
+                top: 10px;
+                padding: 0;
+                margin: 0;
+                line-height: 100%;
+                color: color(text);
+            }
+        }
+    }
+
+   
 }
 
 /* ICONS */
@@ -2824,16 +2867,7 @@ p {
                 li {
                     padding-left: 12px;
                 }
-            }
-
-            ul {
-                li {
-                    &::before {
-                        content: "—";
-                        padding-right: 12px;
-                    }
-                }
-            }
+            }            
         }
     }
 }

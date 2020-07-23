@@ -64,18 +64,49 @@ p b {
 }
 
 /* LISTS */
-.custom-counter {
+.custom-list {
   counter-reset: my-counter;
   list-style: none;
 }
 
-.custom-counter li {
+.custom-list li {
   position: relative;
   margin-left: 16px;
   padding: 10px 0;
 }
 
-.custom-counter li::before {
+.custom-list.list-dash li {
+  margin-left: 12px;
+}
+
+.custom-list.list-dash li::before {
+  content: "—";
+  padding-right: 12px;
+}
+
+.custom-list.list-latin {
+  margin-left: 24px;
+}
+
+.custom-list.list-latin li {
+  counter-increment: my-counter;
+  padding-left: 12px;
+}
+
+.custom-list.list-latin li::before {
+  content: counter(my-counter, lower-latin) ")";
+  position: absolute;
+  font-family: GrenzeGotisch;
+  font-size: 32px;
+  left: -25px;
+  top: 10px;
+  padding: 0;
+  margin: 0;
+  line-height: 100%;
+  color: #474341;
+}
+
+.custom-list.list-counter li::before {
   counter-increment: my-counter;
   content: counter(my-counter) ".";
   text-align: center;
@@ -3056,10 +3087,5 @@ p > .first-char.big {
 
 .content--text .par-1 ol li {
   padding-left: 12px;
-}
-
-.content--text .par-1 ul li::before {
-  content: "—";
-  padding-right: 12px;
 }
 /*# sourceMappingURL=custom.css.map */
