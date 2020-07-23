@@ -76,7 +76,7 @@ p b {
 }
 
 .custom-counter li::before {
-  counter-increment: my-counter1;
+  counter-increment: my-counter;
   content: counter(my-counter) ".";
   text-align: center;
   font-family: GrenzeGotisch;

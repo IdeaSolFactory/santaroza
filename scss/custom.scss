@@ -84,7 +84,7 @@ p {
         padding: 10px 0;
 
         &::before {
-            counter-increment: my-counter + 1;
+            counter-increment: my-counter;
             content: counter(my-counter) ".";
 
             text-align: center;
