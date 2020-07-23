@@ -2909,6 +2909,22 @@ section .header.header--style-4::after {
   }
 }
 
+#footer .footer__container .menu-a .menu-a__smaller {
+  padding-top: 12px;
+}
+
+#footer .footer__container .menu-a .menu-a__smaller > a {
+  display: inline-block;
+  font-size: 19px;
+  color: #bf382b;
+}
+
+@media (min-width: 992px) {
+  #footer .footer__container .menu-a .menu-a__smaller > a {
+    display: block;
+  }
+}
+
 #footer .footer__container .footer__map-container {
   width: 100%;
 }

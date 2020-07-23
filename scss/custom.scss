@@ -2674,7 +2674,7 @@ section {
             a {
                 font-family: Grenze;
                 font-size: 24px;
-                color: color(background-main);
+                color: color(background-main);                
             }
 
             @include screen-lg {
@@ -2683,6 +2683,19 @@ section {
                 flex-direction: column;
                 justify-content: space-between;
                 text-align: left;
+            }
+
+            .menu-a__smaller{
+                padding-top: 12px;
+                >a{
+                    display: inline-block;
+                    font-size: 19px;
+                    color: color(primary);
+
+                    @include screen-lg{
+                        display: block;
+                    }
+                }
             }
         }
 
