@@ -2806,14 +2806,10 @@ section .header.header--style-4::after {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url(../images/icons/icon-bottle-message-01.svg);
+  background-image: url(../images/background-images/illustration-bottle-message.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-filter: FlipH;
-          filter: FlipH;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 
 #contact .contact__text {
