@@ -601,7 +601,7 @@ body {
   content: "";
   position: absolute;
   bottom: -12px;
-  left: 0;
+  left: -300px;
   width: 200px;
   height: 200px;
   background-image: url(../images/items/Rope-01.png);
@@ -609,36 +609,34 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar__ropes-container::before {
+    left: 0;
+  }
 }
 
 .navbar .navbar__ropes-container::after {
   content: "";
   position: absolute;
   bottom: -14px;
-  right: 0;
+  right: -300px;
   width: 200px;
   height: 200px;
   background-image: url(../images/items/Rope-02.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-@media (min-width: 767px) {
-  .navbar .navbar__ropes-container::before {
-    background-position: -20px;
-  }
+@media (min-width: 1200px) {
   .navbar .navbar__ropes-container::after {
-    background-position: 80px;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar .navbar__ropes-container::before {
-    background-position: -15px;
-  }
-  .navbar .navbar__ropes-container::after {
-    background-position: 70px;
+    right: -20px;
   }
 }
 

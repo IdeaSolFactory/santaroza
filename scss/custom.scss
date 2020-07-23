@@ -629,7 +629,7 @@ body {
             content: "";
             position: absolute;
             bottom: -12px;
-            left: 0;
+            left: -300px;
             width: 200px;
             height: 200px;
 
@@ -638,13 +638,19 @@ body {
             background-repeat: no-repeat;
             background-size: contain;
             z-index: 0;
+
+            transition: all .5s ease-in-out;
+
+            @include screen-xl{
+                left: 0;
+            }
         }
 
         &::after {
             content: "";
             position: absolute;
             bottom: -14px;
-            right: 0;
+            right: -300px;
             width: 200px;
             height: 200px;
 
@@ -652,27 +658,15 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-        }
 
-        @include screen-md {
-            &::before {
-                background-position: -20px;
-            }
+            transition: all .5s ease-in-out;
 
-            &::after {
-                background-position: 80px;
+            @include screen-xl{
+                right: -20px;
             }
-        }
+        }       
 
-        @include screen-lg {
-            &::before {
-                background-position: -15px;
-            }
-
-            &::after {
-                background-position: 70px;
-            }
-        }
+        
 
         @include screen-hd {
             &::before {
