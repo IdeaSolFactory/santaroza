@@ -704,20 +704,20 @@ body {
     .navbar-brand {
         vertical-align: middle;
         .navbar__logo {
-            width: auto;
+            width: 220px;
             height: auto;
-            max-width: 200px;
+            // max-width: 200px;
 
             @include screen-lg {
-                max-width: 220px;
+                width: 260px;
             }
 
             @include screen-xl {
-                max-width: 240px;
+                width: 300px;
             }
 
             @include screen-xxl {
-                max-width: 280px;
+                // max-width: 280px;
             }
         }
     }
@@ -927,7 +927,7 @@ section {
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                background-image: url(../images/brand/santa_roza_banner.svg);
+                background-image: url(../images/brand/sr-logo-banner-light.svg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;

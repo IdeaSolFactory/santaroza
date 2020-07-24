@@ -680,26 +680,19 @@ body {
 }
 
 .navbar .navbar-brand .navbar__logo {
-  width: auto;
+  width: 220px;
   height: auto;
-  max-width: 200px;
 }
 
 @media (min-width: 992px) {
   .navbar .navbar-brand .navbar__logo {
-    max-width: 220px;
+    width: 260px;
   }
 }
 
 @media (min-width: 1200px) {
   .navbar .navbar-brand .navbar__logo {
-    max-width: 240px;
-  }
-}
-
-@media (min-width: 1680px) {
-  .navbar .navbar-brand .navbar__logo {
-    max-width: 280px;
+    width: 300px;
   }
 }
 
@@ -936,7 +929,7 @@ section .header.header--style-4::after {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(../images/brand/santa_roza_banner.svg);
+  background-image: url(../images/brand/sr-logo-banner-light.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
