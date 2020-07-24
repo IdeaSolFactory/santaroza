@@ -2052,7 +2052,7 @@ section .header.header--style-4::after {
 }
 
 #route-section .route-section__item .route-section__text > h3 {
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 }
 
 #route-section .route-section__connection {
