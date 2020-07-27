@@ -15,12 +15,31 @@
        feedCountdown(currDate);
     
 
-    function feedCountdown(currentDateTime){
+    function feedCountdown(currentDate){
         var departureData = {
-            times: [ "09:45:00", "11:15:00", "14:15:00", "15:45:00", "17:15:00", "18:45:00"],
-        }
+            initTimes: [ "09:45:00", "11:15:00", "14:15:00", "15:45:00", "17:15:00", "18:45:00"],
+            timeDates:[]
+        }      
+        
+        var currentYear = currentDate.getFullYear();
+        console.log("YEAR: " +  currentYear);
 
-        $.each(departureData.times, function(index){
+        var currentMonth = currentDate.getMonth() + 1;
+        console.log("MONTH: " +  currentMonth);
+
+        var currentDay = currentDate.getDate();
+        console.log("DAY: " + currentDay);
+
+        var currentTime = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+        console.log("TIME: " + currentTime);
+
+        // var currentTime = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+        // console.log("TIME: " + currentTime);
+
+        $.each(departureData.initTimes, function(index){
+            var initDate = new Date(currentYear +  "/" + currentMonth + "/" + currentDay);
+            
+            console.log("SUBIDUBI: " +  currentDate.getHours() + departureData.initTimes[index]);
             
         });
            
