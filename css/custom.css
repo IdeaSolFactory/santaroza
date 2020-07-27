@@ -47,6 +47,10 @@ p {
   line-height: 30px;
 }
 
+p a {
+  color: white;
+}
+
 p b {
   font-weight: bold;
 }
@@ -2861,16 +2865,6 @@ section .header.header--style-4::after {
   background-color: transparent;
 }
 
-#footer .copy-right-txt {
-  margin-top: 16px;
-}
-
-#footer .copy-right-txt p {
-  font-family: GrenzeGotisch;
-  font-size: 22px;
-  color: #bf382b;
-}
-
 #footer .footer__container .footer__item:not(:first-of-type) {
   padding-top: 24px;
 }
@@ -2947,22 +2941,7 @@ section .header.header--style-4::after {
   width: 100%;
 }
 
-.venobox.vbox-item > i::before {
-  padding-left: 3px;
-}
-
-.timer-main img {
-  width: 130px;
-  height: 130px;
-}
-
-/* COMPANY SECTION */
-#isf {
-  padding: 12px 0;
-  background-color: #33b5b1;
-}
-
-#isf .isf__container {
+#footer .copyright-info__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2970,13 +2949,15 @@ section .header.header--style-4::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 32px;
 }
 
-@media (min-width: 767px) {
-  #isf .isf__container {
+@media (min-width: 992px) {
+  #footer .copyright-info__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2987,48 +2968,49 @@ section .header.header--style-4::after {
   }
 }
 
-#isf .isf__container .isf__logo {
-  display: block;
+#footer .copyright-info__container p:first-of-type {
+  margin-bottom: 10px;
 }
 
-#isf .isf__container .isf__logo img {
-  height: 36px;
-}
-
-#isf .isf__container .isf__text {
-  display: block;
-  padding-left: 22px;
-}
-
-#isf .isf__container .isf__text h1,
-#isf .isf__container .isf__text h2,
-#isf .isf__container .isf__text h3,
-#isf .isf__container .isf__text h4,
-#isf .isf__container .isf__text h5,
-#isf .isf__container .isf__text h6,
-#isf .isf__container .isf__text p,
-#isf .isf__container .isf__text a {
-  font-family: SegoeUI;
-  color: white;
-  text-align: center;
-}
-
-#isf .isf__container .isf__text a {
-  font-weight: bold;
-}
-
-#isf .isf__container .isf__text > h3 {
-  padding-top: 6px;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-@media (min-width: 767px) {
-  #isf .isf__container .isf__text > h3 {
-    padding-top: 0;
-    font-size: 18px;
-    line-height: 22px;
+@media (min-width: 992px) {
+  #footer .copyright-info__container p:first-of-type {
+    margin-bottom: 0;
   }
+}
+
+#footer .copyright-info__container .copyright-info__madeby,
+#footer .copyright-info__container .copyright-info__copyright {
+  font-family: Grenze;
+  color: #ede9df;
+}
+
+#footer .copyright-info__container .copyright-info__madeby > a,
+#footer .copyright-info__container .copyright-info__copyright > a {
+  font-family: Grenze;
+  font-weight: bold;
+  color: #bf382b;
+}
+
+@media (min-width: 992px) {
+  #footer .copyright-info__container .copyright-info__madeby {
+    padding-right: 24px;
+    border-right: 2px solid #ede9df;
+  }
+}
+
+@media (min-width: 992px) {
+  #footer .copyright-info__container .copyright-info__copyright {
+    padding-left: 24px;
+  }
+}
+
+.venobox.vbox-item > i::before {
+  padding-left: 3px;
+}
+
+.timer-main img {
+  width: 130px;
+  height: 130px;
 }
 
 /* TEXT STYLING */
