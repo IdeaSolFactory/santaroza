@@ -2987,8 +2987,8 @@ section .header.header--style-4::after {
 #footer .copyright-info__container .copyright-info__madeby > a,
 #footer .copyright-info__container .copyright-info__copyright > a {
   font-family: Grenze;
-  font-weight: bold;
-  color: #bf382b;
+  font-weight: 600;
+  color: #3030d8;
 }
 
 @media (min-width: 992px) {
