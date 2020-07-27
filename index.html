@@ -52,7 +52,7 @@
         <span class="rope-right"></span>
         <div class="navbar-content container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img class="logomeret navbar__logo" src="images/brand/logo-text-white.png" alt="Sánta Róza logó">
+                <img class="logomeret navbar__logo" src="images/brand/sr-logo-text-light.svg" alt="Sánta Róza logó">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -193,7 +193,7 @@
 
     <!-- EVENT AREA START -->
     <a id="programok"></a>
-    <section id="event">
+    <section id="event" class="lazy">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -259,7 +259,7 @@
     <!-- EVENT AREA END -->
 
     <!-- COUNTER AREA START -->
-    <section id="counter">
+    <section id="counter"  class="lazy">
         <div class="container">
             <div class="counter__container">
                 <div class="row justify-content-center">
@@ -316,8 +316,8 @@
             <!-- ROUTE ITEM -->
             <div class="row align-items-center route-section__item route-section__start">
                 <div class="col-lg-8 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/route-dock-mobile.jpg"
-                        srcset="images/background-images/route-dock-mobile.jpg 480w,
+                    <img class="route-section__img img-fluid lazy"
+                        data-srcset="images/background-images/route-dock-mobile.jpg 480w,
                     images/background-images/route-dock-tablet.jpg 768w,
                     images/background-images/route-dock.jpg" alt="">
                 </div>
@@ -350,8 +350,8 @@
                     </div>
                 </div>
                 <div class="col-lg-7 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/route-triangle-mobile.jpg"
-                        srcset="images/background-images/route-triangle-mobile.jpg 480w,
+                    <img class="route-section__img img-fluid lazy"
+                        data-srcset="images/background-images/route-triangle-mobile.jpg 480w,
                     images/background-images/route-triangle-tablet.jpg 768w,
                     images/background-images/route-triangle.jpg" alt="">
                 </div>
@@ -366,7 +366,7 @@
             <!-- ROUTE ITEM -->
             <div class="row align-items-center route-section__item route-section__start">
                 <div class="col-lg-8 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-treasure-01.png" alt="">
+                    <img class="route-section__img img-fluid lazy" data-src="images/background-images/map-treasure-01.png" alt="">
                 </div>
                 <div class="col-lg-4">
                     <div class="route-section__text">
@@ -393,12 +393,13 @@
                         <h3>Bátorság foka</h3>
                         <p>
                             <span class="first-char">A</span>
-                            &nbsp; viharos, ellenségekkel teleszőtt magyar tengeren megmutatkoznak a bátor harcosok, akik ha
+                            &nbsp; viharos, ellenségekkel teleszőtt magyar tengeren megmutatkoznak a bátor harcosok,
+                            akik ha
                             kell, ágyútűzzel is megvédik a hajót és legénységét. </p>
                     </div>
                 </div>
                 <div class="col-lg-7 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-cape-bravery-01.png"
+                    <img class="route-section__img img-fluid lazy" data-src="images/background-images/map-cape-bravery-01.png"
                         alt="">
                 </div>
             </div>
@@ -412,13 +413,13 @@
             <!-- ROUTE ITEM -->
             <div class="row align-items-center route-section__item route-section__start">
                 <div class="col-lg-8 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-destination-01.png"
+                    <img class="route-section__img img-fluid lazy" data-src="images/background-images/map-destination-01.png"
                         alt="">
                 </div>
                 <div class="col-lg-4">
                     <div class="route-section__text">
                         <h3>Vasmacska-simogató</h3>
-                        <p> 
+                        <p>
                             <span class="first-char">A</span>
                             &nbsp; leleményes kalózok hősként térnek vissza a kikötőbe, ahol a legügyesebbek kapitányi
                             elismerésben részesülnek. </p>
@@ -437,10 +438,10 @@
     <section id="schedule-prices" class="bg-darker">
 
         <span class="schedule-prices__bg">
-            <i class="bg__ship"></i>
+            <i class="bg__ship lazy" data-src="/images/background-images/schedule-ship-01.png"></i>
             <!-- <i class="bg__fog"></i> -->
-            <i class="bg__island-foreground"></i>
-            <i class="bg__mountains"></i>
+            <i class="bg__island-foreground lazy" data-src="images/background-images/schedule-island-foreground-01.png"></i>
+            <i class="bg__mountains lazy" data-src="images/background-images/schedule-mountains.svg"></i>
         </span>
 
 
@@ -562,7 +563,8 @@
                                                 <p><i class="fa fa-check" aria-hidden="true"></i> Kalózanimátor</p>
                                                 <p><i class="fa fa-check" aria-hidden="true"></i> Kalózoklevél</p>
                                                 <p><i class="fa fa-check" aria-hidden="true"></i> Juss a zsákmányból</p>
-                                                <p><i class="fa fa-check" aria-hidden="true"></i> Egy palack ásványvíz</p>
+                                                <p><i class="fa fa-check" aria-hidden="true"></i> Egy palack ásványvíz
+                                                </p>
                                             </div>
                                         </div>
                                         <!-- <div class="price__img-holder">
@@ -570,8 +572,8 @@
                                                 </div> -->
                                     </div>
                                     <div class="col-12 col-lg-4 align-self-center">
-                                        <img class="img-fluid m-auto" style="display: block; margin: 0 auto"
-                                            src="/images/icons/icon-kid.png" alt="">
+                                        <img class="img-fluid m-auto lazy" style="display: block; margin: 0 auto"
+                                            data-src="/images/icons/icon-kid.png" alt="">
 
                                     </div>
                                 </div>
@@ -690,7 +692,8 @@
 
     <!-- GALLERY AREA START -->
     <a id="galeria"></a>
-    <section id="gallery">
+    <section id="gallery"> 
+    
         <div class="container zindex">
             <div class="row">
                 <div class="col-lg-12 speaker-heading gallery-heading">
@@ -714,26 +717,23 @@
         <div class="gallery-carousel__container">
 
             <div class="gallery-carousel__item">
-                <img src="images/480/sr-480-09.jpg"                
-                alt="Kalózhangulat a fedélzeten">    
+                <img src="images/480/sr-480-09.jpg" alt="Kalózhangulat a fedélzeten">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-09.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>           
+                </div>
             </div>
 
             <div class="gallery-carousel__item">
-                <img src="images/480/sr-480-07.jpg"
-                alt="A háborúktól megtápázott vitorla és a titkos kabin"> 
+                <img src="images/480/sr-480-07.jpg" alt="A háborúktól megtápázott vitorla és a titkos kabin">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-07.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>              
+                </div>
             </div>
 
             <div class="gallery-carousel__item">
-                <img src="images/480/sr-480-23.jpg"
-                alt="A hajó és kincs védelme mindennél fontosabb">
+                <img src="images/480/sr-480-23.jpg" alt="A hajó és kincs védelme mindennél fontosabb">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-23.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -741,8 +741,7 @@
             </div>
 
             <div class="gallery-carousel__item">
-                <img src="images/480/sr-480-16.jpg"
-                alt="A Sánta Róza a kikötőben">
+                <img src="images/480/sr-480-16.jpg" alt="A Sánta Róza a kikötőben">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-16.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -750,19 +749,16 @@
             </div>
 
             <div class="gallery-carousel__item ">
-                <img src="images/480/sr-480-18.jpg"
-                alt="A Sánta Róza a Balatonon">
+                <img src="images/480/sr-480-18.jpg" alt="A Sánta Róza a Balatonon">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-18.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
-            
+
 
             <div class=" gallery-carousel__item ">
-                <img src="images/480/sr-480-03.jpg"
-                alt="Puskaporos hórdók és rakomány a fedélzeten"
-                    >
+                <img src="images/480/sr-480-03.jpg" alt="Puskaporos hórdók és rakomány a fedélzeten">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-03.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -770,9 +766,7 @@
             </div>
 
             <div class=" gallery-carousel__item ">
-                <img src="images/480/sr-480-29.jpg"                
-                 alt="A zsákmányból szerzett ékszerek és a rettegett kard"
-                    >
+                <img src="images/480/sr-480-29.jpg" alt="A zsákmányból szerzett ékszerek és a rettegett kard">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-29.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -780,8 +774,7 @@
             </div>
 
             <div class=" gallery-carousel__item ">
-                <img src="images/480/sr-480-17.jpg"               
-                 alt="A Sánta Róza felirat a hajó oldalán" >
+                <img src="images/480/sr-480-17.jpg" alt="A Sánta Róza felirat a hajó oldalán">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-17.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -789,8 +782,7 @@
             </div>
 
             <div class=" gallery-carousel__item ">
-                <img src="images/480/sr-480-24.jpg"                 
-                 alt="A Sánta Róza a Tihanyi-félsziget lábánál">
+                <img src="images/480/sr-480-24.jpg" alt="A Sánta Róza a Tihanyi-félsziget lábánál">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-24.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -798,8 +790,7 @@
             </div>
 
             <div class=" gallery-carousel__item ">
-                <img src="images/480/sr-480-11.jpg" 
-                 alt="A Sánta Róza Kapitányi állása" >
+                <img src="images/480/sr-480-11.jpg" alt="A Sánta Róza Kapitányi állása">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-11.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -807,8 +798,7 @@
             </div>
 
             <div class=" gallery-carousel__item ">
-                <img src="images/480/sr-480-02.jpg" 
-                alt="A hajó ablakai titkokat rejtenek" >
+                <img src="images/480/sr-480-02.jpg" alt="A hajó ablakai titkokat rejtenek">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-02.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -816,8 +806,7 @@
             </div>
 
             <div class=" gallery-carousel__item ">
-                <img src="images/480/sr-480-20.jpg" 
-                alt="A hajó orra elszántan szeli a habokat" >
+                <img src="images/480/sr-480-20.jpg" alt="A hajó orra elszántan szeli a habokat">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-20.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -825,8 +814,7 @@
             </div>
 
             <div class="gallery-carousel__item ">
-                <img src="images/480/sr-480-08.jpg" 
-                alt="Sánta Róza szelleme körbelengi a hajót" >
+                <img src="images/480/sr-480-08.jpg" alt="Sánta Róza szelleme körbelengi a hajót">
                 <div class="hover-overlay">
                     <a href="images/1024/sr-1024-08.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
@@ -864,13 +852,12 @@
 
                             <div id="collapse-1" class="faq__list-item-content collapse show"
                                 aria-labelledby="cardheader-1" data-parent="#accordion">
-                                <p><span class="first-char">A</span>
-                                    &nbsp; Sánta Róza Balatonfüreden, a
+                                    A Sánta Róza Balatonfüreden, a
                                     Vitorlás tér mólójáról indul
                                     a menetrendben feltüntetett
                                     időpontokban. Indulj el a Tagore sétányról a móló irányába, ahol már látni fogod a
                                     megtépázott vitorlákat, a zsákmánnyal és ágyúkkal felszerelt kalózhajót.</p>
-                                </div>
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -887,12 +874,12 @@
                             <div id="collapse-2" class="faq__list-item-content collapse" aria-labelledby="cardheader-2"
                                 data-parent="#accordion">
                                 <p>
-                                    <span class="first-char">A</span>
-                                    &nbsp; kikötőhöz legközelebb a Zákony utcai parkolóház használatát javasoljuk, a Zákonyi Ferenc utca 12. szám alatti mélygarázsban, 300 Ft/óra díj ellenében.
+                                    A kikötőhöz legközelebb a Zákony utcai parkolóház használatát javasoljuk, a
+                                    Zákonyi Ferenc utca 12. szám alatti mélygarázsban, 300 Ft/óra díj ellenében.
                                     Egy utcával távolabb, néhány perc sétával elérhető a Huray utcai parkoló, a
                                     Huray utca 3.
                                     szám alatt, ahol a parkolási díj 200 Ft/óra.</p>
-                                </div>
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -909,14 +896,14 @@
                             <div id="collapse-3" class="faq__list-item-content collapse" aria-labelledby="cardheader-3"
                                 data-parent="#accordion">
 
-                                <p> 
-                                    <span class="first-char">A</span>
-                                    &nbsp; Sánta Róza kalózprogramja 60 percig tart. Ezalatt számos kihívás és élmény vár a kalózokra.</p>
-                                
-                                
-                               </div>
+                                <p>
+                                    A Sánta Róza kalózprogramja 60 percig tart. Ezalatt számos kihívás és élmény
+                                    vár a kalózokra.</p>
+
+
+                            </div>
                         </li>
-                        <!-- LIST ITEM END -->                        
+                        <!-- LIST ITEM END -->
 
                         <!-- LIST ITEM -->
                         <li class="faq__list-item card">
@@ -932,14 +919,15 @@
                                 data-parent="#accordion">
 
                                 <p>
-                                    <span class="first-char">B</span>
-                                    ár szülőként is részt vehettek a programon, arra biztatunk
-                                titeket, hogy bátran engedjétek el gyerkőcötöket egy felejthetetlen kalózélményre, amíg
-                                ti kényelmesen
-                                elkortyoltok egy frissítőt a környéken. Így több hely marad az ifjú legénység számára a
-                                fedélzeten.</p>
-                                
-                                </div>
+                                    Bár szülőként is részt vehettek a programon, arra biztatunk
+                                    titeket, hogy bátran engedjétek el gyerkőcötöket egy felejthetetlen kalózélményre,
+                                    amíg
+                                    ti kényelmesen
+                                    elkortyoltok egy frissítőt a környéken. Így több hely marad az ifjú legénység
+                                    számára a
+                                    fedélzeten.</p>
+
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -955,12 +943,14 @@
 
                             <div id="collapse-6" class="faq__list-item-content collapse" aria-labelledby="cardheader-6"
                                 data-parent="#accordion">
-                                <p> <span class="first-char">T</span>  ermészetesen nem! Hajónk a mindenkori Hajózási Szabályzatot
-                                szigorúan betartva biztosítja a
-                                szükséges mentőfelszerelések számát, és legénységünk számára is a lurkók épsége a
-                                legfontosabb kritérium.</p>
+                                <p> 
+                                    Természetesen nem! Hajónk a mindenkori Hajózási
+                                    Szabályzatot
+                                    szigorúan betartva biztosítja a
+                                    szükséges mentőfelszerelések számát, és legénységünk számára is a lurkók épsége a
+                                    legfontosabb kritérium.</p>
 
-                              </div>
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -977,12 +967,15 @@
                             <div id="collapse-7" class="faq__list-item-content collapse" aria-labelledby="cardheader-7"
                                 data-parent="#accordion">
 
-                                <p> <span class="first-char">M</span> enetrendszerinti járatainkon kívül lehetőség van egyedi
-                                programok szervezésére is a hajó
-                                fedélzetén. Vegyétek fel velünk a kapcsolatot, és örömmel adunk további tájékoztatást a
-                                lehetőségekről!</p>
-                                
-                                </div>
+                                <p> 
+                                    Menetrendszerinti járatainkon kívül lehetőség van
+                                    egyedi
+                                    programok szervezésére is a hajó
+                                    fedélzetén. Vegyétek fel velünk a kapcsolatot, és örömmel adunk további
+                                    tájékoztatást a
+                                    lehetőségekről!</p>
+
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -998,11 +991,13 @@
 
                             <div id="collapse-8" class="faq__list-item-content collapse" aria-labelledby="cardheader-8"
                                 data-parent="#accordion">
-                                
-                                <p> <span class="first-char">K</span> is kalózaink és az egyedi rendezvények résztvevői számára is
-                                rendelkezésre áll a fedélzeten
-                                egy mosdó.</p>
-                                </div>
+
+                                <p> 
+                                    Kis kalózaink és az egyedi rendezvények résztvevői
+                                    számára is
+                                    rendelkezésre áll a fedélzeten
+                                    egy mosdó.</p>
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -1019,10 +1014,10 @@
                             <div id="collapse-9" class="faq__list-item-content collapse" aria-labelledby="cardheader-9"
                                 data-parent="#accordion">
 
-                                <p> <span class="first-char">B</span> ár a hajón büfé nem üzemel, a nyári időjárásra való
-                                tekintettel innivaló felhozatala természetesen lehetséges.</p>
-                                
-                                </div>
+                                <p> 
+                                    Bár a hajón büfé nem üzemel, a nyári időjárásra való tekintettel innivaló felhozatala természetesen lehetséges.</p>
+
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -1038,11 +1033,10 @@
 
                             <div id="collapse-10" class="faq__list-item-content collapse"
                                 aria-labelledby="cardheader-10" data-parent="#accordion">
-                                <p> <span class="first-char">H</span> ogy a nyári hőség ne szegje
-                                kedvét a kincskeresésnek, napvitorlákkal árnyékoltuk be a fedélzetet, így a közvetlen
-                                napfény nem zavarhatja meg a kalandot.
+                                    Hogy a nyári hőség ne szegje
+                                    kedvét a kincskeresésnek, napvitorlákkal árnyékoltuk be a fedélzetet, így a közvetlen napfény nem zavarhatja meg a kalandot.
                                 </p>
-                                </div>
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -1058,13 +1052,9 @@
 
                             <div id="collapse-11" class="faq__list-item-content collapse"
                                 aria-labelledby="cardheader-11" data-parent="#accordion">
-                                <p> <span class="first-char">A</span>z egy órás hajózás során
-                                megtapasztalhatják a gyerkőcök, hogy milyen, amikor felavatjuk a legénység legújabb
-                                kalózait. Majd nyomába eredünk Sánta Róza legendás, elveszett kincsének. Megtanuljuk a
-                                kardforgatás művészetét, a hajós navigálás alapjait, és ha jól végeztük dolgunkat, busás
-                                zsákmánnyal térünk vissza a partra.</p>
-                                
-                                </div>
+                                    Az egy órás hajózás során megtapasztalhatják a gyerkőcök, hogy milyen, amikor felavatjuk a legénység legújabb kalózait. Majd nyomába eredünk Sánta Róza legendás, elveszett kincsének. Megtanuljuk a kardforgatás művészetét, a hajós navigálás alapjait, és ha jól végeztük dolgunkat, busás zsákmánnyal térünk vissza a partra.</p>
+
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -1080,13 +1070,14 @@
 
                             <div id="collapse-12" class="faq__list-item-content collapse"
                                 aria-labelledby="cardheader-12" data-parent="#accordion">
-                                
-                                <p> <span class="first-char">H</span>a szeretnéd, hogy egyedi
-                                rendezvényed a Sánta Rózán kerüljön megrendezésre, mi biztosítjuk
-                                neked a kapitányt, aki elnavigálja a hajót a kívánt útvonalon. Emellett egy jeges hordót
-                                is
-                                bekészítünk nektek, hogy a kívánt italok frissen kerüljenek kibontásra.</p>
-                                </div>
+
+                                    Ha szeretnéd, hogy egyedi
+                                    rendezvényed a Sánta Rózán kerüljön megrendezésre, mi biztosítjuk
+                                    neked a kapitányt, aki elnavigálja a hajót a kívánt útvonalon. Emellett egy jeges
+                                    hordót
+                                    is
+                                    bekészítünk nektek, hogy a kívánt italok frissen kerüljenek kibontásra.</p>
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -1102,10 +1093,10 @@
 
                             <div id="collapse-13" class="faq__list-item-content collapse"
                                 aria-labelledby="cardheader-13" data-parent="#accordion">
-                                <p> <span class="first-char">T</span>ermészetesen igen! Kollégáink
-                                a jegypénztárnál örömmel tartják szemmel a járgányokat, míg tart a kalózkaland.</p>
-                                
-                                </div>
+                                    Természetesen igen! Kollégáink
+                                    a jegypénztárnál örömmel tartják szemmel a járgányokat, míg tart a kalózkaland.</p>
+
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -1121,11 +1112,12 @@
 
                             <div id="collapse-14" class="faq__list-item-content collapse"
                                 aria-labelledby="cardheader-14" data-parent="#accordion">
-                                <p> <span class="first-char">Ö</span>römmel látjuk a nagyobb
-                                odafigyelést igénylő gyermekeket is. Arra kérjük a szülőket, hogy
-                                ha bizonytalanok, vegyék fel velünk a kapcsolatot, szívesen megválaszoljuk a felmerülő
-                                kérdéseket.</p>
-                                </div>
+                                    Örömmel látjuk a nagyobb
+                                    odafigyelést igénylő gyermekeket is. Arra kérjük a szülőket, hogy
+                                    ha bizonytalanok, vegyék fel velünk a kapcsolatot, szívesen megválaszoljuk a
+                                    felmerülő
+                                    kérdéseket.</p>
+                            </div>
                         </li>
                         <!-- LIST ITEM END -->
 
@@ -1151,8 +1143,8 @@
                             "Blátónak"
                             hívták.</h4>
 
-                            <span class="first-char big">E</span>
-                        <p>                             
+                        <span class="first-char big">E</span>
+                        <p>
                             kkor még éjszakánként villámok helyett kalózok ágyútüze világította be a
                             Tihanyi-félszigetet,
                             hiszen
@@ -1172,7 +1164,7 @@
             <div class="row justify-content-center align-items-stretch">
                 <div class="col-xl-3 col-lg-7 col-sm-9 col-12 align-self-center">
                     <div class="about-img">
-                        <img src="images/background-images/about-section-01.png" alt="Sánta Róza története"
+                        <img class="lazy" data-src="images/background-images/about-section-01.png" alt="Sánta Róza története"
                             class="img-fluid">
                     </div>
                 </div>
@@ -1250,7 +1242,7 @@
                         <div class="row justify-content-center align-items-center">
                             <div class="col-11 col-lg-3">
                                 <div class="contact__img-holder">
-                                    <span class="contact__img"></span>
+                                    <span class="contact__img lazy" data-src="/images/background-images/illustration-bottle-message.png"></span>
                                 </div>
                             </div>
                             <div class="col-11 col-lg-6">
@@ -1272,7 +1264,7 @@
         <div class="container zindex">
             <div class="row footer__container">
                 <div class="col-12 col-lg-3 footer__item footer__logo-container">
-                    <img class="logomeret footer__logo" src="images/brand/santa_roza_banner.svg" alt="Sánta Róza logo">
+                    <img class="logomeret footer__logo lazy" data-src="images/brand/sr-logo-banner-light.svg" alt="Sánta Róza logo">
                 </div>
                 <div class="col-12 footer__item col-lg-4 m-auto m-lg-0">
                     <div class="menu-a">
@@ -1284,6 +1276,10 @@
                         <a href="#gyik">GYIK</a>
                         <a href="#legenda">Legenda</a>
                         <a href="#kapcsolat">Kapcsolat</a>
+                        <div class="menu-a__smaller">
+                            <a href="aszf.html" target="_blank">ÁSZF</a>
+                            <a href="adatkezelesi.html" target="_blank"> Adatkezelési tájékoztató</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 footer__item col-lg-5">
@@ -1294,30 +1290,16 @@
                 </div>
             </div>
 
-            <div class="row pt-3">
-                <div class="col-lg-12 text-center copy-right-txt">
-                    <p>Copyright © 2020. All rights reserved by <a href="#">Balatoni Sétahajózási Kft.</a></p>
-                </div>
+            <div class="copyright-info__container">
+                
+                    <p class="copyright-info__madeby">Made by <a href="http://www.isf.hu/" target="_blank">ISF Kft.</a></p>
+                    <p class="copyright-info__copyright">Copyright © 2020. All rights reserved by Balatoni Sétahajózási Kft.</p>
+                                         
             </div>
 
         </div>
     </section>
-    <!-- FOOTER AREA END -->
-
-    <!-- COMPANY SECTION -->
-    <section id="isf">
-        <div class="isf__container">
-            <div class="isf__logo">
-                <a href="https://isf.hu" target="_blank">
-                    <img src="/images//brand/ISF-logo-small-170x58.svg" alt="">
-                </a>
-            </div>
-            <div class="isf__text">
-                <h3>A Sánta Róza üzemeltetője az <a href="https://isf.hu" target="_blank">Idea-Sol Factory Kft.</a></h3>
-            </div>
-        </div>
-    </section>
-    <!-- COMPANY SECTION END -->
+    <!-- FOOTER AREA END --> 
 
     <!-- Optional JavaScript -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -1331,6 +1313,7 @@
     <script src="js/countdown.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>    
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
     <script src="js/custom.js"></script>   
 
 </body>

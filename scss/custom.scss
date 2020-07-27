@@ -52,6 +52,10 @@ p {
     font-size: 22px;
     line-height: 30px;
 
+    a{
+        color: white;
+    }
+
     b {
         font-weight: bold;
     }
@@ -74,31 +78,74 @@ p {
 }
 
 /* LISTS */
-.custom-counter {
+.custom-list {
     counter-reset: my-counter;
     list-style: none;
 
-    li {
+    li{
         position: relative;
         margin-left: 16px;
         padding: 10px 0;
+    }
 
-        &::before {
-            counter-increment: my-counter + 1;
-            content: counter(my-counter) ".";
+    &.list-dash{
+        li{
+            
+            margin-left: 12px;
 
-            text-align: center;
-            font-family: GrenzeGotisch;
-            font-size: 32px;
-            position: absolute;
-            left: -25px;
-            top: 10px;
-            padding: 0;
-            margin: 0;
-            line-height: 100%;
-            color: color(text);
+            &::before{
+                content: "—";
+                padding-right: 12px;
+            }
+        }
+        
+    }
+
+    &.list-latin{
+
+        margin-left: 24px;
+        
+        li{
+           counter-increment: my-counter;
+           padding-left: 12px;
+
+           &::before{
+               content: counter(my-counter,lower-latin) ")";
+               position: absolute;
+               font-family: GrenzeGotisch;
+               font-size: 32px;
+               left: -25px;
+               top: 10px;
+               padding: 0;
+                margin: 0;
+                line-height: 100%;
+                color: color(text);   
+           }
         }
     }
+
+    &.list-counter{
+        li {           
+    
+            &::before {
+                counter-increment: my-counter;
+                content: counter(my-counter) ".";
+    
+                text-align: center;
+                font-family: GrenzeGotisch;
+                font-size: 32px;
+                position: absolute;
+                left: -25px;
+                top: 10px;
+                padding: 0;
+                margin: 0;
+                line-height: 100%;
+                color: color(text);
+            }
+        }
+    }
+
+   
 }
 
 /* ICONS */
@@ -586,7 +633,7 @@ body {
             content: "";
             position: absolute;
             bottom: -12px;
-            left: 0;
+            left: -300px;
             width: 200px;
             height: 200px;
 
@@ -595,13 +642,19 @@ body {
             background-repeat: no-repeat;
             background-size: contain;
             z-index: 0;
+
+            transition: all .5s ease-in-out;
+
+            @include screen-xl{
+                left: 0;
+            }
         }
 
         &::after {
             content: "";
             position: absolute;
             bottom: -14px;
-            right: 0;
+            right: -300px;
             width: 200px;
             height: 200px;
 
@@ -609,27 +662,15 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-        }
 
-        @include screen-md {
-            &::before {
-                background-position: -20px;
-            }
+            transition: all .5s ease-in-out;
 
-            &::after {
-                background-position: 80px;
+            @include screen-xl{
+                right: -20px;
             }
-        }
+        }       
 
-        @include screen-lg {
-            &::before {
-                background-position: -15px;
-            }
-
-            &::after {
-                background-position: 70px;
-            }
-        }
+        
 
         @include screen-hd {
             &::before {
@@ -667,20 +708,20 @@ body {
     .navbar-brand {
         vertical-align: middle;
         .navbar__logo {
-            width: auto;
+            width: 220px;
             height: auto;
-            max-width: 200px;
+            // max-width: 200px;
 
             @include screen-lg {
-                max-width: 220px;
+                width: 260px;
             }
 
             @include screen-xl {
-                max-width: 240px;
+                width: 300px;
             }
 
             @include screen-xxl {
-                max-width: 280px;
+                // max-width: 280px;
             }
         }
     }
@@ -890,7 +931,7 @@ section {
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                background-image: url(../images/brand/santa_roza_banner.svg);
+                background-image: url(../images/brand/sr-logo-banner-light.svg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -950,6 +991,34 @@ section {
         left: 0;
         width: 100%;
         height: 100%;
+
+        &::before{
+            content: none;
+            position: absolute;
+            right: 0;
+            top: -54px;            
+            width: 170px;
+            height: 170px;
+
+            background-image: url(../images/background-images/illustration-anchor-chains-01.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 20;
+
+            @include screen-lg{
+                content: "";
+                right: 120px;
+            }
+          
+            @include screen-xl{                
+                right: 200px;
+            }
+
+            @include screen-xxl{
+                right: 300px;
+            }
+        }
 
         &::after {
             content: none;
@@ -1315,7 +1384,7 @@ section {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: left;
-            background-image: url(../images/background-images/schedule-ship-01.png);
+            // background-image: url(../images/background-images/schedule-ship-01.png);
             z-index: 2;
         }
 
@@ -1330,7 +1399,7 @@ section {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: right;
-            background-image: url(../images/background-images/schedule-island-foreground-01.png);
+            // background-image: url(../images/background-images/schedule-island-foreground-01.png);
             z-index: 1;
         }
 
@@ -1344,7 +1413,7 @@ section {
             background-size: auto;
             background-repeat: repeat-x;
             background-position: center;
-            background-image: url(../images/background-images/schedule-fog.svg);
+            // background-image: url(../images/background-images/schedule-fog.svg);
             z-index: 0;
             opacity: 1;
         }
@@ -1360,7 +1429,7 @@ section {
             background-size: contain;
             background-repeat: repeat-x;
             background-position: center;
-            background-image: url(../images/background-images/schedule-mountains.svg);
+            // background-image: url(../images/background-images/schedule-mountains.svg);
             z-index: 0;
             opacity: 0.45;
         }
@@ -1865,7 +1934,7 @@ section {
             }
 
             > h3 {
-                padding-bottom: 6px;
+                padding-bottom: 10px;
             }
         }
     }
@@ -2046,6 +2115,9 @@ section {
 
 /* GALLERY SECTION */
 #gallery {
+    background: none;
+    background-size: cover;
+    background-position: center;
     background-image: url(../images/480/sr-480-12.jpg);
 
     @include screen-md {
@@ -2557,12 +2629,10 @@ section {
                 display: block;
                 width: 100%;
                 height: 100%;
-                background-image: url(../images/icons/icon-bottle-message-01.svg);
+                // background-image: url(../images/background-images/illustration-bottle-message.png);
                 background-size: contain;
                 background-position: center;
-                background-repeat: no-repeat;
-                filter: FlipH;
-                transform: scaleX(-1);
+                background-repeat: no-repeat;               
             }
         }
     }
@@ -2590,16 +2660,7 @@ section {
     padding: 36px 0;
     position: relative;
     background-color: transparent;
-
-    .copy-right-txt {
-        margin-top: 16px;
-        p {
-            font-family: GrenzeGotisch;
-            font-size: 22px;
-            color: color(primary);
-        }
-    }
-
+    
     .footer__container {
         .footer__item {
             &:not(:first-of-type) {
@@ -2631,7 +2692,7 @@ section {
             a {
                 font-family: Grenze;
                 font-size: 24px;
-                color: color(background-main);
+                color: color(background-main);                
             }
 
             @include screen-lg {
@@ -2641,10 +2702,74 @@ section {
                 justify-content: space-between;
                 text-align: left;
             }
+
+            .menu-a__smaller{
+                padding-top: 12px;
+                >a{
+                    display: inline-block;
+                    font-size: 19px;
+                    color: color(primary);
+
+                    @include screen-lg{
+                        display: block;
+                    }
+                }
+            }
         }
 
         .footer__map-container {
             width: 100%;
+        }
+    }
+
+    .copyright-info__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        margin-top: 32px;
+
+        @include screen-lg{
+            flex-direction: row;
+            align-items: center;
+        }
+
+        p{
+            &:first-of-type{
+                margin-bottom: 10px;
+
+                @include screen-lg{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .copyright-info__madeby,
+        .copyright-info__copyright{
+            font-family: Grenze;
+            color: color(text-white);
+
+            >a{
+                font-family: Grenze;
+                font-weight: bold;
+                color: color(primary);
+            }
+        }
+
+        .copyright-info__madeby{
+
+            @include screen-lg{
+                padding-right: 24px;
+                border-right: 2px solid color(text-white);
+            }
+        }
+
+        .copyright-info__copyright{
+
+            @include screen-lg{
+                padding-left: 24px;
+            }
         }
     }
 
@@ -2672,63 +2797,6 @@ section {
     height: 130px;
 }
 
-/* COMPANY SECTION */
-#isf {
-    padding: 12px 0;
-    background-color: color(isf-secondary);
-
-    .isf__container {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-        @include screen-md{
-            flex-direction: row;
-            align-items: center;
-        }
-
-        .isf__logo {
-            display: block;
-            img {
-                height: 36px;
-            }
-        }
-
-        .isf__text {
-            display: block;
-            padding-left: 22px;
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            p,
-            a {
-                font-family: SegoeUI;
-                color: white;
-                text-align: center;
-            }
-
-            a {
-                font-weight: bold;
-            }
-
-            > h3 {
-                padding-top: 6px;
-                font-size: 16px;
-                line-height: 18px;
-
-                @include screen-md{
-                    padding-top: 0;
-                    font-size: 18px;
-                line-height: 22px;
-                }
-            }
-        }
-    }
-}
 
 /* TEXT STYLING */
 
@@ -2760,7 +2828,7 @@ p {
        position: relative;
        color: color(text) !important;      
        right: 0;  
-       top: 0;
+       top: -3px;
        float: none;  
        display: inline-block;
        vertical-align: middle;
@@ -2824,16 +2892,7 @@ p {
                 li {
                     padding-left: 12px;
                 }
-            }
-
-            ul {
-                li {
-                    &::before {
-                        content: "—";
-                        padding-right: 12px;
-                    }
-                }
-            }
+            }            
         }
     }
 }

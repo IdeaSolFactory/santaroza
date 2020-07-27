@@ -29,7 +29,7 @@
     }
 
     // countdown timer js 
-    $('.coundown_res').countdown('2020/07/22 15:20:15', function (event) {
+    $('.coundown_res').countdown('2020/07/30 15:20:15', function (event) {
         var $this = $(this);
         $('#day').html(event.strftime('<span>%D</span>'));
         $('#hour').html(event.strftime('<span>%H</span>'));
@@ -173,7 +173,18 @@
     // video player js
     // jQuery("#bgndVideo").YTPlayer();
 
-    // Auto-collapse -- ISF
+    // Auto-collapse -- ISF   
+    
+    // lazy loading js
+    $('.lazy').Lazy({        
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        effectTime: "0.3s",
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
     
 
 }(jQuery));
