@@ -3058,7 +3058,7 @@ p > .first-char {
   position: relative;
   color: #474341 !important;
   right: 0;
-  top: 0;
+  top: -3px;
   float: none;
   display: inline-block;
   vertical-align: middle;
