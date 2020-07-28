@@ -2115,10 +2115,13 @@ section {
 
 /* GALLERY SECTION */
 #gallery {
+
     background: none;
     background-size: cover;
     background-position: center;
     background-image: url(../images/480/sr-480-12.jpg);
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
 
     @include screen-md {
         background-image: url(../images/768/sr-768-12.jpg);
@@ -2143,6 +2146,11 @@ section {
     &::after {
         opacity: 0.65;
         background-color: color(primary-darker);
+    }
+
+    &.lazy{
+        background-image: none;
+        opacity: 0;
     }
 
     .gallery-heading {
@@ -2753,7 +2761,7 @@ section {
             >a{
                 font-family: Grenze;
                 font-weight: 600;
-                color:  #3030d8;
+                color:  color(primary);
             }
         }
 

@@ -160,6 +160,9 @@
         effect: 'fadeIn',
         effectTime: "0.3s",
         visibleOnly: true,
+        bgLoader: function(element){
+            element.removeClass("lazy");
+        },
         onError: function(element) {
             console.log('error loading ' + element.data('src'));
         }

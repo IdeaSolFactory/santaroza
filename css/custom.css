@@ -2255,6 +2255,9 @@ section .header.header--style-4::after {
   background-size: cover;
   background-position: center;
   background-image: url(../images/480/sr-480-12.jpg);
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 @media (min-width: 767px) {
@@ -2290,6 +2293,11 @@ section .header.header--style-4::after {
 #gallery::after {
   opacity: 0.65;
   background-color: #300f0f;
+}
+
+#gallery.lazy {
+  background-image: none;
+  opacity: 0;
 }
 
 #gallery .gallery-heading h3 {
@@ -2988,7 +2996,7 @@ section .header.header--style-4::after {
 #footer .copyright-info__container .copyright-info__copyright > a {
   font-family: Grenze;
   font-weight: 600;
-  color: #3030d8;
+  color: #bf382b;
 }
 
 @media (min-width: 992px) {
