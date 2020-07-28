@@ -2333,6 +2333,7 @@ section .header.header--style-4::after {
 /*GALLERY CAROUSEL SECTION*/
 #gallery-carousel .gallery-carousel__container .gallery-carousel__item {
   height: 320px;
+  width: 420px;
   position: relative;
 }
 
@@ -2341,6 +2342,8 @@ section .header.header--style-4::after {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 #gallery-carousel .gallery-carousel__container .gallery-carousel__item .hover-overlay {

@@ -2190,14 +2190,17 @@ section {
 /*GALLERY CAROUSEL SECTION*/
 #gallery-carousel {
     .gallery-carousel__container {
+        
         .gallery-carousel__item {
             height: 320px;
+            width: 420px;
             position: relative;
 
             img {
                 width: auto;
                 height: 100%;
                 object-fit: cover;
+                object-position: center;
             }
 
             .hover-overlay {
