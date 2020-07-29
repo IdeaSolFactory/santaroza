@@ -2988,15 +2988,16 @@ section .header.header--style-4::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
-  margin-top: 32px;
+  margin: 32px 0 0 0;
 }
 
 @media (min-width: 992px) {
   #footer .copyright-info__container {
+    margin: 32px 20px 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
