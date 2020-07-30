@@ -2768,14 +2768,17 @@ section {
             }
 
             .menu-a__smaller{
-                padding-top: 12px;
-                >a{
+                padding-top: 8px;
+                margin: 8px 20px;
+                border-top: dashed 1px color(text-light);
+
+                >a{                   
                     display: inline-block;
                     font-size: 19px;
-                    color: color(primary);
-
+                   
                     @include screen-lg{
                         display: block;
+                        margin: 0;
                     }
                 }
             }
