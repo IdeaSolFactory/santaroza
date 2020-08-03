@@ -35,6 +35,18 @@
 
 /* TEXT */
 
+h1,h2,h3,h4,h5,h6,
+p, strong, b, i, 
+span, li, sup,
+div, img,
+iframe,
+a{
+    &::selection{
+        color: color(text-white);
+        background-color: color(primary);
+    }
+}
+
 h1,
 h2,
 h3,

@@ -29,6 +29,25 @@
 }
 
 /* TEXT */
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection,
+p::-moz-selection, strong::-moz-selection, b::-moz-selection, i::-moz-selection,
+span::-moz-selection, li::-moz-selection, sup::-moz-selection,
+div::-moz-selection, img::-moz-selection,
+iframe::-moz-selection,
+a::-moz-selection {
+  color: #ede9df;
+  background-color: #bf382b;
+}
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection,
+p::selection, strong::selection, b::selection, i::selection,
+span::selection, li::selection, sup::selection,
+div::selection, img::selection,
+iframe::selection,
+a::selection {
+  color: #ede9df;
+  background-color: #bf382b;
+}
+
 h1,
 h2,
 h3,
