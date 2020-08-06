@@ -5,52 +5,27 @@
     //preloader part js
     $(window).on('load', function () {
         $('.main-preloader').delay(1000).fadeOut(1000);
-    });   
+    });         
 
     // countdown timer js 
-    $('.coundown_res').countdown('2020/07/04', function (event) {
+    $('.coundown_res').countdown('2020/08/20 21:00:00', function (event) {
         var $this = $(this);
         $('#day').html(event.strftime('<span>%D</span>'));
         $('#hour').html(event.strftime('<span>%H</span>'));
         $('#month').html(event.strftime('<span>%M</span>'));
         $('#second').html(event.strftime('<span>%S</span>'));
     });
-    // gallery slide js
-    $('.gallery-main').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 2000,
-        arrows: false,
-        centerMode: true,
-        centerPadding: '0px',
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-    },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-    },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                }
-    },
 
-  ]
-    });
+
+    // Flickity 
+    $('.gallery-carousel__container').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        autoPlay: true,
+        imagesLoaded: true,
+        lazyLoad: 6
+    });  
 
     // Review slide js
     $('.review-main').slick({
@@ -176,4 +151,22 @@
     $('.counter').counterUp();
     // video player js
     // jQuery("#bgndVideo").YTPlayer();
+
+    // Auto-collapse -- ISF   
+    
+    // lazy loading js
+    $('.lazy').Lazy({        
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        effectTime: "0.3s",
+        visibleOnly: true,
+        bgLoader: function(element){
+            element.removeClass("lazy");
+        },
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
+    
+
 }(jQuery));

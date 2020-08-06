@@ -2,18 +2,31 @@
 <html lang="hu">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WQSBJPK');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Kalózhajó, Balaton, balatoni hajózás, Sánta Róza" />
-    <meta name="description" content="Sánta Róza - A felejthetetlen kalózélmény" />
-    <title>Sánta Róza</title>
+    <meta name="keywords"
+        content="Kalózhajó, Balaton, Balatonfüred, balatoni hajózás, privát bérlés, céges rendezvények, hajós program, hajóbérlés, kincskeresés, kalózkaland, Sánta Róza, osztálykirándulás, hajós gyerekprogram, balatoni gyerekprogram, balatoni kalózhajó, kalandjárat" />
+    <meta name="description"
+        content="Kalózhajós programok gyerekeknek és egyedi rendezvények, valamint privát bérlési lehetőségek a felnőtteknek. Légy te is a Sánta Róza legendájának részese!" />
+    <meta property="og:image" content="/images/thumbnail_1920x1080.jpg">
+    <title>Sánta Róza kalózhajó</title>
     <!--font-awesome icons link-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <!-- Bootstrap CSS -->
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/venobox.css">
@@ -22,31 +35,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom.min.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
 </head>
 
 <body>
-    <!-- perloader part start -->
-    <!-- <div id="main-preloader" class="main-preloader semi-dark-background">
-        <div id="status" class="main-preloader-inner center">
-            <div class="preloader-percentage center">
-                <div class="object object_one"></div>
-                <div class="object object_two"></div>
-                <div class="object object_three"></div>
-                <div class="object object_four"></div>
-                <div class="object object_five"></div>
-            </div>
-            <div class="preloader-bar-outer">
-                <div class="preloader-bar"></div>
-            </div>
-        </div>
-    </div> -->
-    <!-- perloader part start -->
-
     <!-- HEADER AREA START -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navber">
-        <div class="container-fluid">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQSBJPK" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar navbar-expand-xl bg-wood--repeat bottom navbar-light sticky-top" id="navber">
+        <div class="navbar__ropes-container"></div>
+        <span class="rope-right"></span>
+        <div class="navbar-content container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img class="logomeret navbar__logo" src="images/brand/logo-text-white.png" alt="Sánta Róza logó">
+                <img class="logomeret navbar__logo" src="images/brand/sr-logo-text-light.svg" alt="Sánta Róza logó">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,28 +62,32 @@
             <div class="collapse navbar-collapse menu-main" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto menu-item">
                     <li class="nav-item">
-                        <a class="nav-link" href="#event">Programok</a>
+                        <a class="nav-link" href="#programok">Programok</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#speaker">Küldetés</a>
+                        <a class="nav-link" href="#menetrend">Menetrend</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#schedule">Menetrend és jegyek</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#organize">Rendezvények</a>
+                        <a class="nav-link" href="#jegyarak">Jegyek</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Galéria</a>
+                        <a class="nav-link" href="#egyedirendezvenyek">Rendezvények</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Sánta Róza</a>
+                        <a class="nav-link" href="#galeria">Galéria</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gyik">GYIK</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#legenda">Legenda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn btn--style1" href="#register">Jegyvásárlás</a>
+                        <a class="nav-link nav-btn btn--style1" href="#kapcsolat">Kapcsolat</a>
                     </li>
                 </ul>
             </div>
@@ -87,31 +97,31 @@
 
     <!-- BANNER AREA START -->
     <section id="banner">
-        <span class="text-shadow"></span>
+        <!-- <span class="text-shadow"></span> -->
         <div class="backtotop">
             <a href="#banner"><i class="backtotop__icon"></i></a>
-            <!-- <a href="#banner"><i class="fa fa-rocket" aria-hidden="true"></i></a> -->
         </div>
-        <div class="container zindex banner__container">
-            <div class="row h-100 justify-content-center align-items-center">
-                <div class="col-12 col-lg-3 banner__image-wrapper">
-                    <div class="banner__image-holder">
-                    </div>
-                </div>
-                <div class="col-lg-6 banner-txt">
-                    <!-- <h3>Különleges kalóz kaland a Balatonon</h3> -->
-                    <h1>Légy a Sánta Róza legénységének tagja!</h1>
-                    <p>Ha egy igazán emlékezetes hajókirándulásra vágysz, gyere és csatlakozz a Sánta Róza
-                        legénységéhez! Bonts vitorlát és találd meg az elveszett kincset! </p>
 
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12">
+                    <div class="banner-content">
+                        <div class="banner__image-holder"></div>
+                        <div class="banner__txt">
+                            <h1>Lépj a Sánta Róza kalózhajójának fedélzetére!</h1>
+                            <p>Légy részese te is a balatoni kalózlegendának! Balatonfüredről naponta induló <b>gyermek
+                                    kalózjáratok</b> és felnőtteknek szóló <b>egyedi rendezvény</b> lehetőségek várnak
+                                rád. </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="banner-2" class="bg-wood--repeat">
-        <img class="bg-top" src="/images/background-images/bar-wood-top.png" alt="">
-        <img class="bg-bottom" src="/images/background-images/bar-wood-top.png" alt="">
+    <section id="banner-2" class="bg-wood--repeat top-bottom">
+
+        <div class="anchor-container"></div>
 
         <div class="container">
             <div class="row justify-content-center">
@@ -131,7 +141,7 @@
                                             <div class="coun">
                                                 <div class="coun_time">
                                                     <h2 id="day" class="coming-data"></h2>
-                                                    <p class="coming-data2 special-pos">Nap</p>
+                                                    <p class="coming-data2">Nap</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -160,13 +170,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-12 align-bottom align-self-center text-center">
-                                            <h2 class="banner-2__aside-text">a hajó első útjáig</h2>
-                                            <!-- <div class="social-icons">
-                                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                            </div> -->
+                                            <h2 class="banner-2__aside-text">az augusztus 20-ai kalóztámadásig</h2>                                            
                                         </div>
                                     </div>
                                 </div>
@@ -182,36 +186,46 @@
 
 
     <!-- EVENT AREA START -->
-    <section id="event">
+    <a id="programok"></a>
+    <section id="event" class="lazy">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="row align-items-stretch justify-content-between">
-                        <div class="col-lg-4 col-sm-6">
+                    <div class="row align-items-stretch justify-content-center justify-content-lg-between">
+                        <div class="event__item col-lg-4 col-sm-10 col-12 order-2 order-lg-1">
                             <div class="about-item boxed boxed--paper">
-                                <span class="icon pirate-kid"></span>
+                                <span class="about-item__icon icon pirate-hat"></span>
                                 <h3>Kalózkaland</h3>
-                                <p>Vegyél részt a Sánta Róza legendás kincsének felkutatásában, támadd meg a
+                                <p>
+                                    <span class="first-char">V</span>
+                                    egyél részt a Sánta Róza legendás kincsének felkutatásában, támadd meg a
                                     legénységgel az ellenséges hajókat, és közben tanuld ki a kardforgatás és tengeri
                                     navigálás ismereteit!</p>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 event-header mobile-t-p text-center">
-                            <!-- <h4>Programok</h4> -->
-                            <h3>Mik várnak rád a Sánta Rózán?</h3>
-                            <p>Élmény, kaland, egyedi rendezvények. Izgalmasan hangzik? Lépj a fedélzetre és valósítsd
-                                meg a saját kalóztörténetedet!</p>
-                            <a href="#" class="btn--style1">
-                                Jegyet foglalok</a>
+                        <div class="event__item col-lg-4 event-header text-center order-1 order-lg-2">
+                            <div class="event-header__content">
+                                <h3>Mik várnak rád a Sánta Rózán?</h3>
+                                <p>
+                                    <span class="first-char">É</span>
+                                    lmény, kaland, egyedi rendezvények. Izgalmasan hangzik? Lépj a fedélzetre és
+                                    valósítsd
+                                    meg a saját kalóztörténetedet!</p>
+                                <a href="#menetrend" class="btn--style1">
+                                    Menetrend</a>
+                            </div>
+
                         </div>
 
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="event__item col-lg-4 col-sm-10 col-12 order-3">
                             <div class="about-item boxed boxed--paper">
-                                <span class="icon treasure-chest"></span>
+                                <span class="about-item__icon icon jugs-mat"></span>
                                 <h3>Egyedi rendezvények</h3>
-                                <p>Az ódon hajópadló, a megtépázott vitorlák és a kalózlegendák sötét világa téged is
-                                    beindít/vonz? Szervezz különleges céges vagy privát partit, lánybúcsút a Sánta Róza
+                                <p>
+                                    <span class="first-char">A</span>
+                                    z ódon hajópadló, a megtépázott vitorlák és a kalózlegendák sötét világa téged is
+                                    vonz? Szervezz különleges céges vagy privát partit, lánybúcsút a Sánta Róza
                                     fedélzetén.</p>
                             </div>
                         </div>
@@ -237,70 +251,53 @@
         </div>
     </section>
     <!-- EVENT AREA END -->
-    <!-- BRAND AREA START -->
-    <!-- <section id="brand">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 event-header brand-m-p">
-                    <h4>Hol találsz meg minket?</h4>
-                    <h3>Balatonfüred téged is vár!</h3>
-                    <p>A balatonfüredi mólón állomásozik Sánta Róza nevű kalózhajónk, ahova téged is szeretettel várunk
-                        egy felejthetetlen kalózélményre!</p>
-                    <a href="#" class="btn--style1">Megveszem a jegyem!</a>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="brand__image-holder">
-                        <img src="images/Balatonfured-Kikoto.jpg" alt="Balatonfüredi kikötő">
-                    </div>                  
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- BRAND AREA END -->
 
     <!-- COUNTER AREA START -->
-    <section id="counter">
+    <section id="counter" class="lazy">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-11 col-xl-10">
-                    <div class="row count-shadow count-item boxed boxed--paper">
-                        <div class="col-lg-3 col-sm-6 text-center counter-txt line-dark">
-                            <span class="icon coin"></span>
-                            <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
-                                data-counterup-beginat="100">2500</h3>
-                            <span>+</span>
-                            <p>Megszerzett aranytallér</p>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 text-center counter-txt">
-                            <span class="icon pirate-hook-2"></span>
-                            <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
-                                data-counterup-beginat="10">850</h3>
-                            <span>+</span>
-                            <p>Kalóz</p>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 text-center counter-txt line-dark">
-                            <span class="icon map"></span>
-                            <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
-                                data-counterup-beginat="2">130</h3>
-                            <span>+</span>
-                            <p>Küldetés</p>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 text-center counter-txt">
-                            <span class="icon swords"></span>
-                            <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
-                                data-counterup-beginat="10">0</h3>
-                            <span></span>
-                            <p>Elvesztett csata</p>
+            <div class="counter__container">
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <div class="row count-shadow count-item boxed boxed--paper">
+                            <div class="col-lg-3 col-sm-6 text-center counter-txt line-dark">
+                                <span class="icon coin-2"></span>
+                                <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
+                                    data-counterup-beginat="100">2500</h3>
+                                <span>+</span>
+                                <p>Megszerzett aranytallér</p>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 text-center counter-txt">
+                                <span class="icon pirate-hook-2"></span>
+                                <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
+                                    data-counterup-beginat="10">850</h3>
+                                <span>+</span>
+                                <p>Kalóz</p>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 text-center counter-txt line-dark">
+                                <span class="icon map"></span>
+                                <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
+                                    data-counterup-beginat="2">130</h3>
+                                <span>+</span>
+                                <p>Küldetés</p>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 text-center counter-txt">
+                                <span class="icon ship-surrender"></span>
+                                <h3 class="counter" data-counterup-time="2500" data-counterup-delay="30"
+                                    data-counterup-beginat="10">150</h3>
+                                <span>+</span>
+                                <p>Megcsáklyázott hajó</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- COUNTER AREA END -->
 
     <!-- ROUTE SECTION START -->
+    <a id="utvonal"></a>
     <section id="route-section">
         <div class="container">
             <div class="row justify-content-center route-section__heading">
@@ -313,14 +310,16 @@
             <!-- ROUTE ITEM -->
             <div class="row align-items-center route-section__item route-section__start">
                 <div class="col-lg-8 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-dock-02.png" alt="">
+                    <img class="route-section__img img-fluid lazy" data-srcset="images/background-images/route-dock-mobile.jpg 480w,
+                    images/background-images/route-dock-tablet.jpg 768w,
+                    images/background-images/route-dock.jpg" alt="">
                 </div>
                 <div class="col-lg-4">
                     <div class="route-section__text">
-                        <h3>Poszeidon golfütője/ Kráken vesztegelője</h3>
-                        <p>Toborzás, kalózeskü</p>
-                        <p>Jelentkezz szolgálatra a fedélzeten, majd húzd fel velünk a vasmacskát, hogy útnak induljunk egy közös kincskeresős kalandra!
-                            VAGY  Miután összeállt a rettegett legénység, felhúzzuk a vasmacskát és útnak indulunk a kincs felkutatására.</p>
+                        <h3>Cölöp–öböl</h3>
+                        <p>
+                            Miután összeállt a rettegett legénység, felhúzzuk a vasmacskát és útnak indulunk a
+                            kincs felkutatására.</p>
                     </div>
                 </div>
             </div>
@@ -336,14 +335,15 @@
                 <div class="col-lg-4">
                     <div class="route-section__text">
                         <h3>Rejtélyek háromszöge</h3>
-                        <p>A Kincses Térkép megfejtése</p>
-                        <p>A Rejtélyek háromszögének ködös, fodrozódó hullámai között igazítsd útba a hajót, és tanuld meg a kalózkodás legfontosabb alapjait! Forgasd a kardot úgy, mint egy igazi harcos kalóz, és tudj úgy tengeri csomót kötni, mint egy vérbeli hajós. 
-                            <br>VAGY Útba izgazítjuk a hajót, majd útközben elsajátítjuk a kalózkodás fontos alapjait, mint a kardforgatás vagy a csatakiáltás.</p>
+                        <p>
+                            Útba igazítjuk a hajót, majd elsajátítjuk a kalózkodás legfontosabb alapjait, mint a
+                            kardforgatás vagy a csatakiáltás.</p>
                     </div>
                 </div>
                 <div class="col-lg-7 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-treasure-hunt-01.png"
-                        alt="">
+                    <img class="route-section__img img-fluid lazy" data-srcset="images/background-images/route-triangle-mobile.jpg 480w,
+                    images/background-images/route-triangle-tablet.jpg 768w,
+                    images/background-images/route-triangle.jpg" alt="">
                 </div>
             </div>
             <!-- ROUTE ITEM END -->
@@ -356,13 +356,17 @@
             <!-- ROUTE ITEM -->
             <div class="row align-items-center route-section__item route-section__start">
                 <div class="col-lg-8 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-dock-02.png" alt="">
+                    <img class="route-section__img img-fluid lazy"
+                        data-src="images/background-images/map-treasure-01.png" alt="">
                 </div>
                 <div class="col-lg-4">
                     <div class="route-section__text">
-                        <h3>Kincses sziget</h3>
-                        <p>Sánta Róza kincsének bezsákmányolása</p>
-                        <p>Segíts a hajót a kincshez manőverezni és gyűjtsd be a zsákmányt, hogy ne kerüljön illetéktelen kezekbe! VAGY Legügyesebb kalózkapitányunk segítségével a kincshez manőverezünk, és begyűjtjük a zsákmányt.</p>
+                        <h3>Kincsesárok</h3>
+                        <p>
+                            Legügyesebb kalózkapitányunk segítségével a kincshez manőverezünk, és megpróbáljuk
+                            begyűjteni
+                            a zsákmányt.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -378,13 +382,14 @@
                 <div class="col-lg-4">
                     <div class="route-section__text">
                         <h3>Bátorság foka</h3>
-                        <p>A kincs védelme minden körülmények között</p>
-                        <p>Küzdd át magad a Bátorság fokán és ha kell, küldj ágyútüzet az ellenséges hajókra! Védd meg a kincset mindenáron! VAGY A viharos, ellenségekkel teleszőtt magyar tengeren megmutatkoznak a bátor harcosok, akik ha kell, ágyútűzzel is megvédik a megszerzett kincset. </p>
+                        <p>
+                            A viharos, ellenségekkel teleszőtt magyar tengeren megmutatkoznak a bátor harcosok,
+                            akik ha kell, ágyútűzzel is megvédik a hajót és legénységét. </p>
                     </div>
                 </div>
                 <div class="col-lg-7 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-treasure-hunt-01.png"
-                        alt="">
+                    <img class="route-section__img img-fluid lazy"
+                        data-src="images/background-images/map-cape-bravery-01.png" alt="">
                 </div>
             </div>
             <!-- ROUTE ITEM END -->
@@ -397,110 +402,40 @@
             <!-- ROUTE ITEM -->
             <div class="row align-items-center route-section__item route-section__start">
                 <div class="col-lg-8 route-section__img-container">
-                    <img class="route-section__img img-fluid" src="images/background-images/map-dock-02.png" alt="">
+                    <img class="route-section__img img-fluid lazy"
+                        data-src="images/background-images/map-destination-01.png" alt="">
                 </div>
                 <div class="col-lg-4">
                     <div class="route-section__text">
-                        <h3>Kikötő</h3>
-                        <p>Partraszállás</p>
-                        
-                        <p>Próbáld ki a hajó kormányzását, majd segíts kikötni a hajót a balatonfüredi mólón. Partraszállva gyűjtsd be a kincs rádeső részét! VAGY A hajó visszatérése után igazságosan elosztozunk a megszerzett kincseken </p>
+                        <h3>Vasmacska-simogató</h3>
+                        <p>
+                            A leleményes kalózok hősként térnek vissza a kikötőbe, ahol a legügyesebbek kapitányi
+                            elismerésben részesülnek. </p>
                     </div>
                 </div>
             </div>
             <!-- ROUTE ITEM END -->
 
-            
+
 
         </div>
     </section>
     <!-- ROUTE SECTION END -->
 
-    <!-- SPEAKER AREA START -->
-    <!-- <section id="speaker">
-        <div class="container zindex">
-            <div class="row">
-                <div class="col-lg-12 speaker-heading">
-                    <h3>Útvonal</h3>
-                    <div class="header-style"></div>
-                </div>
-            </div>
-            <div class="row speaker-pa">
-                <div class="col-lg-6">
-                    <div class="speaker-item circle-style">
-                        <img src="images/400x500px_1.png" alt="speaker-img" class="img-fluid">
-                        <div class="speaker-txt">
-                            <h3>Kikőtő</h3>
-                            <p>Kalózok toborzása a balatonfüredi mólón</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 text-right">
-                    <div class="speaker-item speak_2">
-                        <img src="images/400x500px_2.png" alt="speaker-img" class="img-fluid">
-                        <div class="speaker-txt">
-                            <h3>Ősi térkép</h3>
-                            <p>Megkezdődik a legendás kincs utáni hajsza</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="speaker-item circle-style">
-                        <img src="images/400x500px_6.png" alt="speaker-img" class="img-fluid">
-                        <div class="speaker-txt">
-                            <h3>Kráken</h3>
-                            <p>Elhajózunk a hírhedt Kráken csontjai mellett</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 text-right">
-                    <div class="speaker-item speak_4">
-                        <img src="images/400x500px_3.png" alt="speaker-img" class="img-fluid">
-                        <div class="speaker-txt">
-                            <h3>Tihany</h3>
-                            <p>A félsziget árnyékában újabb térképre bukkanunk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="speaker-item circle-style">
-                        <img src="images/400x500px_4.png" alt="speaker-img" class="img-fluid">
-                        <div class="speaker-txt">
-                            <h3>Háborúra fel!</h3>
-                            <p>Közel az ellenség, meg kell védeni a titkos térképet!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 text-right">
-                    <div class="speaker-item speak_6">
-                        <img src="images/400x500px_5.png" alt="speaker-img" class="img-fluid">
-                        <div class="speaker-txt">
-                            <h3>Balatonfüred</h3>
-                            <p>Utazásunk a balatonfüredi mólónál ér véget</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- SPEAKER AREA END -->
-
     <!-- SCHEDULE AND PRICE -->
     <section id="schedule-prices" class="bg-darker">
 
         <span class="schedule-prices__bg">
-            <i class="bg__ship"></i>
+            <i class="bg__ship lazy" data-src="/images/background-images/schedule-ship-01.png"></i>
             <!-- <i class="bg__fog"></i> -->
-            <i class="bg__island-foreground"></i>
-            <i class="bg__mountains"></i>
+            <i class="bg__island-foreground lazy"
+                data-src="images/background-images/schedule-island-foreground-01.png"></i>
+            <i class="bg__mountains lazy" data-src="images/background-images/schedule-mountains.svg"></i>
         </span>
 
+
         <!-- SCHEDULE AREA START -->
+        <a id="menetrend"></a>
         <section id="schedule">
             <div class="container zindex">
                 <div class="row">
@@ -511,7 +446,7 @@
                 </div>
 
                 <div class="row justify-content-center schedule__table-container">
-                    <div class="col-12">
+                    <div class="col-11 col-lg-12">
                         <div class="schedule__item boxed boxed--paper-2">
                             <!-- <img src="images/background-images/wooden-board-01.png" class="schedule__item-bckgrnd"/> -->
                             <div class="row justify-content-center h-100">
@@ -521,26 +456,44 @@
 
                                         <!-- SCHEDULE ITEM -->
                                         <div class="schedule__item-text">
-                                            <div class="schedule__item-header row align-items-center">
-                                                <div class="col-lg-10">
-                                                    <i class="schedule__item-img"></i>
-                                                    <h3>Kalózprogram gyermekeknek (4-14 év között)</h3>
+                                            <div
+                                                class="schedule__item-header row align-items-center justify-content-between">
+                                                <div class="col-lg-10 col-xl-9">
+                                                    <div class="schedule__item-header-container">
+                                                        <i class="schedule__item-img"></i>
+                                                    <div class="schedule__item-header-txt">
+                                                        <h3>Kalózprogram gyermekeknek </h3>
+                                                        <p>(Ajánlott kor: 4-14 év között)</p>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                   
                                                 </div>
-                                                <div class="col-lg-2">
+                                                <div class="col-lg-2 col-xl-3 text-lg-right">
                                                     <p>Menetidő: 1 óra</p>
                                                 </div>
                                             </div>
-                                            <div class="schedule__timetable-row">
-                                                <ul class="schedule__timetable">
-                                                    <li class="schedule__timetable-period">Hétfő-Péntek</li>
-                                                    <li>11:30</li>
-                                                    <li>12:00</li>
-                                                    <li>14:30</li>
-                                                    <li>15:00</li>
-                                                    <li>16:30</li>
-                                                </ul>
+                                            <div class="schedule__timetable-block">
+                                                <div class="schedule__timetable-period">
+                                                    <h3>Hétfő-Vasárnap</h3>
+
+                                                </div>
+                                                <div class="schedule__timetable-rows">
+                                                    <ul class="schedule__timetable">
+                                                        <li>10:00</li>
+                                                        <li>11:30</li>
+                                                        <li>14:30</li>
+
+                                                    </ul>
+                                                    <ul class="schedule__timetable">
+                                                        <li>16:00</li>
+                                                        <li>17:30</li>
+                                                        <li>19:00</li>
+                                                    </ul>
+                                                </div>
+
                                             </div>
-                                            <div class="schedule__timetable-row">
+                                            <!-- <div class="schedule__timetable-row">
                                                 <ul class="schedule__timetable">
                                                     <li class="schedule__timetable-period">Szombat-Vasárnap</li>
                                                     <li>11:30</li>
@@ -549,7 +502,7 @@
                                                     <li>15:00</li>
                                                     <li>16:30</li>
                                                 </ul>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <!-- SCHEDULE ITEM END -->
 
@@ -561,12 +514,12 @@
 
                         <div class="schedule__addendum">
                             <ul>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, atque distinctio!
-                                    Laborum.</li>
+                                <!-- <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, atque distinctio!
+                                    Laborum.</li> -->
                             </ul>
                         </div>
 
-                        <a class="btn btn--style1" href="index.html#ticket">Jegy vásárlása</a>
+                        <!--<a class="btn btn--style1" href="index.html#ticket">Jegyvásárlás</a> -->
 
 
                     </div>
@@ -577,84 +530,102 @@
         <!-- SCHEDULE AREA END -->
 
         <!-- PRICE AREA START -->
+        <a id="jegyarak"></a>
         <section id="price">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 section-title text-center">
                         <h1>Jegyárak</h1>
-                        <div class="header header--style-4"></div>
+                        <div class="header header--dark header--style-3"></div>
                     </div>
                 </div>
-                <div class="row price-pa">
-                    <div class="col-lg-4 col-md-8 m-md-auto col-sm-8 m-sm-auto">
-                        <div class="price-item boxed boxed--paper">
-                            <div class="price-img">
-                                <img src="images/kalozgyerek2_128x128.png" alt="Babakalóz">
+                <div class="row justify-content-center align-items-lg-stretch price-pa">
+                    <div class="col-lg-6 col-md-10 col-sm-12 col-11">
+                        <div class="price-item__container">
+
+                            <div class="price-item boxed boxed--paper">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <div class="price-item__text-container">
+                                            <h3>Menetjegy</h3><h5>(3 éves kortól)</h5>
+                                            <!--<span class="cl">0-14 éves korig</span>-->
+                                            <div class="price-tag">
+                                                <span>2990<sup>Ft</sup><p><strong>/fő</strong></p></span>
+                                            </div>
+                                            <div class="gap-p">
+                                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 órás hajókaland
+                                                </p>
+                                                <p><i class="fa fa-check" aria-hidden="true"></i> Kalózavatás</p>
+                                                <p><i class="fa fa-check" aria-hidden="true"></i> Kalózanimátor</p>
+                                                <p><i class="fa fa-check" aria-hidden="true"></i> Kalózoklevél</p>
+                                                <p><i class="fa fa-check" aria-hidden="true"></i> Juss a zsákmányból</p>
+                                                <p><i class="fa fa-check" aria-hidden="true"></i> Egy palack ásványvíz
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="price__img-holder">
+                                                    <img src="/images/icons/icon-kid.png" alt="">
+                                                </div> -->
+                                    </div>
+                                    <div class="col-12 col-lg-4 align-self-center">
+                                        <img class="img-fluid m-auto lazy" style="display: block; margin: 0 auto"
+                                            data-src="/images/icons/icon-kid.png" alt="">
+
+                                    </div>
+                                </div>
+
                             </div>
-                            <h3>Gyermekjegy</h3>
-                            <span class="cl">0-14 éves korig</span>
-                            <div class="price-tag">
-                                <span><sup>Ft</sup>1299</span>
-                            </div>
-                            <div class="gap-p">
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Kalózfelszerelés</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Fotózkodási lehetőség a mólón</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Kalóznyelv elsajátítása</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Izgalmas kalandok</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 órás hajókázás</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Arcfestés</p>
-                            </div>
-                            <div class="price-btn">
-                                <a href="#register"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                    <!-- <div class="col-lg-4 col-sm-8 col-md-8">
+                        <div class="price-item__container">
+                            <div class="price-item recommand-item boxed boxed--paper">
+                                <div class="price-item__text-container">
+                                    <h3>Testvérjegy</h3>
+                                    <span class="cl">0-14 éves korig</span>
+                                    <div class="price-tag">
+                                        <span>-1 000<sup>Ft</sup>
+                                            <p>/ testvér</p>
+                                        </span>
+                                    </div>
+                                    <div class="gap-p">
+                                        <p><i class="fa fa-check" aria-hidden="true"></i> Kedvezményes jegyvásárlási lehetőség</p>
+                                        <p><i class="fa fa-check" aria-hidden="true"></i> Sok a tesód? Jó helyen jársz!</p>
+                                        <p><i class="fa fa-check" aria-hidden="true"></i> Közös tesókaland</p>
+                                    </div>
+                                </div>
+
+                                <div class="price__img-holder">
+                                    <img src="/images/icons/icon-brothers.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-8 col-md-8 m-md-auto m-sm-auto">
-                        <div class="price-item recommand-item boxed boxed--paper">
-                            <div class="price-img">
-                                <img src="images/kalozgyerek_128x128.png" alt="Tiniflotta">
-                            </div>
-                            <h3>Felnőttjegy</h3>
-                            <span class="cl">14-99 éves korig</span>
-                            <div class="price-tag">
-                                <span><sup>Ft</sup>1999</span>
-                            </div>
-                            <div class="gap-p">
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Ingyenes gyermekfelügyelet</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 órás sétahajókázás </p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Szülőbarát bárpult</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Interaktív kalózkaland</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Kedvezmények</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Kalózrelikviák</p>
-                            </div>
-                            <div class="price-btn">
-                                <a href="#register"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-8 col-md-8 m-md-auto m-sm-auto">
-                        <div class="price-item boxed boxed--paper">
-                            <div class="price-img">
-                                <img src="images/kalozcsalad_128x128.png" alt="Kalózcsalád">
-                            </div>
-                            <h3>Családi jegy</h3>
-                            <span class="cl">2 felnőtt+2 gyermek</span>
-                            <div class="price-tag">
-                                <span><sup>Ft</sup>6200</span>
-                            </div>
-                            <div class="gap-p">
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Kedvezményes jegycsomag</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Családi fénykép a legénységgel</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Családi kaland </p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Balatoni élmény</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Különleges ajándékok</p>
-                                <p><i class="fa fa-check" aria-hidden="true"></i> Frissítők a bárban</p>
-                            </div>
-                            <div class="price-btn">
-                                <a href="#register"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                    <div class="col-lg-4 col-sm-8 col-md-8">
+                        <div class="price-item__container">
+                            <div class="price-item boxed boxed--paper">
+
+                                <div class="price-item__text-container">
+                                    <h3>Szülői jegy</h3>
+                                    <span class="cl"></span>
+                                    <div class="price-tag">
+                                        <span>2 000<sup>Ft</sup></span>
+                                    </div>
+                                    <div class="gap-p">
+                                        <p><i class="fa fa-check" aria-hidden="true"></i> Kedvezményes jegycsomag</p>
+                                        <p><i class="fa fa-check" aria-hidden="true"></i> Családi fotó a legénységgel
+                                        </p>
+                                        <p><i class="fa fa-check" aria-hidden="true"></i> Családi élményözön </p>
+                                    </div>
+                                </div>
+
+                                <div class="price__img-holder">
+                                    <img src="/images/icons/icon-parent.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -665,6 +636,7 @@
 
 
     <!-- ORGANIZE AREA START -->
+    <a id="egyedirendezvenyek"></a>
     <section id="organize">
         <span class="text-shadow"></span>
         <div class="container zindex">
@@ -675,51 +647,53 @@
                         <h3>Szabd egyedivé különleges eseményedet!<span></span></h3>
                         <p>Lánybúcsú vagy családi rendezvény, céges parti vagy különleges borkóstoló - minden ötlet
                             megvalósításában örömmel állunk a rendelkezésedre. Keress bennünket elérhetőségeinken!</p>
-                        <a href="#">Egyedi ajánlatot kérek</a>
+                        <a class="btn--style1" href="#kapcsolat">Egyedi ajánlatot kérek</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="organize_2" class="bg-wood--repeat">
-        <img class="bg-top" src="/images/background-images/bar-wood-top.png" alt="">
-        <img class="bg-bottom" src="/images/background-images/bar-wood-top.png" alt="">
-        <div class="container">
-            <div class="row">
+    <section id="organize_2" class="bg-wood--repeat top-bottom">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
                 <div class="col-lg-3 col-sm-6 org-item">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <i class="icon jug-white" aria-hidden="true"></i>
                     <h3>Céges rendezvények</h3>
-                    <p>Csapatépítők, évértékelők,</p>
+                    <p>Csapatépítők, évértékelők</p>
                     <p>teljes körű lebonyolítása</p>
                 </div>
                 <div class="col-lg-3 col-sm-6 org-item sm-style-h">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <i class="icon fishes" aria-hidden="true"></i>
                     <h3>Családi események</h3>
                     <p>Születésnapok, évfordulók, zsúrok</p>
                     <p>kalózköntösbe burkolva</p>
                 </div>
                 <div class="col-lg-3 col-sm-6 org-item">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <i class="icon boots" aria-hidden="true"></i>
                     <h3>Legény- és lánybúcsúk</h3>
                     <p>Egy felhőtlen tematikus </p>
                     <p>parti a Balaton közepén</p>
                 </div>
                 <div class="col-lg-3 col-sm-6 org-item or-i-none">
-                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    <i class="icon wheel-1-white" aria-hidden="true"></i>
                     <h3>Privát bérlés</h3>
                     <p>Különleges alkalmakra több</p>
                     <p>órára is igénybe vehető</p>
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <!-- ORGANIZE AREA END -->
+
     <!-- GALLERY AREA START -->
-    <section id="gallery">
+    <a id="galeria"></a>
+    <section id="gallery" class="lazy" data-loader="bgLoader">
+
         <div class="container zindex">
             <div class="row">
                 <div class="col-lg-12 speaker-heading gallery-heading">
-                    <h3>galéria</h3>
+                    <h3>Galéria</h3>
                     <!-- <div class="header-style gallery-style"></div> -->
                 </div>
             </div>
@@ -727,232 +701,500 @@
                 <div class="col-lg-10 m-auto text-center video-p">
                     <a data-autoplay="true" data-vbtype="video" href="https://youtu.be/Xj3gU3jACe8" class=" venobox"><i
                             class="fa fa-play" aria-hidden="true"></i></a>
-                    <p>videó lejátszása</p>
+                    <p>Hamarosan</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="gallery_2">
-        <div class="gallery-main">
-            <div class="col-lg-2 gallery-item p-0">
-                <img src="images/280x300px_7.png" alt="gallery-img" class="img-fluid w-100">
+
+    <!-- IMAGE GALLERY START -->
+    <section id="gallery-carousel">
+
+        <div class="gallery-carousel__container">
+
+            <div class="gallery-carousel__item">
+                <img class="lazy" data-src="images/480/sr-480-09.jpg" alt="Kalózhangulat a fedélzeten">
                 <div class="hover-overlay">
-                    <a href="images/280x300px_7.png" data-lightbox="roadtrip" data-title="Gallery"><i class="fa fa-plus"
-                            aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-2 gallery-item p-0">
-                <img src="images/280x300px_6.png" alt="gallery-img" class="img-fluid w-100">
-                <div class="hover-overlay">
-                    <a href="images/280x300px_6.png.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                    <a href="images/1024/sr-1024-09.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col-lg-2 gallery-item p-0">
-                <img src="images/280x300px_5.png" alt="gallery-img" class="img-fluid w-100">
+
+            <div class="gallery-carousel__item">
+                <img class="lazy" data-src="images/480/sr-480-07.jpg"
+                    alt="A háborúktól megtápázott vitorla és a titkos kabin">
                 <div class="hover-overlay">
-                    <a href="images/280x300px_5.png.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                    <a href="images/1024/sr-1024-07.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
                             class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col-lg-2 gallery-item p-0">
-                <img src="images/280x300px_4.png" alt="gallery-img" class="img-fluid w-100">
+
+            <div class="gallery-carousel__item">
+                <img class="lazy" data-src="images/480/sr-480-23.jpg" alt="A hajó és kincs védelme mindennél fontosabb">
                 <div class="hover-overlay">
-                    <a href="images/280x300px_4.png" data-lightbox="roadtrip" data-title="Gallery"><i class="fa fa-plus"
-                            aria-hidden="true"></i></a>
+                    <a href="images/1024/sr-1024-23.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col-lg-2 gallery-item p-0">
-                <img src="images/280x300px_3.png" alt="gallery-img" class="img-fluid w-100">
+
+            <div class="gallery-carousel__item">
+                <img class="lazy" data-src="images/480/sr-480-16.jpg" alt="A Sánta Róza a kikötőben">
                 <div class="hover-overlay">
-                    <a href="images/280x300px_3.png" data-lightbox="roadtrip" data-title="Gallery"><i class="fa fa-plus"
-                            aria-hidden="true"></i></a>
+                    <a href="images/1024/sr-1024-16.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col-lg-2 gallery-item p-0">
-                <img src="images/280x300px_1.png" alt="gallery-img" class="img-fluid w-100">
+
+            <div class="gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-18.jpg" alt="A Sánta Róza a Balatonon">
                 <div class="hover-overlay">
-                    <a href="images/280x300px_1.png" data-lightbox="roadtrip" data-title="Gallery"><i class="fa fa-plus"
-                            aria-hidden="true"></i></a>
+                    <a href="images/1024/sr-1024-18.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+
+            <div class=" gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-03.jpg" alt="Puskaporos hórdók és rakomány a fedélzeten">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-03.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class=" gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-29.jpg"
+                    alt="A zsákmányból szerzett ékszerek és a rettegett kard">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-29.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class=" gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-17.jpg" alt="A Sánta Róza felirat a hajó oldalán">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-17.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class=" gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-24.jpg" alt="A Sánta Róza a Tihanyi-félsziget lábánál">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-24.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class=" gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-11.jpg" alt="A Sánta Róza Kapitányi állása">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-11.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class=" gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-02.jpg" alt="A hajó ablakai titkokat rejtenek">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-02.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class=" gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-20.jpg" alt="A hajó orra elszántan szeli a habokat">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-20.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="gallery-carousel__item ">
+                <img class="lazy" data-src="images/480/sr-480-08.jpg" alt="Sánta Róza szelleme körbelengi a hajót">
+                <div class="hover-overlay">
+                    <a href="images/1024/sr-1024-08.jpg" data-lightbox="roadtrip" data-title="Gallery"><i
+                            class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
+
     </section>
-    <!-- GALLERY AREA END -->
+    <!-- IMAGE GALLERY END -->
+
     <!--FAQ AREA STARTS-->
-        <section id="faq">
-            <div>
-                <ul>
-                    <li><b>Hol találom a hajót?</b></li>
-                    <li>A Sánta Róza Balatonfüreden, a Vitorlás tér mólójáról indul a menetrendben feltüntetett időpontokban. Indulj el a Tagore sétányról a móló irányába, ahol már látni fogod a megtépázott vitorlákat, a zsákmánnyal és ágyúkkal felszerelt kalózhajót.</li>
-                    <li><b>Hol tudok parkolni a hajóhoz legközelebb?</b></li>
-                    <li>A kikötőhöz legközelebb a Zákony utcai parkolóház használatát javasoljuk, a Zákonyi Ferenc utca 12. szám alatti mélygarázsban, 300 Ft/óra díj ellenében.
-                    Egy utcával távolabb, néhány perc sétával elérhető a Huray utcai parkoló, a Huray utca 3. szám alatt, ahol a parkolási díj 200 Ft/óra. </li>
-                    <li><b>Mennyi ideig tart a kalandjárat?</b></li>
-                    <li>A Sánta Róza kalózprogramja 60 percig tart. Ezalatt számos kihívás és élmény vár a kalózokra.</li> 
-                    <li><b>Online is tudok jegyet venni?</b></li>
-                    <li>Online jegyvásárlási rendszerünkön keresztül is tudsz jegyet váltani. Ne aggódj, kimaradó járat esetén egy későbbi időpontra fel tudod használni korábban megváltott jegyedet!</li> 
-                    <li><b>Egyedül is útnak engedhetem a gyerekeket?</b></li>
-                    <li>Bár szülőként is részt vehettek a programon, arra biztatunk titeket, hogy bátran engedjétek el gyerkőcötöket egy felejthetetlen kalózélményre, amíg ti kényelmesen elkortyoltok egy pohár bort a mólón, a Spicc teraszán. Így több hely marad az ifjú legénység számára a fedélzeten.</li>
-                    <li><b>A biztonsági berendezések is eltűntek a hajóról a kinccsel együtt?</b></li>
-                    <li>Természetesen nem! Hajónk a mindenkori Hajózási Szabályzatot szigorúan betartva biztosítja a szükséges mentőfelszerelések számát, és legénységünk számára is a lurkók épsége a legfontosabb kritérium.</li>
-                    <li><b>A biztonsági berendezések is eltűntek a hajóról a kinccsel együtt?</b></li>
-                    <li>Természetesen nem! Hajónk a mindenkori Hajózási Szabályzatot szigorúan betartva biztosítja a szükséges mentőfelszerelések számát, és legénységünk számára is a lurkók épsége a legfontosabb kritérium.</li>
-                    <li><b>Mikor vehetik birtokba a nagyobbak és felnőttek a hajót?</b></li>
-                    <li>Menetrendszerinti járatainkon kívül lehetőség van egyedi programok szervezésére is a hajó fedélzetén. Vegyétek fel velünk a kapcsolatot, és örömmel adunk további tájékoztatást a lehetőségekről!</li>
-                    <li><b>Van mosdó a hajón?</b></li>
-                    <li>Kis kalózaink és az egyedi rendezvények résztvevői számára is rendelkezésre áll a fedélzeten egy mosdó.</li>
-                    <li><b>Vihetek fel ételt-italt a fedélzetre?</b></li>
-                    <li>Bár a hajón büfé nem üzemel, a nyári időjárásra való tekintettel innivaló felhozatala természetesen lehetséges.</li>
-                    <li><b>Mit tehetek a tűző nap ellen?</b></li>
-                    <li>Hogy a nyári hőség ne szegje kedvét a kincskeresésnek, napvirotlákkal árnyékoltuk be a fedélzetet, így a közvetlen napfény nem zavarhatja meg a kalandot.
-                    </li>
-                    <li><b>Milyen programokra lehet számítani a kirándulás során?</b></li>
-                    <li>Az egy órás hajózás során megtapasztalhatják a gyerkőcök, hogy milyen, amikor felavatjuk a legénység legújabb kalózait. Majd nyomába eredünk Sánta Róza legendás, elveszett kincsének. Megtanuljuk a kardforgatás művészetét, a hajós navigálás alapjait, és ha jól végeztük dolgunkat, busás zsákmánnyal térünk vissza a partra. </li>
-                    <li><b>Van lehetőség csoportos kedvezményre nagyobb csoportok, osztályok számára?</b></li>
-                    <li>Bizony van! Minimum 10 gyerkőcnél 15% kedvezményt adunk a menetjegyek árából. Nagyobb csoportok esetében kérünk, előre jelezzétek az érkezést, hogy ugyanazon a járaton tudjunk nektek helyet biztosítani.</li>
-                    <li><b>Milyen egyedi programokra vehetem igénybe a hajót?</b></li>
-                    <li>Privát vagy céges rendezvények, lánybúcsúk vagy épp csapatépítők tökéletes helyszíne lehet a Sánta Róza fedélzete. Örömmel segítünk az egyedi igények megvalósításában! Kérünk, legalább két héttel az eseményt megelőzően írj nekünk a további részletekért!</li>
-                    <li><b>Egyedi programok esetén vigyek evezőt?</b></li>
-                    <li>Ha szeretnéd, hogy egyedi rendezvényed a Sánta Rózán kerüljön megrendezésre, mi biztosítjuk neked a kapitányt, aki elnavigálja a hajót a kívánt útvonalon. Emellett egy jeges hordót is bekészítünk nektek, hogy a kívánt italok frissen kerüljenek kibontásra.</li>
-                    <li><b>A babakocsit, játékmotort vagy rollert otthagyhatom a kikötőben?</b></li>
-                    <li>Természetesen igen! Kollégáink a jegypénztárnál örömmel tartják szemmel a járgányokat, míg tart a kalózkaland. 
-                    </li>
-                    <li><b>Vihetem speciális nevelési igénnyel rendelkező gyermekemet?</b></li>
-                    <li>Örömmel látjuk a nagyobb odafigyelést igénylő gyermekeket is. Arra kérjük a szülőket, hogy ha bizonytalanok, vegyék fel velünk a kapcsolatot, szívesen megválaszoljuk a felmerülő kérdéseket.</li> 
-                </ul>
+    <a id="gyik"></a>
+    <section id="faq" class="bg-lighter texture-1 lazy" data-loader="bgLoader">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 section-title text-center">
+                    <h1>Gyakran ismételt kérdések</h1>
+                    <div class="header header--style-3"></div>
+
+                </div>
             </div>
-        </section>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <ul id="accordion" class="faq__list">
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-1">
+
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse-1"
+                                    aria-expanded="true" aria-controls="collapse-1">
+                                    <h3>Hol találom a hajót?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-1" class="faq__list-item-content collapse show"
+                                aria-labelledby="cardheader-1" data-parent="#accordion">
+                                A Sánta Róza Balatonfüreden, a
+                                Vitorlás tér mólójáról indul
+                                a menetrendben feltüntetett
+                                időpontokban. Indulj el a Tagore sétányról a móló irányába, ahol már látni fogod a
+                                megtépázott vitorlákat, a zsákmánnyal és ágyúkkal felszerelt kalózhajót.</p>
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-2">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    <h3>Hol tudok parkolni a hajóhoz legközelebb?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-2" class="faq__list-item-content collapse" aria-labelledby="cardheader-2"
+                                data-parent="#accordion">
+                                <p>
+                                    A kikötőhöz legközelebb a Zákony utcai parkolóház használatát javasoljuk, a
+                                    Zákonyi Ferenc utca 12. szám alatti mélygarázsban, 300 Ft/óra díj ellenében.
+                                    Egy utcával távolabb, néhány perc sétával elérhető a Huray utcai parkoló, a
+                                    Huray utca 3.
+                                    szám alatt, ahol a parkolási díj 200 Ft/óra.</p>
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-3">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                    <h3>Mennyi ideig tart a kalandjárat?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-3" class="faq__list-item-content collapse" aria-labelledby="cardheader-3"
+                                data-parent="#accordion">
+
+                                <p>
+                                    A Sánta Róza kalózprogramja 60 percig tart. Ezalatt számos kihívás és élmény
+                                    vár a kalózokra.</p>
+
+
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-5">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                    <h3>Egyedül is útnak engedhetem a gyerekeket?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-5" class="faq__list-item-content collapse" aria-labelledby="cardheader-5"
+                                data-parent="#accordion">
+
+                                <p>
+                                    Bár szülőként is részt vehettek a programon, arra biztatunk
+                                    titeket, hogy bátran engedjétek el gyerkőcötöket egy felejthetetlen kalózélményre,
+                                    amíg
+                                    ti kényelmesen
+                                    elkortyoltok egy frissítőt a környéken. Így több hely marad az ifjú legénység
+                                    számára a
+                                    fedélzeten.</p>
+
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-6">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                                    <h3>A biztonsági berendezések is eltűntek a hajóról a kinccsel együtt?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-6" class="faq__list-item-content collapse" aria-labelledby="cardheader-6"
+                                data-parent="#accordion">
+                                <p>
+                                    Természetesen nem! Hajónk a mindenkori Hajózási
+                                    Szabályzatot
+                                    szigorúan betartva biztosítja a
+                                    szükséges mentőfelszerelések számát, és legénységünk számára is a lurkók épsége a
+                                    legfontosabb kritérium.</p>
+
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-7">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                                    <h3>Mikor vehetik birtokba a nagyobbak és felnőttek a hajót?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-7" class="faq__list-item-content collapse" aria-labelledby="cardheader-7"
+                                data-parent="#accordion">
+
+                                <p>
+                                    Menetrendszerinti járatainkon kívül lehetőség van
+                                    egyedi
+                                    programok szervezésére is a hajó
+                                    fedélzetén. Vegyétek fel velünk a kapcsolatot, és örömmel adunk további
+                                    tájékoztatást a
+                                    lehetőségekről!</p>
+
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-8">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                                    <h3>Van mosdó a hajón?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-8" class="faq__list-item-content collapse" aria-labelledby="cardheader-8"
+                                data-parent="#accordion">
+
+                                <p>
+                                    Kis kalózaink és az egyedi rendezvények résztvevői
+                                    számára is
+                                    rendelkezésre áll a fedélzeten
+                                    egy mosdó.</p>
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-9">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+                                    <h3>Vihetek fel ételt-italt a fedélzetre?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-9" class="faq__list-item-content collapse" aria-labelledby="cardheader-9"
+                                data-parent="#accordion">
+
+                                <p>
+                                    Bár a hajón büfé nem üzemel, a nyári időjárásra való tekintettel innivaló
+                                    felhozatala természetesen lehetséges.</p>
+
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-10">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+                                    <h3>Mit tehetek a tűző nap ellen?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-10" class="faq__list-item-content collapse"
+                                aria-labelledby="cardheader-10" data-parent="#accordion">
+                                Hogy a nyári hőség ne szegje kedvét a kincskeresésnek, minden kiskalóz elbújhat az általunk biztosított kalózkalapja árnyékába. Emellett nem baj, ha készültök naptejjel, napszemüveggel vagy hosszú ujjú pólóval.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-11">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
+                                    <h3>Milyen programokra lehet számítani a kirándulás során?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-11" class="faq__list-item-content collapse"
+                                aria-labelledby="cardheader-11" data-parent="#accordion">
+                                Az egy órás hajózás során megtapasztalhatják a gyerkőcök, hogy milyen, amikor felavatjuk
+                                a legénység legújabb kalózait. Majd nyomába eredünk Sánta Róza legendás, elveszett
+                                kincsének. Megtanuljuk a kardforgatás művészetét, a hajós navigálás alapjait, és ha jól
+                                végeztük dolgunkat, busás zsákmánnyal térünk vissza a partra.</p>
+
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-12">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
+                                    <h3>Egyedi programok esetén vigyek evezőt?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-12" class="faq__list-item-content collapse"
+                                aria-labelledby="cardheader-12" data-parent="#accordion">
+
+                                Ha szeretnéd, hogy egyedi
+                                rendezvényed a Sánta Rózán kerüljön megrendezésre, mi biztosítjuk
+                                neked a kapitányt, aki elnavigálja a hajót a kívánt útvonalon. Emellett egy jeges
+                                hordót
+                                is
+                                bekészítünk nektek, hogy a kívánt italok frissen kerüljenek kibontásra.</p>
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-13">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13">
+                                    <h3>A babakocsit, játékmotort vagy rollert otthagyhatom a kikötőben?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-13" class="faq__list-item-content collapse"
+                                aria-labelledby="cardheader-13" data-parent="#accordion">
+                                Természetesen igen! Kollégáink
+                                a jegypénztárnál örömmel tartják szemmel a járgányokat, míg tart a kalózkaland.</p>
+
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                        <!-- LIST ITEM -->
+                        <li class="faq__list-item card">
+                            <div class="card-header" id="cardheader-14">
+
+                                <button class="btn btn-primary collapsed" data-toggle="collapse"
+                                    data-target="#collapse-14" aria-expanded="false" aria-controls="collapse-14">
+                                    <h3>Vihetem speciális nevelési igénnyel rendelkező gyermekemet?</h3>
+                                </button>
+                            </div>
+
+                            <div id="collapse-14" class="faq__list-item-content collapse"
+                                aria-labelledby="cardheader-14" data-parent="#accordion">
+                                Örömmel látjuk a nagyobb
+                                odafigyelést igénylő gyermekeket is. Arra kérjük a szülőket, hogy
+                                ha bizonytalanok, vegyék fel velünk a kapcsolatot, szívesen megválaszoljuk a
+                                felmerülő
+                                kérdéseket.</p>
+                            </div>
+                        </li>
+                        <!-- LIST ITEM END -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
     <!--FAQ AREA ENDS-->
 
-
-    <!-- REVIEW AREA START -->
-    <!--
-    <section id="review">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 speaker-heading">
-                    <h3>Reviews</h3>
-                    <div class="header-style"></div>
-                </div>
-            </div>
-            <div class="row review-pa">
-                <div class="col-lg-12">
-                    <div class="review-main">
-                        <div class="col-lg-6">
-                            <div class="review-item">
-                                <div class="review-txt">
-                                    <div class="stars">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatem optio tenetur odit nostrum quis eum quaerat omnis possimus in, dolore laboriosam</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3 col-sm-4">
-                                        <div class="review-img">
-                                            <img src="images/testimonial.png" alt="review-img">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-sm-8">
-                                        <h3>Shakibul Alam</h3>
-                                        <span>Audience</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="review-item">
-                                <div class="review-txt">
-                                    <div class="stars">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatem optio tenetur odit nostrum quis eum quaerat omnis possimus in, dolore laboriosam</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3 col-sm-4">
-                                        <div class="review-img">
-                                            <img src="images/testimonial1.png" alt="review-img">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-sm-8">
-                                        <h3>Shophia Jeren</h3>
-                                        <span>Audience</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="review-item">
-                                <div class="review-txt">
-                                    <div class="stars">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatem optio tenetur odit nostrum quis eum quaerat omnis possimus in, dolore laboriosam</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3 col-sm-4">
-                                        <div class="review-img">
-                                            <img src="images/testimonial3.png" alt="review-img">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-sm-8">
-                                        <h3>Shaiful Alam</h3>
-                                        <span>Audience</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <!-- REVIEW AREA END -->
-
     <!-- ABOUT AREA START -->
+    <a id="legenda"></a>
     <section id="about">
-        <div class="container zindex">
-            <div class="row">
-                <div class="col-lg-5 col-md-8 col-sm-9 about-img">
-                    <div class="main-img">
-                        <img src="images/about-1.jpg" alt="Sánta Róza története" class="img-fluid">
+        <div class="container-fluid zindex">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-sm-9 col-12">
+                    <div class="about-txt">
+                        <h3>XVIII. század, Magyarország</h3>
+                        <h4>A hírhedt kalóz, Sánta Róza azokban az időkben vált híressé, amikor a Balatont még
+                            "Blátónak"
+                            hívták.</h4>
+
+                        <span class="first-char big">E</span>
+                        <p>
+                            kkor még éjszakánként villámok helyett kalózok ágyútüze világította be a
+                            Tihanyi-félszigetet,
+                            hiszen
+                            tengerekről ideérkező gazdag zsarnokok és gonosz kalózok harcoltak egymással az elsüllyedt
+                            blátói aranyért, ami a legenda szerint évszázadok óta a mocsár fenekén hevert. Ezek voltak
+                            talán
+                            a tó legzordabb évei.</p>
+
+                        <p>Sánta Rózát bár rettegett kalóznak tartották rejtélyes mítoszokkal teletűzdelt múltja
+                            miatt, mégis kivívta magának a dicsőséget, amikor a számtalan zsarnokkal és gonosztevővel
+                            szemben megvédte a tavat és annak lakóit a háborúzó, tivornyázó idegen seregektől.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-7 about-txt">
-                    <h3>XVIII. század, Magyarország</h3>
-                    <h4>A hírhedt kalóz Sánta Róza azokban az időkben vált híressé, amikor a Balatont még "Blátónak"
-                        hívták </h4>
-                    <p>Éjszaka villámok helyett kalózok ágyútűze világította be a Tihanyi félszigetet. Ezek voltak talán
-                        a tó legzordabb évei, hiszen tengerekről ideérkező gazdag zsarnokok és gonosz kalózok harcoltak
-                        egymással a híres elsüllyedt blátói aranyért, amit II. Rémon perzsa herceg vesztett el egy
-                        csatában és azóta sem találta meg senki. Sánta Rózát bár kalóznak tartották sötét múltja miatt,
-                        de akkor vívta ki magának a dicsőséget, amikor a többi zsarnokkal és gonosztevővel ellentétben
-                        meg akarta védeni a tavat és annak lakóit, a háborúzó és tivornyázó idegen seregektől. Nevét
-                        onnan kapta, hogy egy ágyúdörgésektől hangos csatában bal lábát elvesztette, de ezzel is
-                        bebizonyította, hogy életét adná a tóért. Minden gonosszal hosszú csatákat vívott és elkobozta
-                        mindenüket, rabszolgának állította őket, municiójukat és pénzüket pedig szétosztotta a szegény
-                        blátói lakosok között. Sánta Róza nevét hamar megtanulta mindenki, hiszen legénységével egy idő
-                        után már nem mertek csatába állni. A tó azóta lett ilyen nyugalmas és szép, gonosz kalózokat
-                        azóta sem látott már itt senki. Sánta Róza hajója halála után megkapta az ő nevét, valamint egy
-                        kincses térképet hagyott ránk, aminek segítségével megtalálhatjátok ti is II. Rémon perzsa
-                        herceg aranyát.</p>
-                    <a href="#">Megkeresem a kincset</a>
-                    <div class="about-s">
-                        <h5>Dr. Fogasy W. Gergely</h5>
-                        <span>Történész</span>
+            </div>
+
+            <div class="row justify-content-center align-items-stretch">
+                <div class="col-xl-3 col-lg-7 col-sm-9 col-12 align-self-center">
+                    <div class="about-img">
+                        <img class="lazy" data-src="images/background-images/about-section-01.png"
+                            alt="Sánta Róza története" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-7 col-sm-9 col-12 align-self-center">
+                    <div class="about-txt--bodytext">
+
+
+                        <p>Nevét onnan kapta, hogy egy ágyúdörgésektől hangos csatában elvesztette bal lábát, de ezzel
+                            is csak azt bizonyította, hogy életét adná a tóért. Minden gonosszal küzdelmes és hősies
+                            csatát
+                            vívott, majd a győzelem után elkobozta zsákmányukat és muníciójukat, pénzüket pedig
+                            szétosztotta a
+                            szegény blátói lakosok között.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-sm-9 col-12">
+                    <div class="about-txt--bodytext">
+                        <p>Sánta Róza nevét mindenki hamar megtanulta, hiszen legénységével szemben egy idő után már
+                            senki sem mert csatába állni. A tó ettől fogva ilyen nyugalmas és szép, gonosz kalózokat
+                            azóta sem
+                            látott itt senki. Halála után nevét a hajójára vésték, amely egy régi kincsestérképet is
+                            rejt. A kincs azóta sem került elő, hiszen ezt a térképet csakis a legleleményesebb kalózok
+                            képesek megfejteni...</p>
+                        <div class="about-s">
+                            <p> – részlet a "Blátói kalózhistóriákból"</p>
+                            <!-- <span>Történész</span> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -961,151 +1203,54 @@
     <!-- ABOUT AREA END -->
 
 
-    <!-- BLOG AREA START -->
-    <!--
-    <section id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 speaker-heading">
-                    <h3>Our Blog</h3>
-                    <div class="header-style"></div>
-                </div>
-            </div>
-            <div class="row blog-pa">
-                <div class="col-lg-12">
-                    <div class="blog-main">
-                        <div class="col-lg-4 blog-item">
-                            <div class="blog-shadow">
-                                <img src="images/blog1.jpg" alt="blog-img" class="img-fluid">
-                                <div class="blog-data">
-                                    <div class="blog-date">
-                                        <h4>21</h4>
-                                        <h5>May</h5>
-                                    </div>
-                                    <span><i class="fa fa-lock" aria-hidden="true"></i> Eveno</span>
-                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 2 Min Ago</span>
-                                    <a href="#">
-                                        <h3>Digital Skills Development</h3>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ut, </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 blog-item">
-                            <div class="blog-shadow">
-                                <img src="images/blog2.jpg" alt="blog-img" class="img-fluid">
-                                <div class="blog-data">
-                                    <div class="blog-date">
-                                        <h4>22</h4>
-                                        <h5>May</h5>
-                                    </div>
-                                    <span><i class="fa fa-lock" aria-hidden="true"></i> Eveno</span>
-                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 2 Min Ago</span>
-                                    <a href="#">
-                                        <h3>Development Roadmap</h3>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ut, </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 blog-item">
-                            <div class="blog-shadow">
-                                <img src="images/blog3.jpg" alt="blog-img" class="img-fluid">
-                                <div class="blog-data">
-                                    <div class="blog-date">
-                                        <h4>23</h4>
-                                        <h5>May</h5>
-                                    </div>
-                                    <span><i class="fa fa-lock" aria-hidden="true"></i> Eveno</span>
-                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 2 Min Ago</span>
-                                    <a href="#">
-                                        <h3>Wordpress Theme Dev</h3>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ut,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 blog-item">
-                            <div class="blog-shadow">
-                                <img src="images/blog4.jpg" alt="blog-img" class="img-fluid">
-                                <div class="blog-data">
-                                    <div class="blog-date">
-                                        <h4>24</h4>
-                                        <h5>May</h5>
-                                    </div>
-                                    <span><i class="fa fa-lock" aria-hidden="true"></i> Eveno</span>
-                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 2 Min Ago</span>
-                                    <a href="#">
-                                        <h3>Important Of Seminars</h3>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ut,</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-    -->
-    <!-- BLOG AREA END -->
-    <!-- REGISTER AREA START -->
-    <section id="register">
+    <!-- BOOKING SECTION START -->
+    <!-- <section id="booking">
         <div class="container zindex">
-            <div class="row">
-                <div class="col-lg-12 section-title">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-12 section-title">
                     <h1>Jegyvásárlás</h1>
                     <div class="header header--style-3"></div>
                 </div>
             </div>
-            <div class="row register-pa">
+
+            <div class="row justify-content-between">
+
+                <div class="col-11 col-lg-6">
+                    <div class="booking__img-holder">
+                        <img src="images/0srticket.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-11 col-lg-6">
+                    <div class="booking__form-container boxed boxed--paper">
+                        <script src="https://assets.ticketinghub.com/checkout.js"
+                            data-widget="ffd98c6e-5e3f-4d0a-87b2-b35846904bc5"></script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!-- BOOKING SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+    <a id="kapcsolat"></a>
+    <section id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div class="register-box boxed boxed--paper">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-5 r-b-color">
+                    <div class="contact__content">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-11 col-lg-3">
+                                <div class="contact__img-holder">
+                                    <span class="contact__img lazy"
+                                        data-src="/images/background-images/illustration-bottle-message.png"></span>
+                                </div>
                             </div>
-                            <div class="col-lg-7 col-md-7">
-                                <div class="purchase-box">
-                                    <h4>Vedd meg a jegyed most!</h4>
-                                    <form>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" placeholder="Vezetéknév">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" placeholder="Keresztnév">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="inputAddress"
-                                                placeholder="Email cím">
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <select class="custom-select" id="validationCustom04" required>
-                                                    <option selected disabled value="" class="same">Jegytípus</option>
-                                                    <option>Gyermekjegy</option>
-                                                    <option>Felnőttjegy</option>
-                                                    <option>Családi jegy</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" id="inputEmail4"
-                                                    placeholder="Ft0.00">
-                                            </div>
-                                        </div>
-                                        <div class="row pt-2">
-                                            <div class="col-lg-5">
-                                                <h5>Fizetési mód</h5>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <a href=""><img class="card" src="images/kassza.jpg.jpg"
-                                                        alt="Fizetési lehetőségek"></a>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary payment-btn">Jegy
-                                            vásárlása</button>
-                                    </form>
+                            <div class="col-11 col-lg-6">
+                                <div class="contact__text">
+                                    <h1 class="contact__title">Írj nekünk e-mailt!</h1>
+                                    <p class="contact__email">info@santaroza.hu</p>
                                 </div>
                             </div>
                         </div>
@@ -1114,39 +1259,51 @@
             </div>
         </div>
     </section>
-    <!-- REGISTER AREA END -->
+    <!-- CONTACT SECTION END -->
 
     <!-- FOOTER AREA START -->
-    <section id="footer" class="bg-wood--repeat">
-        <img class="bg-top" src="/images/background-images/bar-wood-top.png" />
+    <section id="footer" class="bg-wood--repeat top no-overflow">
         <div class="container zindex">
             <div class="row footer__container">
                 <div class="col-12 col-lg-3 footer__item footer__logo-container">
-                    <img class="logomeret footer__logo" src="images/brand/logo_primarycol.png" alt="Sánta Róza logo">
+                    <img class="logomeret footer__logo lazy" data-src="images/brand/sr-logo-banner-light.svg"
+                        alt="Sánta Róza logo">
                 </div>
                 <div class="col-12 footer__item col-lg-4 m-auto m-lg-0">
                     <div class="menu-a">
-                        <a href="#">Programok</a>
-                        <a href="#">Küldetés</a>
-                        <a href="#">Menetrend és jegyek</a>
-                        <a href="#">Rendezvények</a>
-                        <a href="#">Galéria</a>
-                        <a href="#">Sánta Róza</a>
-                        <a href="#">Jegyvásárlás</a>
+                        <a href="#programok">Programok</a>
+                        <a href="#menetrend">Menetrend</a>
+                        <a href="#jegyarak">Jegyek</a>
+                        <a href="#egyedirendezvenyek">Rendezvények</a>
+                        <a href="#galeria">Galéria</a>
+                        <a href="#gyik">GYIK</a>
+                        <a href="#legenda">Legenda</a>
+                        <a href="#kapcsolat">Kapcsolat</a>
+                        <div class="menu-a__smaller">
+                            <a href="aszf.html" target="_blank">ÁSZF</a>
+                            <a href="adatkezelesi.html" target="_blank"> Adatkezelési tájékoztató</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 footer__item col-lg-5">
                     <div class="footer__map-container">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QSWcRIHrcK1ex0opAx0O_ekYcr7JLqiY"
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QSWcRIHrcK1ex0opAx0O_ekYcr7JLqiY&z=16"
                             width="100%" height="260"></iframe>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 col-lg-9 offset-lg-3">
+                    <div class="copyright-info__container">
 
-            <div class="row pt-3">
-                <div class="col-lg-12 text-center copy-right-txt">
-                    <p>Copyright © 2020. All rights reserved by <a href="#">Balatoni Sétahajózási Kft.</a></p>
+                        <p class="copyright-info__madeby">Made by <a target="_blank">isf.hu</a>
+                        </p>
+                        <p class="copyright-info__copyright">Copyright © 2020. All rights reserved by Balatoni Sétahajózási
+                            Kft.</p>
+    
+                    </div>
                 </div>
+                
             </div>
 
         </div>
@@ -1155,6 +1312,7 @@
 
     <!-- Optional JavaScript -->
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
@@ -1164,7 +1322,9 @@
     <script src="js/countdown.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
     <script src="js/custom.js"></script>
+
 </body>
 
 </html>

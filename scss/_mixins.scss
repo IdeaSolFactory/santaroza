@@ -1,4 +1,11 @@
 
+// LINKS
+@mixin hover-state--all{
+    &:hover, &:active, &:focus, &:visited{
+        @content;
+    }
+}
+
 // BACKGROUNDS
 @mixin bckgrnd-img--cover{
     background-size: cover;
