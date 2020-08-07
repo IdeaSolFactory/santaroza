@@ -147,7 +147,11 @@
     });
     //lightbox js
     $('.venobox').venobox();
+
+
     // counter part js
+    // Set html value to required number before counterUp
+
     $('.counter').counterUp();
     // video player js
     // jQuery("#bgndVideo").YTPlayer();
