@@ -92,6 +92,7 @@ p {
 /*TEXT-COLORS*/
 .text-color-red{
         color: #bf382b;
+        //
     }
     
 /* LISTS */
@@ -551,7 +552,7 @@ p {
                 transform: translateX(0);
             }
         }
-    }
+    
 
     &::after {
         content: "";
@@ -567,6 +568,8 @@ p {
         opacity: 0.35;
         z-index: 1;
     }
+
+}
 
 /* BODY */
 body {
