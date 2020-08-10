@@ -797,6 +797,11 @@ section .header.header--style-4::after {
   background-image: url(../images/background-images/heading-bckgrnd-04.png);
 }
 
+/* SECTION TYPE */
+.notification-area {
+  padding: 32px 0;
+}
+
 /*BANNER SECTION*/
 #banner {
   background: url(../images/480/sr-480-18.jpg);
