@@ -8,7 +8,7 @@
     });         
 
     // countdown timer js 
-    $('.coundown_res').countdown('2020/08/20 21:00:00', function (event) {
+    $('.coundown_res').countdown('2020/08/30 18:59:59', function (event) {
         var $this = $(this);
         $('#day').html(event.strftime('<span>%D</span>'));
         $('#hour').html(event.strftime('<span>%H</span>'));
@@ -147,7 +147,11 @@
     });
     //lightbox js
     $('.venobox').venobox();
+
+
     // counter part js
+    // Set html value to required number before counterUp
+
     $('.counter').counterUp();
     // video player js
     // jQuery("#bgndVideo").YTPlayer();

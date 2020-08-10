@@ -86,6 +86,11 @@ p b {
   color: #474341;
 }
 
+/*TEXT-COLORS*/
+.text-color-red {
+  color: #bf382b;
+}
+
 /* LISTS */
 .custom-list {
   counter-reset: my-counter;
@@ -453,13 +458,13 @@ p b {
 }
 
 @media (min-width: 1200px) {
-  .boxed.boxed--paper {
+  .boxed {
     -webkit-filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
             filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
   }
 }
 
-.boxed.boxed--paper-2 {
+.boxed-2 {
   border-style: solid;
   border-width: 1px;
   border-color: white;
@@ -475,13 +480,13 @@ p b {
 }
 
 @media (min-width: 1200px) {
-  .boxed.boxed--paper-2 {
+  .boxed-2 {
     -webkit-filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
             filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
   }
 }
 
-.boxed.boxed--paper::before {
+.boxed::before {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -499,7 +504,7 @@ p b {
 }
 
 @media (min-width: 992px) {
-  .boxed.boxed--paper::before {
+  .boxed::before {
     left: -25px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -790,6 +795,11 @@ section .header.header--style-3::after {
 
 section .header.header--style-4::after {
   background-image: url(../images/background-images/heading-bckgrnd-04.png);
+}
+
+/* SECTION TYPE */
+.notification-area {
+  padding: 32px 0;
 }
 
 /*BANNER SECTION*/
