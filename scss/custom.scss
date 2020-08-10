@@ -89,6 +89,10 @@ p {
     }
 }
 
+/*TEXT-COLORS*/
+.text-color-red{
+        color: #bf382b;
+    }
 /* LISTS */
 .custom-list {
     counter-reset: my-counter;
@@ -503,10 +507,7 @@ p {
         background-color: #e6dfd4 !important;
         filter: drop-shadow(0px 9px 0 rgba(color(primary-darker), 0.07));
     }
-        &.center{
-            text-align: center;
-            text-emphasis-color: #bf382b ;
-             }
+       
         @include screen-xl {
             filter: drop-shadow(-7px 9px 0 rgba(color(primary-darker), 0.07));
         }
