@@ -458,13 +458,13 @@ p b {
 }
 
 @media (min-width: 1200px) {
-  .boxed {
+  .boxed.boxed--paper {
     -webkit-filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
             filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
   }
 }
 
-.boxed-2 {
+.boxed.boxed--paper-2 {
   border-style: solid;
   border-width: 1px;
   border-color: white;
@@ -480,13 +480,13 @@ p b {
 }
 
 @media (min-width: 1200px) {
-  .boxed-2 {
+  .boxed.boxed--paper-2 {
     -webkit-filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
             filter: drop-shadow(-7px 9px 0 rgba(48, 15, 15, 0.07));
   }
 }
 
-.boxed::before {
+.boxed.boxed--paper::before {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -504,7 +504,7 @@ p b {
 }
 
 @media (min-width: 992px) {
-  .boxed::before {
+  .boxed.boxed--paper::before {
     left: -25px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -2934,6 +2934,64 @@ section .header.header--style-4::after {
 #contact .contact__text > .contact__email {
   font-family: Grenze;
   font-size: 26px;
+}
+
+/* BRAND CROSS-REFERENCE SECTION */
+#brand-ref {
+  padding: 60px 0;
+}
+
+#brand-ref .brand-ref__wrapper {
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  #brand-ref .brand-ref__wrapper {
+    padding: 30px;
+  }
+}
+
+#brand-ref .brand-ref__wrapper .brand-ref__text-container {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #brand-ref .brand-ref__wrapper .brand-ref__text-container {
+    text-align: left;
+  }
+}
+
+#brand-ref .brand-ref__wrapper .brand-ref__text-container h3 {
+  margin-bottom: 6px;
+}
+
+#brand-ref .brand-ref__wrapper .brand-ref__text-container h1 {
+  margin-bottom: 10px;
+  color: #bf382b;
+}
+
+#brand-ref .brand-ref__wrapper .brand-ref__text-container a {
+  margin-top: 20px;
+}
+
+#brand-ref .brand-ref__wrapper .brand-ref__img-container {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  #brand-ref .brand-ref__wrapper .brand-ref__img-container {
+    margin-bottom: 0;
+    padding-right: 20px;
+  }
+}
+
+#brand-ref .brand-ref__wrapper .brand-ref__img-container img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* FOOTER SECTION */
