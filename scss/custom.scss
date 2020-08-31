@@ -461,6 +461,19 @@ p {
     }
 }
 
+/* EFFECTS */
+.blur{
+    filter: blur(4px);
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.opacity-50{
+    opacity: 50%;
+}
+
 /* TEXTURES */
 // .texture-1{
 //     position: relative;
@@ -1600,6 +1613,18 @@ section {
                         }
 
                         
+                    }
+
+                    .schedule__notification-container{
+                        display: block;
+                        position: absolute;
+                        top: 65%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-35%);                        
+
+                        h1{
+                            text-align: center;
+                        }
                     }
 
                     .schedule__timetable-block {

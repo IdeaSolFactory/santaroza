@@ -434,6 +434,20 @@ p b {
   z-index: 0;
 }
 
+/* EFFECTS */
+.blur {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.opacity-50 {
+  opacity: 50%;
+}
+
 /* TEXTURES */
 /* BOXES */
 .boxed {
@@ -1649,6 +1663,19 @@ section .header.header--style-4::after {
     height: 100px;
     width: 100px;
   }
+}
+
+#schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__notification-container {
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-35%);
+          transform: translateX(-50%) translateY(-35%);
+}
+
+#schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__notification-container h1 {
+  text-align: center;
 }
 
 #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-block {
