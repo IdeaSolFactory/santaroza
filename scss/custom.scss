@@ -1714,6 +1714,7 @@ section {
                                     }
                                 }
 
+                                
                                 > li {
                                     line-height: 32px;
                                     font-family: GrenzeGotisch;
@@ -1728,7 +1729,7 @@ section {
                                     padding-top: 12px;
 
                                     @include screen-lg {
-                                        width: 33.333%;
+                                        width: 25%;
                                         padding: 12px 0;
 
                                         &:not(.schedule__timetable-period) {
