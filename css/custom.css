@@ -1703,6 +1703,18 @@ section .header.header--style-4::after {
   border-top: 2px solid #b7978a;
 }
 
+#schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-block::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 22%;
+  width: 57%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 2px solid #b7978a;
+}
+
 @media (min-width: 992px) {
   #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-block {
     display: -webkit-box;
@@ -3271,23 +3283,69 @@ p > .first-char.big {
   padding-left: 12px;
 }
 
+.modal {
+  z-index: 10000;
+}
+
 /*Modal button section*/
 .modal-text-section {
-  text-align: left;
+  max-width: 55%;
+  left: 24%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.modal-text-section .modal-more-info-title {
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 .modal-btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal-btn-wrapper .modal-btn {
   cursor: pointer;
+  margin-right: 25px;
+  padding: 0 !important;
+  color: red !important;
+  border-radius: unset !important;
+  background-color: unset !important;
+}
+
+.modal-btn-wrapper .modal-btn .btn-label {
+  font-size: 25px;
+}
+
+.modal-btn-wrapper .btn--style1::before {
+  content: none;
+}
+
+.modal-btn-wrapper .btn--style1::after {
+  content: none;
 }
 
 .modal-content {
   background-color: floralwhite;
+}
+
+.modal-content .modal-header {
+  padding: 1.5rem 2.5rem;
+}
+
+.modal-content .modal-body {
+  padding: 1.5rem 2.5rem;
+}
+
+.modal-content .modal-footer {
+  padding: 1.5rem 2.5rem;
 }
 /*# sourceMappingURL=custom.css.map */

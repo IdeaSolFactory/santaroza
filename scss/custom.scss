@@ -1651,6 +1651,24 @@ section {
                             // @include bckgrnd-img--contain;
                         }
 
+                        
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -15px;
+                            left: 22%;
+                            width: 57%;
+                           justify-content: center;
+                            // height: 100%;
+
+                            border-top: 2px solid color(graphics-light);
+
+                            // background-image: url(../images/borders/border-zigzag-01.svg);
+                            // @include bckgrnd-img--contain;
+                        }
+
+                   
+
                         @include screen-lg {
                             display: flex;
                             flex-direction: row;
@@ -3065,19 +3083,64 @@ p {
     }
 }
 
+.modal{
+z-index:10000;
+}
 /*Modal button section*/
 .modal-text-section{
-text-align: left;
+    
+max-width: 55%;
+    left: 24%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    .modal-more-info-title{
+        font-weight: 500;
+    font-family: sans-serif;
+    font-size: 20px;
+    }
 }
 .modal-btn-wrapper{
     display: flex;
-    margin: 20px 0;
-
+    margin-top: 10px;
+    justify-content: center;
     .modal-btn{
         cursor: pointer;
+        margin-right: 25px;
+        padding:0 !important;
+        color: red !important;
+    border-radius: unset !important;
+    background-color: unset !important;
+
+    .btn-label{
+        font-size:25px
+    }
+    }
+
+    .btn--style1{
+
+        &::before{
+        content:none
+        }
+        &::after{
+            content:none
+            }
     }
 }
 
 .modal-content{
 background-color: floralwhite;
+
+.modal-header{
+    padding:1.5rem 2.5rem;
+
+}
+.modal-body{
+padding:1.5rem 2.5rem;
+}
+
+.modal-footer{
+    padding:1.5rem 2.5rem;
+}
 }
