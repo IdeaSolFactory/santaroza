@@ -3313,10 +3313,6 @@ p > .first-char.big {
 .modal-btn-wrapper .modal-btn {
   cursor: pointer;
   margin-right: 25px;
-  padding: 0 !important;
-  color: #bf382b !important;
-  border-radius: unset !important;
-  background-color: unset !important;
 }
 
 .modal-btn-wrapper .modal-btn .btn-label {
