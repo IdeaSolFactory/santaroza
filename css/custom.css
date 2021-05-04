@@ -3270,4 +3270,24 @@ p > .first-char.big {
 .content--text .par-1 ol li {
   padding-left: 12px;
 }
+
+/*Modal button section*/
+.modal-text-section {
+  text-align: left;
+}
+
+.modal-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.modal-btn-wrapper .modal-btn {
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: floralwhite;
+}
 /*# sourceMappingURL=custom.css.map */

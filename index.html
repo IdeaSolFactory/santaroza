@@ -46,7 +46,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQSBJPK" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    
     <nav class="navbar navbar-expand-xl bg-wood--repeat bottom navbar-light sticky-top" id="navber">
         <div class="navbar__ropes-container"></div>
         <span class="rope-right"></span>
@@ -94,7 +94,39 @@
         </div>
     </nav>
     <!-- HEADER AREA END -->
-
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">További információk</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                Az egy órás sétahajó járat alatt köztes megállás és kiszállás nem történik.<br>
+                A menetrendi járat egy órás sétahajózást biztosít.<br>
+                Első menetrendi hajózás:<br> 8:30 órakor indul - 9:30 órakor érkezik.<br>
+                Utolsó menetrendi hajózás:<br> 19:30 órakor indul - 20:30 órakor érkezik.<br>
+                Balatoni Sétahajózási Kft más járataihoz való csatlakozási lehetőséget nem tud biztosítani, mivel adott kikötőből indul és ugyanoda ér vissza.<br>
+                Kézipoggyászt a vízi járművön úgy kell elhelyezni és szükség esetén csomagolni, hogy az a vízi járművön a közlekedést ne akadályozza, a személyzet munkáját és az utasokat ne zavarja.<br> Kézipoggyász ülőhelyet nem foglalhat el.<br>
+                A vízi járműbe bevitt kézipoggyász őrzése és mozgatása az utas feladata és felelőssége.<br>
+                Kerékpárok szállítása az aktuális utasforgalom és hajótípus, időjárási körülményeknek függvényében korlátozott darabszámban lehetséges, ennek meghatározása minden esetben a hajóparancsnok kompetenciája.<br>
+                A társaság tevékenységi körén kívül eső elháríthatatlan ok <br>- megváltozott vízállási viszonyok vagy időjárási körülmények <br>– miatt igényt érvényesíteni nem lehet.<br>
+                A mindenkori hatályos Díjszabás tartalmazza a menetjegy árakat, a jogszabály alapján igénybe vehető és a Balatoni Sétahajózási Kft által biztosított kedvezmények fajtáját és mértékét, valamint a Díjszabás megtekinthető a Balatoni Sétahajózási Kft. jegypénztárában,<br> és a honlapján.<br>
+                A tárgyévi menetrend a hajóállomásokon, kiadványokban és a Balatoni Sétahajózási Kft honlapján kerül közzétételre.<br>
+                Hajózási vállalkozás a menetrendet a hajóállomáson jól látható helyre kifüggeszti.<br>
+                Az engedélyesköteles szolgáltatását nyilvános internetes felületen, továbbá közforgalmú személyszállítási szolgáltatás esetén az általa igénybe vett kikötőbe<br> – a közforgalmú hajózási tevékenységről rendelkező jogszabályban meghatározott tartalommal és módon meghirdetni.<br>
+                A Balatoni Sétahajózási Kft a meghirdetett járat szüneteltetését vagy korábbi időpontban történő közlekedését <br>– az időjárástól,<br> vízállástól, valamint hajózási zárlattól függő körülmények kivételével<br>– legalább 14 nappal,<br> új járat beállítását, illetve a meghirdetettnél későbbi időpontban történő közlekedését legalább 7 nappal a változás előtt a hajóállomáson kifüggesztett hirdetménnyel<br> és a honlapon az utazóközönség tudomására hozza.
+            </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Vissza</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- BANNER AREA START -->
     <section id="banner">
         <!-- <span class="text-shadow"></span> -->
@@ -493,7 +525,7 @@
                                             <div class="schedule__timetable-block">
                                                 
                                                 <div class="schedule__timetable-period">
-                                                    <h3>Hétfő-Vasárnap</h3>
+                                                    <h3>Szerda-Vasárnap</h3>
                                                 </div>
                                                 <div class="schedule__timetable-rows">
                                                     <ul class="schedule__timetable">
@@ -509,8 +541,22 @@
                                                         <li>19:30</li>
                                                     </ul>
                                                 </div>
+                                                
 
                                             </div>
+                                            <!-- Button trigger modal -->
+                                            <div class="modal-text-section">
+                                                <h3>További információ</h3>
+<p>Hétfő és keddi napokon járatunk menetrendi szolgáltatást nem nyújt.
+    Balatonfüredről a fő kikötőből indul és ugyanoda érkezik vissza.</p>
+                                            </div>
+                                            <div class="modal-btn-wrapper">
+                                            <button type="button" class="btn--style1 modal-btn" data-toggle="modal" data-target="#exampleModalLong">
+                                               ÖSSZES
+                                              </button>
+                                            </div>
+  
+ 
                                             <!-- <div class="schedule__timetable-row">
                                                 <ul class="schedule__timetable">
                                                     <li class="schedule__timetable-period">Szombat-Vasárnap</li>

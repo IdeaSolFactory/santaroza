@@ -3064,3 +3064,20 @@ p {
         }
     }
 }
+
+/*Modal button section*/
+.modal-text-section{
+text-align: left;
+}
+.modal-btn-wrapper{
+    display: flex;
+    margin: 20px 0;
+
+    .modal-btn{
+        cursor: pointer;
+    }
+}
+
+.modal-content{
+background-color: floralwhite;
+}
