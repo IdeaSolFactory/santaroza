@@ -3112,8 +3112,10 @@ max-width: 55%;
     background-color: unset !important;
 
     .btn-label{
-        font-size:25px
+        font-size:25px;
     }
+
+ 
     }
 
     .btn--style1{
@@ -3160,4 +3162,9 @@ padding:1.5rem 2.5rem;
             right: -60px;
             }
     }
+}
+
+.btn-label2{
+    font-size:25px;
+    color:white;
 }

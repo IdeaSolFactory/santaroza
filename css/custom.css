@@ -3360,4 +3360,9 @@ p > .first-char.big {
 .modal-footer .btn--style1::after {
   right: -60px;
 }
+
+.btn-label2 {
+  font-size: 25px;
+  color: white;
+}
 /*# sourceMappingURL=custom.css.map */
