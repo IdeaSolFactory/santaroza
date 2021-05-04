@@ -3102,7 +3102,6 @@ max-width: 55%;
 }
 .modal-btn-wrapper{
     display: flex;
-    margin-top: 10px;
     justify-content: center;
     .modal-btn{
         cursor: pointer;
@@ -3142,4 +3141,23 @@ padding:1.5rem 2.5rem;
 .modal-footer{
     padding:1.5rem 2.5rem;
 }
+}
+
+.modal-more-info-title{
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+
+.modal-footer{
+    .btn--style1{
+        &::before{
+            bottom: -30px;
+            left: -50px;
+        }
+        &::after{
+            right: -60px;
+            }
+    }
 }

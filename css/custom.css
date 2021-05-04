@@ -3305,7 +3305,6 @@ p > .first-char.big {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3346,5 +3345,19 @@ p > .first-char.big {
 
 .modal-content .modal-footer {
   padding: 1.5rem 2.5rem;
+}
+
+.modal-more-info-title {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.modal-footer .btn--style1::before {
+  bottom: -30px;
+  left: -50px;
+}
+
+.modal-footer .btn--style1::after {
+  right: -60px;
 }
 /*# sourceMappingURL=custom.css.map */
