@@ -1818,7 +1818,7 @@ section .header.header--style-4::after {
 
 @media (min-width: 992px) {
   #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-block .schedule__timetable-rows .schedule__timetable > li {
-    width: 33.333%;
+    width: 25%;
     padding: 12px 0;
   }
   #schedule .schedule__table-container .schedule__item .schedule__item-container .schedule__item-text .schedule__timetable-block .schedule__timetable-rows .schedule__timetable > li:not(.schedule__timetable-period):not(:first-of-type) {
